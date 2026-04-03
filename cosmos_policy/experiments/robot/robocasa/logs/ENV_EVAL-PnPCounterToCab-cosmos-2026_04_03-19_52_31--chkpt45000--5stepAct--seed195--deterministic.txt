@@ -1,0 +1,3535 @@
+Eval config: PolicyEvalConfig(suite='robocasa', model_family='cosmos', config='cosmos_predict2_2b_480p_robocasa_50_demos_per_task__inference', ckpt_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B', planning_model_config_name='', planning_model_ckpt_path='', config_file='cosmos_policy/config/config.py', use_third_person_image=True, num_third_person_images=2, use_wrist_image=True, num_wrist_images=1, use_proprio=True, flip_images=True, use_variance_scale=False, use_jpeg_compression=True, ar_future_prediction=False, ar_value_prediction=False, ar_qvalue_prediction=False, num_denoising_steps_action=5, num_denoising_steps_future_state=1, num_denoising_steps_value=1, unnormalize_actions=True, normalize_proprio=True, dataset_stats_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_dataset_statistics.json', t5_text_embeddings_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_t5_embeddings.pkl', trained_with_image_aug=True, chunk_size=32, num_open_loop_steps=16, deterministic=True, deterministic_reset=False, deterministic_reset_seed=None, use_ensemble_future_state_predictions=False, num_future_state_predictions_in_ensemble=3, future_state_ensemble_aggregation_scheme='average', use_ensemble_value_predictions=False, num_value_predictions_in_ensemble=5, value_ensemble_aggregation_scheme='average', search_depth=1, search_depth_value_aggregation_scheme='use_last_value', mask_current_state_action_for_value_prediction=False, mask_future_state_for_qvalue_prediction=False, num_queries_best_of_n=1, use_parallel_inference=False, available_gpus='0,1,2,3,4,5,6,7', parallel_timeout=15, task_name='PnPCounterToCab', num_trials_per_task=50, env_img_res=224, robots='PandaMobile', controllers='OSC_POSE', obj_instance_split='B', layout_and_style_ids='((1,1),(2,2),(4,4),(6,9),(7,10))', randomize_cameras=False, local_log_dir='cosmos_policy/experiments/robot/robocasa/logs/', run_id_note='chkpt45000--5stepAct--seed195--deterministic', use_wandb=False, wandb_entity='YOUR_ENTITY', wandb_project='YOUR_PROJECT', seed=195, randomize_seed=False, data_collection=False, jpeg_compress=True)
+
+Starting evaluation for task: PnPCounterToCab
+Number of trials: 50
+
+Evaluating task: PnPCounterToCab
+Starting episode 1...
+
+Task description: pick the candle from the counter and place it in the cabinet
+Query 1/1: Action query time = 3.549 sec
+Query 1/1 (seed 195): Predicted value = 0.1603
+t=0: Selected seed 195 with value = 0.1603
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.1856
+t=16: Selected seed 195 with value = 0.1856
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2085
+t=32: Selected seed 195 with value = 0.2085
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2337
+t=48: Selected seed 195 with value = 0.2337
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2580
+t=64: Selected seed 195 with value = 0.2580
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2928
+t=80: Selected seed 195 with value = 0.2928
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.3113
+t=96: Selected seed 195 with value = 0.3113
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3484
+t=112: Selected seed 195 with value = 0.3484
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3933
+t=128: Selected seed 195 with value = 0.3933
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4986
+t=144: Selected seed 195 with value = 0.4986
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5765
+t=160: Selected seed 195 with value = 0.5765
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.6623
+t=176: Selected seed 195 with value = 0.6623
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7588
+t=192: Selected seed 195 with value = 0.7588
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.9374
+t=208: Selected seed 195 with value = 0.9374
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=224: Selected seed 195 with value = 0.9995
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=240: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=256: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9934
+t=272: Selected seed 195 with value = 0.9934
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=288: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9544
+t=304: Selected seed 195 with value = 0.9544
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.4642
+t=320: Selected seed 195 with value = 0.4642
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5571
+t=336: Selected seed 195 with value = 0.5571
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.3535
+t=352: Selected seed 195 with value = 0.3535
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3045
+t=368: Selected seed 195 with value = 0.3045
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2830
+t=384: Selected seed 195 with value = 0.2830
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2618
+t=400: Selected seed 195 with value = 0.2618
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2692
+t=416: Selected seed 195 with value = 0.2692
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2543
+t=432: Selected seed 195 with value = 0.2543
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2426
+t=448: Selected seed 195 with value = 0.2426
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.2439
+t=464: Selected seed 195 with value = 0.2439
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2438
+t=480: Selected seed 195 with value = 0.2438
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2530
+t=496: Selected seed 195 with value = 0.2530
+  Episode 0: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=0--success=False--task=pick_the_candle_from_the_counter_and_pla.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=0--success=False--task=pick_the_candle_from_the_counter_and_place_it_in_t.mp4
+Success: False
+# episodes completed so far: 1
+# successes: 0 (0.0%)
+Starting episode 2...
+
+Task description: pick the kettle electric from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.768 sec
+Query 1/1 (seed 195): Predicted value = 0.1147
+t=0: Selected seed 195 with value = 0.1147
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1484
+t=16: Selected seed 195 with value = 0.1484
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1764
+t=32: Selected seed 195 with value = 0.1764
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2120
+t=48: Selected seed 195 with value = 0.2120
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2322
+t=64: Selected seed 195 with value = 0.2322
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2833
+t=80: Selected seed 195 with value = 0.2833
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3504
+t=96: Selected seed 195 with value = 0.3504
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.4271
+t=112: Selected seed 195 with value = 0.4271
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5228
+t=128: Selected seed 195 with value = 0.5228
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5590
+t=144: Selected seed 195 with value = 0.5590
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.6300
+t=160: Selected seed 195 with value = 0.6300
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7071
+t=176: Selected seed 195 with value = 0.7071
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7308
+t=192: Selected seed 195 with value = 0.7308
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.7529
+t=208: Selected seed 195 with value = 0.7529
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8618
+t=224: Selected seed 195 with value = 0.8618
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.9862
+t=240: Selected seed 195 with value = 0.9862
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9975
+t=256: Selected seed 195 with value = 0.9975
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=272: Selected seed 195 with value = 0.9982
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.9910
+t=288: Selected seed 195 with value = 0.9910
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3909
+t=304: Selected seed 195 with value = 0.3909
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1806
+t=320: Selected seed 195 with value = 0.1806
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1484
+t=336: Selected seed 195 with value = 0.1484
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1455
+t=352: Selected seed 195 with value = 0.1455
+Query 1/1: Action query time = 0.760 sec
+Query 1/1 (seed 195): Predicted value = 0.1442
+t=368: Selected seed 195 with value = 0.1442
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1398
+t=384: Selected seed 195 with value = 0.1398
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1393
+t=400: Selected seed 195 with value = 0.1393
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1385
+t=416: Selected seed 195 with value = 0.1385
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1410
+t=432: Selected seed 195 with value = 0.1410
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1462
+t=448: Selected seed 195 with value = 0.1462
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1509
+t=464: Selected seed 195 with value = 0.1509
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1602
+t=480: Selected seed 195 with value = 0.1602
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1752
+t=496: Selected seed 195 with value = 0.1752
+  Episode 1: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=1--success=False--task=pick_the_kettle_electric_from_the_counte.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=1--success=False--task=pick_the_kettle_electric_from_the_counter_and_plac.mp4
+Success: False
+# episodes completed so far: 2
+# successes: 0 (0.0%)
+Starting episode 3...
+
+Task description: pick the sponge from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.1379
+t=0: Selected seed 195 with value = 0.1379
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1718
+t=16: Selected seed 195 with value = 0.1718
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1985
+t=32: Selected seed 195 with value = 0.1985
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2378
+t=48: Selected seed 195 with value = 0.2378
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2791
+t=64: Selected seed 195 with value = 0.2791
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3266
+t=80: Selected seed 195 with value = 0.3266
+Query 1/1: Action query time = 0.806 sec
+Query 1/1 (seed 195): Predicted value = 0.3570
+t=96: Selected seed 195 with value = 0.3570
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4394
+t=112: Selected seed 195 with value = 0.4394
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5484
+t=128: Selected seed 195 with value = 0.5484
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6557
+t=144: Selected seed 195 with value = 0.6557
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7378
+t=160: Selected seed 195 with value = 0.7378
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9203
+t=176: Selected seed 195 with value = 0.9203
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=192: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=208: Selected seed 195 with value = 0.9981
+  Success detected at timestep 212!
+  Episode 2: SUCCESS (length: 213)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=2--success=True--task=pick_the_sponge_from_the_counter_and_pla.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=2--success=True--task=pick_the_sponge_from_the_counter_and_place_it_in_t.mp4
+Success: True
+# episodes completed so far: 3
+# successes: 1 (33.3%)
+Starting episode 4...
+
+Task description: pick the lemon from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.1234
+t=0: Selected seed 195 with value = 0.1234
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1501
+t=16: Selected seed 195 with value = 0.1501
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1711
+t=32: Selected seed 195 with value = 0.1711
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.2102
+t=48: Selected seed 195 with value = 0.2102
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2335
+t=64: Selected seed 195 with value = 0.2335
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2644
+t=80: Selected seed 195 with value = 0.2644
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3077
+t=96: Selected seed 195 with value = 0.3077
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3436
+t=112: Selected seed 195 with value = 0.3436
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.4304
+t=128: Selected seed 195 with value = 0.4304
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5227
+t=144: Selected seed 195 with value = 0.5227
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6226
+t=160: Selected seed 195 with value = 0.6226
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6911
+t=176: Selected seed 195 with value = 0.6911
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8297
+t=192: Selected seed 195 with value = 0.8297
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8644
+t=208: Selected seed 195 with value = 0.8644
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=224: Selected seed 195 with value = 0.9984
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=240: Selected seed 195 with value = 0.9988
+  Success detected at timestep 246!
+  Episode 3: SUCCESS (length: 247)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=3--success=True--task=pick_the_lemon_from_the_counter_and_plac.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=3--success=True--task=pick_the_lemon_from_the_counter_and_place_it_in_th.mp4
+Success: True
+# episodes completed so far: 4
+# successes: 2 (50.0%)
+Starting episode 5...
+
+Task description: pick the jam from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.1273
+t=0: Selected seed 195 with value = 0.1273
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.1508
+t=16: Selected seed 195 with value = 0.1508
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1663
+t=32: Selected seed 195 with value = 0.1663
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1888
+t=48: Selected seed 195 with value = 0.1888
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2161
+t=64: Selected seed 195 with value = 0.2161
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2442
+t=80: Selected seed 195 with value = 0.2442
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2763
+t=96: Selected seed 195 with value = 0.2763
+Query 1/1: Action query time = 0.798 sec
+Query 1/1 (seed 195): Predicted value = 0.3074
+t=112: Selected seed 195 with value = 0.3074
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3246
+t=128: Selected seed 195 with value = 0.3246
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3804
+t=144: Selected seed 195 with value = 0.3804
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4808
+t=160: Selected seed 195 with value = 0.4808
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5664
+t=176: Selected seed 195 with value = 0.5664
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6431
+t=192: Selected seed 195 with value = 0.6431
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7195
+t=208: Selected seed 195 with value = 0.7195
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.8478
+t=224: Selected seed 195 with value = 0.8478
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9889
+t=240: Selected seed 195 with value = 0.9889
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=256: Selected seed 195 with value = 0.9997
+  Success detected at timestep 268!
+  Episode 4: SUCCESS (length: 269)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=4--success=True--task=pick_the_jam_from_the_counter_and_place_.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=4--success=True--task=pick_the_jam_from_the_counter_and_place_it_in_the_.mp4
+Success: True
+# episodes completed so far: 5
+# successes: 3 (60.0%)
+Starting episode 6...
+
+Task description: pick the mug from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.1263
+t=0: Selected seed 195 with value = 0.1263
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1566
+t=16: Selected seed 195 with value = 0.1566
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1989
+t=32: Selected seed 195 with value = 0.1989
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2403
+t=48: Selected seed 195 with value = 0.2403
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2678
+t=64: Selected seed 195 with value = 0.2678
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3059
+t=80: Selected seed 195 with value = 0.3059
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.3531
+t=96: Selected seed 195 with value = 0.3531
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4348
+t=112: Selected seed 195 with value = 0.4348
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5408
+t=128: Selected seed 195 with value = 0.5408
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6216
+t=144: Selected seed 195 with value = 0.6216
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7708
+t=160: Selected seed 195 with value = 0.7708
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9887
+t=176: Selected seed 195 with value = 0.9887
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=192: Selected seed 195 with value = 0.9989
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=208: Selected seed 195 with value = 0.9981
+  Success detected at timestep 214!
+  Episode 5: SUCCESS (length: 215)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=5--success=True--task=pick_the_mug_from_the_counter_and_place_.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=5--success=True--task=pick_the_mug_from_the_counter_and_place_it_in_the_.mp4
+Success: True
+# episodes completed so far: 6
+# successes: 4 (66.7%)
+Starting episode 7...
+
+Task description: pick the jam from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.1300
+t=0: Selected seed 195 with value = 0.1300
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.1599
+t=16: Selected seed 195 with value = 0.1599
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1903
+t=32: Selected seed 195 with value = 0.1903
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2274
+t=48: Selected seed 195 with value = 0.2274
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2523
+t=64: Selected seed 195 with value = 0.2523
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2824
+t=80: Selected seed 195 with value = 0.2824
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3215
+t=96: Selected seed 195 with value = 0.3215
+Query 1/1: Action query time = 0.808 sec
+Query 1/1 (seed 195): Predicted value = 0.3684
+t=112: Selected seed 195 with value = 0.3684
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4510
+t=128: Selected seed 195 with value = 0.4510
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5396
+t=144: Selected seed 195 with value = 0.5396
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6159
+t=160: Selected seed 195 with value = 0.6159
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6788
+t=176: Selected seed 195 with value = 0.6788
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7846
+t=192: Selected seed 195 with value = 0.7846
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8769
+t=208: Selected seed 195 with value = 0.8769
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.9978
+t=224: Selected seed 195 with value = 0.9978
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=240: Selected seed 195 with value = 0.9989
+  Success detected at timestep 250!
+  Episode 6: SUCCESS (length: 251)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=6--success=True--task=pick_the_jam_from_the_counter_and_place_.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=6--success=True--task=pick_the_jam_from_the_counter_and_place_it_in_the_.mp4
+Success: True
+# episodes completed so far: 7
+# successes: 5 (71.4%)
+Starting episode 8...
+
+Task description: pick the hot dog from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.0721
+t=0: Selected seed 195 with value = 0.0721
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.0899
+t=16: Selected seed 195 with value = 0.0899
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1082
+t=32: Selected seed 195 with value = 0.1082
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1267
+t=48: Selected seed 195 with value = 0.1267
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1440
+t=64: Selected seed 195 with value = 0.1440
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1615
+t=80: Selected seed 195 with value = 0.1615
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1839
+t=96: Selected seed 195 with value = 0.1839
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.2522
+t=112: Selected seed 195 with value = 0.2522
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2942
+t=128: Selected seed 195 with value = 0.2942
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3831
+t=144: Selected seed 195 with value = 0.3831
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4980
+t=160: Selected seed 195 with value = 0.4980
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5870
+t=176: Selected seed 195 with value = 0.5870
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6771
+t=192: Selected seed 195 with value = 0.6771
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8098
+t=208: Selected seed 195 with value = 0.8098
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9208
+t=224: Selected seed 195 with value = 0.9208
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=240: Selected seed 195 with value = 0.9990
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=256: Selected seed 195 with value = 0.9990
+  Success detected at timestep 265!
+  Episode 7: SUCCESS (length: 266)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=7--success=True--task=pick_the_hot_dog_from_the_counter_and_pl.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=7--success=True--task=pick_the_hot_dog_from_the_counter_and_place_it_in_.mp4
+Success: True
+# episodes completed so far: 8
+# successes: 6 (75.0%)
+Starting episode 9...
+
+Task description: pick the banana from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.1253
+t=0: Selected seed 195 with value = 0.1253
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1586
+t=16: Selected seed 195 with value = 0.1586
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1941
+t=32: Selected seed 195 with value = 0.1941
+Query 1/1: Action query time = 0.791 sec
+Query 1/1 (seed 195): Predicted value = 0.2262
+t=48: Selected seed 195 with value = 0.2262
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2566
+t=64: Selected seed 195 with value = 0.2566
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2834
+t=80: Selected seed 195 with value = 0.2834
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3100
+t=96: Selected seed 195 with value = 0.3100
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3488
+t=112: Selected seed 195 with value = 0.3488
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4214
+t=128: Selected seed 195 with value = 0.4214
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5207
+t=144: Selected seed 195 with value = 0.5207
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.6218
+t=160: Selected seed 195 with value = 0.6218
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6870
+t=176: Selected seed 195 with value = 0.6870
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8771
+t=192: Selected seed 195 with value = 0.8771
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=208: Selected seed 195 with value = 0.9989
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=224: Selected seed 195 with value = 0.9990
+  Success detected at timestep 233!
+  Episode 8: SUCCESS (length: 234)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=8--success=True--task=pick_the_banana_from_the_counter_and_pla.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=8--success=True--task=pick_the_banana_from_the_counter_and_place_it_in_t.mp4
+Success: True
+# episodes completed so far: 9
+# successes: 7 (77.8%)
+Starting episode 10...
+
+Task description: pick the water bottle from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.764 sec
+Query 1/1 (seed 195): Predicted value = 0.0783
+t=0: Selected seed 195 with value = 0.0783
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1072
+t=16: Selected seed 195 with value = 0.1072
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1198
+t=32: Selected seed 195 with value = 0.1198
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1476
+t=48: Selected seed 195 with value = 0.1476
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.1796
+t=64: Selected seed 195 with value = 0.1796
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2101
+t=80: Selected seed 195 with value = 0.2101
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2355
+t=96: Selected seed 195 with value = 0.2355
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2576
+t=112: Selected seed 195 with value = 0.2576
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3654
+t=128: Selected seed 195 with value = 0.3654
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5465
+t=144: Selected seed 195 with value = 0.5465
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.6363
+t=160: Selected seed 195 with value = 0.6363
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7875
+t=176: Selected seed 195 with value = 0.7875
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9525
+t=192: Selected seed 195 with value = 0.9525
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=208: Selected seed 195 with value = 0.9988
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9979
+t=224: Selected seed 195 with value = 0.9979
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=240: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9894
+t=256: Selected seed 195 with value = 0.9894
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1907
+t=272: Selected seed 195 with value = 0.1907
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.2428
+t=288: Selected seed 195 with value = 0.2428
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4134
+t=304: Selected seed 195 with value = 0.4134
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4338
+t=320: Selected seed 195 with value = 0.4338
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5039
+t=336: Selected seed 195 with value = 0.5039
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.5882
+t=352: Selected seed 195 with value = 0.5882
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6740
+t=368: Selected seed 195 with value = 0.6740
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8081
+t=384: Selected seed 195 with value = 0.8081
+Query 1/1: Action query time = 0.788 sec
+Query 1/1 (seed 195): Predicted value = 0.9401
+t=400: Selected seed 195 with value = 0.9401
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=416: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9980
+t=432: Selected seed 195 with value = 0.9980
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=448: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=464: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9613
+t=480: Selected seed 195 with value = 0.9613
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3370
+t=496: Selected seed 195 with value = 0.3370
+  Episode 9: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=9--success=False--task=pick_the_water_bottle_from_the_counter_a.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=9--success=False--task=pick_the_water_bottle_from_the_counter_and_place_i.mp4
+Success: False
+# episodes completed so far: 10
+# successes: 7 (70.0%)
+Starting episode 11...
+
+Task description: pick the bread from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.1181
+t=0: Selected seed 195 with value = 0.1181
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1467
+t=16: Selected seed 195 with value = 0.1467
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1959
+t=32: Selected seed 195 with value = 0.1959
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8874
+t=48: Selected seed 195 with value = 0.8874
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1863
+t=64: Selected seed 195 with value = 0.1863
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9642
+t=80: Selected seed 195 with value = 0.9642
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1809
+t=96: Selected seed 195 with value = 0.1809
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7658
+t=112: Selected seed 195 with value = 0.7658
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=128: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1926
+t=144: Selected seed 195 with value = 0.1926
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9897
+t=160: Selected seed 195 with value = 0.9897
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3071
+t=176: Selected seed 195 with value = 0.3071
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4592
+t=192: Selected seed 195 with value = 0.4592
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5088
+t=208: Selected seed 195 with value = 0.5088
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5792
+t=224: Selected seed 195 with value = 0.5792
+Query 1/1: Action query time = 0.759 sec
+Query 1/1 (seed 195): Predicted value = 0.6253
+t=240: Selected seed 195 with value = 0.6253
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7387
+t=256: Selected seed 195 with value = 0.7387
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9141
+t=272: Selected seed 195 with value = 0.9141
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.9939
+t=288: Selected seed 195 with value = 0.9939
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9970
+t=304: Selected seed 195 with value = 0.9970
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=320: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.782 sec
+Query 1/1 (seed 195): Predicted value = 0.9792
+t=336: Selected seed 195 with value = 0.9792
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3353
+t=352: Selected seed 195 with value = 0.3353
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2047
+t=368: Selected seed 195 with value = 0.2047
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1744
+t=384: Selected seed 195 with value = 0.1744
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2059
+t=400: Selected seed 195 with value = 0.2059
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2410
+t=416: Selected seed 195 with value = 0.2410
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9234
+t=432: Selected seed 195 with value = 0.9234
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2273
+t=448: Selected seed 195 with value = 0.2273
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=464: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2020
+t=480: Selected seed 195 with value = 0.2020
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2341
+t=496: Selected seed 195 with value = 0.2341
+  Episode 10: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=10--success=False--task=pick_the_bread_from_the_counter_and_plac.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=10--success=False--task=pick_the_bread_from_the_counter_and_place_it_in_th.mp4
+Success: False
+# episodes completed so far: 11
+# successes: 7 (63.6%)
+Starting episode 12...
+
+Task description: pick the mushroom from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.786 sec
+Query 1/1 (seed 195): Predicted value = 0.0448
+t=0: Selected seed 195 with value = 0.0448
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.0524
+t=16: Selected seed 195 with value = 0.0524
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.0669
+t=32: Selected seed 195 with value = 0.0669
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.0876
+t=48: Selected seed 195 with value = 0.0876
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1214
+t=64: Selected seed 195 with value = 0.1214
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1315
+t=80: Selected seed 195 with value = 0.1315
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1431
+t=96: Selected seed 195 with value = 0.1431
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1599
+t=112: Selected seed 195 with value = 0.1599
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1927
+t=128: Selected seed 195 with value = 0.1927
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2322
+t=144: Selected seed 195 with value = 0.2322
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2576
+t=160: Selected seed 195 with value = 0.2576
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2855
+t=176: Selected seed 195 with value = 0.2855
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.3235
+t=192: Selected seed 195 with value = 0.3235
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3890
+t=208: Selected seed 195 with value = 0.3890
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5397
+t=224: Selected seed 195 with value = 0.5397
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6424
+t=240: Selected seed 195 with value = 0.6424
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.7989
+t=256: Selected seed 195 with value = 0.7989
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8592
+t=272: Selected seed 195 with value = 0.8592
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9857
+t=288: Selected seed 195 with value = 0.9857
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9945
+t=304: Selected seed 195 with value = 0.9945
+Query 1/1: Action query time = 0.805 sec
+Query 1/1 (seed 195): Predicted value = 0.9979
+t=320: Selected seed 195 with value = 0.9979
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=336: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4325
+t=352: Selected seed 195 with value = 0.4325
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0858
+t=368: Selected seed 195 with value = 0.0858
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.0737
+t=384: Selected seed 195 with value = 0.0737
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0805
+t=400: Selected seed 195 with value = 0.0805
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0927
+t=416: Selected seed 195 with value = 0.0927
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1003
+t=432: Selected seed 195 with value = 0.1003
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1040
+t=448: Selected seed 195 with value = 0.1040
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1120
+t=464: Selected seed 195 with value = 0.1120
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1229
+t=480: Selected seed 195 with value = 0.1229
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1302
+t=496: Selected seed 195 with value = 0.1302
+  Episode 11: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=11--success=False--task=pick_the_mushroom_from_the_counter_and_p.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=11--success=False--task=pick_the_mushroom_from_the_counter_and_place_it_in.mp4
+Success: False
+# episodes completed so far: 12
+# successes: 7 (58.3%)
+Starting episode 13...
+
+Task description: pick the cupcake from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.1858
+t=0: Selected seed 195 with value = 0.1858
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2100
+t=16: Selected seed 195 with value = 0.2100
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.2432
+t=32: Selected seed 195 with value = 0.2432
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2853
+t=48: Selected seed 195 with value = 0.2853
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3111
+t=64: Selected seed 195 with value = 0.3111
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3583
+t=80: Selected seed 195 with value = 0.3583
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3953
+t=96: Selected seed 195 with value = 0.3953
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4639
+t=112: Selected seed 195 with value = 0.4639
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5542
+t=128: Selected seed 195 with value = 0.5542
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6724
+t=144: Selected seed 195 with value = 0.6724
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7663
+t=160: Selected seed 195 with value = 0.7663
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8991
+t=176: Selected seed 195 with value = 0.8991
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9975
+t=192: Selected seed 195 with value = 0.9975
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=208: Selected seed 195 with value = 0.9982
+  Success detected at timestep 218!
+  Episode 12: SUCCESS (length: 219)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=12--success=True--task=pick_the_cupcake_from_the_counter_and_pl.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=12--success=True--task=pick_the_cupcake_from_the_counter_and_place_it_in_.mp4
+Success: True
+# episodes completed so far: 13
+# successes: 8 (61.5%)
+Starting episode 14...
+
+Task description: pick the candle from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.780 sec
+Query 1/1 (seed 195): Predicted value = 0.1614
+t=0: Selected seed 195 with value = 0.1614
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1853
+t=16: Selected seed 195 with value = 0.1853
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2123
+t=32: Selected seed 195 with value = 0.2123
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2444
+t=48: Selected seed 195 with value = 0.2444
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3298
+t=64: Selected seed 195 with value = 0.3298
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3756
+t=80: Selected seed 195 with value = 0.3756
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4246
+t=96: Selected seed 195 with value = 0.4246
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4639
+t=112: Selected seed 195 with value = 0.4639
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5714
+t=128: Selected seed 195 with value = 0.5714
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7094
+t=144: Selected seed 195 with value = 0.7094
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8448
+t=160: Selected seed 195 with value = 0.8448
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9454
+t=176: Selected seed 195 with value = 0.9454
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=192: Selected seed 195 with value = 0.9989
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=208: Selected seed 195 with value = 0.9981
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1886
+t=224: Selected seed 195 with value = 0.1886
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1713
+t=240: Selected seed 195 with value = 0.1713
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1874
+t=256: Selected seed 195 with value = 0.1874
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2126
+t=272: Selected seed 195 with value = 0.2126
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2503
+t=288: Selected seed 195 with value = 0.2503
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3045
+t=304: Selected seed 195 with value = 0.3045
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3050
+t=320: Selected seed 195 with value = 0.3050
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3404
+t=336: Selected seed 195 with value = 0.3404
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3847
+t=352: Selected seed 195 with value = 0.3847
+Query 1/1: Action query time = 0.793 sec
+Query 1/1 (seed 195): Predicted value = 0.4270
+t=368: Selected seed 195 with value = 0.4270
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4660
+t=384: Selected seed 195 with value = 0.4660
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5871
+t=400: Selected seed 195 with value = 0.5871
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7161
+t=416: Selected seed 195 with value = 0.7161
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8684
+t=432: Selected seed 195 with value = 0.8684
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.9684
+t=448: Selected seed 195 with value = 0.9684
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9968
+t=464: Selected seed 195 with value = 0.9968
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=480: Selected seed 195 with value = 0.9989
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9979
+t=496: Selected seed 195 with value = 0.9979
+  Episode 13: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=13--success=False--task=pick_the_candle_from_the_counter_and_pla.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=13--success=False--task=pick_the_candle_from_the_counter_and_place_it_in_t.mp4
+Success: False
+# episodes completed so far: 14
+# successes: 8 (57.1%)
+Starting episode 15...
+
+Task description: pick the teapot from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.1495
+t=0: Selected seed 195 with value = 0.1495
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1761
+t=16: Selected seed 195 with value = 0.1761
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2211
+t=32: Selected seed 195 with value = 0.2211
+Query 1/1: Action query time = 0.805 sec
+Query 1/1 (seed 195): Predicted value = 0.2660
+t=48: Selected seed 195 with value = 0.2660
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2959
+t=64: Selected seed 195 with value = 0.2959
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3603
+t=80: Selected seed 195 with value = 0.3603
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3823
+t=96: Selected seed 195 with value = 0.3823
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4394
+t=112: Selected seed 195 with value = 0.4394
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5532
+t=128: Selected seed 195 with value = 0.5532
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6918
+t=144: Selected seed 195 with value = 0.6918
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8429
+t=160: Selected seed 195 with value = 0.8429
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9644
+t=176: Selected seed 195 with value = 0.9644
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=192: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9971
+t=208: Selected seed 195 with value = 0.9971
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=224: Selected seed 195 with value = 0.9981
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6136
+t=240: Selected seed 195 with value = 0.6136
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1526
+t=256: Selected seed 195 with value = 0.1526
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1634
+t=272: Selected seed 195 with value = 0.1634
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2020
+t=288: Selected seed 195 with value = 0.2020
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2491
+t=304: Selected seed 195 with value = 0.2491
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2967
+t=320: Selected seed 195 with value = 0.2967
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3338
+t=336: Selected seed 195 with value = 0.3338
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3772
+t=352: Selected seed 195 with value = 0.3772
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4404
+t=368: Selected seed 195 with value = 0.4404
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5220
+t=384: Selected seed 195 with value = 0.5220
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6571
+t=400: Selected seed 195 with value = 0.6571
+Query 1/1: Action query time = 0.803 sec
+Query 1/1 (seed 195): Predicted value = 0.8260
+t=416: Selected seed 195 with value = 0.8260
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9329
+t=432: Selected seed 195 with value = 0.9329
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=448: Selected seed 195 with value = 0.9989
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9959
+t=464: Selected seed 195 with value = 0.9959
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=480: Selected seed 195 with value = 0.9988
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6513
+t=496: Selected seed 195 with value = 0.6513
+  Episode 14: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=14--success=False--task=pick_the_teapot_from_the_counter_and_pla.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=14--success=False--task=pick_the_teapot_from_the_counter_and_place_it_in_t.mp4
+Success: False
+# episodes completed so far: 15
+# successes: 8 (53.3%)
+Starting episode 16...
+
+Task description: pick the lime from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.1414
+t=0: Selected seed 195 with value = 0.1414
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1598
+t=16: Selected seed 195 with value = 0.1598
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1894
+t=32: Selected seed 195 with value = 0.1894
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2245
+t=48: Selected seed 195 with value = 0.2245
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2634
+t=64: Selected seed 195 with value = 0.2634
+Query 1/1: Action query time = 0.804 sec
+Query 1/1 (seed 195): Predicted value = 0.3152
+t=80: Selected seed 195 with value = 0.3152
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3416
+t=96: Selected seed 195 with value = 0.3416
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3896
+t=112: Selected seed 195 with value = 0.3896
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4695
+t=128: Selected seed 195 with value = 0.4695
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5630
+t=144: Selected seed 195 with value = 0.5630
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6987
+t=160: Selected seed 195 with value = 0.6987
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8254
+t=176: Selected seed 195 with value = 0.8254
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9336
+t=192: Selected seed 195 with value = 0.9336
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=208: Selected seed 195 with value = 0.9990
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=224: Selected seed 195 with value = 0.9992
+  Success detected at timestep 233!
+  Episode 15: SUCCESS (length: 234)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=15--success=True--task=pick_the_lime_from_the_counter_and_place.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=15--success=True--task=pick_the_lime_from_the_counter_and_place_it_in_the.mp4
+Success: True
+# episodes completed so far: 16
+# successes: 9 (56.2%)
+Starting episode 17...
+
+Task description: pick the donut from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.1006
+t=0: Selected seed 195 with value = 0.1006
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1261
+t=16: Selected seed 195 with value = 0.1261
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.1658
+t=32: Selected seed 195 with value = 0.1658
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1994
+t=48: Selected seed 195 with value = 0.1994
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2086
+t=64: Selected seed 195 with value = 0.2086
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2493
+t=80: Selected seed 195 with value = 0.2493
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2555
+t=96: Selected seed 195 with value = 0.2555
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2786
+t=112: Selected seed 195 with value = 0.2786
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2788
+t=128: Selected seed 195 with value = 0.2788
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3003
+t=144: Selected seed 195 with value = 0.3003
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3458
+t=160: Selected seed 195 with value = 0.3458
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4095
+t=176: Selected seed 195 with value = 0.4095
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4599
+t=192: Selected seed 195 with value = 0.4599
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.5647
+t=208: Selected seed 195 with value = 0.5647
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6948
+t=224: Selected seed 195 with value = 0.6948
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.8400
+t=240: Selected seed 195 with value = 0.8400
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9408
+t=256: Selected seed 195 with value = 0.9408
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9976
+t=272: Selected seed 195 with value = 0.9976
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=288: Selected seed 195 with value = 0.9982
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=304: Selected seed 195 with value = 0.9988
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=320: Selected seed 195 with value = 0.9997
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9752
+t=336: Selected seed 195 with value = 0.9752
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2735
+t=352: Selected seed 195 with value = 0.2735
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2099
+t=368: Selected seed 195 with value = 0.2099
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1613
+t=384: Selected seed 195 with value = 0.1613
+Query 1/1: Action query time = 0.803 sec
+Query 1/1 (seed 195): Predicted value = 0.1600
+t=400: Selected seed 195 with value = 0.1600
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1481
+t=416: Selected seed 195 with value = 0.1481
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1303
+t=432: Selected seed 195 with value = 0.1303
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1180
+t=448: Selected seed 195 with value = 0.1180
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1102
+t=464: Selected seed 195 with value = 0.1102
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1112
+t=480: Selected seed 195 with value = 0.1112
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1155
+t=496: Selected seed 195 with value = 0.1155
+  Episode 16: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=16--success=False--task=pick_the_donut_from_the_counter_and_plac.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=16--success=False--task=pick_the_donut_from_the_counter_and_place_it_in_th.mp4
+Success: False
+# episodes completed so far: 17
+# successes: 9 (52.9%)
+Starting episode 18...
+
+Task description: pick the coffee cup from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.1205
+t=0: Selected seed 195 with value = 0.1205
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1398
+t=16: Selected seed 195 with value = 0.1398
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1740
+t=32: Selected seed 195 with value = 0.1740
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2180
+t=48: Selected seed 195 with value = 0.2180
+Query 1/1: Action query time = 0.792 sec
+Query 1/1 (seed 195): Predicted value = 0.2501
+t=64: Selected seed 195 with value = 0.2501
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3037
+t=80: Selected seed 195 with value = 0.3037
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3541
+t=96: Selected seed 195 with value = 0.3541
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.4160
+t=112: Selected seed 195 with value = 0.4160
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5092
+t=128: Selected seed 195 with value = 0.5092
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.6265
+t=144: Selected seed 195 with value = 0.6265
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7506
+t=160: Selected seed 195 with value = 0.7506
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9089
+t=176: Selected seed 195 with value = 0.9089
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9974
+t=192: Selected seed 195 with value = 0.9974
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9972
+t=208: Selected seed 195 with value = 0.9972
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=224: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2114
+t=240: Selected seed 195 with value = 0.2114
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.1509
+t=256: Selected seed 195 with value = 0.1509
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1660
+t=272: Selected seed 195 with value = 0.1660
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.1875
+t=288: Selected seed 195 with value = 0.1875
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2071
+t=304: Selected seed 195 with value = 0.2071
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1911
+t=320: Selected seed 195 with value = 0.1911
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2042
+t=336: Selected seed 195 with value = 0.2042
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2173
+t=352: Selected seed 195 with value = 0.2173
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2256
+t=368: Selected seed 195 with value = 0.2256
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2376
+t=384: Selected seed 195 with value = 0.2376
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2404
+t=400: Selected seed 195 with value = 0.2404
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2628
+t=416: Selected seed 195 with value = 0.2628
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3009
+t=432: Selected seed 195 with value = 0.3009
+Query 1/1: Action query time = 0.801 sec
+Query 1/1 (seed 195): Predicted value = 0.3414
+t=448: Selected seed 195 with value = 0.3414
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3841
+t=464: Selected seed 195 with value = 0.3841
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4377
+t=480: Selected seed 195 with value = 0.4377
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5678
+t=496: Selected seed 195 with value = 0.5678
+  Episode 17: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=17--success=False--task=pick_the_coffee_cup_from_the_counter_and.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=17--success=False--task=pick_the_coffee_cup_from_the_counter_and_place_it_.mp4
+Success: False
+# episodes completed so far: 18
+# successes: 9 (50.0%)
+Starting episode 19...
+
+Task description: pick the coffee cup from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.1354
+t=0: Selected seed 195 with value = 0.1354
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1500
+t=16: Selected seed 195 with value = 0.1500
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1907
+t=32: Selected seed 195 with value = 0.1907
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2755
+t=48: Selected seed 195 with value = 0.2755
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3620
+t=64: Selected seed 195 with value = 0.3620
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4017
+t=80: Selected seed 195 with value = 0.4017
+Query 1/1: Action query time = 0.790 sec
+Query 1/1 (seed 195): Predicted value = 0.4688
+t=96: Selected seed 195 with value = 0.4688
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6011
+t=112: Selected seed 195 with value = 0.6011
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.7032
+t=128: Selected seed 195 with value = 0.7032
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8555
+t=144: Selected seed 195 with value = 0.8555
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9835
+t=160: Selected seed 195 with value = 0.9835
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=176: Selected seed 195 with value = 0.9981
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9953
+t=192: Selected seed 195 with value = 0.9953
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=208: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1396
+t=224: Selected seed 195 with value = 0.1396
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1445
+t=240: Selected seed 195 with value = 0.1445
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1489
+t=256: Selected seed 195 with value = 0.1489
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1624
+t=272: Selected seed 195 with value = 0.1624
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.2048
+t=288: Selected seed 195 with value = 0.2048
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2779
+t=304: Selected seed 195 with value = 0.2779
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.3691
+t=320: Selected seed 195 with value = 0.3691
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4392
+t=336: Selected seed 195 with value = 0.4392
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5284
+t=352: Selected seed 195 with value = 0.5284
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6179
+t=368: Selected seed 195 with value = 0.6179
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6946
+t=384: Selected seed 195 with value = 0.6946
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8214
+t=400: Selected seed 195 with value = 0.8214
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9481
+t=416: Selected seed 195 with value = 0.9481
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9980
+t=432: Selected seed 195 with value = 0.9980
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=448: Selected seed 195 with value = 0.9984
+  Success detected at timestep 458!
+  Episode 18: SUCCESS (length: 459)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=18--success=True--task=pick_the_coffee_cup_from_the_counter_and.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=18--success=True--task=pick_the_coffee_cup_from_the_counter_and_place_it_.mp4
+Success: True
+# episodes completed so far: 19
+# successes: 10 (52.6%)
+Starting episode 20...
+
+Task description: pick the fish from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.770 sec
+Query 1/1 (seed 195): Predicted value = 0.0714
+t=0: Selected seed 195 with value = 0.0714
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1015
+t=16: Selected seed 195 with value = 0.1015
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1192
+t=32: Selected seed 195 with value = 0.1192
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1404
+t=48: Selected seed 195 with value = 0.1404
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1682
+t=64: Selected seed 195 with value = 0.1682
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1943
+t=80: Selected seed 195 with value = 0.1943
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2429
+t=96: Selected seed 195 with value = 0.2429
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2818
+t=112: Selected seed 195 with value = 0.2818
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3091
+t=128: Selected seed 195 with value = 0.3091
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3574
+t=144: Selected seed 195 with value = 0.3574
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4246
+t=160: Selected seed 195 with value = 0.4246
+Query 1/1: Action query time = 0.798 sec
+Query 1/1 (seed 195): Predicted value = 0.5369
+t=176: Selected seed 195 with value = 0.5369
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6471
+t=192: Selected seed 195 with value = 0.6471
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7502
+t=208: Selected seed 195 with value = 0.7502
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9300
+t=224: Selected seed 195 with value = 0.9300
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9967
+t=240: Selected seed 195 with value = 0.9967
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9977
+t=256: Selected seed 195 with value = 0.9977
+  Success detected at timestep 264!
+  Episode 19: SUCCESS (length: 265)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=19--success=True--task=pick_the_fish_from_the_counter_and_place.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=19--success=True--task=pick_the_fish_from_the_counter_and_place_it_in_the.mp4
+Success: True
+# episodes completed so far: 20
+# successes: 11 (55.0%)
+Starting episode 21...
+
+Task description: pick the cup from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.1379
+t=0: Selected seed 195 with value = 0.1379
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1625
+t=16: Selected seed 195 with value = 0.1625
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1995
+t=32: Selected seed 195 with value = 0.1995
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2383
+t=48: Selected seed 195 with value = 0.2383
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2638
+t=64: Selected seed 195 with value = 0.2638
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2953
+t=80: Selected seed 195 with value = 0.2953
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3209
+t=96: Selected seed 195 with value = 0.3209
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.3692
+t=112: Selected seed 195 with value = 0.3692
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4295
+t=128: Selected seed 195 with value = 0.4295
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4990
+t=144: Selected seed 195 with value = 0.4990
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6068
+t=160: Selected seed 195 with value = 0.6068
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7130
+t=176: Selected seed 195 with value = 0.7130
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8716
+t=192: Selected seed 195 with value = 0.8716
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9894
+t=208: Selected seed 195 with value = 0.9894
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9976
+t=224: Selected seed 195 with value = 0.9976
+  Success detected at timestep 237!
+  Episode 20: SUCCESS (length: 238)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=20--success=True--task=pick_the_cup_from_the_counter_and_place_.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=20--success=True--task=pick_the_cup_from_the_counter_and_place_it_in_the_.mp4
+Success: True
+# episodes completed so far: 21
+# successes: 12 (57.1%)
+Starting episode 22...
+
+Task description: pick the garlic from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.779 sec
+Query 1/1 (seed 195): Predicted value = 0.1205
+t=0: Selected seed 195 with value = 0.1205
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.1283
+t=16: Selected seed 195 with value = 0.1283
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1389
+t=32: Selected seed 195 with value = 0.1389
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1625
+t=48: Selected seed 195 with value = 0.1625
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1967
+t=64: Selected seed 195 with value = 0.1967
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2283
+t=80: Selected seed 195 with value = 0.2283
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2580
+t=96: Selected seed 195 with value = 0.2580
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3296
+t=112: Selected seed 195 with value = 0.3296
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3692
+t=128: Selected seed 195 with value = 0.3692
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4506
+t=144: Selected seed 195 with value = 0.4506
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5204
+t=160: Selected seed 195 with value = 0.5204
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.5995
+t=176: Selected seed 195 with value = 0.5995
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6896
+t=192: Selected seed 195 with value = 0.6896
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.7910
+t=208: Selected seed 195 with value = 0.7910
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9220
+t=224: Selected seed 195 with value = 0.9220
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=240: Selected seed 195 with value = 0.9984
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=256: Selected seed 195 with value = 0.9981
+  Success detected at timestep 261!
+  Episode 21: SUCCESS (length: 262)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=21--success=True--task=pick_the_garlic_from_the_counter_and_pla.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=21--success=True--task=pick_the_garlic_from_the_counter_and_place_it_in_t.mp4
+Success: True
+# episodes completed so far: 22
+# successes: 13 (59.1%)
+Starting episode 23...
+
+Task description: pick the bell pepper from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.0878
+t=0: Selected seed 195 with value = 0.0878
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1012
+t=16: Selected seed 195 with value = 0.1012
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1188
+t=32: Selected seed 195 with value = 0.1188
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1461
+t=48: Selected seed 195 with value = 0.1461
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1740
+t=64: Selected seed 195 with value = 0.1740
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.2019
+t=80: Selected seed 195 with value = 0.2019
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2288
+t=96: Selected seed 195 with value = 0.2288
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2890
+t=112: Selected seed 195 with value = 0.2890
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3126
+t=128: Selected seed 195 with value = 0.3126
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3708
+t=144: Selected seed 195 with value = 0.3708
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4623
+t=160: Selected seed 195 with value = 0.4623
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5473
+t=176: Selected seed 195 with value = 0.5473
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6846
+t=192: Selected seed 195 with value = 0.6846
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7992
+t=208: Selected seed 195 with value = 0.7992
+Query 1/1: Action query time = 0.801 sec
+Query 1/1 (seed 195): Predicted value = 0.9037
+t=224: Selected seed 195 with value = 0.9037
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.9979
+t=240: Selected seed 195 with value = 0.9979
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9975
+t=256: Selected seed 195 with value = 0.9975
+  Success detected at timestep 262!
+  Episode 22: SUCCESS (length: 263)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=22--success=True--task=pick_the_bell_pepper_from_the_counter_an.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=22--success=True--task=pick_the_bell_pepper_from_the_counter_and_place_it.mp4
+Success: True
+# episodes completed so far: 23
+# successes: 14 (60.9%)
+Starting episode 24...
+
+Task description: pick the bottled drink from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.1233
+t=0: Selected seed 195 with value = 0.1233
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1349
+t=16: Selected seed 195 with value = 0.1349
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1555
+t=32: Selected seed 195 with value = 0.1555
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1867
+t=48: Selected seed 195 with value = 0.1867
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2118
+t=64: Selected seed 195 with value = 0.2118
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2652
+t=80: Selected seed 195 with value = 0.2652
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2695
+t=96: Selected seed 195 with value = 0.2695
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2421
+t=112: Selected seed 195 with value = 0.2421
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2332
+t=128: Selected seed 195 with value = 0.2332
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2323
+t=144: Selected seed 195 with value = 0.2323
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2344
+t=160: Selected seed 195 with value = 0.2344
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2784
+t=176: Selected seed 195 with value = 0.2784
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.2904
+t=192: Selected seed 195 with value = 0.2904
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2891
+t=208: Selected seed 195 with value = 0.2891
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2902
+t=224: Selected seed 195 with value = 0.2902
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3154
+t=240: Selected seed 195 with value = 0.3154
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.4315
+t=256: Selected seed 195 with value = 0.4315
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5909
+t=272: Selected seed 195 with value = 0.5909
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6651
+t=288: Selected seed 195 with value = 0.6651
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7789
+t=304: Selected seed 195 with value = 0.7789
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8680
+t=320: Selected seed 195 with value = 0.8680
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9876
+t=336: Selected seed 195 with value = 0.9876
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9980
+t=352: Selected seed 195 with value = 0.9980
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=368: Selected seed 195 with value = 0.9988
+Query 1/1: Action query time = 0.804 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=384: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.1627
+t=400: Selected seed 195 with value = 0.1627
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1290
+t=416: Selected seed 195 with value = 0.1290
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.1376
+t=432: Selected seed 195 with value = 0.1376
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1277
+t=448: Selected seed 195 with value = 0.1277
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1334
+t=464: Selected seed 195 with value = 0.1334
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1510
+t=480: Selected seed 195 with value = 0.1510
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1752
+t=496: Selected seed 195 with value = 0.1752
+  Episode 23: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=23--success=False--task=pick_the_bottled_drink_from_the_counter_.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=23--success=False--task=pick_the_bottled_drink_from_the_counter_and_place_.mp4
+Success: False
+# episodes completed so far: 24
+# successes: 14 (58.3%)
+Starting episode 25...
+
+Task description: pick the boxed drink from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.1072
+t=0: Selected seed 195 with value = 0.1072
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1329
+t=16: Selected seed 195 with value = 0.1329
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1457
+t=32: Selected seed 195 with value = 0.1457
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1940
+t=48: Selected seed 195 with value = 0.1940
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2376
+t=64: Selected seed 195 with value = 0.2376
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2819
+t=80: Selected seed 195 with value = 0.2819
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3430
+t=96: Selected seed 195 with value = 0.3430
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.4205
+t=112: Selected seed 195 with value = 0.4205
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.4959
+t=128: Selected seed 195 with value = 0.4959
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6101
+t=144: Selected seed 195 with value = 0.6101
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7026
+t=160: Selected seed 195 with value = 0.7026
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8066
+t=176: Selected seed 195 with value = 0.8066
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9653
+t=192: Selected seed 195 with value = 0.9653
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9972
+t=208: Selected seed 195 with value = 0.9972
+  Success detected at timestep 217!
+  Episode 24: SUCCESS (length: 218)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=24--success=True--task=pick_the_boxed_drink_from_the_counter_an.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=24--success=True--task=pick_the_boxed_drink_from_the_counter_and_place_it.mp4
+Success: True
+# episodes completed so far: 25
+# successes: 15 (60.0%)
+Starting episode 26...
+
+Task description: pick the sponge from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.771 sec
+Query 1/1 (seed 195): Predicted value = 0.1449
+t=0: Selected seed 195 with value = 0.1449
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1705
+t=16: Selected seed 195 with value = 0.1705
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1996
+t=32: Selected seed 195 with value = 0.1996
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2423
+t=48: Selected seed 195 with value = 0.2423
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2814
+t=64: Selected seed 195 with value = 0.2814
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3165
+t=80: Selected seed 195 with value = 0.3165
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3279
+t=96: Selected seed 195 with value = 0.3279
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3625
+t=112: Selected seed 195 with value = 0.3625
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.4230
+t=128: Selected seed 195 with value = 0.4230
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4564
+t=144: Selected seed 195 with value = 0.4564
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5552
+t=160: Selected seed 195 with value = 0.5552
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.6820
+t=176: Selected seed 195 with value = 0.6820
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8055
+t=192: Selected seed 195 with value = 0.8055
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9107
+t=208: Selected seed 195 with value = 0.9107
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9959
+t=224: Selected seed 195 with value = 0.9959
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.9964
+t=240: Selected seed 195 with value = 0.9964
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=256: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1471
+t=272: Selected seed 195 with value = 0.1471
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1398
+t=288: Selected seed 195 with value = 0.1398
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1446
+t=304: Selected seed 195 with value = 0.1446
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1607
+t=320: Selected seed 195 with value = 0.1607
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1920
+t=336: Selected seed 195 with value = 0.1920
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2362
+t=352: Selected seed 195 with value = 0.2362
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2969
+t=368: Selected seed 195 with value = 0.2969
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3641
+t=384: Selected seed 195 with value = 0.3641
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4244
+t=400: Selected seed 195 with value = 0.4244
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.4425
+t=416: Selected seed 195 with value = 0.4425
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4948
+t=432: Selected seed 195 with value = 0.4948
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6023
+t=448: Selected seed 195 with value = 0.6023
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7126
+t=464: Selected seed 195 with value = 0.7126
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8489
+t=480: Selected seed 195 with value = 0.8489
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9605
+t=496: Selected seed 195 with value = 0.9605
+  Episode 25: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=25--success=False--task=pick_the_sponge_from_the_counter_and_pla.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=25--success=False--task=pick_the_sponge_from_the_counter_and_place_it_in_t.mp4
+Success: False
+# episodes completed so far: 26
+# successes: 15 (57.7%)
+Starting episode 27...
+
+Task description: pick the lime from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.794 sec
+Query 1/1 (seed 195): Predicted value = 0.1035
+t=0: Selected seed 195 with value = 0.1035
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1214
+t=16: Selected seed 195 with value = 0.1214
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1493
+t=32: Selected seed 195 with value = 0.1493
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1888
+t=48: Selected seed 195 with value = 0.1888
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.2175
+t=64: Selected seed 195 with value = 0.2175
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2413
+t=80: Selected seed 195 with value = 0.2413
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2731
+t=96: Selected seed 195 with value = 0.2731
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3153
+t=112: Selected seed 195 with value = 0.3153
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.3380
+t=128: Selected seed 195 with value = 0.3380
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3649
+t=144: Selected seed 195 with value = 0.3649
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4405
+t=160: Selected seed 195 with value = 0.4405
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6014
+t=176: Selected seed 195 with value = 0.6014
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7219
+t=192: Selected seed 195 with value = 0.7219
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8506
+t=208: Selected seed 195 with value = 0.8506
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9487
+t=224: Selected seed 195 with value = 0.9487
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.9943
+t=240: Selected seed 195 with value = 0.9943
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9978
+t=256: Selected seed 195 with value = 0.9978
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=272: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7494
+t=288: Selected seed 195 with value = 0.7494
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5568
+t=304: Selected seed 195 with value = 0.5568
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=320: Selected seed 195 with value = 0.9983
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9800
+t=336: Selected seed 195 with value = 0.9800
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1886
+t=352: Selected seed 195 with value = 0.1886
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3411
+t=368: Selected seed 195 with value = 0.3411
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5163
+t=384: Selected seed 195 with value = 0.5163
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5039
+t=400: Selected seed 195 with value = 0.5039
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.4526
+t=416: Selected seed 195 with value = 0.4526
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8524
+t=432: Selected seed 195 with value = 0.8524
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.2227
+t=448: Selected seed 195 with value = 0.2227
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9732
+t=464: Selected seed 195 with value = 0.9732
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1654
+t=480: Selected seed 195 with value = 0.1654
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1545
+t=496: Selected seed 195 with value = 0.1545
+  Episode 26: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=26--success=False--task=pick_the_lime_from_the_counter_and_place.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=26--success=False--task=pick_the_lime_from_the_counter_and_place_it_in_the.mp4
+Success: False
+# episodes completed so far: 27
+# successes: 15 (55.6%)
+Starting episode 28...
+
+Task description: pick the apple from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.781 sec
+Query 1/1 (seed 195): Predicted value = 0.1042
+t=0: Selected seed 195 with value = 0.1042
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1391
+t=16: Selected seed 195 with value = 0.1391
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1719
+t=32: Selected seed 195 with value = 0.1719
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2099
+t=48: Selected seed 195 with value = 0.2099
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2444
+t=64: Selected seed 195 with value = 0.2444
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2800
+t=80: Selected seed 195 with value = 0.2800
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.3352
+t=96: Selected seed 195 with value = 0.3352
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3812
+t=112: Selected seed 195 with value = 0.3812
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4784
+t=128: Selected seed 195 with value = 0.4784
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5694
+t=144: Selected seed 195 with value = 0.5694
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6653
+t=160: Selected seed 195 with value = 0.6653
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7962
+t=176: Selected seed 195 with value = 0.7962
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9022
+t=192: Selected seed 195 with value = 0.9022
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9844
+t=208: Selected seed 195 with value = 0.9844
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9969
+t=224: Selected seed 195 with value = 0.9969
+  Success detected at timestep 236!
+  Episode 27: SUCCESS (length: 237)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=27--success=True--task=pick_the_apple_from_the_counter_and_plac.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=27--success=True--task=pick_the_apple_from_the_counter_and_place_it_in_th.mp4
+Success: True
+# episodes completed so far: 28
+# successes: 16 (57.1%)
+Starting episode 29...
+
+Task description: pick the bar from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.1162
+t=0: Selected seed 195 with value = 0.1162
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1299
+t=16: Selected seed 195 with value = 0.1299
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1601
+t=32: Selected seed 195 with value = 0.1601
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1917
+t=48: Selected seed 195 with value = 0.1917
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2118
+t=64: Selected seed 195 with value = 0.2118
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2163
+t=80: Selected seed 195 with value = 0.2163
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2163
+t=96: Selected seed 195 with value = 0.2163
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2171
+t=112: Selected seed 195 with value = 0.2171
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2171
+t=128: Selected seed 195 with value = 0.2171
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2175
+t=144: Selected seed 195 with value = 0.2175
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2183
+t=160: Selected seed 195 with value = 0.2183
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2189
+t=176: Selected seed 195 with value = 0.2189
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2195
+t=192: Selected seed 195 with value = 0.2195
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2205
+t=208: Selected seed 195 with value = 0.2205
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2211
+t=224: Selected seed 195 with value = 0.2211
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2215
+t=240: Selected seed 195 with value = 0.2215
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2221
+t=256: Selected seed 195 with value = 0.2221
+Query 1/1: Action query time = 0.813 sec
+Query 1/1 (seed 195): Predicted value = 0.2221
+t=272: Selected seed 195 with value = 0.2221
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2226
+t=288: Selected seed 195 with value = 0.2226
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2228
+t=304: Selected seed 195 with value = 0.2228
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2233
+t=320: Selected seed 195 with value = 0.2233
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2235
+t=336: Selected seed 195 with value = 0.2235
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2246
+t=352: Selected seed 195 with value = 0.2246
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.2260
+t=368: Selected seed 195 with value = 0.2260
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2491
+t=384: Selected seed 195 with value = 0.2491
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2982
+t=400: Selected seed 195 with value = 0.2982
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3110
+t=416: Selected seed 195 with value = 0.3110
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3697
+t=432: Selected seed 195 with value = 0.3697
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4378
+t=448: Selected seed 195 with value = 0.4378
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4795
+t=464: Selected seed 195 with value = 0.4795
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.5623
+t=480: Selected seed 195 with value = 0.5623
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6497
+t=496: Selected seed 195 with value = 0.6497
+  Episode 28: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=28--success=False--task=pick_the_bar_from_the_counter_and_place_.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=28--success=False--task=pick_the_bar_from_the_counter_and_place_it_in_the_.mp4
+Success: False
+# episodes completed so far: 29
+# successes: 16 (55.2%)
+Starting episode 30...
+
+Task description: pick the banana from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.1328
+t=0: Selected seed 195 with value = 0.1328
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1446
+t=16: Selected seed 195 with value = 0.1446
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1717
+t=32: Selected seed 195 with value = 0.1717
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1961
+t=48: Selected seed 195 with value = 0.1961
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2224
+t=64: Selected seed 195 with value = 0.2224
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2432
+t=80: Selected seed 195 with value = 0.2432
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2648
+t=96: Selected seed 195 with value = 0.2648
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3468
+t=112: Selected seed 195 with value = 0.3468
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3954
+t=128: Selected seed 195 with value = 0.3954
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4415
+t=144: Selected seed 195 with value = 0.4415
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5292
+t=160: Selected seed 195 with value = 0.5292
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6103
+t=176: Selected seed 195 with value = 0.6103
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6865
+t=192: Selected seed 195 with value = 0.6865
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8074
+t=208: Selected seed 195 with value = 0.8074
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9284
+t=224: Selected seed 195 with value = 0.9284
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=240: Selected seed 195 with value = 0.9989
+Query 1/1: Action query time = 0.813 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=256: Selected seed 195 with value = 0.9986
+  Success detected at timestep 258!
+  Episode 29: SUCCESS (length: 259)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=29--success=True--task=pick_the_banana_from_the_counter_and_pla.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=29--success=True--task=pick_the_banana_from_the_counter_and_place_it_in_t.mp4
+Success: True
+# episodes completed so far: 30
+# successes: 17 (56.7%)
+Starting episode 31...
+
+Task description: pick the bar from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.1592
+t=0: Selected seed 195 with value = 0.1592
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1926
+t=16: Selected seed 195 with value = 0.1926
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2148
+t=32: Selected seed 195 with value = 0.2148
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2396
+t=48: Selected seed 195 with value = 0.2396
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2605
+t=64: Selected seed 195 with value = 0.2605
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2916
+t=80: Selected seed 195 with value = 0.2916
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3090
+t=96: Selected seed 195 with value = 0.3090
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3407
+t=112: Selected seed 195 with value = 0.3407
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.3705
+t=128: Selected seed 195 with value = 0.3705
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4438
+t=144: Selected seed 195 with value = 0.4438
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5628
+t=160: Selected seed 195 with value = 0.5628
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6678
+t=176: Selected seed 195 with value = 0.6678
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8088
+t=192: Selected seed 195 with value = 0.8088
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9853
+t=208: Selected seed 195 with value = 0.9853
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=224: Selected seed 195 with value = 0.9998
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=240: Selected seed 195 with value = 0.9997
+  Success detected at timestep 240!
+  Episode 30: SUCCESS (length: 241)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=30--success=True--task=pick_the_bar_from_the_counter_and_place_.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=30--success=True--task=pick_the_bar_from_the_counter_and_place_it_in_the_.mp4
+Success: True
+# episodes completed so far: 31
+# successes: 18 (58.1%)
+Starting episode 32...
+
+Task description: pick the mushroom from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.783 sec
+Query 1/1 (seed 195): Predicted value = 0.0595
+t=0: Selected seed 195 with value = 0.0595
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0825
+t=16: Selected seed 195 with value = 0.0825
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1008
+t=32: Selected seed 195 with value = 0.1008
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1210
+t=48: Selected seed 195 with value = 0.1210
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1348
+t=64: Selected seed 195 with value = 0.1348
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1493
+t=80: Selected seed 195 with value = 0.1493
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1674
+t=96: Selected seed 195 with value = 0.1674
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2060
+t=112: Selected seed 195 with value = 0.2060
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.2088
+t=128: Selected seed 195 with value = 0.2088
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2576
+t=144: Selected seed 195 with value = 0.2576
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3724
+t=160: Selected seed 195 with value = 0.3724
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5293
+t=176: Selected seed 195 with value = 0.5293
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6749
+t=192: Selected seed 195 with value = 0.6749
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8473
+t=208: Selected seed 195 with value = 0.8473
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9379
+t=224: Selected seed 195 with value = 0.9379
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9962
+t=240: Selected seed 195 with value = 0.9962
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=256: Selected seed 195 with value = 0.9982
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=272: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0708
+t=288: Selected seed 195 with value = 0.0708
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0680
+t=304: Selected seed 195 with value = 0.0680
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0744
+t=320: Selected seed 195 with value = 0.0744
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.0845
+t=336: Selected seed 195 with value = 0.0845
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.0899
+t=352: Selected seed 195 with value = 0.0899
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1085
+t=368: Selected seed 195 with value = 0.1085
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1270
+t=384: Selected seed 195 with value = 0.1270
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1512
+t=400: Selected seed 195 with value = 0.1512
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1684
+t=416: Selected seed 195 with value = 0.1684
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2172
+t=432: Selected seed 195 with value = 0.2172
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2372
+t=448: Selected seed 195 with value = 0.2372
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3000
+t=464: Selected seed 195 with value = 0.3000
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.4303
+t=480: Selected seed 195 with value = 0.4303
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5389
+t=496: Selected seed 195 with value = 0.5389
+  Episode 31: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=31--success=False--task=pick_the_mushroom_from_the_counter_and_p.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=31--success=False--task=pick_the_mushroom_from_the_counter_and_place_it_in.mp4
+Success: False
+# episodes completed so far: 32
+# successes: 18 (56.2%)
+Starting episode 33...
+
+Task description: pick the squash from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.792 sec
+Query 1/1 (seed 195): Predicted value = 0.1625
+t=0: Selected seed 195 with value = 0.1625
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1854
+t=16: Selected seed 195 with value = 0.1854
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2145
+t=32: Selected seed 195 with value = 0.2145
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2536
+t=48: Selected seed 195 with value = 0.2536
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2960
+t=64: Selected seed 195 with value = 0.2960
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3381
+t=80: Selected seed 195 with value = 0.3381
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3900
+t=96: Selected seed 195 with value = 0.3900
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.4698
+t=112: Selected seed 195 with value = 0.4698
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.5685
+t=128: Selected seed 195 with value = 0.5685
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6712
+t=144: Selected seed 195 with value = 0.6712
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7779
+t=160: Selected seed 195 with value = 0.7779
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9192
+t=176: Selected seed 195 with value = 0.9192
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9962
+t=192: Selected seed 195 with value = 0.9962
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=208: Selected seed 195 with value = 0.9997
+  Success detected at timestep 212!
+  Episode 32: SUCCESS (length: 213)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=32--success=True--task=pick_the_squash_from_the_counter_and_pla.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=32--success=True--task=pick_the_squash_from_the_counter_and_place_it_in_t.mp4
+Success: True
+# episodes completed so far: 33
+# successes: 19 (57.6%)
+Starting episode 34...
+
+Task description: pick the mug from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.760 sec
+Query 1/1 (seed 195): Predicted value = 0.1644
+t=0: Selected seed 195 with value = 0.1644
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1920
+t=16: Selected seed 195 with value = 0.1920
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2309
+t=32: Selected seed 195 with value = 0.2309
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2771
+t=48: Selected seed 195 with value = 0.2771
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3144
+t=64: Selected seed 195 with value = 0.3144
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3684
+t=80: Selected seed 195 with value = 0.3684
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4181
+t=96: Selected seed 195 with value = 0.4181
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5178
+t=112: Selected seed 195 with value = 0.5178
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6487
+t=128: Selected seed 195 with value = 0.6487
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7382
+t=144: Selected seed 195 with value = 0.7382
+Query 1/1: Action query time = 0.816 sec
+Query 1/1 (seed 195): Predicted value = 0.8912
+t=160: Selected seed 195 with value = 0.8912
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=176: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=192: Selected seed 195 with value = 0.9995
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=208: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=224: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=240: Selected seed 195 with value = 0.9990
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1868
+t=256: Selected seed 195 with value = 0.1868
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1960
+t=272: Selected seed 195 with value = 0.1960
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.2157
+t=288: Selected seed 195 with value = 0.2157
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2287
+t=304: Selected seed 195 with value = 0.2287
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2467
+t=320: Selected seed 195 with value = 0.2467
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2651
+t=336: Selected seed 195 with value = 0.2651
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2532
+t=352: Selected seed 195 with value = 0.2532
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9589
+t=368: Selected seed 195 with value = 0.9589
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2675
+t=384: Selected seed 195 with value = 0.2675
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9967
+t=400: Selected seed 195 with value = 0.9967
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2256
+t=416: Selected seed 195 with value = 0.2256
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2549
+t=432: Selected seed 195 with value = 0.2549
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9940
+t=448: Selected seed 195 with value = 0.9940
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2304
+t=464: Selected seed 195 with value = 0.2304
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2497
+t=480: Selected seed 195 with value = 0.2497
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3080
+t=496: Selected seed 195 with value = 0.3080
+  Episode 33: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=33--success=False--task=pick_the_mug_from_the_counter_and_place_.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=33--success=False--task=pick_the_mug_from_the_counter_and_place_it_in_the_.mp4
+Success: False
+# episodes completed so far: 34
+# successes: 19 (55.9%)
+Starting episode 35...
+
+Task description: pick the mug from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.1415
+t=0: Selected seed 195 with value = 0.1415
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1627
+t=16: Selected seed 195 with value = 0.1627
+Query 1/1: Action query time = 0.817 sec
+Query 1/1 (seed 195): Predicted value = 0.1927
+t=32: Selected seed 195 with value = 0.1927
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2406
+t=48: Selected seed 195 with value = 0.2406
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2775
+t=64: Selected seed 195 with value = 0.2775
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3424
+t=80: Selected seed 195 with value = 0.3424
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.4180
+t=96: Selected seed 195 with value = 0.4180
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.4936
+t=112: Selected seed 195 with value = 0.4936
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5900
+t=128: Selected seed 195 with value = 0.5900
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.6624
+t=144: Selected seed 195 with value = 0.6624
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.7957
+t=160: Selected seed 195 with value = 0.7957
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9528
+t=176: Selected seed 195 with value = 0.9528
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=192: Selected seed 195 with value = 0.9981
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=208: Selected seed 195 with value = 0.9990
+  Success detected at timestep 220!
+  Episode 34: SUCCESS (length: 221)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=34--success=True--task=pick_the_mug_from_the_counter_and_place_.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=34--success=True--task=pick_the_mug_from_the_counter_and_place_it_in_the_.mp4
+Success: True
+# episodes completed so far: 35
+# successes: 20 (57.1%)
+Starting episode 36...
+
+Task description: pick the boxed drink from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.1144
+t=0: Selected seed 195 with value = 0.1144
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1365
+t=16: Selected seed 195 with value = 0.1365
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1564
+t=32: Selected seed 195 with value = 0.1564
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1872
+t=48: Selected seed 195 with value = 0.1872
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2148
+t=64: Selected seed 195 with value = 0.2148
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2308
+t=80: Selected seed 195 with value = 0.2308
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2536
+t=96: Selected seed 195 with value = 0.2536
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3032
+t=112: Selected seed 195 with value = 0.3032
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3589
+t=128: Selected seed 195 with value = 0.3589
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4534
+t=144: Selected seed 195 with value = 0.4534
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5492
+t=160: Selected seed 195 with value = 0.5492
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6470
+t=176: Selected seed 195 with value = 0.6470
+Query 1/1: Action query time = 0.821 sec
+Query 1/1 (seed 195): Predicted value = 0.7425
+t=192: Selected seed 195 with value = 0.7425
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8894
+t=208: Selected seed 195 with value = 0.8894
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=224: Selected seed 195 with value = 0.9989
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=240: Selected seed 195 with value = 0.9984
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=256: Selected seed 195 with value = 0.9983
+  Success detected at timestep 258!
+  Episode 35: SUCCESS (length: 259)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=35--success=True--task=pick_the_boxed_drink_from_the_counter_an.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=35--success=True--task=pick_the_boxed_drink_from_the_counter_and_place_it.mp4
+Success: True
+# episodes completed so far: 36
+# successes: 21 (58.3%)
+Starting episode 37...
+
+Task description: pick the mango from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.1471
+t=0: Selected seed 195 with value = 0.1471
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1714
+t=16: Selected seed 195 with value = 0.1714
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1951
+t=32: Selected seed 195 with value = 0.1951
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2268
+t=48: Selected seed 195 with value = 0.2268
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2551
+t=64: Selected seed 195 with value = 0.2551
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2998
+t=80: Selected seed 195 with value = 0.2998
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.3538
+t=96: Selected seed 195 with value = 0.3538
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3977
+t=112: Selected seed 195 with value = 0.3977
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4966
+t=128: Selected seed 195 with value = 0.4966
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6200
+t=144: Selected seed 195 with value = 0.6200
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7157
+t=160: Selected seed 195 with value = 0.7157
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8470
+t=176: Selected seed 195 with value = 0.8470
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9719
+t=192: Selected seed 195 with value = 0.9719
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=208: Selected seed 195 with value = 0.9986
+  Success detected at timestep 221!
+  Episode 36: SUCCESS (length: 222)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=36--success=True--task=pick_the_mango_from_the_counter_and_plac.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=36--success=True--task=pick_the_mango_from_the_counter_and_place_it_in_th.mp4
+Success: True
+# episodes completed so far: 37
+# successes: 22 (59.5%)
+Starting episode 38...
+
+Task description: pick the apple from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.782 sec
+Query 1/1 (seed 195): Predicted value = 0.1089
+t=0: Selected seed 195 with value = 0.1089
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1325
+t=16: Selected seed 195 with value = 0.1325
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1514
+t=32: Selected seed 195 with value = 0.1514
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1866
+t=48: Selected seed 195 with value = 0.1866
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2209
+t=64: Selected seed 195 with value = 0.2209
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2574
+t=80: Selected seed 195 with value = 0.2574
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3182
+t=96: Selected seed 195 with value = 0.3182
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3552
+t=112: Selected seed 195 with value = 0.3552
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.4345
+t=128: Selected seed 195 with value = 0.4345
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5244
+t=144: Selected seed 195 with value = 0.5244
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6272
+t=160: Selected seed 195 with value = 0.6272
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7175
+t=176: Selected seed 195 with value = 0.7175
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8294
+t=192: Selected seed 195 with value = 0.8294
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=208: Selected seed 195 with value = 0.9989
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=224: Selected seed 195 with value = 0.9992
+  Success detected at timestep 238!
+  Episode 37: SUCCESS (length: 239)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=37--success=True--task=pick_the_apple_from_the_counter_and_plac.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=37--success=True--task=pick_the_apple_from_the_counter_and_place_it_in_th.mp4
+Success: True
+# episodes completed so far: 38
+# successes: 23 (60.5%)
+Starting episode 39...
+
+Task description: pick the carrot from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.1618
+t=0: Selected seed 195 with value = 0.1618
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1953
+t=16: Selected seed 195 with value = 0.1953
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2098
+t=32: Selected seed 195 with value = 0.2098
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2273
+t=48: Selected seed 195 with value = 0.2273
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2540
+t=64: Selected seed 195 with value = 0.2540
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2754
+t=80: Selected seed 195 with value = 0.2754
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2934
+t=96: Selected seed 195 with value = 0.2934
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3119
+t=112: Selected seed 195 with value = 0.3119
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3398
+t=128: Selected seed 195 with value = 0.3398
+Query 1/1: Action query time = 0.809 sec
+Query 1/1 (seed 195): Predicted value = 0.3766
+t=144: Selected seed 195 with value = 0.3766
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4346
+t=160: Selected seed 195 with value = 0.4346
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4992
+t=176: Selected seed 195 with value = 0.4992
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6157
+t=192: Selected seed 195 with value = 0.6157
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7359
+t=208: Selected seed 195 with value = 0.7359
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8898
+t=224: Selected seed 195 with value = 0.8898
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=240: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=256: Selected seed 195 with value = 0.9986
+  Success detected at timestep 263!
+  Episode 38: SUCCESS (length: 264)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=38--success=True--task=pick_the_carrot_from_the_counter_and_pla.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=38--success=True--task=pick_the_carrot_from_the_counter_and_place_it_in_t.mp4
+Success: True
+# episodes completed so far: 39
+# successes: 24 (61.5%)
+Starting episode 40...
+
+Task description: pick the squash from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.1830
+t=0: Selected seed 195 with value = 0.1830
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2264
+t=16: Selected seed 195 with value = 0.2264
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2619
+t=32: Selected seed 195 with value = 0.2619
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3021
+t=48: Selected seed 195 with value = 0.3021
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3435
+t=64: Selected seed 195 with value = 0.3435
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3811
+t=80: Selected seed 195 with value = 0.3811
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4280
+t=96: Selected seed 195 with value = 0.4280
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.5048
+t=112: Selected seed 195 with value = 0.5048
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6585
+t=128: Selected seed 195 with value = 0.6585
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7803
+t=144: Selected seed 195 with value = 0.7803
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9330
+t=160: Selected seed 195 with value = 0.9330
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=176: Selected seed 195 with value = 0.9998
+  Success detected at timestep 190!
+  Episode 39: SUCCESS (length: 191)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=39--success=True--task=pick_the_squash_from_the_counter_and_pla.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=39--success=True--task=pick_the_squash_from_the_counter_and_place_it_in_t.mp4
+Success: True
+# episodes completed so far: 40
+# successes: 25 (62.5%)
+Starting episode 41...
+
+Task description: pick the corn from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.776 sec
+Query 1/1 (seed 195): Predicted value = 0.1409
+t=0: Selected seed 195 with value = 0.1409
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1836
+t=16: Selected seed 195 with value = 0.1836
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.1995
+t=32: Selected seed 195 with value = 0.1995
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2342
+t=48: Selected seed 195 with value = 0.2342
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2624
+t=64: Selected seed 195 with value = 0.2624
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2886
+t=80: Selected seed 195 with value = 0.2886
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3340
+t=96: Selected seed 195 with value = 0.3340
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.3482
+t=112: Selected seed 195 with value = 0.3482
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4146
+t=128: Selected seed 195 with value = 0.4146
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4770
+t=144: Selected seed 195 with value = 0.4770
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5654
+t=160: Selected seed 195 with value = 0.5654
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6622
+t=176: Selected seed 195 with value = 0.6622
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8058
+t=192: Selected seed 195 with value = 0.8058
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9249
+t=208: Selected seed 195 with value = 0.9249
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=224: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9952
+t=240: Selected seed 195 with value = 0.9952
+  Success detected at timestep 242!
+  Episode 40: SUCCESS (length: 243)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=40--success=True--task=pick_the_corn_from_the_counter_and_place.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=40--success=True--task=pick_the_corn_from_the_counter_and_place_it_in_the.mp4
+Success: True
+# episodes completed so far: 41
+# successes: 26 (63.4%)
+Starting episode 42...
+
+Task description: pick the cupcake from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.1911
+t=0: Selected seed 195 with value = 0.1911
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2287
+t=16: Selected seed 195 with value = 0.2287
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2700
+t=32: Selected seed 195 with value = 0.2700
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3119
+t=48: Selected seed 195 with value = 0.3119
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3400
+t=64: Selected seed 195 with value = 0.3400
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4042
+t=80: Selected seed 195 with value = 0.4042
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4917
+t=96: Selected seed 195 with value = 0.4917
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5689
+t=112: Selected seed 195 with value = 0.5689
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6623
+t=128: Selected seed 195 with value = 0.6623
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.7388
+t=144: Selected seed 195 with value = 0.7388
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.8415
+t=160: Selected seed 195 with value = 0.8415
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9774
+t=176: Selected seed 195 with value = 0.9774
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=192: Selected seed 195 with value = 0.9983
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9977
+t=208: Selected seed 195 with value = 0.9977
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=224: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1891
+t=240: Selected seed 195 with value = 0.1891
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2000
+t=256: Selected seed 195 with value = 0.2000
+Query 1/1: Action query time = 0.816 sec
+Query 1/1 (seed 195): Predicted value = 0.2086
+t=272: Selected seed 195 with value = 0.2086
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2341
+t=288: Selected seed 195 with value = 0.2341
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.2763
+t=304: Selected seed 195 with value = 0.2763
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2991
+t=320: Selected seed 195 with value = 0.2991
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2960
+t=336: Selected seed 195 with value = 0.2960
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2954
+t=352: Selected seed 195 with value = 0.2954
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2959
+t=368: Selected seed 195 with value = 0.2959
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.2966
+t=384: Selected seed 195 with value = 0.2966
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2963
+t=400: Selected seed 195 with value = 0.2963
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2959
+t=416: Selected seed 195 with value = 0.2959
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2949
+t=432: Selected seed 195 with value = 0.2949
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2947
+t=448: Selected seed 195 with value = 0.2947
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2957
+t=464: Selected seed 195 with value = 0.2957
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3032
+t=480: Selected seed 195 with value = 0.3032
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3135
+t=496: Selected seed 195 with value = 0.3135
+  Episode 41: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=41--success=False--task=pick_the_cupcake_from_the_counter_and_pl.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=41--success=False--task=pick_the_cupcake_from_the_counter_and_place_it_in_.mp4
+Success: False
+# episodes completed so far: 42
+# successes: 26 (61.9%)
+Starting episode 43...
+
+Task description: pick the lime from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.1254
+t=0: Selected seed 195 with value = 0.1254
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1577
+t=16: Selected seed 195 with value = 0.1577
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1804
+t=32: Selected seed 195 with value = 0.1804
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2127
+t=48: Selected seed 195 with value = 0.2127
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2430
+t=64: Selected seed 195 with value = 0.2430
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2865
+t=80: Selected seed 195 with value = 0.2865
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3098
+t=96: Selected seed 195 with value = 0.3098
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3247
+t=112: Selected seed 195 with value = 0.3247
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3697
+t=128: Selected seed 195 with value = 0.3697
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4534
+t=144: Selected seed 195 with value = 0.4534
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5997
+t=160: Selected seed 195 with value = 0.5997
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7523
+t=176: Selected seed 195 with value = 0.7523
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8473
+t=192: Selected seed 195 with value = 0.8473
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9876
+t=208: Selected seed 195 with value = 0.9876
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9978
+t=224: Selected seed 195 with value = 0.9978
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=240: Selected seed 195 with value = 0.9984
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=256: Selected seed 195 with value = 0.9998
+Query 1/1: Action query time = 0.810 sec
+Query 1/1 (seed 195): Predicted value = 0.2194
+t=272: Selected seed 195 with value = 0.2194
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1767
+t=288: Selected seed 195 with value = 0.1767
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.1676
+t=304: Selected seed 195 with value = 0.1676
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1793
+t=320: Selected seed 195 with value = 0.1793
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1834
+t=336: Selected seed 195 with value = 0.1834
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1827
+t=352: Selected seed 195 with value = 0.1827
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1627
+t=368: Selected seed 195 with value = 0.1627
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.1592
+t=384: Selected seed 195 with value = 0.1592
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1498
+t=400: Selected seed 195 with value = 0.1498
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1652
+t=416: Selected seed 195 with value = 0.1652
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.1869
+t=432: Selected seed 195 with value = 0.1869
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2048
+t=448: Selected seed 195 with value = 0.2048
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2526
+t=464: Selected seed 195 with value = 0.2526
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2856
+t=480: Selected seed 195 with value = 0.2856
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3810
+t=496: Selected seed 195 with value = 0.3810
+  Episode 42: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=42--success=False--task=pick_the_lime_from_the_counter_and_place.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=42--success=False--task=pick_the_lime_from_the_counter_and_place_it_in_the.mp4
+Success: False
+# episodes completed so far: 43
+# successes: 26 (60.5%)
+Starting episode 44...
+
+Task description: pick the coffee cup from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.1047
+t=0: Selected seed 195 with value = 0.1047
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1208
+t=16: Selected seed 195 with value = 0.1208
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1519
+t=32: Selected seed 195 with value = 0.1519
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1881
+t=48: Selected seed 195 with value = 0.1881
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2105
+t=64: Selected seed 195 with value = 0.2105
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2153
+t=80: Selected seed 195 with value = 0.2153
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2212
+t=96: Selected seed 195 with value = 0.2212
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2498
+t=112: Selected seed 195 with value = 0.2498
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2939
+t=128: Selected seed 195 with value = 0.2939
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3450
+t=144: Selected seed 195 with value = 0.3450
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3574
+t=160: Selected seed 195 with value = 0.3574
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4097
+t=176: Selected seed 195 with value = 0.4097
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.5603
+t=192: Selected seed 195 with value = 0.5603
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6780
+t=208: Selected seed 195 with value = 0.6780
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8379
+t=224: Selected seed 195 with value = 0.8379
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9681
+t=240: Selected seed 195 with value = 0.9681
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9847
+t=256: Selected seed 195 with value = 0.9847
+Query 1/1: Action query time = 0.814 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=272: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=288: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.1291
+t=304: Selected seed 195 with value = 0.1291
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1325
+t=320: Selected seed 195 with value = 0.1325
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1446
+t=336: Selected seed 195 with value = 0.1446
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1574
+t=352: Selected seed 195 with value = 0.1574
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1937
+t=368: Selected seed 195 with value = 0.1937
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.1974
+t=384: Selected seed 195 with value = 0.1974
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2155
+t=400: Selected seed 195 with value = 0.2155
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2569
+t=416: Selected seed 195 with value = 0.2569
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.3100
+t=432: Selected seed 195 with value = 0.3100
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3254
+t=448: Selected seed 195 with value = 0.3254
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3712
+t=464: Selected seed 195 with value = 0.3712
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3963
+t=480: Selected seed 195 with value = 0.3963
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4975
+t=496: Selected seed 195 with value = 0.4975
+  Episode 43: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=43--success=False--task=pick_the_coffee_cup_from_the_counter_and.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=43--success=False--task=pick_the_coffee_cup_from_the_counter_and_place_it_.mp4
+Success: False
+# episodes completed so far: 44
+# successes: 26 (59.1%)
+Starting episode 45...
+
+Task description: pick the tangerine from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.1522
+t=0: Selected seed 195 with value = 0.1522
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1894
+t=16: Selected seed 195 with value = 0.1894
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2221
+t=32: Selected seed 195 with value = 0.2221
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2573
+t=48: Selected seed 195 with value = 0.2573
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2977
+t=64: Selected seed 195 with value = 0.2977
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3424
+t=80: Selected seed 195 with value = 0.3424
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3842
+t=96: Selected seed 195 with value = 0.3842
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4366
+t=112: Selected seed 195 with value = 0.4366
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5017
+t=128: Selected seed 195 with value = 0.5017
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6158
+t=144: Selected seed 195 with value = 0.6158
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7121
+t=160: Selected seed 195 with value = 0.7121
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8762
+t=176: Selected seed 195 with value = 0.8762
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=192: Selected seed 195 with value = 0.9990
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=208: Selected seed 195 with value = 0.9991
+  Success detected at timestep 218!
+  Episode 44: SUCCESS (length: 219)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=44--success=True--task=pick_the_tangerine_from_the_counter_and_.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=44--success=True--task=pick_the_tangerine_from_the_counter_and_place_it_i.mp4
+Success: True
+# episodes completed so far: 45
+# successes: 27 (60.0%)
+Starting episode 46...
+
+Task description: pick the lime from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.799 sec
+Query 1/1 (seed 195): Predicted value = 0.1324
+t=0: Selected seed 195 with value = 0.1324
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1632
+t=16: Selected seed 195 with value = 0.1632
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1901
+t=32: Selected seed 195 with value = 0.1901
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2147
+t=48: Selected seed 195 with value = 0.2147
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2424
+t=64: Selected seed 195 with value = 0.2424
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2708
+t=80: Selected seed 195 with value = 0.2708
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2887
+t=96: Selected seed 195 with value = 0.2887
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3099
+t=112: Selected seed 195 with value = 0.3099
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3590
+t=128: Selected seed 195 with value = 0.3590
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.4220
+t=144: Selected seed 195 with value = 0.4220
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.4957
+t=160: Selected seed 195 with value = 0.4957
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5628
+t=176: Selected seed 195 with value = 0.5628
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6415
+t=192: Selected seed 195 with value = 0.6415
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8057
+t=208: Selected seed 195 with value = 0.8057
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9258
+t=224: Selected seed 195 with value = 0.9258
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=240: Selected seed 195 with value = 0.9990
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=256: Selected seed 195 with value = 0.9992
+  Success detected at timestep 260!
+  Episode 45: SUCCESS (length: 261)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--episode=45--success=True--task=pick_the_lime_from_the_counter_and_place.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/PnPCounterToCab--2026_04_03-19_52_31/2026_04_03-19_52_31--with_future_img--episode=45--success=True--task=pick_the_lime_from_the_counter_and_place_it_in_the.mp4
+Success: True
+# episodes completed so far: 46
+# successes: 28 (60.9%)
+Starting episode 47...
+
+Task description: pick the orange from the counter and place it in the cabinet
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.1092
+t=0: Selected seed 195 with value = 0.1092
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1307
+t=16: Selected seed 195 with value = 0.1307
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1497
+t=32: Selected seed 195 with value = 0.1497
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1774
+t=48: Selected seed 195 with value = 0.1774
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2053
+t=64: Selected seed 195 with value = 0.2053
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2237
+t=80: Selected seed 195 with value = 0.2237
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2398
+t=96: Selected seed 195 with value = 0.2398

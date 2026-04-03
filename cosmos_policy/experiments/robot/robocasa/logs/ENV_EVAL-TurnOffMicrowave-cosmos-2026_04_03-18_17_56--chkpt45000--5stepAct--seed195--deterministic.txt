@@ -1,0 +1,2759 @@
+Eval config: PolicyEvalConfig(suite='robocasa', model_family='cosmos', config='cosmos_predict2_2b_480p_robocasa_50_demos_per_task__inference', ckpt_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B', planning_model_config_name='', planning_model_ckpt_path='', config_file='cosmos_policy/config/config.py', use_third_person_image=True, num_third_person_images=2, use_wrist_image=True, num_wrist_images=1, use_proprio=True, flip_images=True, use_variance_scale=False, use_jpeg_compression=True, ar_future_prediction=False, ar_value_prediction=False, ar_qvalue_prediction=False, num_denoising_steps_action=5, num_denoising_steps_future_state=1, num_denoising_steps_value=1, unnormalize_actions=True, normalize_proprio=True, dataset_stats_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_dataset_statistics.json', t5_text_embeddings_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_t5_embeddings.pkl', trained_with_image_aug=True, chunk_size=32, num_open_loop_steps=16, deterministic=True, deterministic_reset=False, deterministic_reset_seed=None, use_ensemble_future_state_predictions=False, num_future_state_predictions_in_ensemble=3, future_state_ensemble_aggregation_scheme='average', use_ensemble_value_predictions=False, num_value_predictions_in_ensemble=5, value_ensemble_aggregation_scheme='average', search_depth=1, search_depth_value_aggregation_scheme='use_last_value', mask_current_state_action_for_value_prediction=False, mask_future_state_for_qvalue_prediction=False, num_queries_best_of_n=1, use_parallel_inference=False, available_gpus='0,1,2,3,4,5,6,7', parallel_timeout=15, task_name='TurnOffMicrowave', num_trials_per_task=50, env_img_res=224, robots='PandaMobile', controllers='OSC_POSE', obj_instance_split='B', layout_and_style_ids='((1,1),(2,2),(4,4),(6,9),(7,10))', randomize_cameras=False, local_log_dir='cosmos_policy/experiments/robot/robocasa/logs/', run_id_note='chkpt45000--5stepAct--seed195--deterministic', use_wandb=False, wandb_entity='YOUR_ENTITY', wandb_project='YOUR_PROJECT', seed=195, randomize_seed=False, data_collection=False, jpeg_compress=True)
+
+Starting evaluation for task: TurnOffMicrowave
+Number of trials: 50
+
+Evaluating task: TurnOffMicrowave
+Starting episode 1...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 3.469 sec
+Query 1/1 (seed 195): Predicted value = 0.2280
+t=0: Selected seed 195 with value = 0.2280
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2613
+t=16: Selected seed 195 with value = 0.2613
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2748
+t=32: Selected seed 195 with value = 0.2748
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3219
+t=48: Selected seed 195 with value = 0.3219
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3983
+t=64: Selected seed 195 with value = 0.3983
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4369
+t=80: Selected seed 195 with value = 0.4369
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4837
+t=96: Selected seed 195 with value = 0.4837
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.5678
+t=112: Selected seed 195 with value = 0.5678
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8991
+t=128: Selected seed 195 with value = 0.8991
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5413
+t=144: Selected seed 195 with value = 0.5413
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.5785
+t=160: Selected seed 195 with value = 0.5785
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6262
+t=176: Selected seed 195 with value = 0.6262
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7011
+t=192: Selected seed 195 with value = 0.7011
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.7981
+t=208: Selected seed 195 with value = 0.7981
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9015
+t=224: Selected seed 195 with value = 0.9015
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=240: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=256: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9999
+t=272: Selected seed 195 with value = 0.9999
+  Success detected at timestep 278!
+  Episode 0: SUCCESS (length: 279)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=0--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=0--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 1
+# successes: 1 (100.0%)
+Starting episode 2...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.2097
+t=0: Selected seed 195 with value = 0.2097
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2247
+t=16: Selected seed 195 with value = 0.2247
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2578
+t=32: Selected seed 195 with value = 0.2578
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2890
+t=48: Selected seed 195 with value = 0.2890
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.3484
+t=64: Selected seed 195 with value = 0.3484
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.4224
+t=80: Selected seed 195 with value = 0.4224
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4604
+t=96: Selected seed 195 with value = 0.4604
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5637
+t=112: Selected seed 195 with value = 0.5637
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7501
+t=128: Selected seed 195 with value = 0.7501
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9958
+t=144: Selected seed 195 with value = 0.9958
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4878
+t=160: Selected seed 195 with value = 0.4878
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.5126
+t=176: Selected seed 195 with value = 0.5126
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5995
+t=192: Selected seed 195 with value = 0.5995
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.6966
+t=208: Selected seed 195 with value = 0.6966
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7867
+t=224: Selected seed 195 with value = 0.7867
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8902
+t=240: Selected seed 195 with value = 0.8902
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7799
+t=256: Selected seed 195 with value = 0.7799
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8836
+t=272: Selected seed 195 with value = 0.8836
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=288: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=304: Selected seed 195 with value = 0.9992
+  Success detected at timestep 312!
+  Episode 1: SUCCESS (length: 313)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=1--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=1--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 2
+# successes: 2 (100.0%)
+Starting episode 3...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.2095
+t=0: Selected seed 195 with value = 0.2095
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2246
+t=16: Selected seed 195 with value = 0.2246
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2573
+t=32: Selected seed 195 with value = 0.2573
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.2879
+t=48: Selected seed 195 with value = 0.2879
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3479
+t=64: Selected seed 195 with value = 0.3479
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.4199
+t=80: Selected seed 195 with value = 0.4199
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4617
+t=96: Selected seed 195 with value = 0.4617
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5620
+t=112: Selected seed 195 with value = 0.5620
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.7519
+t=128: Selected seed 195 with value = 0.7519
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9960
+t=144: Selected seed 195 with value = 0.9960
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4885
+t=160: Selected seed 195 with value = 0.4885
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5108
+t=176: Selected seed 195 with value = 0.5108
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5878
+t=192: Selected seed 195 with value = 0.5878
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.6787
+t=208: Selected seed 195 with value = 0.6787
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7739
+t=224: Selected seed 195 with value = 0.7739
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8443
+t=240: Selected seed 195 with value = 0.8443
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=256: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5550
+t=272: Selected seed 195 with value = 0.5550
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6284
+t=288: Selected seed 195 with value = 0.6284
+Query 1/1: Action query time = 0.790 sec
+Query 1/1 (seed 195): Predicted value = 0.7619
+t=304: Selected seed 195 with value = 0.7619
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8563
+t=320: Selected seed 195 with value = 0.8563
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9668
+t=336: Selected seed 195 with value = 0.9668
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=352: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.779 sec
+Query 1/1 (seed 195): Predicted value = 0.9969
+t=368: Selected seed 195 with value = 0.9969
+  Success detected at timestep 368!
+  Episode 2: SUCCESS (length: 369)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=2--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=2--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 3
+# successes: 3 (100.0%)
+Starting episode 4...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.2147
+t=0: Selected seed 195 with value = 0.2147
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2316
+t=16: Selected seed 195 with value = 0.2316
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2572
+t=32: Selected seed 195 with value = 0.2572
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2904
+t=48: Selected seed 195 with value = 0.2904
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3533
+t=64: Selected seed 195 with value = 0.3533
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4229
+t=80: Selected seed 195 with value = 0.4229
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4540
+t=96: Selected seed 195 with value = 0.4540
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.5621
+t=112: Selected seed 195 with value = 0.5621
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7489
+t=128: Selected seed 195 with value = 0.7489
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9959
+t=144: Selected seed 195 with value = 0.9959
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.4886
+t=160: Selected seed 195 with value = 0.4886
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5141
+t=176: Selected seed 195 with value = 0.5141
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6001
+t=192: Selected seed 195 with value = 0.6001
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7127
+t=208: Selected seed 195 with value = 0.7127
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.8111
+t=224: Selected seed 195 with value = 0.8111
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9123
+t=240: Selected seed 195 with value = 0.9123
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=256: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9938
+t=272: Selected seed 195 with value = 0.9938
+  Success detected at timestep 277!
+  Episode 3: SUCCESS (length: 278)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=3--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=3--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 4
+# successes: 4 (100.0%)
+Starting episode 5...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.2145
+t=0: Selected seed 195 with value = 0.2145
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.2318
+t=16: Selected seed 195 with value = 0.2318
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2567
+t=32: Selected seed 195 with value = 0.2567
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2897
+t=48: Selected seed 195 with value = 0.2897
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3512
+t=64: Selected seed 195 with value = 0.3512
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.4231
+t=80: Selected seed 195 with value = 0.4231
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4529
+t=96: Selected seed 195 with value = 0.4529
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5606
+t=112: Selected seed 195 with value = 0.5606
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7458
+t=128: Selected seed 195 with value = 0.7458
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9963
+t=144: Selected seed 195 with value = 0.9963
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4888
+t=160: Selected seed 195 with value = 0.4888
+Query 1/1: Action query time = 0.789 sec
+Query 1/1 (seed 195): Predicted value = 0.5133
+t=176: Selected seed 195 with value = 0.5133
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5930
+t=192: Selected seed 195 with value = 0.5930
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7031
+t=208: Selected seed 195 with value = 0.7031
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7958
+t=224: Selected seed 195 with value = 0.7958
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.9856
+t=240: Selected seed 195 with value = 0.9856
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5400
+t=256: Selected seed 195 with value = 0.5400
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6068
+t=272: Selected seed 195 with value = 0.6068
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7029
+t=288: Selected seed 195 with value = 0.7029
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8219
+t=304: Selected seed 195 with value = 0.8219
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9340
+t=320: Selected seed 195 with value = 0.9340
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=336: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=352: Selected seed 195 with value = 0.9990
+  Success detected at timestep 355!
+  Episode 4: SUCCESS (length: 356)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=4--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=4--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 5
+# successes: 5 (100.0%)
+Starting episode 6...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.2177
+t=0: Selected seed 195 with value = 0.2177
+  Success detected at timestep 0!
+  Episode 5: SUCCESS (length: 1)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=5--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=5--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 6
+# successes: 6 (100.0%)
+Starting episode 7...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.1977
+t=0: Selected seed 195 with value = 0.1977
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2215
+t=16: Selected seed 195 with value = 0.2215
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2518
+t=32: Selected seed 195 with value = 0.2518
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2673
+t=48: Selected seed 195 with value = 0.2673
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.3140
+t=64: Selected seed 195 with value = 0.3140
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3785
+t=80: Selected seed 195 with value = 0.3785
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4523
+t=96: Selected seed 195 with value = 0.4523
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4973
+t=112: Selected seed 195 with value = 0.4973
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5955
+t=128: Selected seed 195 with value = 0.5955
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8489
+t=144: Selected seed 195 with value = 0.8489
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=160: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.4859
+t=176: Selected seed 195 with value = 0.4859
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5005
+t=192: Selected seed 195 with value = 0.5005
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5456
+t=208: Selected seed 195 with value = 0.5456
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6153
+t=224: Selected seed 195 with value = 0.6153
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7273
+t=240: Selected seed 195 with value = 0.7273
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8618
+t=256: Selected seed 195 with value = 0.8618
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9704
+t=272: Selected seed 195 with value = 0.9704
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=288: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=304: Selected seed 195 with value = 0.9997
+  Success detected at timestep 307!
+  Episode 6: SUCCESS (length: 308)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=6--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=6--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 7
+# successes: 7 (100.0%)
+Starting episode 8...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.760 sec
+Query 1/1 (seed 195): Predicted value = 0.1945
+t=0: Selected seed 195 with value = 0.1945
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2211
+t=16: Selected seed 195 with value = 0.2211
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.2481
+t=32: Selected seed 195 with value = 0.2481
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2619
+t=48: Selected seed 195 with value = 0.2619
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3043
+t=64: Selected seed 195 with value = 0.3043
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3693
+t=80: Selected seed 195 with value = 0.3693
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4412
+t=96: Selected seed 195 with value = 0.4412
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4809
+t=112: Selected seed 195 with value = 0.4809
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5846
+t=128: Selected seed 195 with value = 0.5846
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8059
+t=144: Selected seed 195 with value = 0.8059
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9964
+t=160: Selected seed 195 with value = 0.9964
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4999
+t=176: Selected seed 195 with value = 0.4999
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5251
+t=192: Selected seed 195 with value = 0.5251
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5917
+t=208: Selected seed 195 with value = 0.5917
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.6929
+t=224: Selected seed 195 with value = 0.6929
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.8203
+t=240: Selected seed 195 with value = 0.8203
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9282
+t=256: Selected seed 195 with value = 0.9282
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=272: Selected seed 195 with value = 0.9997
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=288: Selected seed 195 with value = 0.9996
+  Success detected at timestep 296!
+  Episode 7: SUCCESS (length: 297)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=7--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=7--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 8
+# successes: 8 (100.0%)
+Starting episode 9...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.2048
+t=0: Selected seed 195 with value = 0.2048
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2185
+t=16: Selected seed 195 with value = 0.2185
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2518
+t=32: Selected seed 195 with value = 0.2518
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.3000
+t=48: Selected seed 195 with value = 0.3000
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3514
+t=64: Selected seed 195 with value = 0.3514
+Query 1/1: Action query time = 0.760 sec
+Query 1/1 (seed 195): Predicted value = 0.4231
+t=80: Selected seed 195 with value = 0.4231
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.4662
+t=96: Selected seed 195 with value = 0.4662
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5602
+t=112: Selected seed 195 with value = 0.5602
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.7410
+t=128: Selected seed 195 with value = 0.7410
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9961
+t=144: Selected seed 195 with value = 0.9961
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5025
+t=160: Selected seed 195 with value = 0.5025
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5381
+t=176: Selected seed 195 with value = 0.5381
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6376
+t=192: Selected seed 195 with value = 0.6376
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7561
+t=208: Selected seed 195 with value = 0.7561
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8484
+t=224: Selected seed 195 with value = 0.8484
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9790
+t=240: Selected seed 195 with value = 0.9790
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=256: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9972
+t=272: Selected seed 195 with value = 0.9972
+  Success detected at timestep 275!
+  Episode 8: SUCCESS (length: 276)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=8--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=8--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 9
+# successes: 9 (100.0%)
+Starting episode 10...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.2139
+t=0: Selected seed 195 with value = 0.2139
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.2319
+t=16: Selected seed 195 with value = 0.2319
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.2561
+t=32: Selected seed 195 with value = 0.2561
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.2897
+t=48: Selected seed 195 with value = 0.2897
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.3501
+t=64: Selected seed 195 with value = 0.3501
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.4233
+t=80: Selected seed 195 with value = 0.4233
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.4536
+t=96: Selected seed 195 with value = 0.4536
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.5620
+t=112: Selected seed 195 with value = 0.5620
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.7442
+t=128: Selected seed 195 with value = 0.7442
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9960
+t=144: Selected seed 195 with value = 0.9960
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.4898
+t=160: Selected seed 195 with value = 0.4898
+Query 1/1: Action query time = 0.759 sec
+Query 1/1 (seed 195): Predicted value = 0.5135
+t=176: Selected seed 195 with value = 0.5135
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.5991
+t=192: Selected seed 195 with value = 0.5991
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.7123
+t=208: Selected seed 195 with value = 0.7123
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.8100
+t=224: Selected seed 195 with value = 0.8100
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9081
+t=240: Selected seed 195 with value = 0.9081
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=256: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9950
+t=272: Selected seed 195 with value = 0.9950
+  Success detected at timestep 277!
+  Episode 9: SUCCESS (length: 278)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=9--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=9--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 10
+# successes: 10 (100.0%)
+Starting episode 11...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.769 sec
+Query 1/1 (seed 195): Predicted value = 0.1462
+t=0: Selected seed 195 with value = 0.1462
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1653
+t=16: Selected seed 195 with value = 0.1653
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1824
+t=32: Selected seed 195 with value = 0.1824
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2106
+t=48: Selected seed 195 with value = 0.2106
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2496
+t=64: Selected seed 195 with value = 0.2496
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3094
+t=80: Selected seed 195 with value = 0.3094
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3663
+t=96: Selected seed 195 with value = 0.3663
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4360
+t=112: Selected seed 195 with value = 0.4360
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5137
+t=128: Selected seed 195 with value = 0.5137
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6187
+t=144: Selected seed 195 with value = 0.6187
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7351
+t=160: Selected seed 195 with value = 0.7351
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8615
+t=176: Selected seed 195 with value = 0.8615
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9865
+t=192: Selected seed 195 with value = 0.9865
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9980
+t=208: Selected seed 195 with value = 0.9980
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7898
+t=224: Selected seed 195 with value = 0.7898
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9283
+t=240: Selected seed 195 with value = 0.9283
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=256: Selected seed 195 with value = 0.9998
+  Success detected at timestep 268!
+  Episode 10: SUCCESS (length: 269)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=10--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=10--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 11
+# successes: 11 (100.0%)
+Starting episode 12...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.1478
+t=0: Selected seed 195 with value = 0.1478
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1620
+t=16: Selected seed 195 with value = 0.1620
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1865
+t=32: Selected seed 195 with value = 0.1865
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2149
+t=48: Selected seed 195 with value = 0.2149
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2583
+t=64: Selected seed 195 with value = 0.2583
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3064
+t=80: Selected seed 195 with value = 0.3064
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.3647
+t=96: Selected seed 195 with value = 0.3647
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.4317
+t=112: Selected seed 195 with value = 0.4317
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.5140
+t=128: Selected seed 195 with value = 0.5140
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.6218
+t=144: Selected seed 195 with value = 0.6218
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.7502
+t=160: Selected seed 195 with value = 0.7502
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8810
+t=176: Selected seed 195 with value = 0.8810
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9963
+t=192: Selected seed 195 with value = 0.9963
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=208: Selected seed 195 with value = 0.9983
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7609
+t=224: Selected seed 195 with value = 0.7609
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8780
+t=240: Selected seed 195 with value = 0.8780
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=256: Selected seed 195 with value = 0.9998
+  Success detected at timestep 266!
+  Episode 11: SUCCESS (length: 267)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=11--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=11--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 12
+# successes: 12 (100.0%)
+Starting episode 13...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.767 sec
+Query 1/1 (seed 195): Predicted value = 0.1446
+t=0: Selected seed 195 with value = 0.1446
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1641
+t=16: Selected seed 195 with value = 0.1641
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1834
+t=32: Selected seed 195 with value = 0.1834
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2094
+t=48: Selected seed 195 with value = 0.2094
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2469
+t=64: Selected seed 195 with value = 0.2469
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2984
+t=80: Selected seed 195 with value = 0.2984
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3524
+t=96: Selected seed 195 with value = 0.3524
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4172
+t=112: Selected seed 195 with value = 0.4172
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4962
+t=128: Selected seed 195 with value = 0.4962
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6033
+t=144: Selected seed 195 with value = 0.6033
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7333
+t=160: Selected seed 195 with value = 0.7333
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8605
+t=176: Selected seed 195 with value = 0.8605
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9903
+t=192: Selected seed 195 with value = 0.9903
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=208: Selected seed 195 with value = 0.9983
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7627
+t=224: Selected seed 195 with value = 0.7627
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8735
+t=240: Selected seed 195 with value = 0.8735
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=256: Selected seed 195 with value = 0.9996
+  Success detected at timestep 266!
+  Episode 12: SUCCESS (length: 267)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=12--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=12--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 13
+# successes: 13 (100.0%)
+Starting episode 14...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.771 sec
+Query 1/1 (seed 195): Predicted value = 0.1530
+t=0: Selected seed 195 with value = 0.1530
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1646
+t=16: Selected seed 195 with value = 0.1646
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1885
+t=32: Selected seed 195 with value = 0.1885
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2182
+t=48: Selected seed 195 with value = 0.2182
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2665
+t=64: Selected seed 195 with value = 0.2665
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3166
+t=80: Selected seed 195 with value = 0.3166
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3825
+t=96: Selected seed 195 with value = 0.3825
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4507
+t=112: Selected seed 195 with value = 0.4507
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.5401
+t=128: Selected seed 195 with value = 0.5401
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6541
+t=144: Selected seed 195 with value = 0.6541
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7756
+t=160: Selected seed 195 with value = 0.7756
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9097
+t=176: Selected seed 195 with value = 0.9097
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9945
+t=192: Selected seed 195 with value = 0.9945
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=208: Selected seed 195 with value = 0.9982
+  Success detected at timestep 220!
+  Episode 13: SUCCESS (length: 221)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=13--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=13--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 14
+# successes: 14 (100.0%)
+Starting episode 15...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.774 sec
+Query 1/1 (seed 195): Predicted value = 0.1500
+t=0: Selected seed 195 with value = 0.1500
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.1690
+t=16: Selected seed 195 with value = 0.1690
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1867
+t=32: Selected seed 195 with value = 0.1867
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.2134
+t=48: Selected seed 195 with value = 0.2134
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.2557
+t=64: Selected seed 195 with value = 0.2557
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3128
+t=80: Selected seed 195 with value = 0.3128
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3730
+t=96: Selected seed 195 with value = 0.3730
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.4428
+t=112: Selected seed 195 with value = 0.4428
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5233
+t=128: Selected seed 195 with value = 0.5233
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.6285
+t=144: Selected seed 195 with value = 0.6285
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.7434
+t=160: Selected seed 195 with value = 0.7434
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.8741
+t=176: Selected seed 195 with value = 0.8741
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9852
+t=192: Selected seed 195 with value = 0.9852
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9966
+t=208: Selected seed 195 with value = 0.9966
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.8194
+t=224: Selected seed 195 with value = 0.8194
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.9501
+t=240: Selected seed 195 with value = 0.9501
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=256: Selected seed 195 with value = 0.9996
+  Success detected at timestep 268!
+  Episode 14: SUCCESS (length: 269)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=14--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=14--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 15
+# successes: 15 (100.0%)
+Starting episode 16...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.772 sec
+Query 1/1 (seed 195): Predicted value = 0.1526
+t=0: Selected seed 195 with value = 0.1526
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1659
+t=16: Selected seed 195 with value = 0.1659
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1856
+t=32: Selected seed 195 with value = 0.1856
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2150
+t=48: Selected seed 195 with value = 0.2150
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2627
+t=64: Selected seed 195 with value = 0.2627
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3127
+t=80: Selected seed 195 with value = 0.3127
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3786
+t=96: Selected seed 195 with value = 0.3786
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.4488
+t=112: Selected seed 195 with value = 0.4488
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5354
+t=128: Selected seed 195 with value = 0.5354
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6478
+t=144: Selected seed 195 with value = 0.6478
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.7665
+t=160: Selected seed 195 with value = 0.7665
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9029
+t=176: Selected seed 195 with value = 0.9029
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9952
+t=192: Selected seed 195 with value = 0.9952
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=208: Selected seed 195 with value = 0.9983
+  Success detected at timestep 222!
+  Episode 15: SUCCESS (length: 223)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=15--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=15--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 16
+# successes: 16 (100.0%)
+Starting episode 17...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.760 sec
+Query 1/1 (seed 195): Predicted value = 0.1416
+t=0: Selected seed 195 with value = 0.1416
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.1608
+t=16: Selected seed 195 with value = 0.1608
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1800
+t=32: Selected seed 195 with value = 0.1800
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2063
+t=48: Selected seed 195 with value = 0.2063
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2406
+t=64: Selected seed 195 with value = 0.2406
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2955
+t=80: Selected seed 195 with value = 0.2955
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3516
+t=96: Selected seed 195 with value = 0.3516
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4194
+t=112: Selected seed 195 with value = 0.4194
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4963
+t=128: Selected seed 195 with value = 0.4963
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6000
+t=144: Selected seed 195 with value = 0.6000
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.7303
+t=160: Selected seed 195 with value = 0.7303
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8579
+t=176: Selected seed 195 with value = 0.8579
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9878
+t=192: Selected seed 195 with value = 0.9878
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=208: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7633
+t=224: Selected seed 195 with value = 0.7633
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8330
+t=240: Selected seed 195 with value = 0.8330
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=256: Selected seed 195 with value = 0.9995
+  Success detected at timestep 264!
+  Episode 16: SUCCESS (length: 265)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=16--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=16--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 17
+# successes: 17 (100.0%)
+Starting episode 18...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.766 sec
+Query 1/1 (seed 195): Predicted value = 0.1442
+t=0: Selected seed 195 with value = 0.1442
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1624
+t=16: Selected seed 195 with value = 0.1624
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1827
+t=32: Selected seed 195 with value = 0.1827
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2088
+t=48: Selected seed 195 with value = 0.2088
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2454
+t=64: Selected seed 195 with value = 0.2454
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2985
+t=80: Selected seed 195 with value = 0.2985
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.3523
+t=96: Selected seed 195 with value = 0.3523
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4178
+t=112: Selected seed 195 with value = 0.4178
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4988
+t=128: Selected seed 195 with value = 0.4988
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6058
+t=144: Selected seed 195 with value = 0.6058
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7345
+t=160: Selected seed 195 with value = 0.7345
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8614
+t=176: Selected seed 195 with value = 0.8614
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9900
+t=192: Selected seed 195 with value = 0.9900
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=208: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7611
+t=224: Selected seed 195 with value = 0.7611
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8487
+t=240: Selected seed 195 with value = 0.8487
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=256: Selected seed 195 with value = 0.9993
+  Success detected at timestep 262!
+  Episode 17: SUCCESS (length: 263)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=17--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=17--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 18
+# successes: 18 (100.0%)
+Starting episode 19...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.779 sec
+Query 1/1 (seed 195): Predicted value = 0.1466
+t=0: Selected seed 195 with value = 0.1466
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1653
+t=16: Selected seed 195 with value = 0.1653
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1818
+t=32: Selected seed 195 with value = 0.1818
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2103
+t=48: Selected seed 195 with value = 0.2103
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2497
+t=64: Selected seed 195 with value = 0.2497
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3085
+t=80: Selected seed 195 with value = 0.3085
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3657
+t=96: Selected seed 195 with value = 0.3657
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4360
+t=112: Selected seed 195 with value = 0.4360
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.5127
+t=128: Selected seed 195 with value = 0.5127
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6176
+t=144: Selected seed 195 with value = 0.6176
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7344
+t=160: Selected seed 195 with value = 0.7344
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8600
+t=176: Selected seed 195 with value = 0.8600
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9861
+t=192: Selected seed 195 with value = 0.9861
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9980
+t=208: Selected seed 195 with value = 0.9980
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7753
+t=224: Selected seed 195 with value = 0.7753
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9161
+t=240: Selected seed 195 with value = 0.9161
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=256: Selected seed 195 with value = 0.9998
+  Success detected at timestep 267!
+  Episode 18: SUCCESS (length: 268)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=18--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=18--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 19
+# successes: 19 (100.0%)
+Starting episode 20...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.765 sec
+Query 1/1 (seed 195): Predicted value = 0.1464
+t=0: Selected seed 195 with value = 0.1464
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1620
+t=16: Selected seed 195 with value = 0.1620
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1849
+t=32: Selected seed 195 with value = 0.1849
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2135
+t=48: Selected seed 195 with value = 0.2135
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2547
+t=64: Selected seed 195 with value = 0.2547
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3043
+t=80: Selected seed 195 with value = 0.3043
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3615
+t=96: Selected seed 195 with value = 0.3615
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4289
+t=112: Selected seed 195 with value = 0.4289
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5090
+t=128: Selected seed 195 with value = 0.5090
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6173
+t=144: Selected seed 195 with value = 0.6173
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7455
+t=160: Selected seed 195 with value = 0.7455
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8734
+t=176: Selected seed 195 with value = 0.8734
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.9955
+t=192: Selected seed 195 with value = 0.9955
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=208: Selected seed 195 with value = 0.9985
+  Success detected at timestep 223!
+  Episode 19: SUCCESS (length: 224)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=19--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=19--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 20
+# successes: 20 (100.0%)
+Starting episode 21...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.776 sec
+Query 1/1 (seed 195): Predicted value = 0.2041
+t=0: Selected seed 195 with value = 0.2041
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2371
+t=16: Selected seed 195 with value = 0.2371
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2848
+t=32: Selected seed 195 with value = 0.2848
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3318
+t=48: Selected seed 195 with value = 0.3318
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4006
+t=64: Selected seed 195 with value = 0.4006
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4550
+t=80: Selected seed 195 with value = 0.4550
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.5380
+t=96: Selected seed 195 with value = 0.5380
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6368
+t=112: Selected seed 195 with value = 0.6368
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.7125
+t=128: Selected seed 195 with value = 0.7125
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.8445
+t=144: Selected seed 195 with value = 0.8445
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9967
+t=160: Selected seed 195 with value = 0.9967
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=176: Selected seed 195 with value = 0.9989
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=192: Selected seed 195 with value = 0.9996
+  Success detected at timestep 192!
+  Episode 20: SUCCESS (length: 193)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=20--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=20--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 21
+# successes: 21 (100.0%)
+Starting episode 22...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.770 sec
+Query 1/1 (seed 195): Predicted value = 0.2132
+t=0: Selected seed 195 with value = 0.2132
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2431
+t=16: Selected seed 195 with value = 0.2431
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2889
+t=32: Selected seed 195 with value = 0.2889
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3411
+t=48: Selected seed 195 with value = 0.3411
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4096
+t=64: Selected seed 195 with value = 0.4096
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4680
+t=80: Selected seed 195 with value = 0.4680
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5601
+t=96: Selected seed 195 with value = 0.5601
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6536
+t=112: Selected seed 195 with value = 0.6536
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7345
+t=128: Selected seed 195 with value = 0.7345
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8779
+t=144: Selected seed 195 with value = 0.8779
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=160: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=176: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=192: Selected seed 195 with value = 0.9995
+  Success detected at timestep 193!
+  Episode 21: SUCCESS (length: 194)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=21--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=21--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 22
+# successes: 22 (100.0%)
+Starting episode 23...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.778 sec
+Query 1/1 (seed 195): Predicted value = 0.2055
+t=0: Selected seed 195 with value = 0.2055
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2386
+t=16: Selected seed 195 with value = 0.2386
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2855
+t=32: Selected seed 195 with value = 0.2855
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3335
+t=48: Selected seed 195 with value = 0.3335
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4014
+t=64: Selected seed 195 with value = 0.4014
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4585
+t=80: Selected seed 195 with value = 0.4585
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5450
+t=96: Selected seed 195 with value = 0.5450
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6481
+t=112: Selected seed 195 with value = 0.6481
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7292
+t=128: Selected seed 195 with value = 0.7292
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8645
+t=144: Selected seed 195 with value = 0.8645
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9979
+t=160: Selected seed 195 with value = 0.9979
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=176: Selected seed 195 with value = 0.9990
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=192: Selected seed 195 with value = 0.9994
+  Success detected at timestep 192!
+  Episode 22: SUCCESS (length: 193)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=22--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=22--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 23
+# successes: 23 (100.0%)
+Starting episode 24...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.760 sec
+Query 1/1 (seed 195): Predicted value = 0.2061
+t=0: Selected seed 195 with value = 0.2061
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2386
+t=16: Selected seed 195 with value = 0.2386
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2857
+t=32: Selected seed 195 with value = 0.2857
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3330
+t=48: Selected seed 195 with value = 0.3330
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4021
+t=64: Selected seed 195 with value = 0.4021
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4589
+t=80: Selected seed 195 with value = 0.4589
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5491
+t=96: Selected seed 195 with value = 0.5491
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6519
+t=112: Selected seed 195 with value = 0.6519
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7343
+t=128: Selected seed 195 with value = 0.7343
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8708
+t=144: Selected seed 195 with value = 0.8708
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=160: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=176: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=192: Selected seed 195 with value = 0.9991
+  Success detected at timestep 193!
+  Episode 23: SUCCESS (length: 194)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=23--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=23--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 24
+# successes: 24 (100.0%)
+Starting episode 25...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.786 sec
+Query 1/1 (seed 195): Predicted value = 0.2156
+t=0: Selected seed 195 with value = 0.2156
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2482
+t=16: Selected seed 195 with value = 0.2482
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2926
+t=32: Selected seed 195 with value = 0.2926
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3496
+t=48: Selected seed 195 with value = 0.3496
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4175
+t=64: Selected seed 195 with value = 0.4175
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4765
+t=80: Selected seed 195 with value = 0.4765
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5751
+t=96: Selected seed 195 with value = 0.5751
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6592
+t=112: Selected seed 195 with value = 0.6592
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7485
+t=128: Selected seed 195 with value = 0.7485
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9065
+t=144: Selected seed 195 with value = 0.9065
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=160: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=176: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=192: Selected seed 195 with value = 0.9992
+  Success detected at timestep 195!
+  Episode 24: SUCCESS (length: 196)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=24--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=24--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 25
+# successes: 25 (100.0%)
+Starting episode 26...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.768 sec
+Query 1/1 (seed 195): Predicted value = 0.2054
+t=0: Selected seed 195 with value = 0.2054
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2384
+t=16: Selected seed 195 with value = 0.2384
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2861
+t=32: Selected seed 195 with value = 0.2861
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3334
+t=48: Selected seed 195 with value = 0.3334
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4023
+t=64: Selected seed 195 with value = 0.4023
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4579
+t=80: Selected seed 195 with value = 0.4579
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5457
+t=96: Selected seed 195 with value = 0.5457
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6459
+t=112: Selected seed 195 with value = 0.6459
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7262
+t=128: Selected seed 195 with value = 0.7262
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8633
+t=144: Selected seed 195 with value = 0.8633
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9977
+t=160: Selected seed 195 with value = 0.9977
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=176: Selected seed 195 with value = 0.9990
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=192: Selected seed 195 with value = 0.9998
+  Success detected at timestep 192!
+  Episode 25: SUCCESS (length: 193)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=25--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=25--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 26
+# successes: 26 (100.0%)
+Starting episode 27...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.773 sec
+Query 1/1 (seed 195): Predicted value = 0.2154
+t=0: Selected seed 195 with value = 0.2154
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2479
+t=16: Selected seed 195 with value = 0.2479
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2925
+t=32: Selected seed 195 with value = 0.2925
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3498
+t=48: Selected seed 195 with value = 0.3498
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4167
+t=64: Selected seed 195 with value = 0.4167
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.4763
+t=80: Selected seed 195 with value = 0.4763
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5742
+t=96: Selected seed 195 with value = 0.5742
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6583
+t=112: Selected seed 195 with value = 0.6583
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7478
+t=128: Selected seed 195 with value = 0.7478
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9070
+t=144: Selected seed 195 with value = 0.9070
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=160: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=176: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=192: Selected seed 195 with value = 0.9992
+  Success detected at timestep 195!
+  Episode 26: SUCCESS (length: 196)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=26--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=26--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 27
+# successes: 27 (100.0%)
+Starting episode 28...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.2058
+t=0: Selected seed 195 with value = 0.2058
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2386
+t=16: Selected seed 195 with value = 0.2386
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2867
+t=32: Selected seed 195 with value = 0.2867
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3344
+t=48: Selected seed 195 with value = 0.3344
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.4047
+t=64: Selected seed 195 with value = 0.4047
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.4592
+t=80: Selected seed 195 with value = 0.4592
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.5444
+t=96: Selected seed 195 with value = 0.5444
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6427
+t=112: Selected seed 195 with value = 0.6427
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7227
+t=128: Selected seed 195 with value = 0.7227
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8580
+t=144: Selected seed 195 with value = 0.8580
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9975
+t=160: Selected seed 195 with value = 0.9975
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=176: Selected seed 195 with value = 0.9990
+  Success detected at timestep 191!
+  Episode 27: SUCCESS (length: 192)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=27--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=27--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 28
+# successes: 28 (100.0%)
+Starting episode 29...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.2182
+t=0: Selected seed 195 with value = 0.2182
+  Success detected at timestep 0!
+  Episode 28: SUCCESS (length: 1)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=28--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=28--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 29
+# successes: 29 (100.0%)
+Starting episode 30...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.2159
+t=0: Selected seed 195 with value = 0.2159
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2485
+t=16: Selected seed 195 with value = 0.2485
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2930
+t=32: Selected seed 195 with value = 0.2930
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3502
+t=48: Selected seed 195 with value = 0.3502
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4174
+t=64: Selected seed 195 with value = 0.4174
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4767
+t=80: Selected seed 195 with value = 0.4767
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.5752
+t=96: Selected seed 195 with value = 0.5752
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6592
+t=112: Selected seed 195 with value = 0.6592
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7487
+t=128: Selected seed 195 with value = 0.7487
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9071
+t=144: Selected seed 195 with value = 0.9071
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=160: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=176: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=192: Selected seed 195 with value = 0.9993
+  Success detected at timestep 196!
+  Episode 29: SUCCESS (length: 197)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=29--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=29--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 30
+# successes: 30 (100.0%)
+Starting episode 31...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.776 sec
+Query 1/1 (seed 195): Predicted value = 0.1693
+t=0: Selected seed 195 with value = 0.1693
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1863
+t=16: Selected seed 195 with value = 0.1863
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2272
+t=32: Selected seed 195 with value = 0.2272
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2637
+t=48: Selected seed 195 with value = 0.2637
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2985
+t=64: Selected seed 195 with value = 0.2985
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3206
+t=80: Selected seed 195 with value = 0.3206
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3881
+t=96: Selected seed 195 with value = 0.3881
+Query 1/1: Action query time = 0.776 sec
+Query 1/1 (seed 195): Predicted value = 0.4341
+t=112: Selected seed 195 with value = 0.4341
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5064
+t=128: Selected seed 195 with value = 0.5064
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5902
+t=144: Selected seed 195 with value = 0.5902
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6972
+t=160: Selected seed 195 with value = 0.6972
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8281
+t=176: Selected seed 195 with value = 0.8281
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9371
+t=192: Selected seed 195 with value = 0.9371
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=208: Selected seed 195 with value = 0.9986
+Query 1/1: Action query time = 0.782 sec
+Query 1/1 (seed 195): Predicted value = 0.9980
+t=224: Selected seed 195 with value = 0.9980
+  Success detected at timestep 228!
+  Episode 30: SUCCESS (length: 229)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=30--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=30--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 31
+# successes: 31 (100.0%)
+Starting episode 32...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.1708
+t=0: Selected seed 195 with value = 0.1708
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1869
+t=16: Selected seed 195 with value = 0.1869
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2295
+t=32: Selected seed 195 with value = 0.2295
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2649
+t=48: Selected seed 195 with value = 0.2649
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2960
+t=64: Selected seed 195 with value = 0.2960
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3204
+t=80: Selected seed 195 with value = 0.3204
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3861
+t=96: Selected seed 195 with value = 0.3861
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4334
+t=112: Selected seed 195 with value = 0.4334
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5062
+t=128: Selected seed 195 with value = 0.5062
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5896
+t=144: Selected seed 195 with value = 0.5896
+Query 1/1: Action query time = 0.793 sec
+Query 1/1 (seed 195): Predicted value = 0.6966
+t=160: Selected seed 195 with value = 0.6966
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8274
+t=176: Selected seed 195 with value = 0.8274
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9376
+t=192: Selected seed 195 with value = 0.9376
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=208: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=224: Selected seed 195 with value = 0.9981
+  Success detected at timestep 228!
+  Episode 31: SUCCESS (length: 229)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=31--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=31--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 32
+# successes: 32 (100.0%)
+Starting episode 33...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.765 sec
+Query 1/1 (seed 195): Predicted value = 0.1714
+t=0: Selected seed 195 with value = 0.1714
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1874
+t=16: Selected seed 195 with value = 0.1874
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2302
+t=32: Selected seed 195 with value = 0.2302
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2648
+t=48: Selected seed 195 with value = 0.2648
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.2977
+t=64: Selected seed 195 with value = 0.2977
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3204
+t=80: Selected seed 195 with value = 0.3204
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3883
+t=96: Selected seed 195 with value = 0.3883
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4348
+t=112: Selected seed 195 with value = 0.4348
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5088
+t=128: Selected seed 195 with value = 0.5088
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5902
+t=144: Selected seed 195 with value = 0.5902
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6967
+t=160: Selected seed 195 with value = 0.6967
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8266
+t=176: Selected seed 195 with value = 0.8266
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9373
+t=192: Selected seed 195 with value = 0.9373
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=208: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=224: Selected seed 195 with value = 0.9981
+  Success detected at timestep 228!
+  Episode 32: SUCCESS (length: 229)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=32--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=32--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 33
+# successes: 33 (100.0%)
+Starting episode 34...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.782 sec
+Query 1/1 (seed 195): Predicted value = 0.1719
+t=0: Selected seed 195 with value = 0.1719
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1871
+t=16: Selected seed 195 with value = 0.1871
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2307
+t=32: Selected seed 195 with value = 0.2307
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2649
+t=48: Selected seed 195 with value = 0.2649
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2984
+t=64: Selected seed 195 with value = 0.2984
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3222
+t=80: Selected seed 195 with value = 0.3222
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3894
+t=96: Selected seed 195 with value = 0.3894
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4353
+t=112: Selected seed 195 with value = 0.4353
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5084
+t=128: Selected seed 195 with value = 0.5084
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5908
+t=144: Selected seed 195 with value = 0.5908
+Query 1/1: Action query time = 0.787 sec
+Query 1/1 (seed 195): Predicted value = 0.6978
+t=160: Selected seed 195 with value = 0.6978
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8281
+t=176: Selected seed 195 with value = 0.8281
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9377
+t=192: Selected seed 195 with value = 0.9377
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=208: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.9979
+t=224: Selected seed 195 with value = 0.9979
+  Success detected at timestep 228!
+  Episode 33: SUCCESS (length: 229)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=33--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=33--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 34
+# successes: 34 (100.0%)
+Starting episode 35...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.1683
+t=0: Selected seed 195 with value = 0.1683
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1858
+t=16: Selected seed 195 with value = 0.1858
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2271
+t=32: Selected seed 195 with value = 0.2271
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2629
+t=48: Selected seed 195 with value = 0.2629
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2970
+t=64: Selected seed 195 with value = 0.2970
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.3198
+t=80: Selected seed 195 with value = 0.3198
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3882
+t=96: Selected seed 195 with value = 0.3882
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4317
+t=112: Selected seed 195 with value = 0.4317
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5063
+t=128: Selected seed 195 with value = 0.5063
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.5893
+t=144: Selected seed 195 with value = 0.5893
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6962
+t=160: Selected seed 195 with value = 0.6962
+Query 1/1: Action query time = 0.780 sec
+Query 1/1 (seed 195): Predicted value = 0.8260
+t=176: Selected seed 195 with value = 0.8260
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9379
+t=192: Selected seed 195 with value = 0.9379
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=208: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=224: Selected seed 195 with value = 0.9981
+  Success detected at timestep 228!
+  Episode 34: SUCCESS (length: 229)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=34--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=34--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 35
+# successes: 35 (100.0%)
+Starting episode 36...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.782 sec
+Query 1/1 (seed 195): Predicted value = 0.1722
+t=0: Selected seed 195 with value = 0.1722
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1870
+t=16: Selected seed 195 with value = 0.1870
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2301
+t=32: Selected seed 195 with value = 0.2301
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2641
+t=48: Selected seed 195 with value = 0.2641
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2977
+t=64: Selected seed 195 with value = 0.2977
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.3220
+t=80: Selected seed 195 with value = 0.3220
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3887
+t=96: Selected seed 195 with value = 0.3887
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4358
+t=112: Selected seed 195 with value = 0.4358
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5086
+t=128: Selected seed 195 with value = 0.5086
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5928
+t=144: Selected seed 195 with value = 0.5928
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6992
+t=160: Selected seed 195 with value = 0.6992
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8302
+t=176: Selected seed 195 with value = 0.8302
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9403
+t=192: Selected seed 195 with value = 0.9403
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=208: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9980
+t=224: Selected seed 195 with value = 0.9980
+  Success detected at timestep 227!
+  Episode 35: SUCCESS (length: 228)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=35--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=35--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 36
+# successes: 36 (100.0%)
+Starting episode 37...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.776 sec
+Query 1/1 (seed 195): Predicted value = 0.1701
+t=0: Selected seed 195 with value = 0.1701
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.1872
+t=16: Selected seed 195 with value = 0.1872
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2297
+t=32: Selected seed 195 with value = 0.2297
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2648
+t=48: Selected seed 195 with value = 0.2648
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2979
+t=64: Selected seed 195 with value = 0.2979
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3210
+t=80: Selected seed 195 with value = 0.3210
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3871
+t=96: Selected seed 195 with value = 0.3871
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.4324
+t=112: Selected seed 195 with value = 0.4324
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5062
+t=128: Selected seed 195 with value = 0.5062
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5876
+t=144: Selected seed 195 with value = 0.5876
+Query 1/1: Action query time = 0.764 sec
+Query 1/1 (seed 195): Predicted value = 0.6948
+t=160: Selected seed 195 with value = 0.6948
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.8255
+t=176: Selected seed 195 with value = 0.8255
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9348
+t=192: Selected seed 195 with value = 0.9348
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=208: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9980
+t=224: Selected seed 195 with value = 0.9980
+  Success detected at timestep 228!
+  Episode 36: SUCCESS (length: 229)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=36--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=36--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 37
+# successes: 37 (100.0%)
+Starting episode 38...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.1708
+t=0: Selected seed 195 with value = 0.1708
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1866
+t=16: Selected seed 195 with value = 0.1866
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2299
+t=32: Selected seed 195 with value = 0.2299
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2643
+t=48: Selected seed 195 with value = 0.2643
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2977
+t=64: Selected seed 195 with value = 0.2977
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3202
+t=80: Selected seed 195 with value = 0.3202
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3881
+t=96: Selected seed 195 with value = 0.3881
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4344
+t=112: Selected seed 195 with value = 0.4344
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5087
+t=128: Selected seed 195 with value = 0.5087
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5911
+t=144: Selected seed 195 with value = 0.5911
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6986
+t=160: Selected seed 195 with value = 0.6986
+Query 1/1: Action query time = 0.807 sec
+Query 1/1 (seed 195): Predicted value = 0.8293
+t=176: Selected seed 195 with value = 0.8293
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9393
+t=192: Selected seed 195 with value = 0.9393
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=208: Selected seed 195 with value = 0.9986
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=224: Selected seed 195 with value = 0.9982
+  Success detected at timestep 228!
+  Episode 37: SUCCESS (length: 229)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=37--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=37--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 38
+# successes: 38 (100.0%)
+Starting episode 39...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.775 sec
+Query 1/1 (seed 195): Predicted value = 0.1721
+t=0: Selected seed 195 with value = 0.1721
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1875
+t=16: Selected seed 195 with value = 0.1875
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2310
+t=32: Selected seed 195 with value = 0.2310
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2662
+t=48: Selected seed 195 with value = 0.2662
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2990
+t=64: Selected seed 195 with value = 0.2990
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3217
+t=80: Selected seed 195 with value = 0.3217
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3879
+t=96: Selected seed 195 with value = 0.3879
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4357
+t=112: Selected seed 195 with value = 0.4357
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5098
+t=128: Selected seed 195 with value = 0.5098
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5919
+t=144: Selected seed 195 with value = 0.5919
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.6986
+t=160: Selected seed 195 with value = 0.6986
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8287
+t=176: Selected seed 195 with value = 0.8287
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9396
+t=192: Selected seed 195 with value = 0.9396
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=208: Selected seed 195 with value = 0.9986
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=224: Selected seed 195 with value = 0.9982
+  Success detected at timestep 228!
+  Episode 38: SUCCESS (length: 229)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=38--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=38--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 39
+# successes: 39 (100.0%)
+Starting episode 40...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.769 sec
+Query 1/1 (seed 195): Predicted value = 0.1694
+t=0: Selected seed 195 with value = 0.1694
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1857
+t=16: Selected seed 195 with value = 0.1857
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2277
+t=32: Selected seed 195 with value = 0.2277
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2612
+t=48: Selected seed 195 with value = 0.2612
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.2945
+t=64: Selected seed 195 with value = 0.2945
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3166
+t=80: Selected seed 195 with value = 0.3166
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3878
+t=96: Selected seed 195 with value = 0.3878
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4338
+t=112: Selected seed 195 with value = 0.4338
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5081
+t=128: Selected seed 195 with value = 0.5081
+Query 1/1: Action query time = 0.774 sec
+Query 1/1 (seed 195): Predicted value = 0.5909
+t=144: Selected seed 195 with value = 0.5909
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6975
+t=160: Selected seed 195 with value = 0.6975
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8296
+t=176: Selected seed 195 with value = 0.8296
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9397
+t=192: Selected seed 195 with value = 0.9397
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=208: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=224: Selected seed 195 with value = 0.9983
+  Success detected at timestep 227!
+  Episode 39: SUCCESS (length: 228)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=39--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=39--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 40
+# successes: 40 (100.0%)
+Starting episode 41...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.1988
+t=0: Selected seed 195 with value = 0.1988
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2235
+t=16: Selected seed 195 with value = 0.2235
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2624
+t=32: Selected seed 195 with value = 0.2624
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2928
+t=48: Selected seed 195 with value = 0.2928
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3386
+t=64: Selected seed 195 with value = 0.3386
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3978
+t=80: Selected seed 195 with value = 0.3978
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4606
+t=96: Selected seed 195 with value = 0.4606
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5344
+t=112: Selected seed 195 with value = 0.5344
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6248
+t=128: Selected seed 195 with value = 0.6248
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7191
+t=144: Selected seed 195 with value = 0.7191
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8342
+t=160: Selected seed 195 with value = 0.8342
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9851
+t=176: Selected seed 195 with value = 0.9851
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=192: Selected seed 195 with value = 0.9990
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=208: Selected seed 195 with value = 0.9991
+  Success detected at timestep 209!
+  Episode 40: SUCCESS (length: 210)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=40--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=40--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 41
+# successes: 41 (100.0%)
+Starting episode 42...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.761 sec
+Query 1/1 (seed 195): Predicted value = 0.1804
+t=0: Selected seed 195 with value = 0.1804
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2041
+t=16: Selected seed 195 with value = 0.2041
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.2343
+t=32: Selected seed 195 with value = 0.2343
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2603
+t=48: Selected seed 195 with value = 0.2603
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3138
+t=64: Selected seed 195 with value = 0.3138
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3670
+t=80: Selected seed 195 with value = 0.3670
+Query 1/1: Action query time = 0.784 sec
+Query 1/1 (seed 195): Predicted value = 0.4329
+t=96: Selected seed 195 with value = 0.4329
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5024
+t=112: Selected seed 195 with value = 0.5024
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5978
+t=128: Selected seed 195 with value = 0.5978
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6939
+t=144: Selected seed 195 with value = 0.6939
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8128
+t=160: Selected seed 195 with value = 0.8128
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9533
+t=176: Selected seed 195 with value = 0.9533
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=192: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=208: Selected seed 195 with value = 0.9996
+  Success detected at timestep 213!
+  Episode 41: SUCCESS (length: 214)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=41--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=41--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 42
+# successes: 42 (100.0%)
+Starting episode 43...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.1615
+t=0: Selected seed 195 with value = 0.1615
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1806
+t=16: Selected seed 195 with value = 0.1806
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2124
+t=32: Selected seed 195 with value = 0.2124
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2374
+t=48: Selected seed 195 with value = 0.2374
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2835
+t=64: Selected seed 195 with value = 0.2835
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3402
+t=80: Selected seed 195 with value = 0.3402
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4102
+t=96: Selected seed 195 with value = 0.4102
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4725
+t=112: Selected seed 195 with value = 0.4725
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5737
+t=128: Selected seed 195 with value = 0.5737
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6807
+t=144: Selected seed 195 with value = 0.6807
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7983
+t=160: Selected seed 195 with value = 0.7983
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9443
+t=176: Selected seed 195 with value = 0.9443
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9999
+t=192: Selected seed 195 with value = 0.9999
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=208: Selected seed 195 with value = 0.9996
+  Success detected at timestep 214!
+  Episode 42: SUCCESS (length: 215)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=42--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=42--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 43
+# successes: 43 (100.0%)
+Starting episode 44...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.766 sec
+Query 1/1 (seed 195): Predicted value = 0.1887
+t=0: Selected seed 195 with value = 0.1887
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2159
+t=16: Selected seed 195 with value = 0.2159
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2475
+t=32: Selected seed 195 with value = 0.2475
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2869
+t=48: Selected seed 195 with value = 0.2869
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3385
+t=64: Selected seed 195 with value = 0.3385
+Query 1/1: Action query time = 0.777 sec
+Query 1/1 (seed 195): Predicted value = 0.3985
+t=80: Selected seed 195 with value = 0.3985
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4617
+t=96: Selected seed 195 with value = 0.4617
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.5375
+t=112: Selected seed 195 with value = 0.5375
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6372
+t=128: Selected seed 195 with value = 0.6372
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7325
+t=144: Selected seed 195 with value = 0.7325
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8613
+t=160: Selected seed 195 with value = 0.8613
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9954
+t=176: Selected seed 195 with value = 0.9954
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=192: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=208: Selected seed 195 with value = 0.9994
+  Success detected at timestep 212!
+  Episode 43: SUCCESS (length: 213)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=43--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=43--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 44
+# successes: 44 (100.0%)
+Starting episode 45...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.1985
+t=0: Selected seed 195 with value = 0.1985
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2210
+t=16: Selected seed 195 with value = 0.2210
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2575
+t=32: Selected seed 195 with value = 0.2575
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2886
+t=48: Selected seed 195 with value = 0.2886
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3320
+t=64: Selected seed 195 with value = 0.3320
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3874
+t=80: Selected seed 195 with value = 0.3874
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4583
+t=96: Selected seed 195 with value = 0.4583
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5218
+t=112: Selected seed 195 with value = 0.5218
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6153
+t=128: Selected seed 195 with value = 0.6153
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7040
+t=144: Selected seed 195 with value = 0.7040
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8214
+t=160: Selected seed 195 with value = 0.8214
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9587
+t=176: Selected seed 195 with value = 0.9587
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=192: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=208: Selected seed 195 with value = 0.9995
+  Success detected at timestep 211!
+  Episode 44: SUCCESS (length: 212)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=44--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=44--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 45
+# successes: 45 (100.0%)
+Starting episode 46...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.764 sec
+Query 1/1 (seed 195): Predicted value = 0.2154
+t=0: Selected seed 195 with value = 0.2154
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2522
+t=16: Selected seed 195 with value = 0.2522
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2810
+t=32: Selected seed 195 with value = 0.2810
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3184
+t=48: Selected seed 195 with value = 0.3184
+Query 1/1: Action query time = 0.787 sec
+Query 1/1 (seed 195): Predicted value = 0.3856
+t=64: Selected seed 195 with value = 0.3856
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4539
+t=80: Selected seed 195 with value = 0.4539
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5190
+t=96: Selected seed 195 with value = 0.5190
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6149
+t=112: Selected seed 195 with value = 0.6149
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7087
+t=128: Selected seed 195 with value = 0.7087
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8266
+t=144: Selected seed 195 with value = 0.8266
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9644
+t=160: Selected seed 195 with value = 0.9644
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=176: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=192: Selected seed 195 with value = 0.9990
+  Success detected at timestep 194!
+  Episode 45: SUCCESS (length: 195)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=45--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=45--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 46
+# successes: 46 (100.0%)
+Starting episode 47...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.1995
+t=0: Selected seed 195 with value = 0.1995
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2210
+t=16: Selected seed 195 with value = 0.2210
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2567
+t=32: Selected seed 195 with value = 0.2567
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2893
+t=48: Selected seed 195 with value = 0.2893
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3337
+t=64: Selected seed 195 with value = 0.3337
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3869
+t=80: Selected seed 195 with value = 0.3869
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4595
+t=96: Selected seed 195 with value = 0.4595
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5223
+t=112: Selected seed 195 with value = 0.5223
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6179
+t=128: Selected seed 195 with value = 0.6179
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7059
+t=144: Selected seed 195 with value = 0.7059
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8224
+t=160: Selected seed 195 with value = 0.8224
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9593
+t=176: Selected seed 195 with value = 0.9593
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=192: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=208: Selected seed 195 with value = 0.9994
+  Success detected at timestep 211!
+  Episode 46: SUCCESS (length: 212)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=46--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=46--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 47
+# successes: 47 (100.0%)
+Starting episode 48...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.1966
+t=0: Selected seed 195 with value = 0.1966
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.2313
+t=16: Selected seed 195 with value = 0.2313
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2719
+t=32: Selected seed 195 with value = 0.2719
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2994
+t=48: Selected seed 195 with value = 0.2994
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3598
+t=64: Selected seed 195 with value = 0.3598
+Query 1/1: Action query time = 0.792 sec
+Query 1/1 (seed 195): Predicted value = 0.4379
+t=80: Selected seed 195 with value = 0.4379
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4932
+t=96: Selected seed 195 with value = 0.4932
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5824
+t=112: Selected seed 195 with value = 0.5824
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6795
+t=128: Selected seed 195 with value = 0.6795
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7761
+t=144: Selected seed 195 with value = 0.7761
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9093
+t=160: Selected seed 195 with value = 0.9093
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=176: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=192: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=208: Selected seed 195 with value = 0.9995
+  Success detected at timestep 215!
+  Episode 47: SUCCESS (length: 216)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=47--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=47--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 48
+# successes: 48 (100.0%)
+Starting episode 49...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.1999
+t=0: Selected seed 195 with value = 0.1999
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2331
+t=16: Selected seed 195 with value = 0.2331
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2731
+t=32: Selected seed 195 with value = 0.2731
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3014
+t=48: Selected seed 195 with value = 0.3014
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3574
+t=64: Selected seed 195 with value = 0.3574
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4303
+t=80: Selected seed 195 with value = 0.4303
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4916
+t=96: Selected seed 195 with value = 0.4916
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5778
+t=112: Selected seed 195 with value = 0.5778
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6722
+t=128: Selected seed 195 with value = 0.6722
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7649
+t=144: Selected seed 195 with value = 0.7649
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8953
+t=160: Selected seed 195 with value = 0.8953
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=176: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=192: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=208: Selected seed 195 with value = 0.9996
+  Success detected at timestep 215!
+  Episode 48: SUCCESS (length: 216)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=48--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=48--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 49
+# successes: 49 (100.0%)
+Starting episode 50...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.2041
+t=0: Selected seed 195 with value = 0.2041
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2368
+t=16: Selected seed 195 with value = 0.2368
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2801
+t=32: Selected seed 195 with value = 0.2801
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3081
+t=48: Selected seed 195 with value = 0.3081
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.3691
+t=64: Selected seed 195 with value = 0.3691
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.4425
+t=80: Selected seed 195 with value = 0.4425
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5004
+t=96: Selected seed 195 with value = 0.5004
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5930
+t=112: Selected seed 195 with value = 0.5930
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6860
+t=128: Selected seed 195 with value = 0.6860
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7849
+t=144: Selected seed 195 with value = 0.7849
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9140
+t=160: Selected seed 195 with value = 0.9140
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=176: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=192: Selected seed 195 with value = 0.9995
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=208: Selected seed 195 with value = 0.9993
+  Success detected at timestep 213!
+  Episode 49: SUCCESS (length: 214)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--episode=49--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOffMicrowave--2026_04_03-18_17_56/2026_04_03-18_17_56--with_future_img--episode=49--success=True--task=press_the_stop_button_on_the_microwave.mp4
+Success: True
+# episodes completed so far: 50
+# successes: 50 (100.0%)
+Task TurnOffMicrowave results:
+  Success rate: 1.0000 (100%)
+  Average episode length: 228.9
+  Successes: 50/50
+
+================================================================================
+FINAL RESULTS
+================================================================================
+Task: TurnOffMicrowave
+Success rate: 1.0000 (100%)
+Average episode length: 228.9
+Total episodes: 50
+Total successes: 50
+
+Results saved to: cosmos_policy/experiments/robot/robocasa/logs/ENV_EVAL-TurnOffMicrowave-cosmos-2026_04_03-18_17_56--chkpt45000--5stepAct--seed195--deterministic.txt

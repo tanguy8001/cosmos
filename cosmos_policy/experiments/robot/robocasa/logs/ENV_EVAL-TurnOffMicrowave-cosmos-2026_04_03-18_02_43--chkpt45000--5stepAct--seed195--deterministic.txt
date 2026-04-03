@@ -1,0 +1,15 @@
+Eval config: PolicyEvalConfig(suite='robocasa', model_family='cosmos', config='cosmos_predict2_2b_480p_robocasa_50_demos_per_task__inference', ckpt_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B', planning_model_config_name='', planning_model_ckpt_path='', config_file='cosmos_policy/config/config.py', use_third_person_image=True, num_third_person_images=2, use_wrist_image=True, num_wrist_images=1, use_proprio=True, flip_images=True, use_variance_scale=False, use_jpeg_compression=True, ar_future_prediction=False, ar_value_prediction=False, ar_qvalue_prediction=False, num_denoising_steps_action=5, num_denoising_steps_future_state=1, num_denoising_steps_value=1, unnormalize_actions=True, normalize_proprio=True, dataset_stats_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_dataset_statistics.json', t5_text_embeddings_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_t5_embeddings.pkl', trained_with_image_aug=True, chunk_size=32, num_open_loop_steps=16, deterministic=True, deterministic_reset=False, deterministic_reset_seed=None, use_ensemble_future_state_predictions=False, num_future_state_predictions_in_ensemble=3, future_state_ensemble_aggregation_scheme='average', use_ensemble_value_predictions=False, num_value_predictions_in_ensemble=5, value_ensemble_aggregation_scheme='average', search_depth=1, search_depth_value_aggregation_scheme='use_last_value', mask_current_state_action_for_value_prediction=False, mask_future_state_for_qvalue_prediction=False, num_queries_best_of_n=1, use_parallel_inference=False, available_gpus='0,1,2,3,4,5,6,7', parallel_timeout=15, task_name='TurnOffMicrowave', num_trials_per_task=50, env_img_res=224, robots='PandaMobile', controllers='OSC_POSE', obj_instance_split='B', layout_and_style_ids='((1,1),(2,2),(4,4),(6,9),(7,10))', randomize_cameras=False, local_log_dir='cosmos_policy/experiments/robot/robocasa/logs/', run_id_note='chkpt45000--5stepAct--seed195--deterministic', use_wandb=False, wandb_entity='YOUR_ENTITY', wandb_project='YOUR_PROJECT', seed=195, randomize_seed=False, data_collection=False, jpeg_compress=True)
+
+Starting evaluation for task: TurnOffMicrowave
+Number of trials: 50
+
+Evaluating task: TurnOffMicrowave
+Starting episode 1...
+
+Task description: press the stop button on the microwave
+Query 1/1: Action query time = 4.325 sec
+Query 1/1 (seed 195): Predicted value = 0.2268
+t=0: Selected seed 195 with value = 0.2268
+Query 1/1: Action query time = 1.590 sec
+Query 1/1 (seed 195): Predicted value = 0.2614
+t=16: Selected seed 195 with value = 0.2614

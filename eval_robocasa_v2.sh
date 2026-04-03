@@ -3,7 +3,7 @@
 #SBATCH -n 1
 #SBATCH -c 16
 #SBATCH -t 48:00:00
-#SBATCH -J cosmos_robocasa_eval
+#SBATCH -J cosmos_robocasa_v2_eval
 #SBATCH -o out.%j
 #SBATCH -e err.%j
 #SBATCH -p seas_gpu,gpu
