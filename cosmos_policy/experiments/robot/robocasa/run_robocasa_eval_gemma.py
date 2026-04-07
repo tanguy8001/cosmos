@@ -85,15 +85,6 @@ TASK_MAX_STEPS = {
     "TurnOnMicrowave": 500, "TurnOffMicrowave": 500,
 }
 
-GEMMA_SYSTEM_PROMPT = (
-    "You are monitoring a robot arm performing kitchen manipulation tasks. "
-    "Respond with exactly one word: CONTINUE or RETRY.\n"
-    "- CONTINUE: the robot is making visible progress toward its goal\n"
-    "- RETRY: the robot has clearly failed (missed grasp, dropped object, visibly stuck) "
-    "and should replan from its current position\n"
-    "Output ONLY the single word, nothing else."
-)
-
 
 @dataclass
 class PolicyEvalConfig:
@@ -145,7 +136,7 @@ class PolicyEvalConfig:
 
     # --- Qwen3.5 VLM planner ---
     gemma_model_id: str = "Qwen/Qwen3.5-35B-A3B"
-    gemma_replan_every: int = 3    # call Gemma every N action chunks (3 chunks = ~2.4s at 20Hz)
+    gemma_replan_every: int = 5    # call Gemma every N action chunks (5 chunks = ~4.0s at 20Hz)
     gemma_device: str = "cuda:1"   # device for Gemma (use cuda:0 if single GPU + 4bit)
     gemma_load_in_4bit: bool = False  # 4-bit quant: ~16GB VRAM instead of ~62GB
 
@@ -188,26 +179,22 @@ class GemmaPlanner:
         self,
         frame_buffer: list,  # list of PIL Images (primary camera), subsampled at FRAME_SUBSAMPLE
         task_description: str,
-        step: int,
     ) -> tuple:
         """
         Returns (raw_response: str, should_retry: bool).
         Uses process_vision_info (qwen_vl_utils) so video frames are encoded correctly.
         frame_buffer is sampled at 20Hz / FRAME_SUBSAMPLE = 5fps.
         """
-        if step < 100:
-            stage = "Early stage: robot should be approaching and opening the cabinet."
-        elif step < 250:
-            stage = "Mid stage: robot should be reaching in and grasping the object."
-        else:
-            stage = "Late stage: robot should have the object and be placing it on the counter."
-
         user_text = (
             f"Robot task: {task_description}\n"
-            f"Current state: {stage}\n"
-            "The video shows the robot's trajectory from the start of the episode.\n"
-            "Did the robot fail (missed grasp, dropped object, or visibly stuck)?\n"
-            "Answer with a single letter: A for CONTINUE, B for RETRY."
+            "You are watching the wrist camera of a robot arm. The task may still be in progress.\n"
+            "Choose CONTINUE unless you can clearly observe a failure: a missed or failed grasp, "
+            "a dropped object, or the robot visibly stuck with no progress.\n"
+            "If the robot is still approaching, reaching, or grasping — even slowly — choose CONTINUE.\n"
+            "After your reasoning, provide your final decision by exactly following this format:\n"
+            "DECISION: CONTINUE\n"
+            "or\n"
+            "DECISION: RETRY"
         )
 
         # Video content block: no "type" key — qwen_vl_utils requires this exact format
@@ -228,7 +215,7 @@ class GemmaPlanner:
             messages,
             tokenize=False,
             add_generation_prompt=True,
-            enable_thinking=False,
+            enable_thinking=True,
         )
 
         image_inputs, video_inputs, video_kwargs = process_vision_info(
@@ -255,13 +242,17 @@ class GemmaPlanner:
 
         out_ids = self.model.generate(
             **inputs,
-            max_new_tokens=5,
+            max_new_tokens=4096,
             do_sample=False,
+            temperature=1.0,
+            top_p=0.95,
+            top_k=20,
+            min_p=0.0,
         )
         new_tokens = out_ids[0, inputs["input_ids"].shape[1]:]
         raw_response = self.processor.decode(new_tokens, skip_special_tokens=True).strip()
 
-        is_retry = raw_response.upper().startswith("B") or "RETRY" in raw_response.upper()
+        is_retry = "DECISION: RETRY" in raw_response.upper()
         return raw_response, is_retry
 
 
@@ -365,8 +356,7 @@ def run_eval(cfg: PolicyEvalConfig):
         # VLM is called every gemma_replan_every * num_open_loop_steps timesteps.
         # This is independent of the action queue so RETRY can truncate mid-chunk.
         vlm_call_interval = cfg.gemma_replan_every * cfg.num_open_loop_steps
-        # Frame buffer: collect primary-camera frames between VLM calls.
-        # Subsample every 4 steps to keep token count reasonable (~12 frames per call).
+        # Frame buffer: collect wrist-camera frames from episode start, subsampled at 5fps.
         frame_buffer = []
         FRAME_SUBSAMPLE = 4
 
@@ -380,7 +370,7 @@ def run_eval(cfg: PolicyEvalConfig):
 
             # Accumulate subsampled frames for VLM video context
             if t % FRAME_SUBSAMPLE == 0:
-                frame_buffer.append(Image.fromarray(observation["primary_image"]))
+                frame_buffer.append(Image.fromarray(observation["wrist_image"]))
 
             # Call VLM on a fixed timestep cadence (every ~2.4s at 20Hz with defaults)
             if t > 0 and t % vlm_call_interval == 0:
@@ -388,7 +378,6 @@ def run_eval(cfg: PolicyEvalConfig):
                 raw_response, should_retry = vlm.plan(
                     frame_buffer,
                     task_description,
-                    step=t,
                 )
                 vlm_ms = (time.time() - t0) * 1000
                 if should_retry:

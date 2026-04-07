@@ -1,0 +1,289 @@
+=== Job info ===
+JobID: 3867547
+Node:   holygpu8a22103.rc.fas.harvard.edu
+PWD:    /n/netscratch/hankyang_lab/Lab/tdieudonne/cosmos-policy
+================
+Regular GPU detected - using EGL device 0
+Mon Apr  6 22:33:02 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 575.57.08              Driver Version: 575.57.08      CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA A100-SXM4-80GB          On  |   00000000:4B:00.0 Off |                    0 |
+| N/A   28C    P0             65W /  500W |       0MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA A100-SXM4-80GB          On  |   00000000:CA:00.0 Off |                    0 |
+| N/A   29C    P0             67W /  500W |       0MiB /  81920MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+WARNING: mimicgen environments not imported since mimicgen is not installed!
+[04-07 02:34:40|CRITICAL|cosmos_policy/_src/predict2/checkpointer/dcp.py:188:<module>] for the back comptiable pytorch! New DefaultLoadPlanner class is created.
+Using ROBOCASA constants:
+  NUM_ACTIONS_CHUNK = 32
+  ACTION_DIM = 7
+  PROPRIO_DIM = 9
+If needed, manually set the correct constants in `projects/cosmos/cosmos_policy/constants.py`!
+Loading Cosmos Policy model...
+Instantiating pretrained Cosmos model...
+Detected HuggingFace repository: nvidia/Cosmos-Policy-RoboCasa-Predict2-2B
+Downloading checkpoint from HuggingFace: nvidia/Cosmos-Policy-RoboCasa-Predict2-2B
+Checkpoint downloaded successfully to: /n/netscratch/hankyang_lab/Lab/tdieudonne/.cache/huggingface/models--nvidia--Cosmos-Policy-RoboCasa-Predict2-2B/snapshots/4b2a04c80d97202f86127ebec80461e8016ec1dc
+[04-07 02:34:42|INFO|cosmos_policy/_src/imaginaire/visualize/video.py:31:<module>] No module named 'ffmpegcv'
+[04-07 02:34:44|CRITICAL|cosmos_policy/_src/imaginaire/utils/config_helper.py:192:import_all_modules_from_package] Reloading all modules from package cosmos_policy._src.predict2.configs.video2world.experiment
+[04-07 02:34:44|INFO|cosmos_policy/_src/predict2/datasets/augmentor_provider.py:94:augmentor_register] registering video_basic_augmentor_v1...
+[04-07 02:34:44|INFO|cosmos_policy/_src/predict2/datasets/augmentor_provider.py:94:augmentor_register] registering video_basic_augmentor_v2...
+[04-07 02:34:44|INFO|cosmos_policy/_src/predict2/datasets/augmentor_provider.py:94:augmentor_register] registering noframedrop_nocameramove_video_augmentor_v1...
+[04-07 02:34:44|INFO|cosmos_policy/_src/predict2/datasets/augmentor_provider.py:94:augmentor_register] registering nocameramove_video_augmentor_v1...
+[04-07 02:34:44|INFO|cosmos_policy/_src/predict2/datasets/augmentor_provider.py:94:augmentor_register] registering image_basic_augmentor...
+[04-07 02:34:44|INFO|cosmos_policy/_src/predict2/datasets/augmentor_provider.py:94:augmentor_register] registering image_basic_augmentor_without_embeddings...
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_face
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_crowded
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_high_motion
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_robotics
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_av
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_physical_ai
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_4k_cooldown
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_face_only2
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_crowded_only2
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_high_motion_only2
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_robotics_only2
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_av_only2
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_physical_ai_only2
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_4k_cooldown_only2
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_face_high_sigma
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_crowded_high_sigma
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_high_motion_high_sigma
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_robotics_high_sigma
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_av_high_sigma
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_physical_ai_high_sigma
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_4k_cooldown_high_sigma
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_face_high_sigma2
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_crowded_high_sigma2
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-1-Size-2B-Res-720-Fps-16-Note-rf_robotics_high_sigma2
+[04-07 02:34:48|INFO|cosmos_policy/_src/predict2/configs/video2world/experiment/specialized_model/SFT_2B_RF.py:853:<module>] Storing Stage-c_pt_4-Index-2-Size-2B-Res-720-Fps-16-Note-rf_with_edm_ckpt
+[04-07 02:34:48|CRITICAL|cosmos_policy/_src/imaginaire/utils/config_helper.py:192:import_all_modules_from_package] Reloading all modules from package cosmos_policy.config.experiment
+[04-07 02:34:48|INFO|cosmos_policy/_src/imaginaire/utils/checkpoint_db.py:927:get_checkpoint_by_hf] Downloading checkpoint from HuggingFace: nvidia/Cosmos-Predict2-2B-Video2World/model-480p-16fps.pt
+[04-07 02:34:49|INFO|cosmos_policy/_src/imaginaire/utils/checkpoint_db.py:927:get_checkpoint_by_hf] Downloading checkpoint from HuggingFace: nvidia/Cosmos-Policy-ALOHA-Predict2-2B/Cosmos-Policy-ALOHA-Predict2-2B.pt
+[04-07 02:34:49|INFO|cosmos_policy/config/experiment/cosmos_policy_experiment_configs.py:482:register_configs] Registering experiment: cosmos_predict2_2b_480p_libero
+[04-07 02:34:49|INFO|cosmos_policy/config/experiment/cosmos_policy_experiment_configs.py:482:register_configs] Registering experiment: cosmos_predict2_2b_480p_libero__inference_only
+[04-07 02:34:49|INFO|cosmos_policy/config/experiment/cosmos_policy_experiment_configs.py:482:register_configs] Registering experiment: cosmos_predict2_2b_480p_robocasa_50_demos_per_task
+[04-07 02:34:49|INFO|cosmos_policy/config/experiment/cosmos_policy_experiment_configs.py:482:register_configs] Registering experiment: cosmos_predict2_2b_480p_robocasa_50_demos_per_task__inference
+[04-07 02:34:49|INFO|cosmos_policy/config/experiment/cosmos_policy_experiment_configs.py:482:register_configs] Registering experiment: cosmos_predict2_2b_480p_aloha_185_demos_4_tasks_mixture_foldshirt15_candiesinbowl45_candyinbag45_eggplantchickenonplate80
+[04-07 02:34:49|INFO|cosmos_policy/config/experiment/cosmos_policy_experiment_configs.py:482:register_configs] Registering experiment: cosmos_predict2_2b_480p_aloha_185_demos_4_tasks_mixture_foldshirt15_candiesinbowl45_candyinbag45_eggplantchickenonplate80__inference_only
+[04-07 02:34:49|INFO|cosmos_policy/config/experiment/cosmos_policy_experiment_configs.py:482:register_configs] Registering experiment: cosmos_predict2_2b_480p_aloha_185_demos_4_tasks_mixture_foldshirt15_candiesinbowl45_candyinbag45_eggplantchickenonplate80__resumeFrom50K_648_rollouts_Vsprime_value_func
+[04-07 02:34:49|INFO|cosmos_policy/config/experiment/cosmos_policy_experiment_configs.py:482:register_configs] Registering experiment: cosmos_predict2_2b_480p_aloha_185_demos_4_tasks_mixture_foldshirt15_candiesinbowl45_candyinbag45_eggplantchickenonplate80__resumeFrom50K_648_rollouts_Vsprime_value_func__inference_only
+[04-07 02:34:51|INFO|cosmos_policy/_src/predict2/utils/model_loader.py:91:load_model_from_checkpoint] Overriding config checkpoint path with: /n/netscratch/hankyang_lab/Lab/tdieudonne/.cache/huggingface/models--nvidia--Cosmos-Policy-RoboCasa-Predict2-2B/snapshots/4b2a04c80d97202f86127ebec80461e8016ec1dc/Cosmos-Policy-RoboCasa-Predict2-2B.pt
+[04-07 02:34:51|INFO|cosmos_policy/_src/imaginaire/utils/misc.py:152:set_random_seed] Using random seed 0.
+[04-07 02:34:51|INFO|cosmos_policy/_src/predict2/utils/model_loader.py:111:load_model_from_checkpoint] Loading model from /n/netscratch/hankyang_lab/Lab/tdieudonne/.cache/huggingface/models--nvidia--Cosmos-Policy-RoboCasa-Predict2-2B/snapshots/4b2a04c80d97202f86127ebec80461e8016ec1dc/Cosmos-Policy-RoboCasa-Predict2-2B.pt
+[04-07 02:34:51|WARNING|cosmos_policy/_src/predict2/models/text2world_model.py:145:__init__] DiffusionModel: precision torch.bfloat16
+[04-07 02:34:51|INFO|cosmos_policy/_src/imaginaire/utils/checkpoint_db.py:927:get_checkpoint_by_hf] Downloading checkpoint from HuggingFace: nvidia/Cosmos-Predict2-2B-Video2World/tokenizer/tokenizer.pth
+[04-07 02:34:52|INFO|cosmos_policy/tokenizers/wan2pt1.py:165:_policy_video_vae] loading /n/netscratch/hankyang_lab/Lab/tdieudonne/.cache/huggingface/hub/models--nvidia--Cosmos-Predict2-2B-Video2World/snapshots/f50c09f5d8ab133a90cac3f4886a6471e9ba3f18/tokenizer/tokenizer.pth
+[04-07 02:34:52|INFO|cosmos_policy/_src/imaginaire/utils/timer.py:143:_log] Time spent on DiffusionModel: set_up_tokenizer: 0.97 s
+[04-07 02:34:52|CRITICAL|cosmos_policy/_src/predict2/models/text2world_model.py:173:__init__] Using mean loss reduce with loss scale 10.0
+[04-07 02:34:52|INFO|cosmos_policy/_src/predict2/conditioner.py:434:__init__] Initialized embedder #0-fps: 
+ ReMapkey 
+	input key: fps
+	Param count: 0 
+	Trainable: None
+	Dropout rate: 0.0
+	Output key: fps 
+	Dtype: None
+[04-07 02:34:52|INFO|cosmos_policy/_src/predict2/conditioner.py:434:__init__] Initialized embedder #1-padding_mask: 
+ ReMapkey 
+	input key: padding_mask
+	Param count: 0 
+	Trainable: None
+	Dropout rate: 0.0
+	Output key: padding_mask 
+	Dtype: None
+[04-07 02:34:52|INFO|cosmos_policy/_src/predict2/conditioner.py:434:__init__] Initialized embedder #2-text: 
+ TextAttr 
+	input key: ['t5_text_embeddings']
+	Param count: 0 
+	Trainable: None
+	Dropout rate: 0.0
+	Output key: [crossattn_emb]
+[04-07 02:34:52|INFO|cosmos_policy/_src/predict2/conditioner.py:434:__init__] Initialized embedder #3-use_video_condition: 
+ BooleanFlag 
+	input key: fps
+	Param count: 0 
+	Trainable: None
+	Dropout rate: 0.0
+	Output key: use_video_condition 
+	 This is a boolean flag
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1805:enable_selective_checkpoint] Enable selective checkpoint with predict2_2b_720, for every 1 blocks. Total blocks: 28
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 0
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 1
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 2
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 3
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 4
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 5
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 6
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 7
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 8
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 9
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 10
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 11
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 12
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 13
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 14
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 15
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 16
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 17
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 18
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 19
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 20
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 21
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 22
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 23
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 24
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 25
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 26
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/networks/minimal_v4_dit.py:1811:enable_selective_checkpoint] Enable selective checkpoint for block 27
+[04-07 02:34:53|INFO|cosmos_policy/_src/imaginaire/utils/timer.py:143:_log] Time spent on meta to cuda and broadcast model states: 0.24 s
+[04-07 02:34:53|INFO|cosmos_policy/_src/imaginaire/utils/timer.py:143:_log] Time spent on Creating PyTorch model: 1.06 s
+[04-07 02:34:53|INFO|cosmos_policy/_src/imaginaire/utils/timer.py:143:_log] Time spent on Creating PyTorch model and ema if enabled: 1.06 s
+[04-07 02:34:53|INFO|cosmos_policy/_src/imaginaire/utils/timer.py:143:_log] Time spent on DiffusionModel: set_up_model: 1.06 s
+[04-07 02:34:53|INFO|cosmos_policy/_src/imaginaire/utils/timer.py:143:_log] Time spent on instantiate model: 2.05 s
+[04-07 02:34:53|INFO|cosmos_policy/_src/predict2/utils/model_loader.py:227:load_model_state_dict_from_checkpoint] Loading model cached locally from /n/netscratch/hankyang_lab/Lab/tdieudonne/.cache/huggingface/models--nvidia--Cosmos-Policy-RoboCasa-Predict2-2B/snapshots/4b2a04c80d97202f86127ebec80461e8016ec1dc/Cosmos-Policy-RoboCasa-Predict2-2B.pt
+[04-07 02:34:57|CRITICAL|cosmos_policy/_src/predict2/models/text2world_model.py:839:load_state_dict] load model in non-strict mode
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.0.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.0.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.0.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.0.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.1.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.1.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.1.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.1.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.2.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.2.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.2.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.2.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.3.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.3.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.3.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.3.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.4.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.4.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.4.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.4.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.5.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.5.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.5.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.5.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.6.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.6.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.6.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.6.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.7.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.7.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.7.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.7.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.8.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.8.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.8.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.8.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.9.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.9.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.9.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.9.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.10.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.10.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.10.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.10.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.11.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.11.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.11.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.11.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.12.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.12.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.12.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.12.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.13.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.13.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.13.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.13.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.14.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.14.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.14.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.14.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.15.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.15.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.15.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.15.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.16.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.16.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.16.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.16.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.17.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.17.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.17.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.17.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.18.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.18.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.18.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.18.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.19.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.19.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.19.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.19.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.20.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.20.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.20.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.20.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.21.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.21.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.21.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.21.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.22.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.22.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.22.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.22.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.23.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.23.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.23.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.23.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.24.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.24.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.24.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.24.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.25.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.25.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.25.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.25.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.26.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.26.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.26.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.26.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.27.self_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.27.self_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.27.cross_attn.q_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key blocks.27.cross_attn.k_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|WARNING|cosmos_policy/_src/imaginaire/utils/checkpointer.py:451:non_strict_load_model] Skipping key t_embedding_norm._extra_state introduced by TransformerEngine for FP8 in the checkpoint.
+[04-07 02:34:57|CRITICAL|cosmos_policy/_src/predict2/models/text2world_model.py:840:load_state_dict] [RANK 0] _IncompatibleKeys(missing_keys=[], unexpected_keys=[], incorrect_shapes=[])
+Downloading file from HuggingFace: nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_dataset_statistics.json
+File downloaded successfully to: /n/netscratch/hankyang_lab/Lab/tdieudonne/.cache/huggingface/models--nvidia--Cosmos-Policy-RoboCasa-Predict2-2B/snapshots/4b2a04c80d97202f86127ebec80461e8016ec1dc/robocasa_dataset_statistics.json
+Downloading file from HuggingFace: nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_t5_embeddings.pkl
+File downloaded successfully to: /n/netscratch/hankyang_lab/Lab/tdieudonne/.cache/huggingface/models--nvidia--Cosmos-Policy-RoboCasa-Predict2-2B/snapshots/4b2a04c80d97202f86127ebec80461e8016ec1dc/robocasa_t5_embeddings.pkl
+Loaded T5 text embeddings from /n/netscratch/hankyang_lab/Lab/tdieudonne/.cache/huggingface/models--nvidia--Cosmos-Policy-RoboCasa-Predict2-2B/snapshots/4b2a04c80d97202f86127ebec80461e8016ec1dc/robocasa_t5_embeddings.pkl onto device cuda:0
+Loading VLM processor: Qwen/Qwen3.5-4B
+Loading VLM model (4bit=False) ...
+Gemma planner ready.
+Task: PnPCabToCounter | Trials: 50 | VLM replan every 5 chunks
+[04-07 02:35:29|INFO|cosmos_policy/_src/imaginaire/modules/res_sampler.py:210:fori_loop] fori_loop: 0
+[04-07 02:35:31|INFO|cosmos_policy/_src/imaginaire/modules/res_sampler.py:210:fori_loop] fori_loop: 0
+[04-07 02:35:32|INFO|cosmos_policy/_src/imaginaire/modules/res_sampler.py:210:fori_loop] fori_loop: 0
+[04-07 02:35:34|INFO|cosmos_policy/_src/imaginaire/modules/res_sampler.py:210:fori_loop] fori_loop: 0
+[04-07 02:35:35|INFO|cosmos_policy/_src/imaginaire/modules/res_sampler.py:210:fori_loop] fori_loop: 0

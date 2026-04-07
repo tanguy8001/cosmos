@@ -26,15 +26,6 @@ from PIL import Image
 from qwen_vl_utils import process_vision_info
 from transformers import AutoModelForImageTextToText, AutoProcessor
 
-SYSTEM_PROMPT = (
-    "You are monitoring a robot arm performing kitchen manipulation tasks. "
-    "Respond with exactly one word: CONTINUE or RETRY.\n"
-    "- CONTINUE: the robot is making visible progress toward its goal\n"
-    "- RETRY: the robot has clearly failed (missed grasp, dropped object, or visibly stuck) "
-    "and should replan from its current position\n"
-    "Output ONLY the single word, nothing else."
-)
-
 FRAME_SUBSAMPLE = 4  # match eval script: every 4th frame → 5fps at 20Hz
 
 
@@ -50,9 +41,9 @@ def load_frames_to_halfway(video_path: str, fraction: float = 0.5) -> list:
     for i, frame in enumerate(reader):
         if i >= cutoff:
             break
-        frames.append(Image.fromarray(frame))
-        #if i % FRAME_SUBSAMPLE == 0:
-        #    frames.append(Image.fromarray(frame))
+        #frames.append(Image.fromarray(frame))
+        if i % FRAME_SUBSAMPLE == 0:
+            frames.append(Image.fromarray(frame))
     reader.close()
 
     duration_s = total_frames / fps
@@ -65,9 +56,11 @@ def run_qwen(model, processor, frame_buffer, task_description):
 
     user_text = (
         f"Robot task: {task_description}\n"
-        f"The video shows the robot's trajectory from the start of the episode.\n"
-        "Did the robot fail (missed grasp, dropped object, or visibly stuck)?\n"
-        "Answer with a single letter: A for CONTINUE, B for RETRY."
+        "Analyze the video for failures (missed grasp, dropped object, or visibly stuck).\n"
+        "After your reasoning, provide your final decision by exactly following this format:\n"
+        "DECISION: CONTINUE\n"
+        "or\n"
+        "DECISION: RETRY"
     )
 
     messages = [
@@ -87,7 +80,7 @@ def run_qwen(model, processor, frame_buffer, task_description):
         messages,
         tokenize=False,
         add_generation_prompt=True,
-        enable_thinking=False,
+        enable_thinking=True,
     )
 
     image_inputs, video_inputs, video_kwargs = process_vision_info(
@@ -115,7 +108,7 @@ def run_qwen(model, processor, frame_buffer, task_description):
     print(f"Input token count: {inputs['input_ids'].shape[1]}")
 
     with torch.inference_mode():
-        out_ids = model.generate(**inputs, max_new_tokens=4096, do_sample=False)
+        out_ids = model.generate(**inputs, max_new_tokens=4096, do_sample=False, temperature=1.0, top_p=0.95, top_k=20, min_p=0.0)
 
     new_tokens = out_ids[0, inputs["input_ids"].shape[1]:]
     raw = processor.decode(new_tokens, skip_special_tokens=True).strip()

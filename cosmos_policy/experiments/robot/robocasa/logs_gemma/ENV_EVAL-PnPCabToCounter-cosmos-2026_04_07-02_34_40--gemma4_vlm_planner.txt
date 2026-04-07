@@ -1,0 +1,1 @@
+Task: PnPCabToCounter | Trials: 50 | VLM replan every 5 chunks

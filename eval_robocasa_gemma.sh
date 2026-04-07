@@ -85,7 +85,7 @@ singularity exec --nv \
             --num_denoising_steps_value 1 \
             --data_collection False \
             --gemma_model_id Qwen/Qwen3.5-4B \
-            --gemma_replan_every 3 \
+            --gemma_replan_every 5 \
             --gemma_device cuda:1 \
             --local_log_dir cosmos_policy/experiments/robot/robocasa/logs_gemma/
     "
