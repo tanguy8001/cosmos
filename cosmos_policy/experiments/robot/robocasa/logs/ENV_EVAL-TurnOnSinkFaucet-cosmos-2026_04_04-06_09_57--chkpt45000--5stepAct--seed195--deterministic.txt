@@ -1,0 +1,3670 @@
+Eval config: PolicyEvalConfig(suite='robocasa', model_family='cosmos', config='cosmos_predict2_2b_480p_robocasa_50_demos_per_task__inference', ckpt_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B', planning_model_config_name='', planning_model_ckpt_path='', config_file='cosmos_policy/config/config.py', use_third_person_image=True, num_third_person_images=2, use_wrist_image=True, num_wrist_images=1, use_proprio=True, flip_images=True, use_variance_scale=False, use_jpeg_compression=True, ar_future_prediction=False, ar_value_prediction=False, ar_qvalue_prediction=False, num_denoising_steps_action=5, num_denoising_steps_future_state=1, num_denoising_steps_value=1, unnormalize_actions=True, normalize_proprio=True, dataset_stats_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_dataset_statistics.json', t5_text_embeddings_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_t5_embeddings.pkl', trained_with_image_aug=True, chunk_size=32, num_open_loop_steps=16, deterministic=True, deterministic_reset=False, deterministic_reset_seed=None, use_ensemble_future_state_predictions=False, num_future_state_predictions_in_ensemble=3, future_state_ensemble_aggregation_scheme='average', use_ensemble_value_predictions=False, num_value_predictions_in_ensemble=5, value_ensemble_aggregation_scheme='average', search_depth=1, search_depth_value_aggregation_scheme='use_last_value', mask_current_state_action_for_value_prediction=False, mask_future_state_for_qvalue_prediction=False, num_queries_best_of_n=1, use_parallel_inference=False, available_gpus='0,1,2,3,4,5,6,7', parallel_timeout=15, task_name='TurnOnSinkFaucet', num_trials_per_task=50, env_img_res=224, robots='PandaMobile', controllers='OSC_POSE', obj_instance_split='B', layout_and_style_ids='((1,1),(2,2),(4,4),(6,9),(7,10))', randomize_cameras=False, local_log_dir='cosmos_policy/experiments/robot/robocasa/logs/', run_id_note='chkpt45000--5stepAct--seed195--deterministic', use_wandb=False, wandb_entity='YOUR_ENTITY', wandb_project='YOUR_PROJECT', seed=195, randomize_seed=False, data_collection=False, jpeg_compress=True)
+
+Starting evaluation for task: TurnOnSinkFaucet
+Number of trials: 50
+
+Evaluating task: TurnOnSinkFaucet
+Starting episode 1...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 1.161 sec
+Query 1/1 (seed 195): Predicted value = 0.1439
+t=0: Selected seed 195 with value = 0.1439
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.1770
+t=16: Selected seed 195 with value = 0.1770
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2035
+t=32: Selected seed 195 with value = 0.2035
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2438
+t=48: Selected seed 195 with value = 0.2438
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3103
+t=64: Selected seed 195 with value = 0.3103
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3449
+t=80: Selected seed 195 with value = 0.3449
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4159
+t=96: Selected seed 195 with value = 0.4159
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4751
+t=112: Selected seed 195 with value = 0.4751
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6868
+t=128: Selected seed 195 with value = 0.6868
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7203
+t=144: Selected seed 195 with value = 0.7203
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8011
+t=160: Selected seed 195 with value = 0.8011
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8705
+t=176: Selected seed 195 with value = 0.8705
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9529
+t=192: Selected seed 195 with value = 0.9529
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9965
+t=208: Selected seed 195 with value = 0.9965
+  Success detected at timestep 208!
+  Episode 0: SUCCESS (length: 209)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=0--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=0--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 1
+# successes: 1 (100.0%)
+Starting episode 2...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.1418
+t=0: Selected seed 195 with value = 0.1418
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1745
+t=16: Selected seed 195 with value = 0.1745
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1997
+t=32: Selected seed 195 with value = 0.1997
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2527
+t=48: Selected seed 195 with value = 0.2527
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.3188
+t=64: Selected seed 195 with value = 0.3188
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3594
+t=80: Selected seed 195 with value = 0.3594
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4316
+t=96: Selected seed 195 with value = 0.4316
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.4988
+t=112: Selected seed 195 with value = 0.4988
+Query 1/1: Action query time = 0.766 sec
+Query 1/1 (seed 195): Predicted value = 0.7116
+t=128: Selected seed 195 with value = 0.7116
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7178
+t=144: Selected seed 195 with value = 0.7178
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7143
+t=160: Selected seed 195 with value = 0.7143
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7521
+t=176: Selected seed 195 with value = 0.7521
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7917
+t=192: Selected seed 195 with value = 0.7917
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7977
+t=208: Selected seed 195 with value = 0.7977
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8060
+t=224: Selected seed 195 with value = 0.8060
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.8077
+t=240: Selected seed 195 with value = 0.8077
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8164
+t=256: Selected seed 195 with value = 0.8164
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8369
+t=272: Selected seed 195 with value = 0.8369
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8965
+t=288: Selected seed 195 with value = 0.8965
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9209
+t=304: Selected seed 195 with value = 0.9209
+Query 1/1: Action query time = 0.762 sec
+Query 1/1 (seed 195): Predicted value = 0.9829
+t=320: Selected seed 195 with value = 0.9829
+  Success detected at timestep 332!
+  Episode 1: SUCCESS (length: 333)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=1--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=1--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 2
+# successes: 2 (100.0%)
+Starting episode 3...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.1508
+t=0: Selected seed 195 with value = 0.1508
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1822
+t=16: Selected seed 195 with value = 0.1822
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1992
+t=32: Selected seed 195 with value = 0.1992
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2498
+t=48: Selected seed 195 with value = 0.2498
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3018
+t=64: Selected seed 195 with value = 0.3018
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3428
+t=80: Selected seed 195 with value = 0.3428
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4251
+t=96: Selected seed 195 with value = 0.4251
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4777
+t=112: Selected seed 195 with value = 0.4777
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6283
+t=128: Selected seed 195 with value = 0.6283
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.7178
+t=144: Selected seed 195 with value = 0.7178
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7318
+t=160: Selected seed 195 with value = 0.7318
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7471
+t=176: Selected seed 195 with value = 0.7471
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7944
+t=192: Selected seed 195 with value = 0.7944
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.8148
+t=208: Selected seed 195 with value = 0.8148
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8283
+t=224: Selected seed 195 with value = 0.8283
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8308
+t=240: Selected seed 195 with value = 0.8308
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8448
+t=256: Selected seed 195 with value = 0.8448
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8940
+t=272: Selected seed 195 with value = 0.8940
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9252
+t=288: Selected seed 195 with value = 0.9252
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9955
+t=304: Selected seed 195 with value = 0.9955
+  Success detected at timestep 310!
+  Episode 2: SUCCESS (length: 311)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=2--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=2--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 3
+# successes: 3 (100.0%)
+Starting episode 4...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.1375
+t=0: Selected seed 195 with value = 0.1375
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1677
+t=16: Selected seed 195 with value = 0.1677
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2040
+t=32: Selected seed 195 with value = 0.2040
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2517
+t=48: Selected seed 195 with value = 0.2517
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3104
+t=64: Selected seed 195 with value = 0.3104
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3510
+t=80: Selected seed 195 with value = 0.3510
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4251
+t=96: Selected seed 195 with value = 0.4251
+Query 1/1: Action query time = 0.762 sec
+Query 1/1 (seed 195): Predicted value = 0.4959
+t=112: Selected seed 195 with value = 0.4959
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6697
+t=128: Selected seed 195 with value = 0.6697
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6842
+t=144: Selected seed 195 with value = 0.6842
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7020
+t=160: Selected seed 195 with value = 0.7020
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7428
+t=176: Selected seed 195 with value = 0.7428
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7720
+t=192: Selected seed 195 with value = 0.7720
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7887
+t=208: Selected seed 195 with value = 0.7887
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.7998
+t=224: Selected seed 195 with value = 0.7998
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8068
+t=240: Selected seed 195 with value = 0.8068
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8201
+t=256: Selected seed 195 with value = 0.8201
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8353
+t=272: Selected seed 195 with value = 0.8353
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8851
+t=288: Selected seed 195 with value = 0.8851
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9258
+t=304: Selected seed 195 with value = 0.9258
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=320: Selected seed 195 with value = 1.0000
+  Success detected at timestep 327!
+  Episode 3: SUCCESS (length: 328)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=3--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=3--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 4
+# successes: 4 (100.0%)
+Starting episode 5...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.1464
+t=0: Selected seed 195 with value = 0.1464
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1757
+t=16: Selected seed 195 with value = 0.1757
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2030
+t=32: Selected seed 195 with value = 0.2030
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2500
+t=48: Selected seed 195 with value = 0.2500
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3029
+t=64: Selected seed 195 with value = 0.3029
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.3450
+t=80: Selected seed 195 with value = 0.3450
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4206
+t=96: Selected seed 195 with value = 0.4206
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4753
+t=112: Selected seed 195 with value = 0.4753
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6678
+t=128: Selected seed 195 with value = 0.6678
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7367
+t=144: Selected seed 195 with value = 0.7367
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7574
+t=160: Selected seed 195 with value = 0.7574
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7844
+t=176: Selected seed 195 with value = 0.7844
+Query 1/1: Action query time = 0.789 sec
+Query 1/1 (seed 195): Predicted value = 0.8072
+t=192: Selected seed 195 with value = 0.8072
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8162
+t=208: Selected seed 195 with value = 0.8162
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.8311
+t=224: Selected seed 195 with value = 0.8311
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8358
+t=240: Selected seed 195 with value = 0.8358
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8633
+t=256: Selected seed 195 with value = 0.8633
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9247
+t=272: Selected seed 195 with value = 0.9247
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9827
+t=288: Selected seed 195 with value = 0.9827
+  Success detected at timestep 299!
+  Episode 4: SUCCESS (length: 300)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=4--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=4--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 5
+# successes: 5 (100.0%)
+Starting episode 6...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.1446
+t=0: Selected seed 195 with value = 0.1446
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1766
+t=16: Selected seed 195 with value = 0.1766
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.2022
+t=32: Selected seed 195 with value = 0.2022
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2505
+t=48: Selected seed 195 with value = 0.2505
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3136
+t=64: Selected seed 195 with value = 0.3136
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3559
+t=80: Selected seed 195 with value = 0.3559
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4302
+t=96: Selected seed 195 with value = 0.4302
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4916
+t=112: Selected seed 195 with value = 0.4916
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6712
+t=128: Selected seed 195 with value = 0.6712
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.7197
+t=144: Selected seed 195 with value = 0.7197
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7430
+t=160: Selected seed 195 with value = 0.7430
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7767
+t=176: Selected seed 195 with value = 0.7767
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.8006
+t=192: Selected seed 195 with value = 0.8006
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8105
+t=208: Selected seed 195 with value = 0.8105
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8228
+t=224: Selected seed 195 with value = 0.8228
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8296
+t=240: Selected seed 195 with value = 0.8296
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.8429
+t=256: Selected seed 195 with value = 0.8429
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.9039
+t=272: Selected seed 195 with value = 0.9039
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9305
+t=288: Selected seed 195 with value = 0.9305
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=304: Selected seed 195 with value = 0.9992
+  Success detected at timestep 307!
+  Episode 5: SUCCESS (length: 308)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=5--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=5--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 6
+# successes: 6 (100.0%)
+Starting episode 7...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.759 sec
+Query 1/1 (seed 195): Predicted value = 0.1410
+t=0: Selected seed 195 with value = 0.1410
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1728
+t=16: Selected seed 195 with value = 0.1728
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.1992
+t=32: Selected seed 195 with value = 0.1992
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2518
+t=48: Selected seed 195 with value = 0.2518
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3165
+t=64: Selected seed 195 with value = 0.3165
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3564
+t=80: Selected seed 195 with value = 0.3564
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4290
+t=96: Selected seed 195 with value = 0.4290
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4958
+t=112: Selected seed 195 with value = 0.4958
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5546
+t=128: Selected seed 195 with value = 0.5546
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6247
+t=144: Selected seed 195 with value = 0.6247
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7734
+t=160: Selected seed 195 with value = 0.7734
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.8312
+t=176: Selected seed 195 with value = 0.8312
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8970
+t=192: Selected seed 195 with value = 0.8970
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9485
+t=208: Selected seed 195 with value = 0.9485
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.9916
+t=224: Selected seed 195 with value = 0.9916
+  Success detected at timestep 226!
+  Episode 6: SUCCESS (length: 227)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=6--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=6--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 7
+# successes: 7 (100.0%)
+Starting episode 8...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.1422
+t=0: Selected seed 195 with value = 0.1422
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1738
+t=16: Selected seed 195 with value = 0.1738
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1989
+t=32: Selected seed 195 with value = 0.1989
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2452
+t=48: Selected seed 195 with value = 0.2452
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.3003
+t=64: Selected seed 195 with value = 0.3003
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3348
+t=80: Selected seed 195 with value = 0.3348
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4163
+t=96: Selected seed 195 with value = 0.4163
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4847
+t=112: Selected seed 195 with value = 0.4847
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.5448
+t=128: Selected seed 195 with value = 0.5448
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6510
+t=144: Selected seed 195 with value = 0.6510
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7838
+t=160: Selected seed 195 with value = 0.7838
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8529
+t=176: Selected seed 195 with value = 0.8529
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.9242
+t=192: Selected seed 195 with value = 0.9242
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9616
+t=208: Selected seed 195 with value = 0.9616
+  Success detected at timestep 219!
+  Episode 7: SUCCESS (length: 220)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=7--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=7--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 8
+# successes: 8 (100.0%)
+Starting episode 9...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.1456
+t=0: Selected seed 195 with value = 0.1456
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1758
+t=16: Selected seed 195 with value = 0.1758
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2053
+t=32: Selected seed 195 with value = 0.2053
+Query 1/1: Action query time = 0.787 sec
+Query 1/1 (seed 195): Predicted value = 0.2521
+t=48: Selected seed 195 with value = 0.2521
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3197
+t=64: Selected seed 195 with value = 0.3197
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3585
+t=80: Selected seed 195 with value = 0.3585
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4353
+t=96: Selected seed 195 with value = 0.4353
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4960
+t=112: Selected seed 195 with value = 0.4960
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6817
+t=128: Selected seed 195 with value = 0.6817
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7442
+t=144: Selected seed 195 with value = 0.7442
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7710
+t=160: Selected seed 195 with value = 0.7710
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7948
+t=176: Selected seed 195 with value = 0.7948
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8162
+t=192: Selected seed 195 with value = 0.8162
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8352
+t=208: Selected seed 195 with value = 0.8352
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8431
+t=224: Selected seed 195 with value = 0.8431
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8510
+t=240: Selected seed 195 with value = 0.8510
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9116
+t=256: Selected seed 195 with value = 0.9116
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.9316
+t=272: Selected seed 195 with value = 0.9316
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9954
+t=288: Selected seed 195 with value = 0.9954
+  Success detected at timestep 293!
+  Episode 8: SUCCESS (length: 294)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=8--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=8--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 9
+# successes: 9 (100.0%)
+Starting episode 10...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.1425
+t=0: Selected seed 195 with value = 0.1425
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1768
+t=16: Selected seed 195 with value = 0.1768
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2049
+t=32: Selected seed 195 with value = 0.2049
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.2542
+t=48: Selected seed 195 with value = 0.2542
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3142
+t=64: Selected seed 195 with value = 0.3142
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3535
+t=80: Selected seed 195 with value = 0.3535
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4285
+t=96: Selected seed 195 with value = 0.4285
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.4968
+t=112: Selected seed 195 with value = 0.4968
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7035
+t=128: Selected seed 195 with value = 0.7035
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7232
+t=144: Selected seed 195 with value = 0.7232
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7200
+t=160: Selected seed 195 with value = 0.7200
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.7643
+t=176: Selected seed 195 with value = 0.7643
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8010
+t=192: Selected seed 195 with value = 0.8010
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8148
+t=208: Selected seed 195 with value = 0.8148
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8121
+t=224: Selected seed 195 with value = 0.8121
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.8224
+t=240: Selected seed 195 with value = 0.8224
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8354
+t=256: Selected seed 195 with value = 0.8354
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8934
+t=272: Selected seed 195 with value = 0.8934
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9243
+t=288: Selected seed 195 with value = 0.9243
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9737
+t=304: Selected seed 195 with value = 0.9737
+  Success detected at timestep 317!
+  Episode 9: SUCCESS (length: 318)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=9--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=9--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 10
+# successes: 10 (100.0%)
+Starting episode 11...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.762 sec
+Query 1/1 (seed 195): Predicted value = 0.0709
+t=0: Selected seed 195 with value = 0.0709
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0861
+t=16: Selected seed 195 with value = 0.0861
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0967
+t=32: Selected seed 195 with value = 0.0967
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1213
+t=48: Selected seed 195 with value = 0.1213
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1414
+t=64: Selected seed 195 with value = 0.1414
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1598
+t=80: Selected seed 195 with value = 0.1598
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.1961
+t=96: Selected seed 195 with value = 0.1961
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2441
+t=112: Selected seed 195 with value = 0.2441
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2995
+t=128: Selected seed 195 with value = 0.2995
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3716
+t=144: Selected seed 195 with value = 0.3716
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4230
+t=160: Selected seed 195 with value = 0.4230
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5232
+t=176: Selected seed 195 with value = 0.5232
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6458
+t=192: Selected seed 195 with value = 0.6458
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7801
+t=208: Selected seed 195 with value = 0.7801
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.8699
+t=224: Selected seed 195 with value = 0.8699
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9539
+t=240: Selected seed 195 with value = 0.9539
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9962
+t=256: Selected seed 195 with value = 0.9962
+  Success detected at timestep 268!
+  Episode 10: SUCCESS (length: 269)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=10--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=10--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 11
+# successes: 11 (100.0%)
+Starting episode 12...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.0753
+t=0: Selected seed 195 with value = 0.0753
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0941
+t=16: Selected seed 195 with value = 0.0941
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1048
+t=32: Selected seed 195 with value = 0.1048
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1279
+t=48: Selected seed 195 with value = 0.1279
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1513
+t=64: Selected seed 195 with value = 0.1513
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1756
+t=80: Selected seed 195 with value = 0.1756
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2416
+t=96: Selected seed 195 with value = 0.2416
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2892
+t=112: Selected seed 195 with value = 0.2892
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3488
+t=128: Selected seed 195 with value = 0.3488
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4187
+t=144: Selected seed 195 with value = 0.4187
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.4939
+t=160: Selected seed 195 with value = 0.4939
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6089
+t=176: Selected seed 195 with value = 0.6089
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7579
+t=192: Selected seed 195 with value = 0.7579
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8066
+t=208: Selected seed 195 with value = 0.8066
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9036
+t=224: Selected seed 195 with value = 0.9036
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9890
+t=240: Selected seed 195 with value = 0.9890
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=256: Selected seed 195 with value = 0.9991
+  Success detected at timestep 267!
+  Episode 11: SUCCESS (length: 268)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=11--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=11--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 12
+# successes: 12 (100.0%)
+Starting episode 13...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.0670
+t=0: Selected seed 195 with value = 0.0670
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.0866
+t=16: Selected seed 195 with value = 0.0866
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.0978
+t=32: Selected seed 195 with value = 0.0978
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1162
+t=48: Selected seed 195 with value = 0.1162
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1420
+t=64: Selected seed 195 with value = 0.1420
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.1617
+t=80: Selected seed 195 with value = 0.1617
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2149
+t=96: Selected seed 195 with value = 0.2149
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2566
+t=112: Selected seed 195 with value = 0.2566
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.3120
+t=128: Selected seed 195 with value = 0.3120
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3691
+t=144: Selected seed 195 with value = 0.3691
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4274
+t=160: Selected seed 195 with value = 0.4274
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5353
+t=176: Selected seed 195 with value = 0.5353
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6742
+t=192: Selected seed 195 with value = 0.6742
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8544
+t=208: Selected seed 195 with value = 0.8544
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.9339
+t=224: Selected seed 195 with value = 0.9339
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9972
+t=240: Selected seed 195 with value = 0.9972
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=256: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=272: Selected seed 195 with value = 0.9996
+  Success detected at timestep 285!
+  Episode 12: SUCCESS (length: 286)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=12--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=12--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 13
+# successes: 13 (100.0%)
+Starting episode 14...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.0758
+t=0: Selected seed 195 with value = 0.0758
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0941
+t=16: Selected seed 195 with value = 0.0941
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1014
+t=32: Selected seed 195 with value = 0.1014
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1173
+t=48: Selected seed 195 with value = 0.1173
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1429
+t=64: Selected seed 195 with value = 0.1429
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1570
+t=80: Selected seed 195 with value = 0.1570
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1935
+t=96: Selected seed 195 with value = 0.1935
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2366
+t=112: Selected seed 195 with value = 0.2366
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.2897
+t=128: Selected seed 195 with value = 0.2897
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.3649
+t=144: Selected seed 195 with value = 0.3649
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4183
+t=160: Selected seed 195 with value = 0.4183
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4955
+t=176: Selected seed 195 with value = 0.4955
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6477
+t=192: Selected seed 195 with value = 0.6477
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7691
+t=208: Selected seed 195 with value = 0.7691
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8606
+t=224: Selected seed 195 with value = 0.8606
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9457
+t=240: Selected seed 195 with value = 0.9457
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9943
+t=256: Selected seed 195 with value = 0.9943
+  Success detected at timestep 265!
+  Episode 13: SUCCESS (length: 266)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=13--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=13--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 14
+# successes: 14 (100.0%)
+Starting episode 15...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.761 sec
+Query 1/1 (seed 195): Predicted value = 0.0681
+t=0: Selected seed 195 with value = 0.0681
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0879
+t=16: Selected seed 195 with value = 0.0879
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.0989
+t=32: Selected seed 195 with value = 0.0989
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1171
+t=48: Selected seed 195 with value = 0.1171
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1420
+t=64: Selected seed 195 with value = 0.1420
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1595
+t=80: Selected seed 195 with value = 0.1595
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2097
+t=96: Selected seed 195 with value = 0.2097
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2520
+t=112: Selected seed 195 with value = 0.2520
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.3096
+t=128: Selected seed 195 with value = 0.3096
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3711
+t=144: Selected seed 195 with value = 0.3711
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.4290
+t=160: Selected seed 195 with value = 0.4290
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5293
+t=176: Selected seed 195 with value = 0.5293
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6608
+t=192: Selected seed 195 with value = 0.6608
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8432
+t=208: Selected seed 195 with value = 0.8432
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9422
+t=224: Selected seed 195 with value = 0.9422
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=240: Selected seed 195 with value = 0.9986
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=256: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=272: Selected seed 195 with value = 0.9991
+  Success detected at timestep 277!
+  Episode 14: SUCCESS (length: 278)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=14--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=14--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 15
+# successes: 15 (100.0%)
+Starting episode 16...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.0751
+t=0: Selected seed 195 with value = 0.0751
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0993
+t=16: Selected seed 195 with value = 0.0993
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1095
+t=32: Selected seed 195 with value = 0.1095
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1208
+t=48: Selected seed 195 with value = 0.1208
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1444
+t=64: Selected seed 195 with value = 0.1444
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1672
+t=80: Selected seed 195 with value = 0.1672
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2185
+t=96: Selected seed 195 with value = 0.2185
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2634
+t=112: Selected seed 195 with value = 0.2634
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3205
+t=128: Selected seed 195 with value = 0.3205
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3973
+t=144: Selected seed 195 with value = 0.3973
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4542
+t=160: Selected seed 195 with value = 0.4542
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5526
+t=176: Selected seed 195 with value = 0.5526
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6755
+t=192: Selected seed 195 with value = 0.6755
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8607
+t=208: Selected seed 195 with value = 0.8607
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9677
+t=224: Selected seed 195 with value = 0.9677
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=240: Selected seed 195 with value = 0.9986
+Query 1/1: Action query time = 0.819 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=256: Selected seed 195 with value = 0.9998
+  Success detected at timestep 266!
+  Episode 15: SUCCESS (length: 267)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=15--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=15--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 16
+# successes: 16 (100.0%)
+Starting episode 17...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.0766
+t=0: Selected seed 195 with value = 0.0766
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0989
+t=16: Selected seed 195 with value = 0.0989
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1034
+t=32: Selected seed 195 with value = 0.1034
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1270
+t=48: Selected seed 195 with value = 0.1270
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1580
+t=64: Selected seed 195 with value = 0.1580
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1763
+t=80: Selected seed 195 with value = 0.1763
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2350
+t=96: Selected seed 195 with value = 0.2350
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2851
+t=112: Selected seed 195 with value = 0.2851
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.3524
+t=128: Selected seed 195 with value = 0.3524
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4250
+t=144: Selected seed 195 with value = 0.4250
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4860
+t=160: Selected seed 195 with value = 0.4860
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6097
+t=176: Selected seed 195 with value = 0.6097
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7752
+t=192: Selected seed 195 with value = 0.7752
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8421
+t=208: Selected seed 195 with value = 0.8421
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9376
+t=224: Selected seed 195 with value = 0.9376
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=240: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=256: Selected seed 195 with value = 0.9989
+  Success detected at timestep 266!
+  Episode 16: SUCCESS (length: 267)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=16--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=16--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 17
+# successes: 17 (100.0%)
+Starting episode 18...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.0919
+t=0: Selected seed 195 with value = 0.0919
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1159
+t=16: Selected seed 195 with value = 0.1159
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1145
+t=32: Selected seed 195 with value = 0.1145
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1199
+t=48: Selected seed 195 with value = 0.1199
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1439
+t=64: Selected seed 195 with value = 0.1439
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1647
+t=80: Selected seed 195 with value = 0.1647
+Query 1/1: Action query time = 0.812 sec
+Query 1/1 (seed 195): Predicted value = 0.2068
+t=96: Selected seed 195 with value = 0.2068
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2506
+t=112: Selected seed 195 with value = 0.2506
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3222
+t=128: Selected seed 195 with value = 0.3222
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4022
+t=144: Selected seed 195 with value = 0.4022
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4362
+t=160: Selected seed 195 with value = 0.4362
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5346
+t=176: Selected seed 195 with value = 0.5346
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.7017
+t=192: Selected seed 195 with value = 0.7017
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8066
+t=208: Selected seed 195 with value = 0.8066
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9121
+t=224: Selected seed 195 with value = 0.9121
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9912
+t=240: Selected seed 195 with value = 0.9912
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=256: Selected seed 195 with value = 0.9997
+  Success detected at timestep 271!
+  Episode 17: SUCCESS (length: 272)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=17--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=17--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 18
+# successes: 18 (100.0%)
+Starting episode 19...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.1033
+t=0: Selected seed 195 with value = 0.1033
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1286
+t=16: Selected seed 195 with value = 0.1286
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1388
+t=32: Selected seed 195 with value = 0.1388
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1693
+t=48: Selected seed 195 with value = 0.1693
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1823
+t=64: Selected seed 195 with value = 0.1823
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.2134
+t=80: Selected seed 195 with value = 0.2134
+Query 1/1: Action query time = 0.759 sec
+Query 1/1 (seed 195): Predicted value = 0.2761
+t=96: Selected seed 195 with value = 0.2761
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3369
+t=112: Selected seed 195 with value = 0.3369
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4013
+t=128: Selected seed 195 with value = 0.4013
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4549
+t=144: Selected seed 195 with value = 0.4549
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5452
+t=160: Selected seed 195 with value = 0.5452
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6779
+t=176: Selected seed 195 with value = 0.6779
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8271
+t=192: Selected seed 195 with value = 0.8271
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8908
+t=208: Selected seed 195 with value = 0.8908
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9945
+t=224: Selected seed 195 with value = 0.9945
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=240: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=256: Selected seed 195 with value = 0.9995
+  Success detected at timestep 263!
+  Episode 18: SUCCESS (length: 264)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=18--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=18--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 19
+# successes: 19 (100.0%)
+Starting episode 20...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.781 sec
+Query 1/1 (seed 195): Predicted value = 0.0667
+t=0: Selected seed 195 with value = 0.0667
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.0876
+t=16: Selected seed 195 with value = 0.0876
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0983
+t=32: Selected seed 195 with value = 0.0983
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1181
+t=48: Selected seed 195 with value = 0.1181
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1421
+t=64: Selected seed 195 with value = 0.1421
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1632
+t=80: Selected seed 195 with value = 0.1632
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2161
+t=96: Selected seed 195 with value = 0.2161
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2564
+t=112: Selected seed 195 with value = 0.2564
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3105
+t=128: Selected seed 195 with value = 0.3105
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.3741
+t=144: Selected seed 195 with value = 0.3741
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4308
+t=160: Selected seed 195 with value = 0.4308
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5478
+t=176: Selected seed 195 with value = 0.5478
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6833
+t=192: Selected seed 195 with value = 0.6833
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8846
+t=208: Selected seed 195 with value = 0.8846
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9751
+t=224: Selected seed 195 with value = 0.9751
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=240: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9999
+t=256: Selected seed 195 with value = 0.9999
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.9999
+t=272: Selected seed 195 with value = 0.9999
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=288: Selected seed 195 with value = 0.9994
+  Success detected at timestep 294!
+  Episode 19: SUCCESS (length: 295)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=19--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=19--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 20
+# successes: 20 (100.0%)
+Starting episode 21...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.1452
+t=0: Selected seed 195 with value = 0.1452
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1799
+t=16: Selected seed 195 with value = 0.1799
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2103
+t=32: Selected seed 195 with value = 0.2103
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2431
+t=48: Selected seed 195 with value = 0.2431
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2896
+t=64: Selected seed 195 with value = 0.2896
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3396
+t=80: Selected seed 195 with value = 0.3396
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.3915
+t=96: Selected seed 195 with value = 0.3915
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4337
+t=112: Selected seed 195 with value = 0.4337
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5450
+t=128: Selected seed 195 with value = 0.5450
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7381
+t=144: Selected seed 195 with value = 0.7381
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9661
+t=160: Selected seed 195 with value = 0.9661
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9192
+t=176: Selected seed 195 with value = 0.9192
+Query 1/1: Action query time = 0.817 sec
+Query 1/1 (seed 195): Predicted value = 0.9034
+t=192: Selected seed 195 with value = 0.9034
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9137
+t=208: Selected seed 195 with value = 0.9137
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9336
+t=224: Selected seed 195 with value = 0.9336
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9318
+t=240: Selected seed 195 with value = 0.9318
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9538
+t=256: Selected seed 195 with value = 0.9538
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9332
+t=272: Selected seed 195 with value = 0.9332
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9930
+t=288: Selected seed 195 with value = 0.9930
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9933
+t=304: Selected seed 195 with value = 0.9933
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=320: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9827
+t=336: Selected seed 195 with value = 0.9827
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9939
+t=352: Selected seed 195 with value = 0.9939
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9969
+t=368: Selected seed 195 with value = 0.9969
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.9927
+t=384: Selected seed 195 with value = 0.9927
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9953
+t=400: Selected seed 195 with value = 0.9953
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9945
+t=416: Selected seed 195 with value = 0.9945
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9932
+t=432: Selected seed 195 with value = 0.9932
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9929
+t=448: Selected seed 195 with value = 0.9929
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9924
+t=464: Selected seed 195 with value = 0.9924
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.9933
+t=480: Selected seed 195 with value = 0.9933
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.9940
+t=496: Selected seed 195 with value = 0.9940
+  Episode 20: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=20--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=20--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 21
+# successes: 20 (95.2%)
+Starting episode 22...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.1578
+t=0: Selected seed 195 with value = 0.1578
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1965
+t=16: Selected seed 195 with value = 0.1965
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2117
+t=32: Selected seed 195 with value = 0.2117
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2442
+t=48: Selected seed 195 with value = 0.2442
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2880
+t=64: Selected seed 195 with value = 0.2880
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3360
+t=80: Selected seed 195 with value = 0.3360
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3890
+t=96: Selected seed 195 with value = 0.3890
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4335
+t=112: Selected seed 195 with value = 0.4335
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5240
+t=128: Selected seed 195 with value = 0.5240
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6458
+t=144: Selected seed 195 with value = 0.6458
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9496
+t=160: Selected seed 195 with value = 0.9496
+Query 1/1: Action query time = 0.807 sec
+Query 1/1 (seed 195): Predicted value = 0.9192
+t=176: Selected seed 195 with value = 0.9192
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9426
+t=192: Selected seed 195 with value = 0.9426
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9032
+t=208: Selected seed 195 with value = 0.9032
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9202
+t=224: Selected seed 195 with value = 0.9202
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9206
+t=240: Selected seed 195 with value = 0.9206
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9497
+t=256: Selected seed 195 with value = 0.9497
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9328
+t=272: Selected seed 195 with value = 0.9328
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9392
+t=288: Selected seed 195 with value = 0.9392
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9362
+t=304: Selected seed 195 with value = 0.9362
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9517
+t=320: Selected seed 195 with value = 0.9517
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9966
+t=336: Selected seed 195 with value = 0.9966
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=352: Selected seed 195 with value = 0.9983
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=368: Selected seed 195 with value = 0.9995
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=384: Selected seed 195 with value = 0.9998
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=400: Selected seed 195 with value = 0.9998
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=416: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=432: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=448: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=464: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.9971
+t=480: Selected seed 195 with value = 0.9971
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9965
+t=496: Selected seed 195 with value = 0.9965
+  Episode 21: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=21--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=21--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 22
+# successes: 20 (90.9%)
+Starting episode 23...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.766 sec
+Query 1/1 (seed 195): Predicted value = 0.1381
+t=0: Selected seed 195 with value = 0.1381
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1716
+t=16: Selected seed 195 with value = 0.1716
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2009
+t=32: Selected seed 195 with value = 0.2009
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2280
+t=48: Selected seed 195 with value = 0.2280
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2705
+t=64: Selected seed 195 with value = 0.2705
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3271
+t=80: Selected seed 195 with value = 0.3271
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3843
+t=96: Selected seed 195 with value = 0.3843
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4311
+t=112: Selected seed 195 with value = 0.4311
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5111
+t=128: Selected seed 195 with value = 0.5111
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7022
+t=144: Selected seed 195 with value = 0.7022
+Query 1/1: Action query time = 0.817 sec
+Query 1/1 (seed 195): Predicted value = 0.7851
+t=160: Selected seed 195 with value = 0.7851
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9280
+t=176: Selected seed 195 with value = 0.9280
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9794
+t=192: Selected seed 195 with value = 0.9794
+  Success detected at timestep 207!
+  Episode 22: SUCCESS (length: 208)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=22--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=22--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 23
+# successes: 21 (91.3%)
+Starting episode 24...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.1358
+t=0: Selected seed 195 with value = 0.1358
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1750
+t=16: Selected seed 195 with value = 0.1750
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2041
+t=32: Selected seed 195 with value = 0.2041
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.2297
+t=48: Selected seed 195 with value = 0.2297
+Query 1/1: Action query time = 0.759 sec
+Query 1/1 (seed 195): Predicted value = 0.2770
+t=64: Selected seed 195 with value = 0.2770
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3291
+t=80: Selected seed 195 with value = 0.3291
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3839
+t=96: Selected seed 195 with value = 0.3839
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4244
+t=112: Selected seed 195 with value = 0.4244
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5131
+t=128: Selected seed 195 with value = 0.5131
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6602
+t=144: Selected seed 195 with value = 0.6602
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9850
+t=160: Selected seed 195 with value = 0.9850
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9536
+t=176: Selected seed 195 with value = 0.9536
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9445
+t=192: Selected seed 195 with value = 0.9445
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9731
+t=208: Selected seed 195 with value = 0.9731
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9772
+t=224: Selected seed 195 with value = 0.9772
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9684
+t=240: Selected seed 195 with value = 0.9684
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9728
+t=256: Selected seed 195 with value = 0.9728
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.9658
+t=272: Selected seed 195 with value = 0.9658
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9970
+t=288: Selected seed 195 with value = 0.9970
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9972
+t=304: Selected seed 195 with value = 0.9972
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9974
+t=320: Selected seed 195 with value = 0.9974
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9973
+t=336: Selected seed 195 with value = 0.9973
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9972
+t=352: Selected seed 195 with value = 0.9972
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9957
+t=368: Selected seed 195 with value = 0.9957
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9949
+t=384: Selected seed 195 with value = 0.9949
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9961
+t=400: Selected seed 195 with value = 0.9961
+Query 1/1: Action query time = 0.807 sec
+Query 1/1 (seed 195): Predicted value = 0.9962
+t=416: Selected seed 195 with value = 0.9962
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9964
+t=432: Selected seed 195 with value = 0.9964
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9967
+t=448: Selected seed 195 with value = 0.9967
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9966
+t=464: Selected seed 195 with value = 0.9966
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9966
+t=480: Selected seed 195 with value = 0.9966
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9965
+t=496: Selected seed 195 with value = 0.9965
+  Episode 23: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=23--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=23--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 24
+# successes: 21 (87.5%)
+Starting episode 25...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.759 sec
+Query 1/1 (seed 195): Predicted value = 0.1394
+t=0: Selected seed 195 with value = 0.1394
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.1744
+t=16: Selected seed 195 with value = 0.1744
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2022
+t=32: Selected seed 195 with value = 0.2022
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.2367
+t=48: Selected seed 195 with value = 0.2367
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2818
+t=64: Selected seed 195 with value = 0.2818
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3326
+t=80: Selected seed 195 with value = 0.3326
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3833
+t=96: Selected seed 195 with value = 0.3833
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4246
+t=112: Selected seed 195 with value = 0.4246
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5117
+t=128: Selected seed 195 with value = 0.5117
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6763
+t=144: Selected seed 195 with value = 0.6763
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9770
+t=160: Selected seed 195 with value = 0.9770
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9310
+t=176: Selected seed 195 with value = 0.9310
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9270
+t=192: Selected seed 195 with value = 0.9270
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9241
+t=208: Selected seed 195 with value = 0.9241
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9587
+t=224: Selected seed 195 with value = 0.9587
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9949
+t=240: Selected seed 195 with value = 0.9949
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.9599
+t=256: Selected seed 195 with value = 0.9599
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9706
+t=272: Selected seed 195 with value = 0.9706
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9530
+t=288: Selected seed 195 with value = 0.9530
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9666
+t=304: Selected seed 195 with value = 0.9666
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9971
+t=320: Selected seed 195 with value = 0.9971
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9970
+t=336: Selected seed 195 with value = 0.9970
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9973
+t=352: Selected seed 195 with value = 0.9973
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9966
+t=368: Selected seed 195 with value = 0.9966
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9953
+t=384: Selected seed 195 with value = 0.9953
+Query 1/1: Action query time = 0.813 sec
+Query 1/1 (seed 195): Predicted value = 0.9960
+t=400: Selected seed 195 with value = 0.9960
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9962
+t=416: Selected seed 195 with value = 0.9962
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9965
+t=432: Selected seed 195 with value = 0.9965
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9966
+t=448: Selected seed 195 with value = 0.9966
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9967
+t=464: Selected seed 195 with value = 0.9967
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9967
+t=480: Selected seed 195 with value = 0.9967
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9969
+t=496: Selected seed 195 with value = 0.9969
+  Episode 24: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=24--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=24--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 25
+# successes: 21 (84.0%)
+Starting episode 26...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.1406
+t=0: Selected seed 195 with value = 0.1406
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.1785
+t=16: Selected seed 195 with value = 0.1785
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2029
+t=32: Selected seed 195 with value = 0.2029
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.2322
+t=48: Selected seed 195 with value = 0.2322
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2734
+t=64: Selected seed 195 with value = 0.2734
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.3277
+t=80: Selected seed 195 with value = 0.3277
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3856
+t=96: Selected seed 195 with value = 0.3856
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4296
+t=112: Selected seed 195 with value = 0.4296
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4975
+t=128: Selected seed 195 with value = 0.4975
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6670
+t=144: Selected seed 195 with value = 0.6670
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9094
+t=160: Selected seed 195 with value = 0.9094
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9279
+t=176: Selected seed 195 with value = 0.9279
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9474
+t=192: Selected seed 195 with value = 0.9474
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9806
+t=208: Selected seed 195 with value = 0.9806
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9394
+t=224: Selected seed 195 with value = 0.9394
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8876
+t=240: Selected seed 195 with value = 0.8876
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.9379
+t=256: Selected seed 195 with value = 0.9379
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9668
+t=272: Selected seed 195 with value = 0.9668
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9808
+t=288: Selected seed 195 with value = 0.9808
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.9812
+t=304: Selected seed 195 with value = 0.9812
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9857
+t=320: Selected seed 195 with value = 0.9857
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9830
+t=336: Selected seed 195 with value = 0.9830
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9888
+t=352: Selected seed 195 with value = 0.9888
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9910
+t=368: Selected seed 195 with value = 0.9910
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9919
+t=384: Selected seed 195 with value = 0.9919
+Query 1/1: Action query time = 0.818 sec
+Query 1/1 (seed 195): Predicted value = 0.9923
+t=400: Selected seed 195 with value = 0.9923
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9940
+t=416: Selected seed 195 with value = 0.9940
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9951
+t=432: Selected seed 195 with value = 0.9951
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9960
+t=448: Selected seed 195 with value = 0.9960
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9978
+t=464: Selected seed 195 with value = 0.9978
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9970
+t=480: Selected seed 195 with value = 0.9970
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9963
+t=496: Selected seed 195 with value = 0.9963
+  Episode 25: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=25--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=25--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 26
+# successes: 21 (80.8%)
+Starting episode 27...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.1406
+t=0: Selected seed 195 with value = 0.1406
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.1735
+t=16: Selected seed 195 with value = 0.1735
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1981
+t=32: Selected seed 195 with value = 0.1981
+Query 1/1: Action query time = 0.759 sec
+Query 1/1 (seed 195): Predicted value = 0.2334
+t=48: Selected seed 195 with value = 0.2334
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2728
+t=64: Selected seed 195 with value = 0.2728
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3246
+t=80: Selected seed 195 with value = 0.3246
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3785
+t=96: Selected seed 195 with value = 0.3785
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4198
+t=112: Selected seed 195 with value = 0.4198
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4903
+t=128: Selected seed 195 with value = 0.4903
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6273
+t=144: Selected seed 195 with value = 0.6273
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9315
+t=160: Selected seed 195 with value = 0.9315
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9567
+t=176: Selected seed 195 with value = 0.9567
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9364
+t=192: Selected seed 195 with value = 0.9364
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9253
+t=208: Selected seed 195 with value = 0.9253
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9086
+t=224: Selected seed 195 with value = 0.9086
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9106
+t=240: Selected seed 195 with value = 0.9106
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.9042
+t=256: Selected seed 195 with value = 0.9042
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9160
+t=272: Selected seed 195 with value = 0.9160
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9653
+t=288: Selected seed 195 with value = 0.9653
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9486
+t=304: Selected seed 195 with value = 0.9486
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9781
+t=320: Selected seed 195 with value = 0.9781
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9458
+t=336: Selected seed 195 with value = 0.9458
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9902
+t=352: Selected seed 195 with value = 0.9902
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9960
+t=368: Selected seed 195 with value = 0.9960
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9831
+t=384: Selected seed 195 with value = 0.9831
+Query 1/1: Action query time = 0.807 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=400: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9948
+t=416: Selected seed 195 with value = 0.9948
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9879
+t=432: Selected seed 195 with value = 0.9879
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9950
+t=448: Selected seed 195 with value = 0.9950
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9976
+t=464: Selected seed 195 with value = 0.9976
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9468
+t=480: Selected seed 195 with value = 0.9468
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9811
+t=496: Selected seed 195 with value = 0.9811
+  Episode 26: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=26--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=26--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 27
+# successes: 21 (77.8%)
+Starting episode 28...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.1412
+t=0: Selected seed 195 with value = 0.1412
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.1784
+t=16: Selected seed 195 with value = 0.1784
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2010
+t=32: Selected seed 195 with value = 0.2010
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.2301
+t=48: Selected seed 195 with value = 0.2301
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2721
+t=64: Selected seed 195 with value = 0.2721
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3276
+t=80: Selected seed 195 with value = 0.3276
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3815
+t=96: Selected seed 195 with value = 0.3815
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4255
+t=112: Selected seed 195 with value = 0.4255
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.4945
+t=128: Selected seed 195 with value = 0.4945
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6677
+t=144: Selected seed 195 with value = 0.6677
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9534
+t=160: Selected seed 195 with value = 0.9534
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9024
+t=176: Selected seed 195 with value = 0.9024
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9177
+t=192: Selected seed 195 with value = 0.9177
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9181
+t=208: Selected seed 195 with value = 0.9181
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8855
+t=224: Selected seed 195 with value = 0.8855
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9234
+t=240: Selected seed 195 with value = 0.9234
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.9323
+t=256: Selected seed 195 with value = 0.9323
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9381
+t=272: Selected seed 195 with value = 0.9381
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9334
+t=288: Selected seed 195 with value = 0.9334
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.9952
+t=304: Selected seed 195 with value = 0.9952
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9902
+t=320: Selected seed 195 with value = 0.9902
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9811
+t=336: Selected seed 195 with value = 0.9811
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9719
+t=352: Selected seed 195 with value = 0.9719
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9783
+t=368: Selected seed 195 with value = 0.9783
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9739
+t=384: Selected seed 195 with value = 0.9739
+Query 1/1: Action query time = 0.804 sec
+Query 1/1 (seed 195): Predicted value = 0.9703
+t=400: Selected seed 195 with value = 0.9703
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9738
+t=416: Selected seed 195 with value = 0.9738
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9748
+t=432: Selected seed 195 with value = 0.9748
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9749
+t=448: Selected seed 195 with value = 0.9749
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9761
+t=464: Selected seed 195 with value = 0.9761
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9770
+t=480: Selected seed 195 with value = 0.9770
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9776
+t=496: Selected seed 195 with value = 0.9776
+  Episode 27: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=27--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=27--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 28
+# successes: 21 (75.0%)
+Starting episode 29...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.1419
+t=0: Selected seed 195 with value = 0.1419
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.1770
+t=16: Selected seed 195 with value = 0.1770
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2031
+t=32: Selected seed 195 with value = 0.2031
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.2311
+t=48: Selected seed 195 with value = 0.2311
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2806
+t=64: Selected seed 195 with value = 0.2806
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3323
+t=80: Selected seed 195 with value = 0.3323
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3842
+t=96: Selected seed 195 with value = 0.3842
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4241
+t=112: Selected seed 195 with value = 0.4241
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5153
+t=128: Selected seed 195 with value = 0.5153
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6372
+t=144: Selected seed 195 with value = 0.6372
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9569
+t=160: Selected seed 195 with value = 0.9569
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9512
+t=176: Selected seed 195 with value = 0.9512
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9595
+t=192: Selected seed 195 with value = 0.9595
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9083
+t=208: Selected seed 195 with value = 0.9083
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9189
+t=224: Selected seed 195 with value = 0.9189
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9129
+t=240: Selected seed 195 with value = 0.9129
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.9214
+t=256: Selected seed 195 with value = 0.9214
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9489
+t=272: Selected seed 195 with value = 0.9489
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9353
+t=288: Selected seed 195 with value = 0.9353
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.9226
+t=304: Selected seed 195 with value = 0.9226
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9689
+t=320: Selected seed 195 with value = 0.9689
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9762
+t=336: Selected seed 195 with value = 0.9762
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=352: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9959
+t=368: Selected seed 195 with value = 0.9959
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9954
+t=384: Selected seed 195 with value = 0.9954
+Query 1/1: Action query time = 0.818 sec
+Query 1/1 (seed 195): Predicted value = 0.9916
+t=400: Selected seed 195 with value = 0.9916
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9932
+t=416: Selected seed 195 with value = 0.9932
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9973
+t=432: Selected seed 195 with value = 0.9973
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9482
+t=448: Selected seed 195 with value = 0.9482
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9877
+t=464: Selected seed 195 with value = 0.9877
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9731
+t=480: Selected seed 195 with value = 0.9731
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9797
+t=496: Selected seed 195 with value = 0.9797
+  Episode 28: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=28--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=28--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 29
+# successes: 21 (72.4%)
+Starting episode 30...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.1338
+t=0: Selected seed 195 with value = 0.1338
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1619
+t=16: Selected seed 195 with value = 0.1619
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.1934
+t=32: Selected seed 195 with value = 0.1934
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2167
+t=48: Selected seed 195 with value = 0.2167
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2634
+t=64: Selected seed 195 with value = 0.2634
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3200
+t=80: Selected seed 195 with value = 0.3200
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3759
+t=96: Selected seed 195 with value = 0.3759
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4220
+t=112: Selected seed 195 with value = 0.4220
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4873
+t=128: Selected seed 195 with value = 0.4873
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6236
+t=144: Selected seed 195 with value = 0.6236
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8834
+t=160: Selected seed 195 with value = 0.8834
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9107
+t=176: Selected seed 195 with value = 0.9107
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9137
+t=192: Selected seed 195 with value = 0.9137
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8952
+t=208: Selected seed 195 with value = 0.8952
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9057
+t=224: Selected seed 195 with value = 0.9057
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.9091
+t=240: Selected seed 195 with value = 0.9091
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8884
+t=256: Selected seed 195 with value = 0.8884
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8838
+t=272: Selected seed 195 with value = 0.8838
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.8875
+t=288: Selected seed 195 with value = 0.8875
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9092
+t=304: Selected seed 195 with value = 0.9092
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9279
+t=320: Selected seed 195 with value = 0.9279
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9203
+t=336: Selected seed 195 with value = 0.9203
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9415
+t=352: Selected seed 195 with value = 0.9415
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9205
+t=368: Selected seed 195 with value = 0.9205
+Query 1/1: Action query time = 0.812 sec
+Query 1/1 (seed 195): Predicted value = 0.9422
+t=384: Selected seed 195 with value = 0.9422
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9739
+t=400: Selected seed 195 with value = 0.9739
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9788
+t=416: Selected seed 195 with value = 0.9788
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9725
+t=432: Selected seed 195 with value = 0.9725
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9652
+t=448: Selected seed 195 with value = 0.9652
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9676
+t=464: Selected seed 195 with value = 0.9676
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9791
+t=480: Selected seed 195 with value = 0.9791
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9825
+t=496: Selected seed 195 with value = 0.9825
+  Episode 29: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=29--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=29--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 30
+# successes: 21 (70.0%)
+Starting episode 31...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.4049
+t=0: Selected seed 195 with value = 0.4049
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4626
+t=16: Selected seed 195 with value = 0.4626
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5025
+t=32: Selected seed 195 with value = 0.5025
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4818
+t=48: Selected seed 195 with value = 0.4818
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6955
+t=64: Selected seed 195 with value = 0.6955
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8880
+t=80: Selected seed 195 with value = 0.8880
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9821
+t=96: Selected seed 195 with value = 0.9821
+  Success detected at timestep 110!
+  Episode 30: SUCCESS (length: 111)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=30--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=30--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 31
+# successes: 22 (71.0%)
+Starting episode 32...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.788 sec
+Query 1/1 (seed 195): Predicted value = 0.3998
+t=0: Selected seed 195 with value = 0.3998
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4852
+t=16: Selected seed 195 with value = 0.4852
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5739
+t=32: Selected seed 195 with value = 0.5739
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6106
+t=48: Selected seed 195 with value = 0.6106
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7396
+t=64: Selected seed 195 with value = 0.7396
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8928
+t=80: Selected seed 195 with value = 0.8928
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9340
+t=96: Selected seed 195 with value = 0.9340
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9935
+t=112: Selected seed 195 with value = 0.9935
+  Success detected at timestep 114!
+  Episode 31: SUCCESS (length: 115)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=31--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=31--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 32
+# successes: 23 (71.9%)
+Starting episode 33...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.4043
+t=0: Selected seed 195 with value = 0.4043
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4132
+t=16: Selected seed 195 with value = 0.4132
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4485
+t=32: Selected seed 195 with value = 0.4485
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4230
+t=48: Selected seed 195 with value = 0.4230
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5699
+t=64: Selected seed 195 with value = 0.5699
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7694
+t=80: Selected seed 195 with value = 0.7694
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9067
+t=96: Selected seed 195 with value = 0.9067
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9887
+t=112: Selected seed 195 with value = 0.9887
+  Success detected at timestep 117!
+  Episode 32: SUCCESS (length: 118)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=32--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=32--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 33
+# successes: 24 (72.7%)
+Starting episode 34...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.778 sec
+Query 1/1 (seed 195): Predicted value = 0.3429
+t=0: Selected seed 195 with value = 0.3429
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3702
+t=16: Selected seed 195 with value = 0.3702
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5056
+t=32: Selected seed 195 with value = 0.5056
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4533
+t=48: Selected seed 195 with value = 0.4533
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6615
+t=64: Selected seed 195 with value = 0.6615
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8534
+t=80: Selected seed 195 with value = 0.8534
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9199
+t=96: Selected seed 195 with value = 0.9199
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9977
+t=112: Selected seed 195 with value = 0.9977
+  Success detected at timestep 124!
+  Episode 33: SUCCESS (length: 125)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=33--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=33--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 34
+# successes: 25 (73.5%)
+Starting episode 35...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.3779
+t=0: Selected seed 195 with value = 0.3779
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4566
+t=16: Selected seed 195 with value = 0.4566
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5120
+t=32: Selected seed 195 with value = 0.5120
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4889
+t=48: Selected seed 195 with value = 0.4889
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6958
+t=64: Selected seed 195 with value = 0.6958
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8869
+t=80: Selected seed 195 with value = 0.8869
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.9737
+t=96: Selected seed 195 with value = 0.9737
+  Success detected at timestep 109!
+  Episode 34: SUCCESS (length: 110)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=34--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=34--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 35
+# successes: 26 (74.3%)
+Starting episode 36...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.773 sec
+Query 1/1 (seed 195): Predicted value = 0.3082
+t=0: Selected seed 195 with value = 0.3082
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4030
+t=16: Selected seed 195 with value = 0.4030
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5073
+t=32: Selected seed 195 with value = 0.5073
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4879
+t=48: Selected seed 195 with value = 0.4879
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7110
+t=64: Selected seed 195 with value = 0.7110
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.9025
+t=80: Selected seed 195 with value = 0.9025
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9960
+t=96: Selected seed 195 with value = 0.9960
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=112: Selected seed 195 with value = 0.9984
+  Success detected at timestep 114!
+  Episode 35: SUCCESS (length: 115)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=35--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=35--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 36
+# successes: 27 (75.0%)
+Starting episode 37...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.3649
+t=0: Selected seed 195 with value = 0.3649
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4395
+t=16: Selected seed 195 with value = 0.4395
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5099
+t=32: Selected seed 195 with value = 0.5099
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.4577
+t=48: Selected seed 195 with value = 0.4577
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.6393
+t=64: Selected seed 195 with value = 0.6393
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8123
+t=80: Selected seed 195 with value = 0.8123
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9070
+t=96: Selected seed 195 with value = 0.9070
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9630
+t=112: Selected seed 195 with value = 0.9630
+  Success detected at timestep 122!
+  Episode 36: SUCCESS (length: 123)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=36--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=36--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 37
+# successes: 28 (75.7%)
+Starting episode 38...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.786 sec
+Query 1/1 (seed 195): Predicted value = 0.3477
+t=0: Selected seed 195 with value = 0.3477
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4001
+t=16: Selected seed 195 with value = 0.4001
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5071
+t=32: Selected seed 195 with value = 0.5071
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4934
+t=48: Selected seed 195 with value = 0.4934
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6407
+t=64: Selected seed 195 with value = 0.6407
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8050
+t=80: Selected seed 195 with value = 0.8050
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9241
+t=96: Selected seed 195 with value = 0.9241
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9947
+t=112: Selected seed 195 with value = 0.9947
+  Success detected at timestep 118!
+  Episode 37: SUCCESS (length: 119)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=37--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=37--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 38
+# successes: 29 (76.3%)
+Starting episode 39...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.765 sec
+Query 1/1 (seed 195): Predicted value = 0.4169
+t=0: Selected seed 195 with value = 0.4169
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4853
+t=16: Selected seed 195 with value = 0.4853
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5141
+t=32: Selected seed 195 with value = 0.5141
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5052
+t=48: Selected seed 195 with value = 0.5052
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6859
+t=64: Selected seed 195 with value = 0.6859
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8087
+t=80: Selected seed 195 with value = 0.8087
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9199
+t=96: Selected seed 195 with value = 0.9199
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9536
+t=112: Selected seed 195 with value = 0.9536
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=128: Selected seed 195 with value = 0.9990
+  Success detected at timestep 130!
+  Episode 38: SUCCESS (length: 131)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=38--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=38--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 39
+# successes: 30 (76.9%)
+Starting episode 40...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.776 sec
+Query 1/1 (seed 195): Predicted value = 0.3929
+t=0: Selected seed 195 with value = 0.3929
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4653
+t=16: Selected seed 195 with value = 0.4653
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5507
+t=32: Selected seed 195 with value = 0.5507
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5707
+t=48: Selected seed 195 with value = 0.5707
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7089
+t=64: Selected seed 195 with value = 0.7089
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9036
+t=80: Selected seed 195 with value = 0.9036
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9632
+t=96: Selected seed 195 with value = 0.9632
+  Success detected at timestep 111!
+  Episode 39: SUCCESS (length: 112)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=39--success=True--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=39--success=True--task=turn_on_the_sink_faucet.mp4
+Success: True
+# episodes completed so far: 40
+# successes: 31 (77.5%)
+Starting episode 41...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.0856
+t=0: Selected seed 195 with value = 0.0856
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1059
+t=16: Selected seed 195 with value = 0.1059
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.1319
+t=32: Selected seed 195 with value = 0.1319
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1639
+t=48: Selected seed 195 with value = 0.1639
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1979
+t=64: Selected seed 195 with value = 0.1979
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2424
+t=80: Selected seed 195 with value = 0.2424
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2940
+t=96: Selected seed 195 with value = 0.2940
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3508
+t=112: Selected seed 195 with value = 0.3508
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4251
+t=128: Selected seed 195 with value = 0.4251
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5041
+t=144: Selected seed 195 with value = 0.5041
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7260
+t=160: Selected seed 195 with value = 0.7260
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8024
+t=176: Selected seed 195 with value = 0.8024
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8461
+t=192: Selected seed 195 with value = 0.8461
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.8777
+t=208: Selected seed 195 with value = 0.8777
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9048
+t=224: Selected seed 195 with value = 0.9048
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9061
+t=240: Selected seed 195 with value = 0.9061
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9068
+t=256: Selected seed 195 with value = 0.9068
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9063
+t=272: Selected seed 195 with value = 0.9063
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9071
+t=288: Selected seed 195 with value = 0.9071
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9063
+t=304: Selected seed 195 with value = 0.9063
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9070
+t=320: Selected seed 195 with value = 0.9070
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9088
+t=336: Selected seed 195 with value = 0.9088
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9094
+t=352: Selected seed 195 with value = 0.9094
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9091
+t=368: Selected seed 195 with value = 0.9091
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9102
+t=384: Selected seed 195 with value = 0.9102
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9123
+t=400: Selected seed 195 with value = 0.9123
+Query 1/1: Action query time = 0.815 sec
+Query 1/1 (seed 195): Predicted value = 0.9131
+t=416: Selected seed 195 with value = 0.9131
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9132
+t=432: Selected seed 195 with value = 0.9132
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9133
+t=448: Selected seed 195 with value = 0.9133
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9151
+t=464: Selected seed 195 with value = 0.9151
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9164
+t=480: Selected seed 195 with value = 0.9164
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9157
+t=496: Selected seed 195 with value = 0.9157
+  Episode 40: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=40--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=40--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 41
+# successes: 31 (75.6%)
+Starting episode 42...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.0843
+t=0: Selected seed 195 with value = 0.0843
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1028
+t=16: Selected seed 195 with value = 0.1028
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1249
+t=32: Selected seed 195 with value = 0.1249
+Query 1/1: Action query time = 0.777 sec
+Query 1/1 (seed 195): Predicted value = 0.1644
+t=48: Selected seed 195 with value = 0.1644
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1936
+t=64: Selected seed 195 with value = 0.1936
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2304
+t=80: Selected seed 195 with value = 0.2304
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2797
+t=96: Selected seed 195 with value = 0.2797
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3424
+t=112: Selected seed 195 with value = 0.3424
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4220
+t=128: Selected seed 195 with value = 0.4220
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5079
+t=144: Selected seed 195 with value = 0.5079
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7453
+t=160: Selected seed 195 with value = 0.7453
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7884
+t=176: Selected seed 195 with value = 0.7884
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8484
+t=192: Selected seed 195 with value = 0.8484
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8812
+t=208: Selected seed 195 with value = 0.8812
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9077
+t=224: Selected seed 195 with value = 0.9077
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9089
+t=240: Selected seed 195 with value = 0.9089
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9099
+t=256: Selected seed 195 with value = 0.9099
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9107
+t=272: Selected seed 195 with value = 0.9107
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9130
+t=288: Selected seed 195 with value = 0.9130
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9129
+t=304: Selected seed 195 with value = 0.9129
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9148
+t=320: Selected seed 195 with value = 0.9148
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9174
+t=336: Selected seed 195 with value = 0.9174
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9178
+t=352: Selected seed 195 with value = 0.9178
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9185
+t=368: Selected seed 195 with value = 0.9185
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9187
+t=384: Selected seed 195 with value = 0.9187
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9191
+t=400: Selected seed 195 with value = 0.9191
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9192
+t=416: Selected seed 195 with value = 0.9192
+Query 1/1: Action query time = 0.813 sec
+Query 1/1 (seed 195): Predicted value = 0.9204
+t=432: Selected seed 195 with value = 0.9204
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9195
+t=448: Selected seed 195 with value = 0.9195
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9200
+t=464: Selected seed 195 with value = 0.9200
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9199
+t=480: Selected seed 195 with value = 0.9199
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9186
+t=496: Selected seed 195 with value = 0.9186
+  Episode 41: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=41--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=41--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 42
+# successes: 31 (73.8%)
+Starting episode 43...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.0713
+t=0: Selected seed 195 with value = 0.0713
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0993
+t=16: Selected seed 195 with value = 0.0993
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1195
+t=32: Selected seed 195 with value = 0.1195
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1611
+t=48: Selected seed 195 with value = 0.1611
+Query 1/1: Action query time = 0.769 sec
+Query 1/1 (seed 195): Predicted value = 0.1910
+t=64: Selected seed 195 with value = 0.1910
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2349
+t=80: Selected seed 195 with value = 0.2349
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2841
+t=96: Selected seed 195 with value = 0.2841
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3340
+t=112: Selected seed 195 with value = 0.3340
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4066
+t=128: Selected seed 195 with value = 0.4066
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4733
+t=144: Selected seed 195 with value = 0.4733
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6557
+t=160: Selected seed 195 with value = 0.6557
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7748
+t=176: Selected seed 195 with value = 0.7748
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8384
+t=192: Selected seed 195 with value = 0.8384
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8766
+t=208: Selected seed 195 with value = 0.8766
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9079
+t=224: Selected seed 195 with value = 0.9079
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9073
+t=240: Selected seed 195 with value = 0.9073
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9085
+t=256: Selected seed 195 with value = 0.9085
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9091
+t=272: Selected seed 195 with value = 0.9091
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9091
+t=288: Selected seed 195 with value = 0.9091
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9093
+t=304: Selected seed 195 with value = 0.9093
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9091
+t=320: Selected seed 195 with value = 0.9091
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9094
+t=336: Selected seed 195 with value = 0.9094
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9109
+t=352: Selected seed 195 with value = 0.9109
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9104
+t=368: Selected seed 195 with value = 0.9104
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9110
+t=384: Selected seed 195 with value = 0.9110
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9120
+t=400: Selected seed 195 with value = 0.9120
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9136
+t=416: Selected seed 195 with value = 0.9136
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9145
+t=432: Selected seed 195 with value = 0.9145
+Query 1/1: Action query time = 0.825 sec
+Query 1/1 (seed 195): Predicted value = 0.9155
+t=448: Selected seed 195 with value = 0.9155
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9158
+t=464: Selected seed 195 with value = 0.9158
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9164
+t=480: Selected seed 195 with value = 0.9164
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9151
+t=496: Selected seed 195 with value = 0.9151
+  Episode 42: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=42--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=42--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 43
+# successes: 31 (72.1%)
+Starting episode 44...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.0775
+t=0: Selected seed 195 with value = 0.0775
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0956
+t=16: Selected seed 195 with value = 0.0956
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1228
+t=32: Selected seed 195 with value = 0.1228
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1590
+t=48: Selected seed 195 with value = 0.1590
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.1917
+t=64: Selected seed 195 with value = 0.1917
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2267
+t=80: Selected seed 195 with value = 0.2267
+Query 1/1: Action query time = 0.760 sec
+Query 1/1 (seed 195): Predicted value = 0.2798
+t=96: Selected seed 195 with value = 0.2798
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3297
+t=112: Selected seed 195 with value = 0.3297
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4111
+t=128: Selected seed 195 with value = 0.4111
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4846
+t=144: Selected seed 195 with value = 0.4846
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.6911
+t=160: Selected seed 195 with value = 0.6911
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7692
+t=176: Selected seed 195 with value = 0.7692
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8204
+t=192: Selected seed 195 with value = 0.8204
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8567
+t=208: Selected seed 195 with value = 0.8567
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8982
+t=224: Selected seed 195 with value = 0.8982
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9001
+t=240: Selected seed 195 with value = 0.9001
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9024
+t=256: Selected seed 195 with value = 0.9024
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9026
+t=272: Selected seed 195 with value = 0.9026
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9045
+t=288: Selected seed 195 with value = 0.9045
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9057
+t=304: Selected seed 195 with value = 0.9057
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9080
+t=320: Selected seed 195 with value = 0.9080
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9092
+t=336: Selected seed 195 with value = 0.9092
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9114
+t=352: Selected seed 195 with value = 0.9114
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9107
+t=368: Selected seed 195 with value = 0.9107
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9118
+t=384: Selected seed 195 with value = 0.9118
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9127
+t=400: Selected seed 195 with value = 0.9127
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9144
+t=416: Selected seed 195 with value = 0.9144
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9152
+t=432: Selected seed 195 with value = 0.9152
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9173
+t=448: Selected seed 195 with value = 0.9173
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9171
+t=464: Selected seed 195 with value = 0.9171
+Query 1/1: Action query time = 0.808 sec
+Query 1/1 (seed 195): Predicted value = 0.9167
+t=480: Selected seed 195 with value = 0.9167
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9162
+t=496: Selected seed 195 with value = 0.9162
+  Episode 43: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=43--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=43--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 44
+# successes: 31 (70.5%)
+Starting episode 45...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.0876
+t=0: Selected seed 195 with value = 0.0876
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1069
+t=16: Selected seed 195 with value = 0.1069
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1319
+t=32: Selected seed 195 with value = 0.1319
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1720
+t=48: Selected seed 195 with value = 0.1720
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1985
+t=64: Selected seed 195 with value = 0.1985
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2371
+t=80: Selected seed 195 with value = 0.2371
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.2886
+t=96: Selected seed 195 with value = 0.2886
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3437
+t=112: Selected seed 195 with value = 0.3437
+Query 1/1: Action query time = 0.774 sec
+Query 1/1 (seed 195): Predicted value = 0.4195
+t=128: Selected seed 195 with value = 0.4195
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4904
+t=144: Selected seed 195 with value = 0.4904
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7135
+t=160: Selected seed 195 with value = 0.7135
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8171
+t=176: Selected seed 195 with value = 0.8171
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8492
+t=192: Selected seed 195 with value = 0.8492
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8943
+t=208: Selected seed 195 with value = 0.8943
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9088
+t=224: Selected seed 195 with value = 0.9088
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9090
+t=240: Selected seed 195 with value = 0.9090
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9099
+t=256: Selected seed 195 with value = 0.9099
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9112
+t=272: Selected seed 195 with value = 0.9112
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9110
+t=288: Selected seed 195 with value = 0.9110
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9115
+t=304: Selected seed 195 with value = 0.9115
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9111
+t=320: Selected seed 195 with value = 0.9111
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9116
+t=336: Selected seed 195 with value = 0.9116
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9117
+t=352: Selected seed 195 with value = 0.9117
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9142
+t=368: Selected seed 195 with value = 0.9142
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9151
+t=384: Selected seed 195 with value = 0.9151
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9153
+t=400: Selected seed 195 with value = 0.9153
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9151
+t=416: Selected seed 195 with value = 0.9151
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9154
+t=432: Selected seed 195 with value = 0.9154
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9157
+t=448: Selected seed 195 with value = 0.9157
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9170
+t=464: Selected seed 195 with value = 0.9170
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.9167
+t=480: Selected seed 195 with value = 0.9167
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9175
+t=496: Selected seed 195 with value = 0.9175
+  Episode 44: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=44--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=44--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 45
+# successes: 31 (68.9%)
+Starting episode 46...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.769 sec
+Query 1/1 (seed 195): Predicted value = 0.0787
+t=0: Selected seed 195 with value = 0.0787
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0979
+t=16: Selected seed 195 with value = 0.0979
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1262
+t=32: Selected seed 195 with value = 0.1262
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1598
+t=48: Selected seed 195 with value = 0.1598
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1930
+t=64: Selected seed 195 with value = 0.1930
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2367
+t=80: Selected seed 195 with value = 0.2367
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2887
+t=96: Selected seed 195 with value = 0.2887
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.3460
+t=112: Selected seed 195 with value = 0.3460
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4201
+t=128: Selected seed 195 with value = 0.4201
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.4895
+t=144: Selected seed 195 with value = 0.4895
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7109
+t=160: Selected seed 195 with value = 0.7109
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8150
+t=176: Selected seed 195 with value = 0.8150
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8495
+t=192: Selected seed 195 with value = 0.8495
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8778
+t=208: Selected seed 195 with value = 0.8778
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8900
+t=224: Selected seed 195 with value = 0.8900
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8902
+t=240: Selected seed 195 with value = 0.8902
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8916
+t=256: Selected seed 195 with value = 0.8916
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8920
+t=272: Selected seed 195 with value = 0.8920
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8912
+t=288: Selected seed 195 with value = 0.8912
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8927
+t=304: Selected seed 195 with value = 0.8927
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.8938
+t=320: Selected seed 195 with value = 0.8938
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8949
+t=336: Selected seed 195 with value = 0.8949
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8949
+t=352: Selected seed 195 with value = 0.8949
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8974
+t=368: Selected seed 195 with value = 0.8974
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8980
+t=384: Selected seed 195 with value = 0.8980
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8971
+t=400: Selected seed 195 with value = 0.8971
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8984
+t=416: Selected seed 195 with value = 0.8984
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8991
+t=432: Selected seed 195 with value = 0.8991
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8997
+t=448: Selected seed 195 with value = 0.8997
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9007
+t=464: Selected seed 195 with value = 0.9007
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9002
+t=480: Selected seed 195 with value = 0.9002
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9008
+t=496: Selected seed 195 with value = 0.9008
+  Episode 45: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=45--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=45--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 46
+# successes: 31 (67.4%)
+Starting episode 47...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.0803
+t=0: Selected seed 195 with value = 0.0803
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.1047
+t=16: Selected seed 195 with value = 0.1047
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1245
+t=32: Selected seed 195 with value = 0.1245
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1735
+t=48: Selected seed 195 with value = 0.1735
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2077
+t=64: Selected seed 195 with value = 0.2077
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2534
+t=80: Selected seed 195 with value = 0.2534
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3031
+t=96: Selected seed 195 with value = 0.3031
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3617
+t=112: Selected seed 195 with value = 0.3617
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.4324
+t=128: Selected seed 195 with value = 0.4324
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5103
+t=144: Selected seed 195 with value = 0.5103
+Query 1/1: Action query time = 0.771 sec
+Query 1/1 (seed 195): Predicted value = 0.7179
+t=160: Selected seed 195 with value = 0.7179
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7949
+t=176: Selected seed 195 with value = 0.7949
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8430
+t=192: Selected seed 195 with value = 0.8430
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8735
+t=208: Selected seed 195 with value = 0.8735
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8891
+t=224: Selected seed 195 with value = 0.8891
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8911
+t=240: Selected seed 195 with value = 0.8911
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8928
+t=256: Selected seed 195 with value = 0.8928
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8933
+t=272: Selected seed 195 with value = 0.8933
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8931
+t=288: Selected seed 195 with value = 0.8931
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8948
+t=304: Selected seed 195 with value = 0.8948
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8944
+t=320: Selected seed 195 with value = 0.8944
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.8960
+t=336: Selected seed 195 with value = 0.8960
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8985
+t=352: Selected seed 195 with value = 0.8985
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8997
+t=368: Selected seed 195 with value = 0.8997
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9005
+t=384: Selected seed 195 with value = 0.9005
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9011
+t=400: Selected seed 195 with value = 0.9011
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9025
+t=416: Selected seed 195 with value = 0.9025
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9025
+t=432: Selected seed 195 with value = 0.9025
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9023
+t=448: Selected seed 195 with value = 0.9023
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9035
+t=464: Selected seed 195 with value = 0.9035
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9049
+t=480: Selected seed 195 with value = 0.9049
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9054
+t=496: Selected seed 195 with value = 0.9054
+  Episode 46: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=46--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=46--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 47
+# successes: 31 (66.0%)
+Starting episode 48...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.761 sec
+Query 1/1 (seed 195): Predicted value = 0.0899
+t=0: Selected seed 195 with value = 0.0899
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1113
+t=16: Selected seed 195 with value = 0.1113
+Query 1/1: Action query time = 0.765 sec
+Query 1/1 (seed 195): Predicted value = 0.1404
+t=32: Selected seed 195 with value = 0.1404
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1713
+t=48: Selected seed 195 with value = 0.1713
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2065
+t=64: Selected seed 195 with value = 0.2065
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2483
+t=80: Selected seed 195 with value = 0.2483
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2954
+t=96: Selected seed 195 with value = 0.2954
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3573
+t=112: Selected seed 195 with value = 0.3573
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4297
+t=128: Selected seed 195 with value = 0.4297
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.5152
+t=144: Selected seed 195 with value = 0.5152
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7477
+t=160: Selected seed 195 with value = 0.7477
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.8046
+t=176: Selected seed 195 with value = 0.8046
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8552
+t=192: Selected seed 195 with value = 0.8552
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8909
+t=208: Selected seed 195 with value = 0.8909
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9050
+t=224: Selected seed 195 with value = 0.9050
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9069
+t=240: Selected seed 195 with value = 0.9069
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9074
+t=256: Selected seed 195 with value = 0.9074
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9087
+t=272: Selected seed 195 with value = 0.9087
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.9086
+t=288: Selected seed 195 with value = 0.9086
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9101
+t=304: Selected seed 195 with value = 0.9101
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9128
+t=320: Selected seed 195 with value = 0.9128
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9160
+t=336: Selected seed 195 with value = 0.9160
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.9163
+t=352: Selected seed 195 with value = 0.9163
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9167
+t=368: Selected seed 195 with value = 0.9167
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9172
+t=384: Selected seed 195 with value = 0.9172
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9173
+t=400: Selected seed 195 with value = 0.9173
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9176
+t=416: Selected seed 195 with value = 0.9176
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9173
+t=432: Selected seed 195 with value = 0.9173
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9185
+t=448: Selected seed 195 with value = 0.9185
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9190
+t=464: Selected seed 195 with value = 0.9190
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9194
+t=480: Selected seed 195 with value = 0.9194
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9188
+t=496: Selected seed 195 with value = 0.9188
+  Episode 47: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=47--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=47--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 48
+# successes: 31 (64.6%)
+Starting episode 49...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.0811
+t=0: Selected seed 195 with value = 0.0811
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1026
+t=16: Selected seed 195 with value = 0.1026
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1258
+t=32: Selected seed 195 with value = 0.1258
+Query 1/1: Action query time = 0.802 sec
+Query 1/1 (seed 195): Predicted value = 0.1610
+t=48: Selected seed 195 with value = 0.1610
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1938
+t=64: Selected seed 195 with value = 0.1938
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2402
+t=80: Selected seed 195 with value = 0.2402
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2874
+t=96: Selected seed 195 with value = 0.2874
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3489
+t=112: Selected seed 195 with value = 0.3489
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4210
+t=128: Selected seed 195 with value = 0.4210
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4983
+t=144: Selected seed 195 with value = 0.4983
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.7171
+t=160: Selected seed 195 with value = 0.7171
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8068
+t=176: Selected seed 195 with value = 0.8068
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.8469
+t=192: Selected seed 195 with value = 0.8469
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8832
+t=208: Selected seed 195 with value = 0.8832
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8989
+t=224: Selected seed 195 with value = 0.8989
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9012
+t=240: Selected seed 195 with value = 0.9012
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9014
+t=256: Selected seed 195 with value = 0.9014
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9013
+t=272: Selected seed 195 with value = 0.9013
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9009
+t=288: Selected seed 195 with value = 0.9009
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9025
+t=304: Selected seed 195 with value = 0.9025
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9044
+t=320: Selected seed 195 with value = 0.9044
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9047
+t=336: Selected seed 195 with value = 0.9047
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9055
+t=352: Selected seed 195 with value = 0.9055
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.9060
+t=368: Selected seed 195 with value = 0.9060
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9078
+t=384: Selected seed 195 with value = 0.9078
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9101
+t=400: Selected seed 195 with value = 0.9101
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9103
+t=416: Selected seed 195 with value = 0.9103
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9102
+t=432: Selected seed 195 with value = 0.9102
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9112
+t=448: Selected seed 195 with value = 0.9112
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9114
+t=464: Selected seed 195 with value = 0.9114
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9138
+t=480: Selected seed 195 with value = 0.9138
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9143
+t=496: Selected seed 195 with value = 0.9143
+  Episode 48: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=48--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=48--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 49
+# successes: 31 (63.3%)
+Starting episode 50...
+
+Task description: turn on the sink faucet
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.0816
+t=0: Selected seed 195 with value = 0.0816
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1057
+t=16: Selected seed 195 with value = 0.1057
+Query 1/1: Action query time = 0.775 sec
+Query 1/1 (seed 195): Predicted value = 0.1315
+t=32: Selected seed 195 with value = 0.1315
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1716
+t=48: Selected seed 195 with value = 0.1716
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2068
+t=64: Selected seed 195 with value = 0.2068
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2513
+t=80: Selected seed 195 with value = 0.2513
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2976
+t=96: Selected seed 195 with value = 0.2976
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3560
+t=112: Selected seed 195 with value = 0.3560
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4392
+t=128: Selected seed 195 with value = 0.4392
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.5309
+t=144: Selected seed 195 with value = 0.5309
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.7546
+t=160: Selected seed 195 with value = 0.7546
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7972
+t=176: Selected seed 195 with value = 0.7972
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8395
+t=192: Selected seed 195 with value = 0.8395
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8757
+t=208: Selected seed 195 with value = 0.8757
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8987
+t=224: Selected seed 195 with value = 0.8987
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8993
+t=240: Selected seed 195 with value = 0.8993
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8997
+t=256: Selected seed 195 with value = 0.8997
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8997
+t=272: Selected seed 195 with value = 0.8997
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9016
+t=288: Selected seed 195 with value = 0.9016
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9027
+t=304: Selected seed 195 with value = 0.9027
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9036
+t=320: Selected seed 195 with value = 0.9036
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.9060
+t=336: Selected seed 195 with value = 0.9060
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9076
+t=352: Selected seed 195 with value = 0.9076
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9103
+t=368: Selected seed 195 with value = 0.9103
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9128
+t=384: Selected seed 195 with value = 0.9128
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9132
+t=400: Selected seed 195 with value = 0.9132
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9152
+t=416: Selected seed 195 with value = 0.9152
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9162
+t=432: Selected seed 195 with value = 0.9162
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9172
+t=448: Selected seed 195 with value = 0.9172
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9188
+t=464: Selected seed 195 with value = 0.9188
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9200
+t=480: Selected seed 195 with value = 0.9200
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9225
+t=496: Selected seed 195 with value = 0.9225
+  Episode 49: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--episode=49--success=False--task=turn_on_the_sink_faucet.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/TurnOnSinkFaucet--2026_04_04-06_09_57/2026_04_04-06_09_57--with_future_img--episode=49--success=False--task=turn_on_the_sink_faucet.mp4
+Success: False
+# episodes completed so far: 50
+# successes: 31 (62.0%)
+Task TurnOnSinkFaucet results:
+  Success rate: 0.6200 (62%)
+  Average episode length: 329.3
+  Successes: 31/50
+
+================================================================================
+FINAL RESULTS
+================================================================================
+Task: TurnOnSinkFaucet
+Success rate: 0.6200 (62%)
+Average episode length: 329.3
+Total episodes: 50
+Total successes: 31
+
+Results saved to: cosmos_policy/experiments/robot/robocasa/logs/ENV_EVAL-TurnOnSinkFaucet-cosmos-2026_04_04-06_09_57--chkpt45000--5stepAct--seed195--deterministic.txt

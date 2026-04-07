@@ -1,5 +1,7 @@
 # Cosmos Policy: Fine-Tuning Video Models for Visuomotor Control and Planning
 
+salloc --partition gpu_test --mem 128G --time 0-06:00 --nodes=1 --gpus-per-node=2
+
 <p align="center">
   <a href="https://arxiv.org/abs/2601.16163">Paper</a>&nbsp | <a href="https://research.nvidia.com/labs/dir/cosmos-policy/">Project Website</a>&nbsp | 🤗 <a href="https://huggingface.co/collections/nvidia/cosmos-policy">Models & Training Data</a>&nbsp | <a href="https://youtu.be/V2qdFD9n5BM">Summary Video</a>
 </p>

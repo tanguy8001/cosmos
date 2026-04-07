@@ -1,0 +1,26 @@
+Task: PnPCabToCounter | Trials: 50 | VLM replan every 3 chunks
+  [ep0 t=48] VLM='A' → CONTINUE (665ms)
+  [ep0 t=96] VLM='A' → CONTINUE (395ms)
+  [ep0 t=144] VLM='A' → CONTINUE (370ms)
+  [ep0 t=192] VLM='A' → CONTINUE (339ms)
+  [ep0 t=240] VLM='A' → CONTINUE (362ms)
+  [ep0 t=288] VLM='A' → CONTINUE (390ms)
+  [ep0 t=336] VLM='A' → CONTINUE (368ms)
+  [ep0 t=384] VLM='A' → CONTINUE (341ms)
+  [ep0 t=432] VLM='A' → CONTINUE (357ms)
+  [ep0 t=480] VLM='A' → CONTINUE (392ms)
+Episode 0: FAILURE (0/1) | VLM retries: 0
+  [ep1 t=48] VLM='A' → CONTINUE (374ms)
+  [ep1 t=96] VLM='A' → CONTINUE (390ms)
+  [ep1 t=144] VLM='A' → CONTINUE (363ms)
+  [ep1 t=192] VLM='A' → CONTINUE (368ms)
+  [ep1 t=240] VLM='A' → CONTINUE (402ms)
+  [ep1 t=288] VLM='A' → CONTINUE (363ms)
+  [ep1 t=336] VLM='A' → CONTINUE (370ms)
+  Episode 1: SUCCESS at t=340
+Episode 1: SUCCESS (1/2) | VLM retries: 0
+  [ep2 t=48] VLM='A' → CONTINUE (402ms)
+  [ep2 t=96] VLM='A' → CONTINUE (365ms)
+  [ep2 t=144] VLM='A' → CONTINUE (377ms)
+  [ep2 t=192] VLM='A' → CONTINUE (335ms)
+  [ep2 t=240] VLM='A' → CONTINUE (393ms)

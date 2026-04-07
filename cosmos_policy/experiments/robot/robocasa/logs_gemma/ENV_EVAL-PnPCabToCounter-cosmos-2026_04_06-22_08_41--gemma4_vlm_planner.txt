@@ -1,0 +1,8 @@
+Task: PnPCabToCounter | Trials: 50 | VLM replan every 3 chunks
+  [ep0 t=48] VLM='The user wants me to analyze the provided images and decide whether to "CONTINUE" or "RE' → CONTINUE (1329ms)
+  [ep0 t=96] VLM='The user wants me to decide whether to CONTINUE or RETRY based on the provided images and the' → RETRY #1 (1021ms) — queue cleared, replanning
+  [ep0 t=144] VLM='The user wants me to analyze a sequence of images showing a robot arm task.
+The task is' → CONTINUE (975ms)
+  [ep0 t=192] VLM='The user wants me to decide whether to CONTINUE or RETRY based on the provided images and the' → RETRY #2 (977ms) — queue cleared, replanning
+  [ep0 t=240] VLM='The user wants me to decide whether to CONTINUE or RETRY based on the provided images and the' → RETRY #3 (1027ms) — queue cleared, replanning
+  [ep0 t=288] VLM='The user wants me to decide whether the robot should "CONTINUE" or "RETRY" based' → RETRY #4 (1011ms) — queue cleared, replanning

@@ -25,7 +25,13 @@ from torch.distributed._tensor import DTensor
 from torch.distributed.device_mesh import DeviceMesh
 from torch.nn import CrossEntropyLoss
 from transformers.activations import ACT2FN
-from transformers.cache_utils import Cache, DynamicCache, SlidingWindowCache, StaticCache
+from transformers.cache_utils import Cache, DynamicCache, StaticCache
+try:
+    from transformers.cache_utils import SlidingWindowCache
+except ImportError:
+    # transformers 5.x relocated SlidingWindowCache; alias to DynamicCache so that
+    # isinstance checks return False (non-sliding path), which is correct for inference.
+    SlidingWindowCache = DynamicCache
 from transformers.modeling_attn_mask_utils import AttentionMaskConverter
 from transformers.modeling_outputs import BaseModelOutputWithPast, ModelOutput
 from transformers.modeling_rope_utils import ROPE_INIT_FUNCTIONS

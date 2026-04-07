@@ -1,0 +1,3 @@
+Task: PnPCabToCounter | Trials: 50 | VLM replan every 3 chunks
+  [ep0 t=48] VLM='A' → CONTINUE (1752ms)
+  [ep0 t=96] VLM='A' → CONTINUE (896ms)

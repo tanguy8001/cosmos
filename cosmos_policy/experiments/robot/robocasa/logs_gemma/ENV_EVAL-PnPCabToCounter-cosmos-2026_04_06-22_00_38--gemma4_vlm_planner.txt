@@ -1,0 +1,4 @@
+Task: PnPCabToCounter | Trials: 50 | VLM replan every 3 chunks
+  [ep0 t=48] VLM='The user wants me to' → CONTINUE (1666ms)
+  [ep0 t=96] VLM='The user wants me to' → CONTINUE (436ms)
+  [ep0 t=144] VLM='The user wants me to' → CONTINUE (434ms)

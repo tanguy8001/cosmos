@@ -1,0 +1,1772 @@
+Eval config: PolicyEvalConfig(suite='robocasa', model_family='cosmos', config='cosmos_predict2_2b_480p_robocasa_50_demos_per_task__inference', ckpt_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B', planning_model_config_name='', planning_model_ckpt_path='', config_file='cosmos_policy/config/config.py', use_third_person_image=True, num_third_person_images=2, use_wrist_image=True, num_wrist_images=1, use_proprio=True, flip_images=True, use_variance_scale=False, use_jpeg_compression=True, ar_future_prediction=False, ar_value_prediction=False, ar_qvalue_prediction=False, num_denoising_steps_action=5, num_denoising_steps_future_state=1, num_denoising_steps_value=1, unnormalize_actions=True, normalize_proprio=True, dataset_stats_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_dataset_statistics.json', t5_text_embeddings_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_t5_embeddings.pkl', trained_with_image_aug=True, chunk_size=32, num_open_loop_steps=16, deterministic=True, deterministic_reset=False, deterministic_reset_seed=None, use_ensemble_future_state_predictions=False, num_future_state_predictions_in_ensemble=3, future_state_ensemble_aggregation_scheme='average', use_ensemble_value_predictions=False, num_value_predictions_in_ensemble=5, value_ensemble_aggregation_scheme='average', search_depth=1, search_depth_value_aggregation_scheme='use_last_value', mask_current_state_action_for_value_prediction=False, mask_future_state_for_qvalue_prediction=False, num_queries_best_of_n=1, use_parallel_inference=False, available_gpus='0,1,2,3,4,5,6,7', parallel_timeout=15, task_name='CoffeePressButton', num_trials_per_task=50, env_img_res=224, robots='PandaMobile', controllers='OSC_POSE', obj_instance_split='B', layout_and_style_ids='((1,1),(2,2),(4,4),(6,9),(7,10))', randomize_cameras=False, local_log_dir='cosmos_policy/experiments/robot/robocasa/logs/', run_id_note='chkpt45000--5stepAct--seed195--deterministic', use_wandb=False, wandb_entity='YOUR_ENTITY', wandb_project='YOUR_PROJECT', seed=195, randomize_seed=False, data_collection=False, jpeg_compress=True)
+
+Starting evaluation for task: CoffeePressButton
+Number of trials: 50
+
+Evaluating task: CoffeePressButton
+Starting episode 1...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 1.163 sec
+Query 1/1 (seed 195): Predicted value = 0.6090
+t=0: Selected seed 195 with value = 0.6090
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6821
+t=16: Selected seed 195 with value = 0.6821
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8185
+t=32: Selected seed 195 with value = 0.8185
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9519
+t=48: Selected seed 195 with value = 0.9519
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=64: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=80: Selected seed 195 with value = 0.9996
+  Success detected at timestep 87!
+  Episode 0: SUCCESS (length: 88)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=0--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=0--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 1
+# successes: 1 (100.0%)
+Starting episode 2...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.5744
+t=0: Selected seed 195 with value = 0.5744
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6636
+t=16: Selected seed 195 with value = 0.6636
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7439
+t=32: Selected seed 195 with value = 0.7439
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9008
+t=48: Selected seed 195 with value = 0.9008
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9935
+t=64: Selected seed 195 with value = 0.9935
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=80: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=96: Selected seed 195 with value = 0.9997
+  Success detected at timestep 106!
+  Episode 1: SUCCESS (length: 107)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=1--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=1--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 2
+# successes: 2 (100.0%)
+Starting episode 3...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.762 sec
+Query 1/1 (seed 195): Predicted value = 0.5512
+t=0: Selected seed 195 with value = 0.5512
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6525
+t=16: Selected seed 195 with value = 0.6525
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7180
+t=32: Selected seed 195 with value = 0.7180
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.8432
+t=48: Selected seed 195 with value = 0.8432
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9309
+t=64: Selected seed 195 with value = 0.9309
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9301
+t=80: Selected seed 195 with value = 0.9301
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9301
+t=96: Selected seed 195 with value = 0.9301
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9301
+t=112: Selected seed 195 with value = 0.9301
+Query 1/1: Action query time = 0.779 sec
+Query 1/1 (seed 195): Predicted value = 0.9263
+t=128: Selected seed 195 with value = 0.9263
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9235
+t=144: Selected seed 195 with value = 0.9235
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9209
+t=160: Selected seed 195 with value = 0.9209
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9183
+t=176: Selected seed 195 with value = 0.9183
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9173
+t=192: Selected seed 195 with value = 0.9173
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9175
+t=208: Selected seed 195 with value = 0.9175
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9172
+t=224: Selected seed 195 with value = 0.9172
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9173
+t=240: Selected seed 195 with value = 0.9173
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9180
+t=256: Selected seed 195 with value = 0.9180
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9178
+t=272: Selected seed 195 with value = 0.9178
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9179
+t=288: Selected seed 195 with value = 0.9179
+  Episode 2: FAILURE (length: 300)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=2--success=False--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=2--success=False--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: False
+# episodes completed so far: 3
+# successes: 2 (66.7%)
+Starting episode 4...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.5808
+t=0: Selected seed 195 with value = 0.5808
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6598
+t=16: Selected seed 195 with value = 0.6598
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7445
+t=32: Selected seed 195 with value = 0.7445
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.8864
+t=48: Selected seed 195 with value = 0.8864
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9853
+t=64: Selected seed 195 with value = 0.9853
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9978
+t=80: Selected seed 195 with value = 0.9978
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=96: Selected seed 195 with value = 0.9996
+  Success detected at timestep 108!
+  Episode 3: SUCCESS (length: 109)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=3--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=3--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 4
+# successes: 3 (75.0%)
+Starting episode 5...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.6367
+t=0: Selected seed 195 with value = 0.6367
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7266
+t=16: Selected seed 195 with value = 0.7266
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8982
+t=32: Selected seed 195 with value = 0.8982
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9980
+t=48: Selected seed 195 with value = 0.9980
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=64: Selected seed 195 with value = 0.9983
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=80: Selected seed 195 with value = 0.9983
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=96: Selected seed 195 with value = 0.9983
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=112: Selected seed 195 with value = 0.9984
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=128: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=144: Selected seed 195 with value = 0.9995
+  Success detected at timestep 156!
+  Episode 4: SUCCESS (length: 157)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=4--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=4--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 5
+# successes: 4 (80.0%)
+Starting episode 6...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.5899
+t=0: Selected seed 195 with value = 0.5899
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6687
+t=16: Selected seed 195 with value = 0.6687
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.7723
+t=32: Selected seed 195 with value = 0.7723
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9478
+t=48: Selected seed 195 with value = 0.9478
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=64: Selected seed 195 with value = 0.9981
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=80: Selected seed 195 with value = 0.9994
+  Success detected at timestep 92!
+  Episode 5: SUCCESS (length: 93)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=5--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=5--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 6
+# successes: 5 (83.3%)
+Starting episode 7...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.6227
+t=0: Selected seed 195 with value = 0.6227
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7036
+t=16: Selected seed 195 with value = 0.7036
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8675
+t=32: Selected seed 195 with value = 0.8675
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=48: Selected seed 195 with value = 0.9982
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=64: Selected seed 195 with value = 0.9997
+  Success detected at timestep 78!
+  Episode 6: SUCCESS (length: 79)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=6--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=6--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 7
+# successes: 6 (85.7%)
+Starting episode 8...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.759 sec
+Query 1/1 (seed 195): Predicted value = 0.6315
+t=0: Selected seed 195 with value = 0.6315
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7171
+t=16: Selected seed 195 with value = 0.7171
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9020
+t=32: Selected seed 195 with value = 0.9020
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=48: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=64: Selected seed 195 with value = 0.9995
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6184
+t=80: Selected seed 195 with value = 0.6184
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6884
+t=96: Selected seed 195 with value = 0.6884
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7466
+t=112: Selected seed 195 with value = 0.7466
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7967
+t=128: Selected seed 195 with value = 0.7967
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8804
+t=144: Selected seed 195 with value = 0.8804
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9976
+t=160: Selected seed 195 with value = 0.9976
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=176: Selected seed 195 with value = 0.9997
+  Success detected at timestep 184!
+  Episode 7: SUCCESS (length: 185)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=7--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=7--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 8
+# successes: 7 (87.5%)
+Starting episode 9...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.6142
+t=0: Selected seed 195 with value = 0.6142
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.6923
+t=16: Selected seed 195 with value = 0.6923
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8629
+t=32: Selected seed 195 with value = 0.8629
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9939
+t=48: Selected seed 195 with value = 0.9939
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=64: Selected seed 195 with value = 0.9983
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=80: Selected seed 195 with value = 0.9997
+  Success detected at timestep 94!
+  Episode 8: SUCCESS (length: 95)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=8--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=8--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 9
+# successes: 8 (88.9%)
+Starting episode 10...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.761 sec
+Query 1/1 (seed 195): Predicted value = 0.6534
+t=0: Selected seed 195 with value = 0.6534
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7271
+t=16: Selected seed 195 with value = 0.7271
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9156
+t=32: Selected seed 195 with value = 0.9156
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=48: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=64: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5842
+t=80: Selected seed 195 with value = 0.5842
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6062
+t=96: Selected seed 195 with value = 0.6062
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6161
+t=112: Selected seed 195 with value = 0.6161
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.6448
+t=128: Selected seed 195 with value = 0.6448
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7294
+t=144: Selected seed 195 with value = 0.7294
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8124
+t=160: Selected seed 195 with value = 0.8124
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9263
+t=176: Selected seed 195 with value = 0.9263
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9970
+t=192: Selected seed 195 with value = 0.9970
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=208: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5532
+t=224: Selected seed 195 with value = 0.5532
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5931
+t=240: Selected seed 195 with value = 0.5931
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7218
+t=256: Selected seed 195 with value = 0.7218
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7628
+t=272: Selected seed 195 with value = 0.7628
+Query 1/1: Action query time = 0.768 sec
+Query 1/1 (seed 195): Predicted value = 0.9394
+t=288: Selected seed 195 with value = 0.9394
+  Episode 9: FAILURE (length: 300)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=9--success=False--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=9--success=False--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: False
+# episodes completed so far: 10
+# successes: 8 (80.0%)
+Starting episode 11...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.4808
+t=0: Selected seed 195 with value = 0.4808
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5613
+t=16: Selected seed 195 with value = 0.5613
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6529
+t=32: Selected seed 195 with value = 0.6529
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.7746
+t=48: Selected seed 195 with value = 0.7746
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8850
+t=64: Selected seed 195 with value = 0.8850
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=80: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=96: Selected seed 195 with value = 0.9998
+  Success detected at timestep 105!
+  Episode 10: SUCCESS (length: 106)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=10--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=10--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 11
+# successes: 9 (81.8%)
+Starting episode 12...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.4533
+t=0: Selected seed 195 with value = 0.4533
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.5486
+t=16: Selected seed 195 with value = 0.5486
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6317
+t=32: Selected seed 195 with value = 0.6317
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7387
+t=48: Selected seed 195 with value = 0.7387
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8686
+t=64: Selected seed 195 with value = 0.8686
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9961
+t=80: Selected seed 195 with value = 0.9961
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=96: Selected seed 195 with value = 0.9991
+  Success detected at timestep 110!
+  Episode 11: SUCCESS (length: 111)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=11--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=11--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 12
+# successes: 10 (83.3%)
+Starting episode 13...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.4635
+t=0: Selected seed 195 with value = 0.4635
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5622
+t=16: Selected seed 195 with value = 0.5622
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6501
+t=32: Selected seed 195 with value = 0.6501
+Query 1/1: Action query time = 0.768 sec
+Query 1/1 (seed 195): Predicted value = 0.7470
+t=48: Selected seed 195 with value = 0.7470
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8819
+t=64: Selected seed 195 with value = 0.8819
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=80: Selected seed 195 with value = 0.9988
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=96: Selected seed 195 with value = 0.9990
+  Success detected at timestep 102!
+  Episode 12: SUCCESS (length: 103)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=12--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=12--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 13
+# successes: 11 (84.6%)
+Starting episode 14...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.4815
+t=0: Selected seed 195 with value = 0.4815
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.5616
+t=16: Selected seed 195 with value = 0.5616
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6466
+t=32: Selected seed 195 with value = 0.6466
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.7658
+t=48: Selected seed 195 with value = 0.7658
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8600
+t=64: Selected seed 195 with value = 0.8600
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9978
+t=80: Selected seed 195 with value = 0.9978
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=96: Selected seed 195 with value = 0.9990
+  Success detected at timestep 107!
+  Episode 13: SUCCESS (length: 108)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=13--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=13--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 14
+# successes: 12 (85.7%)
+Starting episode 15...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.766 sec
+Query 1/1 (seed 195): Predicted value = 0.4823
+t=0: Selected seed 195 with value = 0.4823
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5605
+t=16: Selected seed 195 with value = 0.5605
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6525
+t=32: Selected seed 195 with value = 0.6525
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7710
+t=48: Selected seed 195 with value = 0.7710
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8859
+t=64: Selected seed 195 with value = 0.8859
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=80: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=96: Selected seed 195 with value = 0.9992
+  Success detected at timestep 107!
+  Episode 14: SUCCESS (length: 108)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=14--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=14--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 15
+# successes: 13 (86.7%)
+Starting episode 16...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.4637
+t=0: Selected seed 195 with value = 0.4637
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5546
+t=16: Selected seed 195 with value = 0.5546
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6524
+t=32: Selected seed 195 with value = 0.6524
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7441
+t=48: Selected seed 195 with value = 0.7441
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8745
+t=64: Selected seed 195 with value = 0.8745
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9974
+t=80: Selected seed 195 with value = 0.9974
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=96: Selected seed 195 with value = 0.9991
+  Success detected at timestep 106!
+  Episode 15: SUCCESS (length: 107)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=15--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=15--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 16
+# successes: 14 (87.5%)
+Starting episode 17...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.4857
+t=0: Selected seed 195 with value = 0.4857
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5662
+t=16: Selected seed 195 with value = 0.5662
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6560
+t=32: Selected seed 195 with value = 0.6560
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7746
+t=48: Selected seed 195 with value = 0.7746
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8840
+t=64: Selected seed 195 with value = 0.8840
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=80: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=96: Selected seed 195 with value = 0.9993
+  Success detected at timestep 106!
+  Episode 16: SUCCESS (length: 107)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=16--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=16--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 17
+# successes: 15 (88.2%)
+Starting episode 18...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.772 sec
+Query 1/1 (seed 195): Predicted value = 0.4771
+t=0: Selected seed 195 with value = 0.4771
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5660
+t=16: Selected seed 195 with value = 0.5660
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6572
+t=32: Selected seed 195 with value = 0.6572
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7725
+t=48: Selected seed 195 with value = 0.7725
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8883
+t=64: Selected seed 195 with value = 0.8883
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=80: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=96: Selected seed 195 with value = 0.9995
+  Success detected at timestep 105!
+  Episode 17: SUCCESS (length: 106)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=17--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=17--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 18
+# successes: 16 (88.9%)
+Starting episode 19...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.4796
+t=0: Selected seed 195 with value = 0.4796
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5611
+t=16: Selected seed 195 with value = 0.5611
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6544
+t=32: Selected seed 195 with value = 0.6544
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7668
+t=48: Selected seed 195 with value = 0.7668
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8862
+t=64: Selected seed 195 with value = 0.8862
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=80: Selected seed 195 with value = 0.9986
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=96: Selected seed 195 with value = 0.9991
+  Success detected at timestep 110!
+  Episode 18: SUCCESS (length: 111)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=18--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=18--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 19
+# successes: 17 (89.5%)
+Starting episode 20...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.762 sec
+Query 1/1 (seed 195): Predicted value = 0.4614
+t=0: Selected seed 195 with value = 0.4614
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5550
+t=16: Selected seed 195 with value = 0.5550
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6393
+t=32: Selected seed 195 with value = 0.6393
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7417
+t=48: Selected seed 195 with value = 0.7417
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8608
+t=64: Selected seed 195 with value = 0.8608
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9962
+t=80: Selected seed 195 with value = 0.9962
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=96: Selected seed 195 with value = 0.9992
+  Success detected at timestep 111!
+  Episode 19: SUCCESS (length: 112)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=19--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=19--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 20
+# successes: 18 (90.0%)
+Starting episode 21...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.788 sec
+Query 1/1 (seed 195): Predicted value = 0.3934
+t=0: Selected seed 195 with value = 0.3934
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4679
+t=16: Selected seed 195 with value = 0.4679
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5247
+t=32: Selected seed 195 with value = 0.5247
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6091
+t=48: Selected seed 195 with value = 0.6091
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6882
+t=64: Selected seed 195 with value = 0.6882
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8163
+t=80: Selected seed 195 with value = 0.8163
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9624
+t=96: Selected seed 195 with value = 0.9624
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9963
+t=112: Selected seed 195 with value = 0.9963
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=128: Selected seed 195 with value = 0.9987
+  Success detected at timestep 137!
+  Episode 20: SUCCESS (length: 138)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=20--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=20--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 21
+# successes: 19 (90.5%)
+Starting episode 22...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.3898
+t=0: Selected seed 195 with value = 0.3898
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4768
+t=16: Selected seed 195 with value = 0.4768
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5407
+t=32: Selected seed 195 with value = 0.5407
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6393
+t=48: Selected seed 195 with value = 0.6393
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7336
+t=64: Selected seed 195 with value = 0.7336
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8833
+t=80: Selected seed 195 with value = 0.8833
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9762
+t=96: Selected seed 195 with value = 0.9762
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9929
+t=112: Selected seed 195 with value = 0.9929
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=128: Selected seed 195 with value = 0.9985
+  Success detected at timestep 140!
+  Episode 21: SUCCESS (length: 141)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=21--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=21--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 22
+# successes: 20 (90.9%)
+Starting episode 23...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.3678
+t=0: Selected seed 195 with value = 0.3678
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4452
+t=16: Selected seed 195 with value = 0.4452
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5161
+t=32: Selected seed 195 with value = 0.5161
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5942
+t=48: Selected seed 195 with value = 0.5942
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.6461
+t=64: Selected seed 195 with value = 0.6461
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7165
+t=80: Selected seed 195 with value = 0.7165
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8107
+t=96: Selected seed 195 with value = 0.8107
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9342
+t=112: Selected seed 195 with value = 0.9342
+Query 1/1: Action query time = 0.801 sec
+Query 1/1 (seed 195): Predicted value = 0.9975
+t=128: Selected seed 195 with value = 0.9975
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=144: Selected seed 195 with value = 0.9983
+  Success detected at timestep 155!
+  Episode 22: SUCCESS (length: 156)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=22--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=22--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 23
+# successes: 21 (91.3%)
+Starting episode 24...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.3623
+t=0: Selected seed 195 with value = 0.3623
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4363
+t=16: Selected seed 195 with value = 0.4363
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5050
+t=32: Selected seed 195 with value = 0.5050
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.5902
+t=48: Selected seed 195 with value = 0.5902
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6458
+t=64: Selected seed 195 with value = 0.6458
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7339
+t=80: Selected seed 195 with value = 0.7339
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8411
+t=96: Selected seed 195 with value = 0.8411
+Query 1/1: Action query time = 0.778 sec
+Query 1/1 (seed 195): Predicted value = 0.9917
+t=112: Selected seed 195 with value = 0.9917
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=128: Selected seed 195 with value = 0.9984
+  Success detected at timestep 142!
+  Episode 23: SUCCESS (length: 143)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=23--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=23--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 24
+# successes: 22 (91.7%)
+Starting episode 25...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.3854
+t=0: Selected seed 195 with value = 0.3854
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4574
+t=16: Selected seed 195 with value = 0.4574
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5225
+t=32: Selected seed 195 with value = 0.5225
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5957
+t=48: Selected seed 195 with value = 0.5957
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6493
+t=64: Selected seed 195 with value = 0.6493
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.7419
+t=80: Selected seed 195 with value = 0.7419
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8736
+t=96: Selected seed 195 with value = 0.8736
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9966
+t=112: Selected seed 195 with value = 0.9966
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=128: Selected seed 195 with value = 0.9983
+  Success detected at timestep 139!
+  Episode 24: SUCCESS (length: 140)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=24--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=24--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 25
+# successes: 23 (92.0%)
+Starting episode 26...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.777 sec
+Query 1/1 (seed 195): Predicted value = 0.3559
+t=0: Selected seed 195 with value = 0.3559
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4187
+t=16: Selected seed 195 with value = 0.4187
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5044
+t=32: Selected seed 195 with value = 0.5044
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6001
+t=48: Selected seed 195 with value = 0.6001
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6676
+t=64: Selected seed 195 with value = 0.6676
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7818
+t=80: Selected seed 195 with value = 0.7818
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9212
+t=96: Selected seed 195 with value = 0.9212
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=112: Selected seed 195 with value = 0.9984
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=128: Selected seed 195 with value = 0.9989
+  Success detected at timestep 136!
+  Episode 25: SUCCESS (length: 137)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=25--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=25--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 26
+# successes: 24 (92.3%)
+Starting episode 27...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.3657
+t=0: Selected seed 195 with value = 0.3657
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4480
+t=16: Selected seed 195 with value = 0.4480
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5055
+t=32: Selected seed 195 with value = 0.5055
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6092
+t=48: Selected seed 195 with value = 0.6092
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7047
+t=64: Selected seed 195 with value = 0.7047
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8363
+t=80: Selected seed 195 with value = 0.8363
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9748
+t=96: Selected seed 195 with value = 0.9748
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=112: Selected seed 195 with value = 0.9986
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=128: Selected seed 195 with value = 0.9984
+  Success detected at timestep 130!
+  Episode 26: SUCCESS (length: 131)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=26--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=26--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 27
+# successes: 25 (92.6%)
+Starting episode 28...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.3975
+t=0: Selected seed 195 with value = 0.3975
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4746
+t=16: Selected seed 195 with value = 0.4746
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5302
+t=32: Selected seed 195 with value = 0.5302
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6109
+t=48: Selected seed 195 with value = 0.6109
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6794
+t=64: Selected seed 195 with value = 0.6794
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7978
+t=80: Selected seed 195 with value = 0.7978
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9536
+t=96: Selected seed 195 with value = 0.9536
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9964
+t=112: Selected seed 195 with value = 0.9964
+Query 1/1: Action query time = 0.816 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=128: Selected seed 195 with value = 0.9983
+  Success detected at timestep 138!
+  Episode 27: SUCCESS (length: 139)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=27--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=27--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 28
+# successes: 26 (92.9%)
+Starting episode 29...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.3811
+t=0: Selected seed 195 with value = 0.3811
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4521
+t=16: Selected seed 195 with value = 0.4521
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5167
+t=32: Selected seed 195 with value = 0.5167
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6019
+t=48: Selected seed 195 with value = 0.6019
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6631
+t=64: Selected seed 195 with value = 0.6631
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7663
+t=80: Selected seed 195 with value = 0.7663
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9075
+t=96: Selected seed 195 with value = 0.9075
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9978
+t=112: Selected seed 195 with value = 0.9978
+Query 1/1: Action query time = 0.774 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=128: Selected seed 195 with value = 0.9984
+  Success detected at timestep 138!
+  Episode 28: SUCCESS (length: 139)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=28--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=28--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 29
+# successes: 27 (93.1%)
+Starting episode 30...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.3895
+t=0: Selected seed 195 with value = 0.3895
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4739
+t=16: Selected seed 195 with value = 0.4739
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5284
+t=32: Selected seed 195 with value = 0.5284
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6214
+t=48: Selected seed 195 with value = 0.6214
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.7271
+t=64: Selected seed 195 with value = 0.7271
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8691
+t=80: Selected seed 195 with value = 0.8691
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9909
+t=96: Selected seed 195 with value = 0.9909
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=112: Selected seed 195 with value = 0.9985
+  Success detected at timestep 127!
+  Episode 29: SUCCESS (length: 128)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=29--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=29--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 30
+# successes: 28 (93.3%)
+Starting episode 31...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.783 sec
+Query 1/1 (seed 195): Predicted value = 0.4184
+t=0: Selected seed 195 with value = 0.4184
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5123
+t=16: Selected seed 195 with value = 0.5123
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6316
+t=32: Selected seed 195 with value = 0.6316
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7205
+t=48: Selected seed 195 with value = 0.7205
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.8646
+t=64: Selected seed 195 with value = 0.8646
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9747
+t=80: Selected seed 195 with value = 0.9747
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9825
+t=96: Selected seed 195 with value = 0.9825
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9843
+t=112: Selected seed 195 with value = 0.9843
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=128: Selected seed 195 with value = 1.0000
+  Success detected at timestep 143!
+  Episode 30: SUCCESS (length: 144)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=30--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=30--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 31
+# successes: 29 (93.5%)
+Starting episode 32...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.3922
+t=0: Selected seed 195 with value = 0.3922
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4796
+t=16: Selected seed 195 with value = 0.4796
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5716
+t=32: Selected seed 195 with value = 0.5716
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6417
+t=48: Selected seed 195 with value = 0.6417
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7581
+t=64: Selected seed 195 with value = 0.7581
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.8701
+t=80: Selected seed 195 with value = 0.8701
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=96: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9999
+t=112: Selected seed 195 with value = 0.9999
+  Success detected at timestep 119!
+  Episode 31: SUCCESS (length: 120)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=31--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=31--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 32
+# successes: 30 (93.8%)
+Starting episode 33...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.769 sec
+Query 1/1 (seed 195): Predicted value = 0.4163
+t=0: Selected seed 195 with value = 0.4163
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4916
+t=16: Selected seed 195 with value = 0.4916
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5971
+t=32: Selected seed 195 with value = 0.5971
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6338
+t=48: Selected seed 195 with value = 0.6338
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7051
+t=64: Selected seed 195 with value = 0.7051
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7895
+t=80: Selected seed 195 with value = 0.7895
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.8837
+t=96: Selected seed 195 with value = 0.8837
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=112: Selected seed 195 with value = 0.9990
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=128: Selected seed 195 with value = 0.9994
+  Success detected at timestep 134!
+  Episode 32: SUCCESS (length: 135)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=32--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=32--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 33
+# successes: 31 (93.9%)
+Starting episode 34...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.4239
+t=0: Selected seed 195 with value = 0.4239
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5039
+t=16: Selected seed 195 with value = 0.5039
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6018
+t=32: Selected seed 195 with value = 0.6018
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6460
+t=48: Selected seed 195 with value = 0.6460
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7294
+t=64: Selected seed 195 with value = 0.7294
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8279
+t=80: Selected seed 195 with value = 0.8279
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9549
+t=96: Selected seed 195 with value = 0.9549
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=112: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=128: Selected seed 195 with value = 0.9996
+  Success detected at timestep 133!
+  Episode 33: SUCCESS (length: 134)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=33--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=33--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 34
+# successes: 32 (94.1%)
+Starting episode 35...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.784 sec
+Query 1/1 (seed 195): Predicted value = 0.4315
+t=0: Selected seed 195 with value = 0.4315
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5060
+t=16: Selected seed 195 with value = 0.5060
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.5972
+t=32: Selected seed 195 with value = 0.5972
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6447
+t=48: Selected seed 195 with value = 0.6447
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7268
+t=64: Selected seed 195 with value = 0.7268
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8168
+t=80: Selected seed 195 with value = 0.8168
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9399
+t=96: Selected seed 195 with value = 0.9399
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=112: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=128: Selected seed 195 with value = 0.9997
+  Success detected at timestep 133!
+  Episode 34: SUCCESS (length: 134)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=34--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=34--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 35
+# successes: 33 (94.3%)
+Starting episode 36...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.4234
+t=0: Selected seed 195 with value = 0.4234
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4991
+t=16: Selected seed 195 with value = 0.4991
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5988
+t=32: Selected seed 195 with value = 0.5988
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6626
+t=48: Selected seed 195 with value = 0.6626
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7814
+t=64: Selected seed 195 with value = 0.7814
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8952
+t=80: Selected seed 195 with value = 0.8952
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=96: Selected seed 195 with value = 0.9995
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=112: Selected seed 195 with value = 1.0000
+  Success detected at timestep 117!
+  Episode 35: SUCCESS (length: 118)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=35--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=35--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 36
+# successes: 34 (94.4%)
+Starting episode 37...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.774 sec
+Query 1/1 (seed 195): Predicted value = 0.4166
+t=0: Selected seed 195 with value = 0.4166
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5003
+t=16: Selected seed 195 with value = 0.5003
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5924
+t=32: Selected seed 195 with value = 0.5924
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6478
+t=48: Selected seed 195 with value = 0.6478
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7429
+t=64: Selected seed 195 with value = 0.7429
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8520
+t=80: Selected seed 195 with value = 0.8520
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9902
+t=96: Selected seed 195 with value = 0.9902
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=112: Selected seed 195 with value = 0.9991
+  Success detected at timestep 127!
+  Episode 36: SUCCESS (length: 128)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=36--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=36--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 37
+# successes: 35 (94.6%)
+Starting episode 38...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.4055
+t=0: Selected seed 195 with value = 0.4055
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4864
+t=16: Selected seed 195 with value = 0.4864
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6234
+t=32: Selected seed 195 with value = 0.6234
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7057
+t=48: Selected seed 195 with value = 0.7057
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8474
+t=64: Selected seed 195 with value = 0.8474
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9662
+t=80: Selected seed 195 with value = 0.9662
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9801
+t=96: Selected seed 195 with value = 0.9801
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 1.0000
+t=112: Selected seed 195 with value = 1.0000
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=128: Selected seed 195 with value = 0.9991
+  Success detected at timestep 128!
+  Episode 37: SUCCESS (length: 129)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=37--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=37--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 38
+# successes: 36 (94.7%)
+Starting episode 39...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.781 sec
+Query 1/1 (seed 195): Predicted value = 0.4255
+t=0: Selected seed 195 with value = 0.4255
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5086
+t=16: Selected seed 195 with value = 0.5086
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6029
+t=32: Selected seed 195 with value = 0.6029
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6652
+t=48: Selected seed 195 with value = 0.6652
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7724
+t=64: Selected seed 195 with value = 0.7724
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8880
+t=80: Selected seed 195 with value = 0.8880
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=96: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=112: Selected seed 195 with value = 0.9997
+  Success detected at timestep 119!
+  Episode 38: SUCCESS (length: 120)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=38--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=38--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 39
+# successes: 37 (94.9%)
+Starting episode 40...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.4183
+t=0: Selected seed 195 with value = 0.4183
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4982
+t=16: Selected seed 195 with value = 0.4982
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5985
+t=32: Selected seed 195 with value = 0.5985
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6597
+t=48: Selected seed 195 with value = 0.6597
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7627
+t=64: Selected seed 195 with value = 0.7627
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8778
+t=80: Selected seed 195 with value = 0.8778
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=96: Selected seed 195 with value = 0.9995
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=112: Selected seed 195 with value = 0.9997
+  Success detected at timestep 121!
+  Episode 39: SUCCESS (length: 122)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=39--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=39--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 40
+# successes: 38 (95.0%)
+Starting episode 41...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.5604
+t=0: Selected seed 195 with value = 0.5604
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6582
+t=16: Selected seed 195 with value = 0.6582
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7309
+t=32: Selected seed 195 with value = 0.7309
+Query 1/1: Action query time = 0.821 sec
+Query 1/1 (seed 195): Predicted value = 0.8765
+t=48: Selected seed 195 with value = 0.8765
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9253
+t=64: Selected seed 195 with value = 0.9253
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9672
+t=80: Selected seed 195 with value = 0.9672
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9669
+t=96: Selected seed 195 with value = 0.9669
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9683
+t=112: Selected seed 195 with value = 0.9683
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9679
+t=128: Selected seed 195 with value = 0.9679
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.9691
+t=144: Selected seed 195 with value = 0.9691
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9714
+t=160: Selected seed 195 with value = 0.9714
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.9712
+t=176: Selected seed 195 with value = 0.9712
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9730
+t=192: Selected seed 195 with value = 0.9730
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.9727
+t=208: Selected seed 195 with value = 0.9727
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9748
+t=224: Selected seed 195 with value = 0.9748
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9747
+t=240: Selected seed 195 with value = 0.9747
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9804
+t=256: Selected seed 195 with value = 0.9804
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9785
+t=272: Selected seed 195 with value = 0.9785
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9763
+t=288: Selected seed 195 with value = 0.9763
+  Episode 40: FAILURE (length: 300)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=40--success=False--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=40--success=False--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: False
+# episodes completed so far: 41
+# successes: 38 (92.7%)
+Starting episode 42...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.5933
+t=0: Selected seed 195 with value = 0.5933
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6990
+t=16: Selected seed 195 with value = 0.6990
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8177
+t=32: Selected seed 195 with value = 0.8177
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9496
+t=48: Selected seed 195 with value = 0.9496
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=64: Selected seed 195 with value = 0.9984
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=80: Selected seed 195 with value = 0.9994
+  Success detected at timestep 92!
+  Episode 41: SUCCESS (length: 93)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=41--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=41--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 42
+# successes: 39 (92.9%)
+Starting episode 43...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.5836
+t=0: Selected seed 195 with value = 0.5836
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6670
+t=16: Selected seed 195 with value = 0.6670
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7713
+t=32: Selected seed 195 with value = 0.7713
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8873
+t=48: Selected seed 195 with value = 0.8873
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9776
+t=64: Selected seed 195 with value = 0.9776
+Query 1/1: Action query time = 0.824 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=80: Selected seed 195 with value = 0.9982
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=96: Selected seed 195 with value = 0.9990
+  Success detected at timestep 104!
+  Episode 42: SUCCESS (length: 105)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=42--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=42--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 43
+# successes: 40 (93.0%)
+Starting episode 44...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.5703
+t=0: Selected seed 195 with value = 0.5703
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6521
+t=16: Selected seed 195 with value = 0.6521
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7572
+t=32: Selected seed 195 with value = 0.7572
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8717
+t=48: Selected seed 195 with value = 0.8717
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9500
+t=64: Selected seed 195 with value = 0.9500
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9967
+t=80: Selected seed 195 with value = 0.9967
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=96: Selected seed 195 with value = 0.9991
+  Success detected at timestep 106!
+  Episode 43: SUCCESS (length: 107)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=43--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=43--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 44
+# successes: 41 (93.2%)
+Starting episode 45...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.6164
+t=0: Selected seed 195 with value = 0.6164
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7298
+t=16: Selected seed 195 with value = 0.7298
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8661
+t=32: Selected seed 195 with value = 0.8661
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=48: Selected seed 195 with value = 0.9995
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=64: Selected seed 195 with value = 0.9995
+  Success detected at timestep 73!
+  Episode 44: SUCCESS (length: 74)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=44--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=44--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 45
+# successes: 42 (93.3%)
+Starting episode 46...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.6132
+t=0: Selected seed 195 with value = 0.6132
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7138
+t=16: Selected seed 195 with value = 0.7138
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8371
+t=32: Selected seed 195 with value = 0.8371
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=48: Selected seed 195 with value = 0.9988
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=64: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9979
+t=80: Selected seed 195 with value = 0.9979
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=96: Selected seed 195 with value = 0.9989
+  Success detected at timestep 102!
+  Episode 45: SUCCESS (length: 103)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=45--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=45--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 46
+# successes: 43 (93.5%)
+Starting episode 47...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.780 sec
+Query 1/1 (seed 195): Predicted value = 0.5747
+t=0: Selected seed 195 with value = 0.5747
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6731
+t=16: Selected seed 195 with value = 0.6731
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7600
+t=32: Selected seed 195 with value = 0.7600
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9012
+t=48: Selected seed 195 with value = 0.9012
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=64: Selected seed 195 with value = 0.9986
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=80: Selected seed 195 with value = 0.9993
+  Success detected at timestep 92!
+  Episode 46: SUCCESS (length: 93)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=46--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=46--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 47
+# successes: 44 (93.6%)
+Starting episode 48...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.5635
+t=0: Selected seed 195 with value = 0.5635
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6477
+t=16: Selected seed 195 with value = 0.6477
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7467
+t=32: Selected seed 195 with value = 0.7467
+Query 1/1: Action query time = 0.768 sec
+Query 1/1 (seed 195): Predicted value = 0.8452
+t=48: Selected seed 195 with value = 0.8452
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9182
+t=64: Selected seed 195 with value = 0.9182
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=80: Selected seed 195 with value = 0.9982
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=96: Selected seed 195 with value = 0.9992
+  Success detected at timestep 106!
+  Episode 47: SUCCESS (length: 107)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=47--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=47--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 48
+# successes: 45 (93.8%)
+Starting episode 49...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.6081
+t=0: Selected seed 195 with value = 0.6081
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7219
+t=16: Selected seed 195 with value = 0.7219
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8503
+t=32: Selected seed 195 with value = 0.8503
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=48: Selected seed 195 with value = 0.9997
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=64: Selected seed 195 with value = 0.9996
+  Success detected at timestep 75!
+  Episode 48: SUCCESS (length: 76)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=48--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=48--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 49
+# successes: 46 (93.9%)
+Starting episode 50...
+
+Task description: press the button on the coffee machine to serve coffee
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.5652
+t=0: Selected seed 195 with value = 0.5652
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6555
+t=16: Selected seed 195 with value = 0.6555
+Query 1/1: Action query time = 0.760 sec
+Query 1/1 (seed 195): Predicted value = 0.7630
+t=32: Selected seed 195 with value = 0.7630
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8813
+t=48: Selected seed 195 with value = 0.8813
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9922
+t=64: Selected seed 195 with value = 0.9922
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=80: Selected seed 195 with value = 0.9989
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=96: Selected seed 195 with value = 0.9991
+  Success detected at timestep 104!
+  Episode 49: SUCCESS (length: 105)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--episode=49--success=True--task=press_the_button_on_the_coffee_machine_t.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/CoffeePressButton--2026_04_04-10_52_34/2026_04_04-10_52_34--with_future_img--episode=49--success=True--task=press_the_button_on_the_coffee_machine_to_serve_co.mp4
+Success: True
+# episodes completed so far: 50
+# successes: 47 (94.0%)
+Task CoffeePressButton results:
+  Success rate: 0.9400 (94%)
+  Average episode length: 128.6
+  Successes: 47/50
+
+================================================================================
+FINAL RESULTS
+================================================================================
+Task: CoffeePressButton
+Success rate: 0.9400 (94%)
+Average episode length: 128.6
+Total episodes: 50
+Total successes: 47
+
+Results saved to: cosmos_policy/experiments/robot/robocasa/logs/ENV_EVAL-CoffeePressButton-cosmos-2026_04_04-10_52_34--chkpt45000--5stepAct--seed195--deterministic.txt

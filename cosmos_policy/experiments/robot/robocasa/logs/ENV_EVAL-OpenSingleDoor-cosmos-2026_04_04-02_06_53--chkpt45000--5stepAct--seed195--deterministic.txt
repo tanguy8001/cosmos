@@ -1,0 +1,3291 @@
+Eval config: PolicyEvalConfig(suite='robocasa', model_family='cosmos', config='cosmos_predict2_2b_480p_robocasa_50_demos_per_task__inference', ckpt_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B', planning_model_config_name='', planning_model_ckpt_path='', config_file='cosmos_policy/config/config.py', use_third_person_image=True, num_third_person_images=2, use_wrist_image=True, num_wrist_images=1, use_proprio=True, flip_images=True, use_variance_scale=False, use_jpeg_compression=True, ar_future_prediction=False, ar_value_prediction=False, ar_qvalue_prediction=False, num_denoising_steps_action=5, num_denoising_steps_future_state=1, num_denoising_steps_value=1, unnormalize_actions=True, normalize_proprio=True, dataset_stats_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_dataset_statistics.json', t5_text_embeddings_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_t5_embeddings.pkl', trained_with_image_aug=True, chunk_size=32, num_open_loop_steps=16, deterministic=True, deterministic_reset=False, deterministic_reset_seed=None, use_ensemble_future_state_predictions=False, num_future_state_predictions_in_ensemble=3, future_state_ensemble_aggregation_scheme='average', use_ensemble_value_predictions=False, num_value_predictions_in_ensemble=5, value_ensemble_aggregation_scheme='average', search_depth=1, search_depth_value_aggregation_scheme='use_last_value', mask_current_state_action_for_value_prediction=False, mask_future_state_for_qvalue_prediction=False, num_queries_best_of_n=1, use_parallel_inference=False, available_gpus='0,1,2,3,4,5,6,7', parallel_timeout=15, task_name='OpenSingleDoor', num_trials_per_task=50, env_img_res=224, robots='PandaMobile', controllers='OSC_POSE', obj_instance_split='B', layout_and_style_ids='((1,1),(2,2),(4,4),(6,9),(7,10))', randomize_cameras=False, local_log_dir='cosmos_policy/experiments/robot/robocasa/logs/', run_id_note='chkpt45000--5stepAct--seed195--deterministic', use_wandb=False, wandb_entity='YOUR_ENTITY', wandb_project='YOUR_PROJECT', seed=195, randomize_seed=False, data_collection=False, jpeg_compress=True)
+
+Starting evaluation for task: OpenSingleDoor
+Number of trials: 50
+
+Evaluating task: OpenSingleDoor
+Starting episode 1...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 1.161 sec
+Query 1/1 (seed 195): Predicted value = 0.1682
+t=0: Selected seed 195 with value = 0.1682
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1970
+t=16: Selected seed 195 with value = 0.1970
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2274
+t=32: Selected seed 195 with value = 0.2274
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2699
+t=48: Selected seed 195 with value = 0.2699
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3436
+t=64: Selected seed 195 with value = 0.3436
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4031
+t=80: Selected seed 195 with value = 0.4031
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.4593
+t=96: Selected seed 195 with value = 0.4593
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5359
+t=112: Selected seed 195 with value = 0.5359
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6230
+t=128: Selected seed 195 with value = 0.6230
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7363
+t=144: Selected seed 195 with value = 0.7363
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8880
+t=160: Selected seed 195 with value = 0.8880
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9968
+t=176: Selected seed 195 with value = 0.9968
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9961
+t=192: Selected seed 195 with value = 0.9961
+  Success detected at timestep 205!
+  Episode 0: SUCCESS (length: 206)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=0--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=0--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 1
+# successes: 1 (100.0%)
+Starting episode 2...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.1657
+t=0: Selected seed 195 with value = 0.1657
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1945
+t=16: Selected seed 195 with value = 0.1945
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2243
+t=32: Selected seed 195 with value = 0.2243
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2673
+t=48: Selected seed 195 with value = 0.2673
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.3714
+t=64: Selected seed 195 with value = 0.3714
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4491
+t=80: Selected seed 195 with value = 0.4491
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5515
+t=96: Selected seed 195 with value = 0.5515
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6469
+t=112: Selected seed 195 with value = 0.6469
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7681
+t=128: Selected seed 195 with value = 0.7681
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.9067
+t=144: Selected seed 195 with value = 0.9067
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.9975
+t=160: Selected seed 195 with value = 0.9975
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=176: Selected seed 195 with value = 0.9986
+  Success detected at timestep 186!
+  Episode 1: SUCCESS (length: 187)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=1--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=1--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 2
+# successes: 2 (100.0%)
+Starting episode 3...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.1662
+t=0: Selected seed 195 with value = 0.1662
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1951
+t=16: Selected seed 195 with value = 0.1951
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2257
+t=32: Selected seed 195 with value = 0.2257
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2699
+t=48: Selected seed 195 with value = 0.2699
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3718
+t=64: Selected seed 195 with value = 0.3718
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4524
+t=80: Selected seed 195 with value = 0.4524
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5542
+t=96: Selected seed 195 with value = 0.5542
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.6480
+t=112: Selected seed 195 with value = 0.6480
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7717
+t=128: Selected seed 195 with value = 0.7717
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9093
+t=144: Selected seed 195 with value = 0.9093
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9964
+t=160: Selected seed 195 with value = 0.9964
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=176: Selected seed 195 with value = 0.9982
+  Success detected at timestep 185!
+  Episode 2: SUCCESS (length: 186)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=2--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=2--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 3
+# successes: 3 (100.0%)
+Starting episode 4...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.1640
+t=0: Selected seed 195 with value = 0.1640
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.1936
+t=16: Selected seed 195 with value = 0.1936
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2244
+t=32: Selected seed 195 with value = 0.2244
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2687
+t=48: Selected seed 195 with value = 0.2687
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3693
+t=64: Selected seed 195 with value = 0.3693
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.4502
+t=80: Selected seed 195 with value = 0.4502
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5524
+t=96: Selected seed 195 with value = 0.5524
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6449
+t=112: Selected seed 195 with value = 0.6449
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.7659
+t=128: Selected seed 195 with value = 0.7659
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9047
+t=144: Selected seed 195 with value = 0.9047
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9972
+t=160: Selected seed 195 with value = 0.9972
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=176: Selected seed 195 with value = 0.9984
+  Success detected at timestep 186!
+  Episode 3: SUCCESS (length: 187)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=3--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=3--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 4
+# successes: 4 (100.0%)
+Starting episode 5...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.767 sec
+Query 1/1 (seed 195): Predicted value = 0.1659
+t=0: Selected seed 195 with value = 0.1659
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1947
+t=16: Selected seed 195 with value = 0.1947
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2250
+t=32: Selected seed 195 with value = 0.2250
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2692
+t=48: Selected seed 195 with value = 0.2692
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3703
+t=64: Selected seed 195 with value = 0.3703
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4515
+t=80: Selected seed 195 with value = 0.4515
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5541
+t=96: Selected seed 195 with value = 0.5541
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.6474
+t=112: Selected seed 195 with value = 0.6474
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.7706
+t=128: Selected seed 195 with value = 0.7706
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9081
+t=144: Selected seed 195 with value = 0.9081
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9969
+t=160: Selected seed 195 with value = 0.9969
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=176: Selected seed 195 with value = 0.9982
+  Success detected at timestep 185!
+  Episode 4: SUCCESS (length: 186)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=4--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=4--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 5
+# successes: 5 (100.0%)
+Starting episode 6...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.1682
+t=0: Selected seed 195 with value = 0.1682
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.1978
+t=16: Selected seed 195 with value = 0.1978
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2289
+t=32: Selected seed 195 with value = 0.2289
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2741
+t=48: Selected seed 195 with value = 0.2741
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3755
+t=64: Selected seed 195 with value = 0.3755
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4529
+t=80: Selected seed 195 with value = 0.4529
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5533
+t=96: Selected seed 195 with value = 0.5533
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.6479
+t=112: Selected seed 195 with value = 0.6479
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7663
+t=128: Selected seed 195 with value = 0.7663
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9038
+t=144: Selected seed 195 with value = 0.9038
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.9973
+t=160: Selected seed 195 with value = 0.9973
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=176: Selected seed 195 with value = 0.9987
+  Success detected at timestep 186!
+  Episode 5: SUCCESS (length: 187)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=5--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=5--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 6
+# successes: 6 (100.0%)
+Starting episode 7...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.1714
+t=0: Selected seed 195 with value = 0.1714
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2004
+t=16: Selected seed 195 with value = 0.2004
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2340
+t=32: Selected seed 195 with value = 0.2340
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2815
+t=48: Selected seed 195 with value = 0.2815
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3844
+t=64: Selected seed 195 with value = 0.3844
+Query 1/1: Action query time = 0.781 sec
+Query 1/1 (seed 195): Predicted value = 0.4590
+t=80: Selected seed 195 with value = 0.4590
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5587
+t=96: Selected seed 195 with value = 0.5587
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6497
+t=112: Selected seed 195 with value = 0.6497
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7701
+t=128: Selected seed 195 with value = 0.7701
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9037
+t=144: Selected seed 195 with value = 0.9037
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9972
+t=160: Selected seed 195 with value = 0.9972
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=176: Selected seed 195 with value = 0.9989
+  Success detected at timestep 186!
+  Episode 6: SUCCESS (length: 187)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=6--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=6--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 7
+# successes: 7 (100.0%)
+Starting episode 8...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.1700
+t=0: Selected seed 195 with value = 0.1700
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1985
+t=16: Selected seed 195 with value = 0.1985
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2311
+t=32: Selected seed 195 with value = 0.2311
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2768
+t=48: Selected seed 195 with value = 0.2768
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3786
+t=64: Selected seed 195 with value = 0.3786
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.4552
+t=80: Selected seed 195 with value = 0.4552
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.5559
+t=96: Selected seed 195 with value = 0.5559
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6474
+t=112: Selected seed 195 with value = 0.6474
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7668
+t=128: Selected seed 195 with value = 0.7668
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9018
+t=144: Selected seed 195 with value = 0.9018
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9976
+t=160: Selected seed 195 with value = 0.9976
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=176: Selected seed 195 with value = 0.9986
+  Success detected at timestep 187!
+  Episode 7: SUCCESS (length: 188)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=7--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=7--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 8
+# successes: 8 (100.0%)
+Starting episode 9...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.1652
+t=0: Selected seed 195 with value = 0.1652
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1940
+t=16: Selected seed 195 with value = 0.1940
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2259
+t=32: Selected seed 195 with value = 0.2259
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2685
+t=48: Selected seed 195 with value = 0.2685
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3674
+t=64: Selected seed 195 with value = 0.3674
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4511
+t=80: Selected seed 195 with value = 0.4511
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5544
+t=96: Selected seed 195 with value = 0.5544
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6471
+t=112: Selected seed 195 with value = 0.6471
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.7691
+t=128: Selected seed 195 with value = 0.7691
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9069
+t=144: Selected seed 195 with value = 0.9069
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9972
+t=160: Selected seed 195 with value = 0.9972
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=176: Selected seed 195 with value = 0.9983
+  Success detected at timestep 186!
+  Episode 8: SUCCESS (length: 187)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=8--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=8--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 9
+# successes: 9 (100.0%)
+Starting episode 10...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.1640
+t=0: Selected seed 195 with value = 0.1640
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1939
+t=16: Selected seed 195 with value = 0.1939
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2255
+t=32: Selected seed 195 with value = 0.2255
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2724
+t=48: Selected seed 195 with value = 0.2724
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3696
+t=64: Selected seed 195 with value = 0.3696
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4519
+t=80: Selected seed 195 with value = 0.4519
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5538
+t=96: Selected seed 195 with value = 0.5538
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6463
+t=112: Selected seed 195 with value = 0.6463
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7685
+t=128: Selected seed 195 with value = 0.7685
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9057
+t=144: Selected seed 195 with value = 0.9057
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9963
+t=160: Selected seed 195 with value = 0.9963
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=176: Selected seed 195 with value = 0.9981
+  Success detected at timestep 186!
+  Episode 9: SUCCESS (length: 187)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=9--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=9--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 10
+# successes: 10 (100.0%)
+Starting episode 11...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.1069
+t=0: Selected seed 195 with value = 0.1069
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1521
+t=16: Selected seed 195 with value = 0.1521
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1898
+t=32: Selected seed 195 with value = 0.1898
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2421
+t=48: Selected seed 195 with value = 0.2421
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.3119
+t=64: Selected seed 195 with value = 0.3119
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3677
+t=80: Selected seed 195 with value = 0.3677
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.4571
+t=96: Selected seed 195 with value = 0.4571
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5683
+t=112: Selected seed 195 with value = 0.5683
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6903
+t=128: Selected seed 195 with value = 0.6903
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8205
+t=144: Selected seed 195 with value = 0.8205
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9550
+t=160: Selected seed 195 with value = 0.9550
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3615
+t=176: Selected seed 195 with value = 0.3615
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7541
+t=192: Selected seed 195 with value = 0.7541
+  Success detected at timestep 198!
+  Episode 10: SUCCESS (length: 199)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=10--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=10--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 11
+# successes: 11 (100.0%)
+Starting episode 12...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.1068
+t=0: Selected seed 195 with value = 0.1068
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1639
+t=16: Selected seed 195 with value = 0.1639
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2171
+t=32: Selected seed 195 with value = 0.2171
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2670
+t=48: Selected seed 195 with value = 0.2670
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3893
+t=64: Selected seed 195 with value = 0.3893
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4553
+t=80: Selected seed 195 with value = 0.4553
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4975
+t=96: Selected seed 195 with value = 0.4975
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6722
+t=112: Selected seed 195 with value = 0.6722
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7877
+t=128: Selected seed 195 with value = 0.7877
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6722
+t=144: Selected seed 195 with value = 0.6722
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7177
+t=160: Selected seed 195 with value = 0.7177
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4597
+t=176: Selected seed 195 with value = 0.4597
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5711
+t=192: Selected seed 195 with value = 0.5711
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4568
+t=208: Selected seed 195 with value = 0.4568
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4959
+t=224: Selected seed 195 with value = 0.4959
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5907
+t=240: Selected seed 195 with value = 0.5907
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7076
+t=256: Selected seed 195 with value = 0.7076
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5969
+t=272: Selected seed 195 with value = 0.5969
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.5006
+t=288: Selected seed 195 with value = 0.5006
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9020
+t=304: Selected seed 195 with value = 0.9020
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9489
+t=320: Selected seed 195 with value = 0.9489
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.4293
+t=336: Selected seed 195 with value = 0.4293
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.8154
+t=352: Selected seed 195 with value = 0.8154
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.8688
+t=368: Selected seed 195 with value = 0.8688
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9438
+t=384: Selected seed 195 with value = 0.9438
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9251
+t=400: Selected seed 195 with value = 0.9251
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5809
+t=416: Selected seed 195 with value = 0.5809
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7515
+t=432: Selected seed 195 with value = 0.7515
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5614
+t=448: Selected seed 195 with value = 0.5614
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9307
+t=464: Selected seed 195 with value = 0.9307
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9484
+t=480: Selected seed 195 with value = 0.9484
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6179
+t=496: Selected seed 195 with value = 0.6179
+  Episode 11: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=11--success=False--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=11--success=False--task=open_the_cabinet_door.mp4
+Success: False
+# episodes completed so far: 12
+# successes: 11 (91.7%)
+Starting episode 13...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.1024
+t=0: Selected seed 195 with value = 0.1024
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1551
+t=16: Selected seed 195 with value = 0.1551
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1971
+t=32: Selected seed 195 with value = 0.1971
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2435
+t=48: Selected seed 195 with value = 0.2435
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3163
+t=64: Selected seed 195 with value = 0.3163
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3731
+t=80: Selected seed 195 with value = 0.3731
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4664
+t=96: Selected seed 195 with value = 0.4664
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5739
+t=112: Selected seed 195 with value = 0.5739
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6748
+t=128: Selected seed 195 with value = 0.6748
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8081
+t=144: Selected seed 195 with value = 0.8081
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9355
+t=160: Selected seed 195 with value = 0.9355
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4066
+t=176: Selected seed 195 with value = 0.4066
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9946
+t=192: Selected seed 195 with value = 0.9946
+  Success detected at timestep 197!
+  Episode 12: SUCCESS (length: 198)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=12--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=12--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 13
+# successes: 12 (92.3%)
+Starting episode 14...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.770 sec
+Query 1/1 (seed 195): Predicted value = 0.1135
+t=0: Selected seed 195 with value = 0.1135
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1624
+t=16: Selected seed 195 with value = 0.1624
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2089
+t=32: Selected seed 195 with value = 0.2089
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2711
+t=48: Selected seed 195 with value = 0.2711
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3786
+t=64: Selected seed 195 with value = 0.3786
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4643
+t=80: Selected seed 195 with value = 0.4643
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5006
+t=96: Selected seed 195 with value = 0.5006
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6710
+t=112: Selected seed 195 with value = 0.6710
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7774
+t=128: Selected seed 195 with value = 0.7774
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9115
+t=144: Selected seed 195 with value = 0.9115
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6272
+t=160: Selected seed 195 with value = 0.6272
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4711
+t=176: Selected seed 195 with value = 0.4711
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4193
+t=192: Selected seed 195 with value = 0.4193
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4997
+t=208: Selected seed 195 with value = 0.4997
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.5179
+t=224: Selected seed 195 with value = 0.5179
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5954
+t=240: Selected seed 195 with value = 0.5954
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6468
+t=256: Selected seed 195 with value = 0.6468
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2897
+t=272: Selected seed 195 with value = 0.2897
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2916
+t=288: Selected seed 195 with value = 0.2916
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2573
+t=304: Selected seed 195 with value = 0.2573
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2283
+t=320: Selected seed 195 with value = 0.2283
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1576
+t=336: Selected seed 195 with value = 0.1576
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1320
+t=352: Selected seed 195 with value = 0.1320
+Query 1/1: Action query time = 0.793 sec
+Query 1/1 (seed 195): Predicted value = 0.1524
+t=368: Selected seed 195 with value = 0.1524
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1685
+t=384: Selected seed 195 with value = 0.1685
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1818
+t=400: Selected seed 195 with value = 0.1818
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1834
+t=416: Selected seed 195 with value = 0.1834
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2060
+t=432: Selected seed 195 with value = 0.2060
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2397
+t=448: Selected seed 195 with value = 0.2397
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2603
+t=464: Selected seed 195 with value = 0.2603
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3214
+t=480: Selected seed 195 with value = 0.3214
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4070
+t=496: Selected seed 195 with value = 0.4070
+  Episode 13: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=13--success=False--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=13--success=False--task=open_the_cabinet_door.mp4
+Success: False
+# episodes completed so far: 14
+# successes: 12 (85.7%)
+Starting episode 15...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.1371
+t=0: Selected seed 195 with value = 0.1371
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1567
+t=16: Selected seed 195 with value = 0.1567
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.1949
+t=32: Selected seed 195 with value = 0.1949
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2333
+t=48: Selected seed 195 with value = 0.2333
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2942
+t=64: Selected seed 195 with value = 0.2942
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3334
+t=80: Selected seed 195 with value = 0.3334
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3813
+t=96: Selected seed 195 with value = 0.3813
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4791
+t=112: Selected seed 195 with value = 0.4791
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5003
+t=128: Selected seed 195 with value = 0.5003
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5283
+t=144: Selected seed 195 with value = 0.5283
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5583
+t=160: Selected seed 195 with value = 0.5583
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.6368
+t=176: Selected seed 195 with value = 0.6368
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7414
+t=192: Selected seed 195 with value = 0.7414
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8987
+t=208: Selected seed 195 with value = 0.8987
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=224: Selected seed 195 with value = 0.9983
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=240: Selected seed 195 with value = 0.9989
+  Success detected at timestep 249!
+  Episode 14: SUCCESS (length: 250)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=14--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=14--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 15
+# successes: 13 (86.7%)
+Starting episode 16...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.759 sec
+Query 1/1 (seed 195): Predicted value = 0.1262
+t=0: Selected seed 195 with value = 0.1262
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1353
+t=16: Selected seed 195 with value = 0.1353
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2187
+t=32: Selected seed 195 with value = 0.2187
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3027
+t=48: Selected seed 195 with value = 0.3027
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.4148
+t=64: Selected seed 195 with value = 0.4148
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4662
+t=80: Selected seed 195 with value = 0.4662
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5239
+t=96: Selected seed 195 with value = 0.5239
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6680
+t=112: Selected seed 195 with value = 0.6680
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7432
+t=128: Selected seed 195 with value = 0.7432
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8376
+t=144: Selected seed 195 with value = 0.8376
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8630
+t=160: Selected seed 195 with value = 0.8630
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5857
+t=176: Selected seed 195 with value = 0.5857
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4287
+t=192: Selected seed 195 with value = 0.4287
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4466
+t=208: Selected seed 195 with value = 0.4466
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5390
+t=224: Selected seed 195 with value = 0.5390
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6151
+t=240: Selected seed 195 with value = 0.6151
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7642
+t=256: Selected seed 195 with value = 0.7642
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9146
+t=272: Selected seed 195 with value = 0.9146
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9807
+t=288: Selected seed 195 with value = 0.9807
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7931
+t=304: Selected seed 195 with value = 0.7931
+Query 1/1: Action query time = 0.775 sec
+Query 1/1 (seed 195): Predicted value = 0.6707
+t=320: Selected seed 195 with value = 0.6707
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8543
+t=336: Selected seed 195 with value = 0.8543
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8106
+t=352: Selected seed 195 with value = 0.8106
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8863
+t=368: Selected seed 195 with value = 0.8863
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7129
+t=384: Selected seed 195 with value = 0.7129
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6590
+t=400: Selected seed 195 with value = 0.6590
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9472
+t=416: Selected seed 195 with value = 0.9472
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8904
+t=432: Selected seed 195 with value = 0.8904
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9473
+t=448: Selected seed 195 with value = 0.9473
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.7707
+t=464: Selected seed 195 with value = 0.7707
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8934
+t=480: Selected seed 195 with value = 0.8934
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6362
+t=496: Selected seed 195 with value = 0.6362
+  Episode 15: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=15--success=False--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=15--success=False--task=open_the_cabinet_door.mp4
+Success: False
+# episodes completed so far: 16
+# successes: 13 (81.2%)
+Starting episode 17...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.1028
+t=0: Selected seed 195 with value = 0.1028
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1453
+t=16: Selected seed 195 with value = 0.1453
+Query 1/1: Action query time = 0.764 sec
+Query 1/1 (seed 195): Predicted value = 0.1964
+t=32: Selected seed 195 with value = 0.1964
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2630
+t=48: Selected seed 195 with value = 0.2630
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3384
+t=64: Selected seed 195 with value = 0.3384
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.4446
+t=80: Selected seed 195 with value = 0.4446
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4900
+t=96: Selected seed 195 with value = 0.4900
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6541
+t=112: Selected seed 195 with value = 0.6541
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7704
+t=128: Selected seed 195 with value = 0.7704
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9076
+t=144: Selected seed 195 with value = 0.9076
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.4168
+t=160: Selected seed 195 with value = 0.4168
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5366
+t=176: Selected seed 195 with value = 0.5366
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4141
+t=192: Selected seed 195 with value = 0.4141
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4854
+t=208: Selected seed 195 with value = 0.4854
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5214
+t=224: Selected seed 195 with value = 0.5214
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5978
+t=240: Selected seed 195 with value = 0.5978
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2872
+t=256: Selected seed 195 with value = 0.2872
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1513
+t=272: Selected seed 195 with value = 0.1513
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2205
+t=288: Selected seed 195 with value = 0.2205
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2469
+t=304: Selected seed 195 with value = 0.2469
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2441
+t=320: Selected seed 195 with value = 0.2441
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1640
+t=336: Selected seed 195 with value = 0.1640
+Query 1/1: Action query time = 0.774 sec
+Query 1/1 (seed 195): Predicted value = 0.1128
+t=352: Selected seed 195 with value = 0.1128
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1211
+t=368: Selected seed 195 with value = 0.1211
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1280
+t=384: Selected seed 195 with value = 0.1280
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1389
+t=400: Selected seed 195 with value = 0.1389
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1642
+t=416: Selected seed 195 with value = 0.1642
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1786
+t=432: Selected seed 195 with value = 0.1786
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2100
+t=448: Selected seed 195 with value = 0.2100
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2342
+t=464: Selected seed 195 with value = 0.2342
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2684
+t=480: Selected seed 195 with value = 0.2684
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.3449
+t=496: Selected seed 195 with value = 0.3449
+  Episode 16: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=16--success=False--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=16--success=False--task=open_the_cabinet_door.mp4
+Success: False
+# episodes completed so far: 17
+# successes: 13 (76.5%)
+Starting episode 18...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.1422
+t=0: Selected seed 195 with value = 0.1422
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1606
+t=16: Selected seed 195 with value = 0.1606
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1967
+t=32: Selected seed 195 with value = 0.1967
+Query 1/1: Action query time = 0.809 sec
+Query 1/1 (seed 195): Predicted value = 0.2352
+t=48: Selected seed 195 with value = 0.2352
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2914
+t=64: Selected seed 195 with value = 0.2914
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3261
+t=80: Selected seed 195 with value = 0.3261
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3682
+t=96: Selected seed 195 with value = 0.3682
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4455
+t=112: Selected seed 195 with value = 0.4455
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4982
+t=128: Selected seed 195 with value = 0.4982
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5264
+t=144: Selected seed 195 with value = 0.5264
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5734
+t=160: Selected seed 195 with value = 0.5734
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6639
+t=176: Selected seed 195 with value = 0.6639
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7705
+t=192: Selected seed 195 with value = 0.7705
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9225
+t=208: Selected seed 195 with value = 0.9225
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=224: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=240: Selected seed 195 with value = 0.9991
+  Success detected at timestep 245!
+  Episode 17: SUCCESS (length: 246)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=17--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=17--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 18
+# successes: 14 (77.8%)
+Starting episode 19...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.769 sec
+Query 1/1 (seed 195): Predicted value = 0.1034
+t=0: Selected seed 195 with value = 0.1034
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1338
+t=16: Selected seed 195 with value = 0.1338
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2009
+t=32: Selected seed 195 with value = 0.2009
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2605
+t=48: Selected seed 195 with value = 0.2605
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3636
+t=64: Selected seed 195 with value = 0.3636
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4390
+t=80: Selected seed 195 with value = 0.4390
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5009
+t=96: Selected seed 195 with value = 0.5009
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6708
+t=112: Selected seed 195 with value = 0.6708
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7758
+t=128: Selected seed 195 with value = 0.7758
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9176
+t=144: Selected seed 195 with value = 0.9176
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9463
+t=160: Selected seed 195 with value = 0.9463
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4666
+t=176: Selected seed 195 with value = 0.4666
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.5680
+t=192: Selected seed 195 with value = 0.5680
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4870
+t=208: Selected seed 195 with value = 0.4870
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5577
+t=224: Selected seed 195 with value = 0.5577
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6133
+t=240: Selected seed 195 with value = 0.6133
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7098
+t=256: Selected seed 195 with value = 0.7098
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3705
+t=272: Selected seed 195 with value = 0.3705
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3109
+t=288: Selected seed 195 with value = 0.3109
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2893
+t=304: Selected seed 195 with value = 0.2893
+Query 1/1: Action query time = 0.786 sec
+Query 1/1 (seed 195): Predicted value = 0.2887
+t=320: Selected seed 195 with value = 0.2887
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2366
+t=336: Selected seed 195 with value = 0.2366
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1430
+t=352: Selected seed 195 with value = 0.1430
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1431
+t=368: Selected seed 195 with value = 0.1431
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1625
+t=384: Selected seed 195 with value = 0.1625
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1836
+t=400: Selected seed 195 with value = 0.1836
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1927
+t=416: Selected seed 195 with value = 0.1927
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1915
+t=432: Selected seed 195 with value = 0.1915
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2150
+t=448: Selected seed 195 with value = 0.2150
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2457
+t=464: Selected seed 195 with value = 0.2457
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2684
+t=480: Selected seed 195 with value = 0.2684
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3181
+t=496: Selected seed 195 with value = 0.3181
+  Episode 18: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=18--success=False--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=18--success=False--task=open_the_cabinet_door.mp4
+Success: False
+# episodes completed so far: 19
+# successes: 14 (73.7%)
+Starting episode 20...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.1280
+t=0: Selected seed 195 with value = 0.1280
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.1682
+t=16: Selected seed 195 with value = 0.1682
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2087
+t=32: Selected seed 195 with value = 0.2087
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2618
+t=48: Selected seed 195 with value = 0.2618
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3461
+t=64: Selected seed 195 with value = 0.3461
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4097
+t=80: Selected seed 195 with value = 0.4097
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.4726
+t=96: Selected seed 195 with value = 0.4726
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6091
+t=112: Selected seed 195 with value = 0.6091
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6887
+t=128: Selected seed 195 with value = 0.6887
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8089
+t=144: Selected seed 195 with value = 0.8089
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7115
+t=160: Selected seed 195 with value = 0.7115
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9611
+t=176: Selected seed 195 with value = 0.9611
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6168
+t=192: Selected seed 195 with value = 0.6168
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.4582
+t=208: Selected seed 195 with value = 0.4582
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5216
+t=224: Selected seed 195 with value = 0.5216
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5849
+t=240: Selected seed 195 with value = 0.5849
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7451
+t=256: Selected seed 195 with value = 0.7451
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3624
+t=272: Selected seed 195 with value = 0.3624
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3181
+t=288: Selected seed 195 with value = 0.3181
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3716
+t=304: Selected seed 195 with value = 0.3716
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4709
+t=320: Selected seed 195 with value = 0.4709
+Query 1/1: Action query time = 0.798 sec
+Query 1/1 (seed 195): Predicted value = 0.9297
+t=336: Selected seed 195 with value = 0.9297
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.4104
+t=352: Selected seed 195 with value = 0.4104
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.5260
+t=368: Selected seed 195 with value = 0.5260
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5123
+t=384: Selected seed 195 with value = 0.5123
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4302
+t=400: Selected seed 195 with value = 0.4302
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3986
+t=416: Selected seed 195 with value = 0.3986
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8585
+t=432: Selected seed 195 with value = 0.8585
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9450
+t=448: Selected seed 195 with value = 0.9450
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4786
+t=464: Selected seed 195 with value = 0.4786
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6378
+t=480: Selected seed 195 with value = 0.6378
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8140
+t=496: Selected seed 195 with value = 0.8140
+  Episode 19: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=19--success=False--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=19--success=False--task=open_the_cabinet_door.mp4
+Success: False
+# episodes completed so far: 20
+# successes: 14 (70.0%)
+Starting episode 21...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.1658
+t=0: Selected seed 195 with value = 0.1658
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1802
+t=16: Selected seed 195 with value = 0.1802
+Query 1/1: Action query time = 0.769 sec
+Query 1/1 (seed 195): Predicted value = 0.2127
+t=32: Selected seed 195 with value = 0.2127
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2634
+t=48: Selected seed 195 with value = 0.2634
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3090
+t=64: Selected seed 195 with value = 0.3090
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3682
+t=80: Selected seed 195 with value = 0.3682
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4225
+t=96: Selected seed 195 with value = 0.4225
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5246
+t=112: Selected seed 195 with value = 0.5246
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6130
+t=128: Selected seed 195 with value = 0.6130
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7047
+t=144: Selected seed 195 with value = 0.7047
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.8008
+t=160: Selected seed 195 with value = 0.8008
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.9284
+t=176: Selected seed 195 with value = 0.9284
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9961
+t=192: Selected seed 195 with value = 0.9961
+  Success detected at timestep 204!
+  Episode 20: SUCCESS (length: 205)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=20--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=20--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 21
+# successes: 15 (71.4%)
+Starting episode 22...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.759 sec
+Query 1/1 (seed 195): Predicted value = 0.1632
+t=0: Selected seed 195 with value = 0.1632
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1812
+t=16: Selected seed 195 with value = 0.1812
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2106
+t=32: Selected seed 195 with value = 0.2106
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2603
+t=48: Selected seed 195 with value = 0.2603
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3075
+t=64: Selected seed 195 with value = 0.3075
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3691
+t=80: Selected seed 195 with value = 0.3691
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4203
+t=96: Selected seed 195 with value = 0.4203
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5283
+t=112: Selected seed 195 with value = 0.5283
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6012
+t=128: Selected seed 195 with value = 0.6012
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6886
+t=144: Selected seed 195 with value = 0.6886
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7900
+t=160: Selected seed 195 with value = 0.7900
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9484
+t=176: Selected seed 195 with value = 0.9484
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9980
+t=192: Selected seed 195 with value = 0.9980
+  Success detected at timestep 205!
+  Episode 21: SUCCESS (length: 206)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=21--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=21--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 22
+# successes: 16 (72.7%)
+Starting episode 23...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.775 sec
+Query 1/1 (seed 195): Predicted value = 0.1637
+t=0: Selected seed 195 with value = 0.1637
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1810
+t=16: Selected seed 195 with value = 0.1810
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2095
+t=32: Selected seed 195 with value = 0.2095
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2592
+t=48: Selected seed 195 with value = 0.2592
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3076
+t=64: Selected seed 195 with value = 0.3076
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3699
+t=80: Selected seed 195 with value = 0.3699
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4195
+t=96: Selected seed 195 with value = 0.4195
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.5299
+t=112: Selected seed 195 with value = 0.5299
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6033
+t=128: Selected seed 195 with value = 0.6033
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6941
+t=144: Selected seed 195 with value = 0.6941
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7945
+t=160: Selected seed 195 with value = 0.7945
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9597
+t=176: Selected seed 195 with value = 0.9597
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=192: Selected seed 195 with value = 0.9982
+  Success detected at timestep 204!
+  Episode 22: SUCCESS (length: 205)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=22--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=22--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 23
+# successes: 17 (73.9%)
+Starting episode 24...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.764 sec
+Query 1/1 (seed 195): Predicted value = 0.1630
+t=0: Selected seed 195 with value = 0.1630
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1817
+t=16: Selected seed 195 with value = 0.1817
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2109
+t=32: Selected seed 195 with value = 0.2109
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2593
+t=48: Selected seed 195 with value = 0.2593
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3086
+t=64: Selected seed 195 with value = 0.3086
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3683
+t=80: Selected seed 195 with value = 0.3683
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4194
+t=96: Selected seed 195 with value = 0.4194
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5306
+t=112: Selected seed 195 with value = 0.5306
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6014
+t=128: Selected seed 195 with value = 0.6014
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6905
+t=144: Selected seed 195 with value = 0.6905
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.7910
+t=160: Selected seed 195 with value = 0.7910
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.9534
+t=176: Selected seed 195 with value = 0.9534
+Query 1/1: Action query time = 0.760 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=192: Selected seed 195 with value = 0.9983
+  Success detected at timestep 204!
+  Episode 23: SUCCESS (length: 205)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=23--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=23--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 24
+# successes: 18 (75.0%)
+Starting episode 25...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.773 sec
+Query 1/1 (seed 195): Predicted value = 0.1644
+t=0: Selected seed 195 with value = 0.1644
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1782
+t=16: Selected seed 195 with value = 0.1782
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2113
+t=32: Selected seed 195 with value = 0.2113
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2609
+t=48: Selected seed 195 with value = 0.2609
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3096
+t=64: Selected seed 195 with value = 0.3096
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3701
+t=80: Selected seed 195 with value = 0.3701
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4254
+t=96: Selected seed 195 with value = 0.4254
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5236
+t=112: Selected seed 195 with value = 0.5236
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6105
+t=128: Selected seed 195 with value = 0.6105
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7039
+t=144: Selected seed 195 with value = 0.7039
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8036
+t=160: Selected seed 195 with value = 0.8036
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9773
+t=176: Selected seed 195 with value = 0.9773
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=192: Selected seed 195 with value = 0.9981
+  Success detected at timestep 203!
+  Episode 24: SUCCESS (length: 204)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=24--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=24--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 25
+# successes: 19 (76.0%)
+Starting episode 26...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.1642
+t=0: Selected seed 195 with value = 0.1642
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1824
+t=16: Selected seed 195 with value = 0.1824
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2111
+t=32: Selected seed 195 with value = 0.2111
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2560
+t=48: Selected seed 195 with value = 0.2560
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3088
+t=64: Selected seed 195 with value = 0.3088
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3637
+t=80: Selected seed 195 with value = 0.3637
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4166
+t=96: Selected seed 195 with value = 0.4166
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5279
+t=112: Selected seed 195 with value = 0.5279
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.5982
+t=128: Selected seed 195 with value = 0.5982
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6904
+t=144: Selected seed 195 with value = 0.6904
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.7857
+t=160: Selected seed 195 with value = 0.7857
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9585
+t=176: Selected seed 195 with value = 0.9585
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=192: Selected seed 195 with value = 0.9983
+  Success detected at timestep 204!
+  Episode 25: SUCCESS (length: 205)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=25--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=25--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 26
+# successes: 20 (76.9%)
+Starting episode 27...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.769 sec
+Query 1/1 (seed 195): Predicted value = 0.1653
+t=0: Selected seed 195 with value = 0.1653
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1830
+t=16: Selected seed 195 with value = 0.1830
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2113
+t=32: Selected seed 195 with value = 0.2113
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2561
+t=48: Selected seed 195 with value = 0.2561
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3086
+t=64: Selected seed 195 with value = 0.3086
+Query 1/1: Action query time = 0.728 sec
+Query 1/1 (seed 195): Predicted value = 0.3613
+t=80: Selected seed 195 with value = 0.3613
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4162
+t=96: Selected seed 195 with value = 0.4162
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5261
+t=112: Selected seed 195 with value = 0.5261
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6078
+t=128: Selected seed 195 with value = 0.6078
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6988
+t=144: Selected seed 195 with value = 0.6988
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7880
+t=160: Selected seed 195 with value = 0.7880
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9478
+t=176: Selected seed 195 with value = 0.9478
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=192: Selected seed 195 with value = 0.9981
+  Success detected at timestep 204!
+  Episode 26: SUCCESS (length: 205)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=26--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=26--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 27
+# successes: 21 (77.8%)
+Starting episode 28...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.787 sec
+Query 1/1 (seed 195): Predicted value = 0.1657
+t=0: Selected seed 195 with value = 0.1657
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1830
+t=16: Selected seed 195 with value = 0.1830
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2111
+t=32: Selected seed 195 with value = 0.2111
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2560
+t=48: Selected seed 195 with value = 0.2560
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3093
+t=64: Selected seed 195 with value = 0.3093
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3624
+t=80: Selected seed 195 with value = 0.3624
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4171
+t=96: Selected seed 195 with value = 0.4171
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.5265
+t=112: Selected seed 195 with value = 0.5265
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6096
+t=128: Selected seed 195 with value = 0.6096
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7004
+t=144: Selected seed 195 with value = 0.7004
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7895
+t=160: Selected seed 195 with value = 0.7895
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9477
+t=176: Selected seed 195 with value = 0.9477
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9982
+t=192: Selected seed 195 with value = 0.9982
+  Success detected at timestep 203!
+  Episode 27: SUCCESS (length: 204)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=27--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=27--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 28
+# successes: 22 (78.6%)
+Starting episode 29...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.773 sec
+Query 1/1 (seed 195): Predicted value = 0.1660
+t=0: Selected seed 195 with value = 0.1660
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1832
+t=16: Selected seed 195 with value = 0.1832
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2108
+t=32: Selected seed 195 with value = 0.2108
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2559
+t=48: Selected seed 195 with value = 0.2559
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3089
+t=64: Selected seed 195 with value = 0.3089
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3615
+t=80: Selected seed 195 with value = 0.3615
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4160
+t=96: Selected seed 195 with value = 0.4160
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5272
+t=112: Selected seed 195 with value = 0.5272
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6078
+t=128: Selected seed 195 with value = 0.6078
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6952
+t=144: Selected seed 195 with value = 0.6952
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7838
+t=160: Selected seed 195 with value = 0.7838
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9438
+t=176: Selected seed 195 with value = 0.9438
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=192: Selected seed 195 with value = 0.9981
+  Success detected at timestep 204!
+  Episode 28: SUCCESS (length: 205)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=28--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=28--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 29
+# successes: 23 (79.3%)
+Starting episode 30...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.770 sec
+Query 1/1 (seed 195): Predicted value = 0.1636
+t=0: Selected seed 195 with value = 0.1636
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1804
+t=16: Selected seed 195 with value = 0.1804
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2098
+t=32: Selected seed 195 with value = 0.2098
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.2614
+t=48: Selected seed 195 with value = 0.2614
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3078
+t=64: Selected seed 195 with value = 0.3078
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3712
+t=80: Selected seed 195 with value = 0.3712
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4213
+t=96: Selected seed 195 with value = 0.4213
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5281
+t=112: Selected seed 195 with value = 0.5281
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.6063
+t=128: Selected seed 195 with value = 0.6063
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6975
+t=144: Selected seed 195 with value = 0.6975
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7989
+t=160: Selected seed 195 with value = 0.7989
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9674
+t=176: Selected seed 195 with value = 0.9674
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=192: Selected seed 195 with value = 0.9983
+  Success detected at timestep 204!
+  Episode 29: SUCCESS (length: 205)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=29--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=29--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 30
+# successes: 24 (80.0%)
+Starting episode 31...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.770 sec
+Query 1/1 (seed 195): Predicted value = 0.0732
+t=0: Selected seed 195 with value = 0.0732
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0778
+t=16: Selected seed 195 with value = 0.0778
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0955
+t=32: Selected seed 195 with value = 0.0955
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0971
+t=48: Selected seed 195 with value = 0.0971
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1318
+t=64: Selected seed 195 with value = 0.1318
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1369
+t=80: Selected seed 195 with value = 0.1369
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1458
+t=96: Selected seed 195 with value = 0.1458
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1605
+t=112: Selected seed 195 with value = 0.1605
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1987
+t=128: Selected seed 195 with value = 0.1987
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2212
+t=144: Selected seed 195 with value = 0.2212
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2729
+t=160: Selected seed 195 with value = 0.2729
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3052
+t=176: Selected seed 195 with value = 0.3052
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3510
+t=192: Selected seed 195 with value = 0.3510
+Query 1/1: Action query time = 0.817 sec
+Query 1/1 (seed 195): Predicted value = 0.4601
+t=208: Selected seed 195 with value = 0.4601
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5025
+t=224: Selected seed 195 with value = 0.5025
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6321
+t=240: Selected seed 195 with value = 0.6321
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7564
+t=256: Selected seed 195 with value = 0.7564
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8604
+t=272: Selected seed 195 with value = 0.8604
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9786
+t=288: Selected seed 195 with value = 0.9786
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=304: Selected seed 195 with value = 0.9991
+  Success detected at timestep 312!
+  Episode 30: SUCCESS (length: 313)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=30--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=30--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 31
+# successes: 25 (80.6%)
+Starting episode 32...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.0861
+t=0: Selected seed 195 with value = 0.0861
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.0918
+t=16: Selected seed 195 with value = 0.0918
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1133
+t=32: Selected seed 195 with value = 0.1133
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1935
+t=48: Selected seed 195 with value = 0.1935
+Query 1/1: Action query time = 0.765 sec
+Query 1/1 (seed 195): Predicted value = 0.3271
+t=64: Selected seed 195 with value = 0.3271
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3886
+t=80: Selected seed 195 with value = 0.3886
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4065
+t=96: Selected seed 195 with value = 0.4065
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4258
+t=112: Selected seed 195 with value = 0.4258
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6684
+t=128: Selected seed 195 with value = 0.6684
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7778
+t=144: Selected seed 195 with value = 0.7778
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6558
+t=160: Selected seed 195 with value = 0.6558
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3309
+t=176: Selected seed 195 with value = 0.3309
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3470
+t=192: Selected seed 195 with value = 0.3470
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3562
+t=208: Selected seed 195 with value = 0.3562
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4787
+t=224: Selected seed 195 with value = 0.4787
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5136
+t=240: Selected seed 195 with value = 0.5136
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5400
+t=256: Selected seed 195 with value = 0.5400
+Query 1/1: Action query time = 0.800 sec
+Query 1/1 (seed 195): Predicted value = 0.5833
+t=272: Selected seed 195 with value = 0.5833
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4865
+t=288: Selected seed 195 with value = 0.4865
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.3381
+t=304: Selected seed 195 with value = 0.3381
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.4164
+t=320: Selected seed 195 with value = 0.4164
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4206
+t=336: Selected seed 195 with value = 0.4206
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3980
+t=352: Selected seed 195 with value = 0.3980
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4186
+t=368: Selected seed 195 with value = 0.4186
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.5718
+t=384: Selected seed 195 with value = 0.5718
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6226
+t=400: Selected seed 195 with value = 0.6226
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6998
+t=416: Selected seed 195 with value = 0.6998
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6229
+t=432: Selected seed 195 with value = 0.6229
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5573
+t=448: Selected seed 195 with value = 0.5573
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3664
+t=464: Selected seed 195 with value = 0.3664
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3762
+t=480: Selected seed 195 with value = 0.3762
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5131
+t=496: Selected seed 195 with value = 0.5131
+  Episode 31: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=31--success=False--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=31--success=False--task=open_the_cabinet_door.mp4
+Success: False
+# episodes completed so far: 32
+# successes: 25 (78.1%)
+Starting episode 33...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.772 sec
+Query 1/1 (seed 195): Predicted value = 0.0466
+t=0: Selected seed 195 with value = 0.0466
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0674
+t=16: Selected seed 195 with value = 0.0674
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0775
+t=32: Selected seed 195 with value = 0.0775
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0785
+t=48: Selected seed 195 with value = 0.0785
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1186
+t=64: Selected seed 195 with value = 0.1186
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1393
+t=80: Selected seed 195 with value = 0.1393
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1570
+t=96: Selected seed 195 with value = 0.1570
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1917
+t=112: Selected seed 195 with value = 0.1917
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2189
+t=128: Selected seed 195 with value = 0.2189
+Query 1/1: Action query time = 0.794 sec
+Query 1/1 (seed 195): Predicted value = 0.2663
+t=144: Selected seed 195 with value = 0.2663
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3296
+t=160: Selected seed 195 with value = 0.3296
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.4315
+t=176: Selected seed 195 with value = 0.4315
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.4464
+t=192: Selected seed 195 with value = 0.4464
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.4293
+t=208: Selected seed 195 with value = 0.4293
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.5033
+t=224: Selected seed 195 with value = 0.5033
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6429
+t=240: Selected seed 195 with value = 0.6429
+  Success detected at timestep 240!
+  Episode 32: SUCCESS (length: 241)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=32--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=32--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 33
+# successes: 26 (78.8%)
+Starting episode 34...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.1428
+t=0: Selected seed 195 with value = 0.1428
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1661
+t=16: Selected seed 195 with value = 0.1661
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2058
+t=32: Selected seed 195 with value = 0.2058
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2474
+t=48: Selected seed 195 with value = 0.2474
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3401
+t=64: Selected seed 195 with value = 0.3401
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4055
+t=80: Selected seed 195 with value = 0.4055
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4776
+t=96: Selected seed 195 with value = 0.4776
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6011
+t=112: Selected seed 195 with value = 0.6011
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6871
+t=128: Selected seed 195 with value = 0.6871
+Query 1/1: Action query time = 0.766 sec
+Query 1/1 (seed 195): Predicted value = 0.8330
+t=144: Selected seed 195 with value = 0.8330
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9769
+t=160: Selected seed 195 with value = 0.9769
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=176: Selected seed 195 with value = 0.9983
+  Success detected at timestep 191!
+  Episode 33: SUCCESS (length: 192)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=33--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=33--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 34
+# successes: 27 (79.4%)
+Starting episode 35...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.775 sec
+Query 1/1 (seed 195): Predicted value = 0.0501
+t=0: Selected seed 195 with value = 0.0501
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0625
+t=16: Selected seed 195 with value = 0.0625
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0756
+t=32: Selected seed 195 with value = 0.0756
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0821
+t=48: Selected seed 195 with value = 0.0821
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1204
+t=64: Selected seed 195 with value = 0.1204
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1418
+t=80: Selected seed 195 with value = 0.1418
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1673
+t=96: Selected seed 195 with value = 0.1673
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.2196
+t=112: Selected seed 195 with value = 0.2196
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2433
+t=128: Selected seed 195 with value = 0.2433
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2917
+t=144: Selected seed 195 with value = 0.2917
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3522
+t=160: Selected seed 195 with value = 0.3522
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4668
+t=176: Selected seed 195 with value = 0.4668
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6286
+t=192: Selected seed 195 with value = 0.6286
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7203
+t=208: Selected seed 195 with value = 0.7203
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7287
+t=224: Selected seed 195 with value = 0.7287
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8831
+t=240: Selected seed 195 with value = 0.8831
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9831
+t=256: Selected seed 195 with value = 0.9831
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=272: Selected seed 195 with value = 0.9992
+  Success detected at timestep 281!
+  Episode 34: SUCCESS (length: 282)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=34--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=34--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 35
+# successes: 28 (80.0%)
+Starting episode 36...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.773 sec
+Query 1/1 (seed 195): Predicted value = 0.0893
+t=0: Selected seed 195 with value = 0.0893
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1022
+t=16: Selected seed 195 with value = 0.1022
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1174
+t=32: Selected seed 195 with value = 0.1174
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1491
+t=48: Selected seed 195 with value = 0.1491
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2208
+t=64: Selected seed 195 with value = 0.2208
+Query 1/1: Action query time = 0.791 sec
+Query 1/1 (seed 195): Predicted value = 0.3691
+t=80: Selected seed 195 with value = 0.3691
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3690
+t=96: Selected seed 195 with value = 0.3690
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3517
+t=112: Selected seed 195 with value = 0.3517
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.3198
+t=128: Selected seed 195 with value = 0.3198
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3007
+t=144: Selected seed 195 with value = 0.3007
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3063
+t=160: Selected seed 195 with value = 0.3063
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.2890
+t=176: Selected seed 195 with value = 0.2890
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.2462
+t=192: Selected seed 195 with value = 0.2462
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.1607
+t=208: Selected seed 195 with value = 0.1607
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.1428
+t=224: Selected seed 195 with value = 0.1428
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1482
+t=240: Selected seed 195 with value = 0.1482
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1571
+t=256: Selected seed 195 with value = 0.1571
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1569
+t=272: Selected seed 195 with value = 0.1569
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1519
+t=288: Selected seed 195 with value = 0.1519
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1679
+t=304: Selected seed 195 with value = 0.1679
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2370
+t=320: Selected seed 195 with value = 0.2370
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1932
+t=336: Selected seed 195 with value = 0.1932
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2308
+t=352: Selected seed 195 with value = 0.2308
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.2772
+t=368: Selected seed 195 with value = 0.2772
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.3083
+t=384: Selected seed 195 with value = 0.3083
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3534
+t=400: Selected seed 195 with value = 0.3534
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.4796
+t=416: Selected seed 195 with value = 0.4796
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.4977
+t=432: Selected seed 195 with value = 0.4977
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.6259
+t=448: Selected seed 195 with value = 0.6259
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7190
+t=464: Selected seed 195 with value = 0.7190
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.7599
+t=480: Selected seed 195 with value = 0.7599
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9233
+t=496: Selected seed 195 with value = 0.9233
+  Episode 35: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=35--success=False--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=35--success=False--task=open_the_cabinet_door.mp4
+Success: False
+# episodes completed so far: 36
+# successes: 28 (77.8%)
+Starting episode 37...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.778 sec
+Query 1/1 (seed 195): Predicted value = 0.0482
+t=0: Selected seed 195 with value = 0.0482
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0749
+t=16: Selected seed 195 with value = 0.0749
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0794
+t=32: Selected seed 195 with value = 0.0794
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.0903
+t=48: Selected seed 195 with value = 0.0903
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1237
+t=64: Selected seed 195 with value = 0.1237
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1483
+t=80: Selected seed 195 with value = 0.1483
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1720
+t=96: Selected seed 195 with value = 0.1720
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2125
+t=112: Selected seed 195 with value = 0.2125
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2490
+t=128: Selected seed 195 with value = 0.2490
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3534
+t=144: Selected seed 195 with value = 0.3534
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3979
+t=160: Selected seed 195 with value = 0.3979
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4890
+t=176: Selected seed 195 with value = 0.4890
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4055
+t=192: Selected seed 195 with value = 0.4055
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4568
+t=208: Selected seed 195 with value = 0.4568
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5366
+t=224: Selected seed 195 with value = 0.5366
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8303
+t=240: Selected seed 195 with value = 0.8303
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8961
+t=256: Selected seed 195 with value = 0.8961
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8955
+t=272: Selected seed 195 with value = 0.8955
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9773
+t=288: Selected seed 195 with value = 0.9773
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9844
+t=304: Selected seed 195 with value = 0.9844
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9124
+t=320: Selected seed 195 with value = 0.9124
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.5431
+t=336: Selected seed 195 with value = 0.5431
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6825
+t=352: Selected seed 195 with value = 0.6825
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4436
+t=368: Selected seed 195 with value = 0.4436
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5663
+t=384: Selected seed 195 with value = 0.5663
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7837
+t=400: Selected seed 195 with value = 0.7837
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8982
+t=416: Selected seed 195 with value = 0.8982
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9696
+t=432: Selected seed 195 with value = 0.9696
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3221
+t=448: Selected seed 195 with value = 0.3221
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5985
+t=464: Selected seed 195 with value = 0.5985
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9538
+t=480: Selected seed 195 with value = 0.9538
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3295
+t=496: Selected seed 195 with value = 0.3295
+  Episode 36: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=36--success=False--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=36--success=False--task=open_the_cabinet_door.mp4
+Success: False
+# episodes completed so far: 37
+# successes: 28 (75.7%)
+Starting episode 38...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.791 sec
+Query 1/1 (seed 195): Predicted value = 0.0674
+t=0: Selected seed 195 with value = 0.0674
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0822
+t=16: Selected seed 195 with value = 0.0822
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0912
+t=32: Selected seed 195 with value = 0.0912
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1132
+t=48: Selected seed 195 with value = 0.1132
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1303
+t=64: Selected seed 195 with value = 0.1303
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1328
+t=80: Selected seed 195 with value = 0.1328
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1440
+t=96: Selected seed 195 with value = 0.1440
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1638
+t=112: Selected seed 195 with value = 0.1638
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2666
+t=128: Selected seed 195 with value = 0.2666
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2936
+t=144: Selected seed 195 with value = 0.2936
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3502
+t=160: Selected seed 195 with value = 0.3502
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.4093
+t=176: Selected seed 195 with value = 0.4093
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.4372
+t=192: Selected seed 195 with value = 0.4372
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5218
+t=208: Selected seed 195 with value = 0.5218
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.5107
+t=224: Selected seed 195 with value = 0.5107
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.5873
+t=240: Selected seed 195 with value = 0.5873
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6105
+t=256: Selected seed 195 with value = 0.6105
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6456
+t=272: Selected seed 195 with value = 0.6456
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4649
+t=288: Selected seed 195 with value = 0.4649
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1469
+t=304: Selected seed 195 with value = 0.1469
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2874
+t=320: Selected seed 195 with value = 0.2874
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3373
+t=336: Selected seed 195 with value = 0.3373
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4252
+t=352: Selected seed 195 with value = 0.4252
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.4372
+t=368: Selected seed 195 with value = 0.4372
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.4270
+t=384: Selected seed 195 with value = 0.4270
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5035
+t=400: Selected seed 195 with value = 0.5035
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5463
+t=416: Selected seed 195 with value = 0.5463
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6334
+t=432: Selected seed 195 with value = 0.6334
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6665
+t=448: Selected seed 195 with value = 0.6665
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8032
+t=464: Selected seed 195 with value = 0.8032
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5671
+t=480: Selected seed 195 with value = 0.5671
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.2637
+t=496: Selected seed 195 with value = 0.2637
+  Episode 37: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=37--success=False--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=37--success=False--task=open_the_cabinet_door.mp4
+Success: False
+# episodes completed so far: 38
+# successes: 28 (73.7%)
+Starting episode 39...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.796 sec
+Query 1/1 (seed 195): Predicted value = 0.0454
+t=0: Selected seed 195 with value = 0.0454
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0723
+t=16: Selected seed 195 with value = 0.0723
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0713
+t=32: Selected seed 195 with value = 0.0713
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0912
+t=48: Selected seed 195 with value = 0.0912
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1166
+t=64: Selected seed 195 with value = 0.1166
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1407
+t=80: Selected seed 195 with value = 0.1407
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1668
+t=96: Selected seed 195 with value = 0.1668
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2059
+t=112: Selected seed 195 with value = 0.2059
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2378
+t=128: Selected seed 195 with value = 0.2378
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3353
+t=144: Selected seed 195 with value = 0.3353
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3987
+t=160: Selected seed 195 with value = 0.3987
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4750
+t=176: Selected seed 195 with value = 0.4750
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5950
+t=192: Selected seed 195 with value = 0.5950
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6856
+t=208: Selected seed 195 with value = 0.6856
+  Success detected at timestep 220!
+  Episode 38: SUCCESS (length: 221)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=38--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=38--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 39
+# successes: 29 (74.4%)
+Starting episode 40...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.0430
+t=0: Selected seed 195 with value = 0.0430
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0621
+t=16: Selected seed 195 with value = 0.0621
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0752
+t=32: Selected seed 195 with value = 0.0752
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.0859
+t=48: Selected seed 195 with value = 0.0859
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1214
+t=64: Selected seed 195 with value = 0.1214
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1467
+t=80: Selected seed 195 with value = 0.1467
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1737
+t=96: Selected seed 195 with value = 0.1737
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2248
+t=112: Selected seed 195 with value = 0.2248
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2528
+t=128: Selected seed 195 with value = 0.2528
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2878
+t=144: Selected seed 195 with value = 0.2878
+Query 1/1: Action query time = 0.808 sec
+Query 1/1 (seed 195): Predicted value = 0.3285
+t=160: Selected seed 195 with value = 0.3285
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4475
+t=176: Selected seed 195 with value = 0.4475
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6411
+t=192: Selected seed 195 with value = 0.6411
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7290
+t=208: Selected seed 195 with value = 0.7290
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.8626
+t=224: Selected seed 195 with value = 0.8626
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9129
+t=240: Selected seed 195 with value = 0.9129
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9583
+t=256: Selected seed 195 with value = 0.9583
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9928
+t=272: Selected seed 195 with value = 0.9928
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=288: Selected seed 195 with value = 0.9997
+  Success detected at timestep 291!
+  Episode 39: SUCCESS (length: 292)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=39--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=39--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 40
+# successes: 30 (75.0%)
+Starting episode 41...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.0670
+t=0: Selected seed 195 with value = 0.0670
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.0715
+t=16: Selected seed 195 with value = 0.0715
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1340
+t=32: Selected seed 195 with value = 0.1340
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1893
+t=48: Selected seed 195 with value = 0.1893
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2629
+t=64: Selected seed 195 with value = 0.2629
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3434
+t=80: Selected seed 195 with value = 0.3434
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3702
+t=96: Selected seed 195 with value = 0.3702
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3508
+t=112: Selected seed 195 with value = 0.3508
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2215
+t=128: Selected seed 195 with value = 0.2215
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.2511
+t=144: Selected seed 195 with value = 0.2511
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2895
+t=160: Selected seed 195 with value = 0.2895
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5205
+t=176: Selected seed 195 with value = 0.5205
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.7797
+t=192: Selected seed 195 with value = 0.7797
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8224
+t=208: Selected seed 195 with value = 0.8224
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6277
+t=224: Selected seed 195 with value = 0.6277
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4450
+t=240: Selected seed 195 with value = 0.4450
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4430
+t=256: Selected seed 195 with value = 0.4430
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5366
+t=272: Selected seed 195 with value = 0.5366
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7135
+t=288: Selected seed 195 with value = 0.7135
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8774
+t=304: Selected seed 195 with value = 0.8774
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7245
+t=320: Selected seed 195 with value = 0.7245
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7163
+t=336: Selected seed 195 with value = 0.7163
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7908
+t=352: Selected seed 195 with value = 0.7908
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6779
+t=368: Selected seed 195 with value = 0.6779
+  Success detected at timestep 369!
+  Episode 40: SUCCESS (length: 370)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=40--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=40--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 41
+# successes: 31 (75.6%)
+Starting episode 42...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.773 sec
+Query 1/1 (seed 195): Predicted value = 0.0949
+t=0: Selected seed 195 with value = 0.0949
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1297
+t=16: Selected seed 195 with value = 0.1297
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1449
+t=32: Selected seed 195 with value = 0.1449
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1513
+t=48: Selected seed 195 with value = 0.1513
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1370
+t=64: Selected seed 195 with value = 0.1370
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1553
+t=80: Selected seed 195 with value = 0.1553
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1777
+t=96: Selected seed 195 with value = 0.1777
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.2060
+t=112: Selected seed 195 with value = 0.2060
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2301
+t=128: Selected seed 195 with value = 0.2301
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2628
+t=144: Selected seed 195 with value = 0.2628
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2865
+t=160: Selected seed 195 with value = 0.2865
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3427
+t=176: Selected seed 195 with value = 0.3427
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4511
+t=192: Selected seed 195 with value = 0.4511
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5396
+t=208: Selected seed 195 with value = 0.5396
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6049
+t=224: Selected seed 195 with value = 0.6049
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7070
+t=240: Selected seed 195 with value = 0.7070
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8758
+t=256: Selected seed 195 with value = 0.8758
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.9349
+t=272: Selected seed 195 with value = 0.9349
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9820
+t=288: Selected seed 195 with value = 0.9820
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=304: Selected seed 195 with value = 0.9991
+  Success detected at timestep 308!
+  Episode 41: SUCCESS (length: 309)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=41--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=41--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 42
+# successes: 32 (76.2%)
+Starting episode 43...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.769 sec
+Query 1/1 (seed 195): Predicted value = 0.0361
+t=0: Selected seed 195 with value = 0.0361
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.0456
+t=16: Selected seed 195 with value = 0.0456
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.0517
+t=32: Selected seed 195 with value = 0.0517
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0609
+t=48: Selected seed 195 with value = 0.0609
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0878
+t=64: Selected seed 195 with value = 0.0878
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1028
+t=80: Selected seed 195 with value = 0.1028
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1246
+t=96: Selected seed 195 with value = 0.1246
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1572
+t=112: Selected seed 195 with value = 0.1572
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1753
+t=128: Selected seed 195 with value = 0.1753
+Query 1/1: Action query time = 0.794 sec
+Query 1/1 (seed 195): Predicted value = 0.2268
+t=144: Selected seed 195 with value = 0.2268
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2520
+t=160: Selected seed 195 with value = 0.2520
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2987
+t=176: Selected seed 195 with value = 0.2987
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3733
+t=192: Selected seed 195 with value = 0.3733
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4665
+t=208: Selected seed 195 with value = 0.4665
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5506
+t=224: Selected seed 195 with value = 0.5506
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6906
+t=240: Selected seed 195 with value = 0.6906
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7962
+t=256: Selected seed 195 with value = 0.7962
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.8905
+t=272: Selected seed 195 with value = 0.8905
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9516
+t=288: Selected seed 195 with value = 0.9516
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9983
+t=304: Selected seed 195 with value = 0.9983
+  Success detected at timestep 314!
+  Episode 42: SUCCESS (length: 315)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=42--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=42--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 43
+# successes: 33 (76.7%)
+Starting episode 44...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.0331
+t=0: Selected seed 195 with value = 0.0331
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0363
+t=16: Selected seed 195 with value = 0.0363
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.0417
+t=32: Selected seed 195 with value = 0.0417
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.0559
+t=48: Selected seed 195 with value = 0.0559
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.0767
+t=64: Selected seed 195 with value = 0.0767
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.0968
+t=80: Selected seed 195 with value = 0.0968
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1137
+t=96: Selected seed 195 with value = 0.1137
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1517
+t=112: Selected seed 195 with value = 0.1517
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1763
+t=128: Selected seed 195 with value = 0.1763
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2156
+t=144: Selected seed 195 with value = 0.2156
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2351
+t=160: Selected seed 195 with value = 0.2351
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2790
+t=176: Selected seed 195 with value = 0.2790
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3526
+t=192: Selected seed 195 with value = 0.3526
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4660
+t=208: Selected seed 195 with value = 0.4660
+Query 1/1: Action query time = 0.774 sec
+Query 1/1 (seed 195): Predicted value = 0.5183
+t=224: Selected seed 195 with value = 0.5183
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6741
+t=240: Selected seed 195 with value = 0.6741
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7404
+t=256: Selected seed 195 with value = 0.7404
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8639
+t=272: Selected seed 195 with value = 0.8639
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9308
+t=288: Selected seed 195 with value = 0.9308
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=304: Selected seed 195 with value = 0.9986
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=320: Selected seed 195 with value = 0.9991
+  Success detected at timestep 320!
+  Episode 43: SUCCESS (length: 321)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=43--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=43--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 44
+# successes: 34 (77.3%)
+Starting episode 45...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.780 sec
+Query 1/1 (seed 195): Predicted value = 0.0618
+t=0: Selected seed 195 with value = 0.0618
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.0687
+t=16: Selected seed 195 with value = 0.0687
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1577
+t=32: Selected seed 195 with value = 0.1577
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1986
+t=48: Selected seed 195 with value = 0.1986
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2954
+t=64: Selected seed 195 with value = 0.2954
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3453
+t=80: Selected seed 195 with value = 0.3453
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4303
+t=96: Selected seed 195 with value = 0.4303
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3165
+t=112: Selected seed 195 with value = 0.3165
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2337
+t=128: Selected seed 195 with value = 0.2337
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.2473
+t=144: Selected seed 195 with value = 0.2473
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2680
+t=160: Selected seed 195 with value = 0.2680
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2733
+t=176: Selected seed 195 with value = 0.2733
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2844
+t=192: Selected seed 195 with value = 0.2844
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.2925
+t=208: Selected seed 195 with value = 0.2925
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3075
+t=224: Selected seed 195 with value = 0.3075
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3050
+t=240: Selected seed 195 with value = 0.3050
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3067
+t=256: Selected seed 195 with value = 0.3067
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3043
+t=272: Selected seed 195 with value = 0.3043
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2956
+t=288: Selected seed 195 with value = 0.2956
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2948
+t=304: Selected seed 195 with value = 0.2948
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2914
+t=320: Selected seed 195 with value = 0.2914
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2833
+t=336: Selected seed 195 with value = 0.2833
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2679
+t=352: Selected seed 195 with value = 0.2679
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2580
+t=368: Selected seed 195 with value = 0.2580
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.2490
+t=384: Selected seed 195 with value = 0.2490
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2577
+t=400: Selected seed 195 with value = 0.2577
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4551
+t=416: Selected seed 195 with value = 0.4551
+Query 1/1: Action query time = 0.778 sec
+Query 1/1 (seed 195): Predicted value = 0.2671
+t=432: Selected seed 195 with value = 0.2671
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7072
+t=448: Selected seed 195 with value = 0.7072
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8046
+t=464: Selected seed 195 with value = 0.8046
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3597
+t=480: Selected seed 195 with value = 0.3597
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.4955
+t=496: Selected seed 195 with value = 0.4955
+  Episode 44: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=44--success=False--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=44--success=False--task=open_the_cabinet_door.mp4
+Success: False
+# episodes completed so far: 45
+# successes: 34 (75.6%)
+Starting episode 46...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.0552
+t=0: Selected seed 195 with value = 0.0552
+Query 1/1: Action query time = 0.761 sec
+Query 1/1 (seed 195): Predicted value = 0.0596
+t=16: Selected seed 195 with value = 0.0596
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.1235
+t=32: Selected seed 195 with value = 0.1235
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.1933
+t=48: Selected seed 195 with value = 0.1933
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2496
+t=64: Selected seed 195 with value = 0.2496
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3338
+t=80: Selected seed 195 with value = 0.3338
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3304
+t=96: Selected seed 195 with value = 0.3304
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.3931
+t=112: Selected seed 195 with value = 0.3931
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.1972
+t=128: Selected seed 195 with value = 0.1972
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2668
+t=144: Selected seed 195 with value = 0.2668
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2326
+t=160: Selected seed 195 with value = 0.2326
+Query 1/1: Action query time = 0.729 sec
+Query 1/1 (seed 195): Predicted value = 0.6813
+t=176: Selected seed 195 with value = 0.6813
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8280
+t=192: Selected seed 195 with value = 0.8280
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8258
+t=208: Selected seed 195 with value = 0.8258
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.9765
+t=224: Selected seed 195 with value = 0.9765
+  Success detected at timestep 238!
+  Episode 45: SUCCESS (length: 239)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=45--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=45--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 46
+# successes: 35 (76.1%)
+Starting episode 47...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.0813
+t=0: Selected seed 195 with value = 0.0813
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1132
+t=16: Selected seed 195 with value = 0.1132
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1071
+t=32: Selected seed 195 with value = 0.1071
+Query 1/1: Action query time = 0.778 sec
+Query 1/1 (seed 195): Predicted value = 0.1207
+t=48: Selected seed 195 with value = 0.1207
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1333
+t=64: Selected seed 195 with value = 0.1333
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1575
+t=80: Selected seed 195 with value = 0.1575
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.1877
+t=96: Selected seed 195 with value = 0.1877
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2224
+t=112: Selected seed 195 with value = 0.2224
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2358
+t=128: Selected seed 195 with value = 0.2358
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2774
+t=144: Selected seed 195 with value = 0.2774
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2984
+t=160: Selected seed 195 with value = 0.2984
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3392
+t=176: Selected seed 195 with value = 0.3392
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4522
+t=192: Selected seed 195 with value = 0.4522
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5512
+t=208: Selected seed 195 with value = 0.5512
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6401
+t=224: Selected seed 195 with value = 0.6401
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7365
+t=240: Selected seed 195 with value = 0.7365
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9007
+t=256: Selected seed 195 with value = 0.9007
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9686
+t=272: Selected seed 195 with value = 0.9686
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9974
+t=288: Selected seed 195 with value = 0.9974
+  Success detected at timestep 303!
+  Episode 46: SUCCESS (length: 304)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=46--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=46--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 47
+# successes: 36 (76.6%)
+Starting episode 48...
+
+Task description: open the cabinet door
+Query 1/1: Action query time = 0.776 sec
+Query 1/1 (seed 195): Predicted value = 0.0989
+t=0: Selected seed 195 with value = 0.0989
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1211
+t=16: Selected seed 195 with value = 0.1211
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1350
+t=32: Selected seed 195 with value = 0.1350
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1546
+t=48: Selected seed 195 with value = 0.1546
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1383
+t=64: Selected seed 195 with value = 0.1383
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1635
+t=80: Selected seed 195 with value = 0.1635
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1829
+t=96: Selected seed 195 with value = 0.1829
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2144
+t=112: Selected seed 195 with value = 0.2144
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2394
+t=128: Selected seed 195 with value = 0.2394
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2726
+t=144: Selected seed 195 with value = 0.2726
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3023
+t=160: Selected seed 195 with value = 0.3023
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3465
+t=176: Selected seed 195 with value = 0.3465
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4531
+t=192: Selected seed 195 with value = 0.4531
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5431
+t=208: Selected seed 195 with value = 0.5431
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6188
+t=224: Selected seed 195 with value = 0.6188
+Query 1/1: Action query time = 0.764 sec
+Query 1/1 (seed 195): Predicted value = 0.7123
+t=240: Selected seed 195 with value = 0.7123
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8517
+t=256: Selected seed 195 with value = 0.8517
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9062
+t=272: Selected seed 195 with value = 0.9062
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9609
+t=288: Selected seed 195 with value = 0.9609
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=304: Selected seed 195 with value = 0.9987
+  Success detected at timestep 314!
+  Episode 47: SUCCESS (length: 315)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=47--success=True--task=open_the_cabinet_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=47--success=True--task=open_the_cabinet_door.mp4
+Success: True
+# episodes completed so far: 48
+# successes: 37 (77.1%)
+Starting episode 49...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.1753
+t=0: Selected seed 195 with value = 0.1753
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1922
+t=16: Selected seed 195 with value = 0.1922
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2313
+t=32: Selected seed 195 with value = 0.2313
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2751
+t=48: Selected seed 195 with value = 0.2751
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3642
+t=64: Selected seed 195 with value = 0.3642
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4308
+t=80: Selected seed 195 with value = 0.4308
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5537
+t=96: Selected seed 195 with value = 0.5537
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5856
+t=112: Selected seed 195 with value = 0.5856
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6073
+t=128: Selected seed 195 with value = 0.6073
+Query 1/1: Action query time = 0.799 sec
+Query 1/1 (seed 195): Predicted value = 0.6969
+t=144: Selected seed 195 with value = 0.6969
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7936
+t=160: Selected seed 195 with value = 0.7936
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9156
+t=176: Selected seed 195 with value = 0.9156
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=192: Selected seed 195 with value = 0.9990
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=208: Selected seed 195 with value = 0.9991
+  Success detected at timestep 212!
+  Episode 48: SUCCESS (length: 213)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=48--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=48--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 49
+# successes: 38 (77.6%)
+Starting episode 50...
+
+Task description: open the microwave door
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.1739
+t=0: Selected seed 195 with value = 0.1739
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1945
+t=16: Selected seed 195 with value = 0.1945
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2335
+t=32: Selected seed 195 with value = 0.2335
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2738
+t=48: Selected seed 195 with value = 0.2738
+Query 1/1: Action query time = 0.774 sec
+Query 1/1 (seed 195): Predicted value = 0.3706
+t=64: Selected seed 195 with value = 0.3706
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4316
+t=80: Selected seed 195 with value = 0.4316
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5380
+t=96: Selected seed 195 with value = 0.5380
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5673
+t=112: Selected seed 195 with value = 0.5673
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5751
+t=128: Selected seed 195 with value = 0.5751
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6641
+t=144: Selected seed 195 with value = 0.6641
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7439
+t=160: Selected seed 195 with value = 0.7439
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8827
+t=176: Selected seed 195 with value = 0.8827
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=192: Selected seed 195 with value = 0.9988
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=208: Selected seed 195 with value = 0.9987
+  Success detected at timestep 219!
+  Episode 49: SUCCESS (length: 220)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--episode=49--success=True--task=open_the_microwave_door.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenSingleDoor--2026_04_04-02_06_53/2026_04_04-02_06_53--with_future_img--episode=49--success=True--task=open_the_microwave_door.mp4
+Success: True
+# episodes completed so far: 50
+# successes: 39 (78.0%)
+Task OpenSingleDoor results:
+  Success rate: 0.7800 (78%)
+  Average episode length: 289.5
+  Successes: 39/50
+
+================================================================================
+FINAL RESULTS
+================================================================================
+Task: OpenSingleDoor
+Success rate: 0.7800 (78%)
+Average episode length: 289.5
+Total episodes: 50
+Total successes: 39
+
+Results saved to: cosmos_policy/experiments/robot/robocasa/logs/ENV_EVAL-OpenSingleDoor-cosmos-2026_04_04-02_06_53--chkpt45000--5stepAct--seed195--deterministic.txt

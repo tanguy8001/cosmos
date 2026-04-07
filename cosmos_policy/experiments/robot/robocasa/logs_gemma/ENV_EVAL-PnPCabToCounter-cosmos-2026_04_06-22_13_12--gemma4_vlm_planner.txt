@@ -1,0 +1,179 @@
+Task: PnPCabToCounter | Trials: 50 | VLM replan every 3 chunks
+  [ep0 t=48] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #1 (1195ms) — queue cleared, replanning
+  [ep0 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (811ms) — queue cleared, replanning
+  [ep0 t=144] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #3 (830ms) — queue cleared, replanning
+  [ep0 t=192] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #4 (780ms) — queue cleared, replanning
+  [ep0 t=240] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (806ms) — queue cleared, replanning
+  [ep0 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (820ms) — queue cleared, replanning
+  [ep0 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (818ms) — queue cleared, replanning
+  [ep0 t=384] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #8 (789ms) — queue cleared, replanning
+  [ep0 t=432] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #9 (804ms) — queue cleared, replanning
+  [ep0 t=480] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #10 (828ms) — queue cleared, replanning
+Episode 0: FAILURE (0/1) | VLM retries: 10
+  [ep1 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (821ms) — queue cleared, replanning
+  [ep1 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (832ms) — queue cleared, replanning
+  [ep1 t=144] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #3 (811ms) — queue cleared, replanning
+  [ep1 t=192] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #4 (833ms) — queue cleared, replanning
+  [ep1 t=240] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (831ms) — queue cleared, replanning
+  [ep1 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (805ms) — queue cleared, replanning
+  [ep1 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (818ms) — queue cleared, replanning
+  Episode 1: SUCCESS at t=340
+Episode 1: SUCCESS (1/2) | VLM retries: 7
+  [ep2 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (824ms) — queue cleared, replanning
+  [ep2 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (811ms) — queue cleared, replanning
+  [ep2 t=144] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #3 (823ms) — queue cleared, replanning
+  [ep2 t=192] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #4 (785ms) — queue cleared, replanning
+  [ep2 t=240] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (831ms) — queue cleared, replanning
+  [ep2 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (815ms) — queue cleared, replanning
+  Episode 2: SUCCESS at t=304
+Episode 2: SUCCESS (2/3) | VLM retries: 6
+  [ep3 t=48] VLM='The user wants me to decide whether the robot should "CONTINUE" or' → CONTINUE (858ms)
+  [ep3 t=96] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #1 (811ms) — queue cleared, replanning
+  [ep3 t=144] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #2 (789ms) — queue cleared, replanning
+  [ep3 t=192] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #3 (791ms) — queue cleared, replanning
+  [ep3 t=240] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #4 (861ms) — queue cleared, replanning
+  [ep3 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (809ms) — queue cleared, replanning
+  [ep3 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (794ms) — queue cleared, replanning
+  [ep3 t=384] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (788ms) — queue cleared, replanning
+  [ep3 t=432] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #8 (873ms) — queue cleared, replanning
+  [ep3 t=480] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #9 (810ms) — queue cleared, replanning
+Episode 3: FAILURE (2/4) | VLM retries: 9
+  [ep4 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (793ms) — queue cleared, replanning
+  [ep4 t=96] VLM='The user wants me to decide if the robot should "CONTINUE" or' → CONTINUE (871ms)
+  [ep4 t=144] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (791ms) — queue cleared, replanning
+  [ep4 t=192] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #3 (786ms) — queue cleared, replanning
+  [ep4 t=240] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #4 (791ms) — queue cleared, replanning
+  [ep4 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (870ms) — queue cleared, replanning
+  [ep4 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (788ms) — queue cleared, replanning
+  [ep4 t=384] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (787ms) — queue cleared, replanning
+  [ep4 t=432] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #8 (792ms) — queue cleared, replanning
+  [ep4 t=480] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #9 (884ms) — queue cleared, replanning
+Episode 4: FAILURE (2/5) | VLM retries: 9
+  [ep5 t=48] VLM='The user wants me to decide whether the robot should "CONTINUE" or' → CONTINUE (784ms)
+  [ep5 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (878ms) — queue cleared, replanning
+  [ep5 t=144] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #2 (795ms) — queue cleared, replanning
+  [ep5 t=192] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #3 (789ms) — queue cleared, replanning
+  [ep5 t=240] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #4 (789ms) — queue cleared, replanning
+  [ep5 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (857ms) — queue cleared, replanning
+  [ep5 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (793ms) — queue cleared, replanning
+  [ep5 t=384] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (788ms) — queue cleared, replanning
+  [ep5 t=432] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #8 (788ms) — queue cleared, replanning
+  [ep5 t=480] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #9 (894ms) — queue cleared, replanning
+Episode 5: FAILURE (2/6) | VLM retries: 9
+  [ep6 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (792ms) — queue cleared, replanning
+  [ep6 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (788ms) — queue cleared, replanning
+  [ep6 t=144] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #3 (853ms) — queue cleared, replanning
+  [ep6 t=192] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #4 (784ms) — queue cleared, replanning
+  [ep6 t=240] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #5 (790ms) — queue cleared, replanning
+  [ep6 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (788ms) — queue cleared, replanning
+  [ep6 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (869ms) — queue cleared, replanning
+  [ep6 t=384] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #8 (785ms) — queue cleared, replanning
+  [ep6 t=432] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #9 (786ms) — queue cleared, replanning
+  [ep6 t=480] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #10 (790ms) — queue cleared, replanning
+Episode 6: FAILURE (2/7) | VLM retries: 10
+  [ep7 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (844ms) — queue cleared, replanning
+  [ep7 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (783ms) — queue cleared, replanning
+  [ep7 t=144] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #3 (819ms) — queue cleared, replanning
+  [ep7 t=192] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #4 (790ms) — queue cleared, replanning
+  [ep7 t=240] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (846ms) — queue cleared, replanning
+  [ep7 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (789ms) — queue cleared, replanning
+  [ep7 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (821ms) — queue cleared, replanning
+  [ep7 t=384] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #8 (789ms) — queue cleared, replanning
+  [ep7 t=432] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #9 (842ms) — queue cleared, replanning
+  [ep7 t=480] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #10 (791ms) — queue cleared, replanning
+Episode 7: FAILURE (2/8) | VLM retries: 10
+  [ep8 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (849ms) — queue cleared, replanning
+  [ep8 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (783ms) — queue cleared, replanning
+  [ep8 t=144] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #3 (815ms) — queue cleared, replanning
+  [ep8 t=192] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #4 (781ms) — queue cleared, replanning
+  [ep8 t=240] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (840ms) — queue cleared, replanning
+  [ep8 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (792ms) — queue cleared, replanning
+  [ep8 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (825ms) — queue cleared, replanning
+  Episode 8: SUCCESS at t=346
+Episode 8: SUCCESS (3/9) | VLM retries: 7
+  [ep9 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (837ms) — queue cleared, replanning
+  [ep9 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (818ms) — queue cleared, replanning
+  [ep9 t=144] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #3 (841ms) — queue cleared, replanning
+  [ep9 t=192] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #4 (815ms) — queue cleared, replanning
+  [ep9 t=240] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (852ms) — queue cleared, replanning
+  [ep9 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (822ms) — queue cleared, replanning
+  [ep9 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (788ms) — queue cleared, replanning
+  Episode 9: SUCCESS at t=350
+Episode 9: SUCCESS (4/10) | VLM retries: 7
+  [ep10 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (871ms) — queue cleared, replanning
+  [ep10 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (784ms) — queue cleared, replanning
+  [ep10 t=144] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #3 (790ms) — queue cleared, replanning
+  [ep10 t=192] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #4 (871ms) — queue cleared, replanning
+  [ep10 t=240] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (785ms) — queue cleared, replanning
+  [ep10 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (794ms) — queue cleared, replanning
+  [ep10 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (875ms) — queue cleared, replanning
+  [ep10 t=384] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #8 (785ms) — queue cleared, replanning
+  [ep10 t=432] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #9 (794ms) — queue cleared, replanning
+  [ep10 t=480] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #10 (855ms) — queue cleared, replanning
+Episode 10: FAILURE (4/11) | VLM retries: 10
+  [ep11 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (788ms) — queue cleared, replanning
+  [ep11 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (878ms) — queue cleared, replanning
+  [ep11 t=144] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #3 (793ms) — queue cleared, replanning
+  [ep11 t=192] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #4 (792ms) — queue cleared, replanning
+  [ep11 t=240] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (869ms) — queue cleared, replanning
+  [ep11 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (793ms) — queue cleared, replanning
+  [ep11 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (794ms) — queue cleared, replanning
+  [ep11 t=384] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #8 (856ms) — queue cleared, replanning
+  [ep11 t=432] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #9 (788ms) — queue cleared, replanning
+  [ep11 t=480] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #10 (792ms) — queue cleared, replanning
+Episode 11: FAILURE (4/12) | VLM retries: 10
+  [ep12 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (855ms) — queue cleared, replanning
+  [ep12 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (829ms) — queue cleared, replanning
+  [ep12 t=144] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #3 (784ms) — queue cleared, replanning
+  [ep12 t=192] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #4 (855ms) — queue cleared, replanning
+  [ep12 t=240] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #5 (816ms) — queue cleared, replanning
+  [ep12 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (785ms) — queue cleared, replanning
+  [ep12 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (847ms) — queue cleared, replanning
+  [ep12 t=384] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #8 (815ms) — queue cleared, replanning
+  [ep12 t=432] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #9 (789ms) — queue cleared, replanning
+  [ep12 t=480] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #10 (846ms) — queue cleared, replanning
+Episode 12: FAILURE (4/13) | VLM retries: 10
+  [ep13 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (790ms) — queue cleared, replanning
+  [ep13 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (843ms) — queue cleared, replanning
+  [ep13 t=144] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #3 (819ms) — queue cleared, replanning
+  [ep13 t=192] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #4 (791ms) — queue cleared, replanning
+  [ep13 t=240] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (783ms) — queue cleared, replanning
+  [ep13 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (840ms) — queue cleared, replanning
+  Episode 13: SUCCESS at t=327
+Episode 13: SUCCESS (5/14) | VLM retries: 6
+  [ep14 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (792ms) — queue cleared, replanning
+  [ep14 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (845ms) — queue cleared, replanning
+  [ep14 t=144] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #3 (823ms) — queue cleared, replanning
+  [ep14 t=192] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #4 (785ms) — queue cleared, replanning
+  [ep14 t=240] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #5 (792ms) — queue cleared, replanning
+  [ep14 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (853ms) — queue cleared, replanning
+  [ep14 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (823ms) — queue cleared, replanning
+  [ep14 t=384] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #8 (785ms) — queue cleared, replanning
+  [ep14 t=432] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #9 (789ms) — queue cleared, replanning
+  [ep14 t=480] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #10 (857ms) — queue cleared, replanning
+Episode 14: FAILURE (5/15) | VLM retries: 10
+  [ep15 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (792ms) — queue cleared, replanning
+  [ep15 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (878ms) — queue cleared, replanning
+  [ep15 t=144] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #3 (797ms) — queue cleared, replanning
+  [ep15 t=192] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #4 (786ms) — queue cleared, replanning
+  [ep15 t=240] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #5 (877ms) — queue cleared, replanning
+  Episode 15: SUCCESS at t=274
+Episode 15: SUCCESS (6/16) | VLM retries: 5
+  [ep16 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (879ms) — queue cleared, replanning
+  [ep16 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (789ms) — queue cleared, replanning
+  [ep16 t=144] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #3 (794ms) — queue cleared, replanning
+  [ep16 t=192] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #4 (882ms) — queue cleared, replanning
+  [ep16 t=240] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #5 (790ms) — queue cleared, replanning
+  [ep16 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (791ms) — queue cleared, replanning
+  [ep16 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (881ms) — queue cleared, replanning
+  [ep16 t=384] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #8 (791ms) — queue cleared, replanning
+  [ep16 t=432] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #9 (788ms) — queue cleared, replanning
+  [ep16 t=480] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #10 (879ms) — queue cleared, replanning
+Episode 16: FAILURE (6/17) | VLM retries: 10
+  [ep17 t=48] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #1 (881ms) — queue cleared, replanning
+  [ep17 t=96] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #2 (793ms) — queue cleared, replanning
+  [ep17 t=144] VLM='The user wants me to decide if the robot should continue or retry based on' → RETRY #3 (789ms) — queue cleared, replanning
+  [ep17 t=192] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #4 (876ms) — queue cleared, replanning
+  [ep17 t=240] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #5 (793ms) — queue cleared, replanning
+  [ep17 t=288] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #6 (788ms) — queue cleared, replanning
+  [ep17 t=336] VLM='The user wants me to decide whether the robot should continue or retry based on' → RETRY #7 (874ms) — queue cleared, replanning

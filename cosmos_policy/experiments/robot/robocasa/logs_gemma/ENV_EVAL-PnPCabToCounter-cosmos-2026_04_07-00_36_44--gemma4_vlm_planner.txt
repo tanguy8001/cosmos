@@ -1,0 +1,73 @@
+Task: PnPCabToCounter | Trials: 50 | VLM replan every 3 chunks
+  [ep0 t=48] VLM='A' → CONTINUE (924ms)
+  [ep0 t=96] VLM='A' → CONTINUE (920ms)
+  [ep0 t=144] VLM='A' → CONTINUE (1174ms)
+  [ep0 t=192] VLM='A' → CONTINUE (1466ms)
+  [ep0 t=240] VLM='A' → CONTINUE (1842ms)
+  [ep0 t=288] VLM='A' → CONTINUE (2136ms)
+  [ep0 t=336] VLM='A' → CONTINUE (2392ms)
+  [ep0 t=384] VLM='A' → CONTINUE (2725ms)
+  [ep0 t=432] VLM='A' → CONTINUE (3017ms)
+  [ep0 t=480] VLM='A' → CONTINUE (3285ms)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs_gemma/rollout_data/PnPCabToCounter--2026_04_07-00_36_44/2026_04_07-00_36_44--episode=0--success=False--task=pick_the_peach_from_the_cabinet_and_plac.mp4
+Episode 0: FAILURE (0/1) | VLM retries: 0
+  [ep1 t=48] VLM='A' → CONTINUE (506ms)
+  [ep1 t=96] VLM='A' → CONTINUE (587ms)
+  [ep1 t=144] VLM='A' → CONTINUE (816ms)
+  [ep1 t=192] VLM='A' → CONTINUE (1055ms)
+  [ep1 t=240] VLM='A' → CONTINUE (1163ms)
+  [ep1 t=288] VLM='A' → CONTINUE (1386ms)
+  [ep1 t=336] VLM='A' → CONTINUE (1528ms)
+  Episode 1: SUCCESS at t=340
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs_gemma/rollout_data/PnPCabToCounter--2026_04_07-00_36_44/2026_04_07-00_36_44--episode=1--success=True--task=pick_the_wine_from_the_cabinet_and_place.mp4
+Episode 1: SUCCESS (1/2) | VLM retries: 0
+  [ep2 t=48] VLM='A' → CONTINUE (424ms)
+  [ep2 t=96] VLM='A' → CONTINUE (621ms)
+  [ep2 t=144] VLM='A' → CONTINUE (855ms)
+  [ep2 t=192] VLM='A' → CONTINUE (916ms)
+  [ep2 t=240] VLM='A' → CONTINUE (1103ms)
+  [ep2 t=288] VLM='A' → CONTINUE (1307ms)
+  Episode 2: SUCCESS at t=304
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs_gemma/rollout_data/PnPCabToCounter--2026_04_07-00_36_44/2026_04_07-00_36_44--episode=2--success=True--task=pick_the_sponge_from_the_cabinet_and_pla.mp4
+Episode 2: SUCCESS (2/3) | VLM retries: 0
+  [ep3 t=48] VLM='A' → CONTINUE (576ms)
+  [ep3 t=96] VLM='A' → CONTINUE (623ms)
+  [ep3 t=144] VLM='A' → CONTINUE (761ms)
+  [ep3 t=192] VLM='A' → CONTINUE (918ms)
+  [ep3 t=240] VLM='A' → CONTINUE (1175ms)
+  [ep3 t=288] VLM='A' → CONTINUE (1311ms)
+  [ep3 t=336] VLM='A' → CONTINUE (1496ms)
+  [ep3 t=384] VLM='A' → CONTINUE (1666ms)
+  [ep3 t=432] VLM='A' → CONTINUE (1909ms)
+  [ep3 t=480] VLM='A' → CONTINUE (2066ms)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs_gemma/rollout_data/PnPCabToCounter--2026_04_07-00_36_44/2026_04_07-00_36_44--episode=3--success=False--task=pick_the_bar_soap_from_the_cabinet_and_p.mp4
+Episode 3: FAILURE (2/4) | VLM retries: 0
+  [ep4 t=48] VLM='A' → CONTINUE (492ms)
+  [ep4 t=96] VLM='A' → CONTINUE (610ms)
+  [ep4 t=144] VLM='A' → CONTINUE (767ms)
+  [ep4 t=192] VLM='A' → CONTINUE (916ms)
+  [ep4 t=240] VLM='A' → CONTINUE (1229ms)
+  [ep4 t=288] VLM='A' → CONTINUE (1299ms)
+  [ep4 t=336] VLM='A' → CONTINUE (1469ms)
+  [ep4 t=384] VLM='A' → CONTINUE (1629ms)
+  [ep4 t=432] VLM='A' → CONTINUE (1879ms)
+  [ep4 t=480] VLM='A' → CONTINUE (2046ms)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs_gemma/rollout_data/PnPCabToCounter--2026_04_07-00_36_44/2026_04_07-00_36_44--episode=4--success=False--task=pick_the_canned_food_from_the_cabinet_an.mp4
+Episode 4: FAILURE (2/5) | VLM retries: 0
+  [ep5 t=48] VLM='A' → CONTINUE (581ms)
+  [ep5 t=96] VLM='A' → CONTINUE (600ms)
+  [ep5 t=144] VLM='A' → CONTINUE (760ms)
+  [ep5 t=192] VLM='A' → CONTINUE (924ms)
+  [ep5 t=240] VLM='A' → CONTINUE (1190ms)
+  [ep5 t=288] VLM='A' → CONTINUE (1338ms)
+  [ep5 t=336] VLM='A' → CONTINUE (1556ms)
+  [ep5 t=384] VLM='A' → CONTINUE (1713ms)
+  [ep5 t=432] VLM='A' → CONTINUE (2038ms)
+  [ep5 t=480] VLM='A' → CONTINUE (2116ms)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs_gemma/rollout_data/PnPCabToCounter--2026_04_07-00_36_44/2026_04_07-00_36_44--episode=5--success=False--task=pick_the_condiment_bottle_from_the_cabin.mp4
+Episode 5: FAILURE (2/6) | VLM retries: 0
+  [ep6 t=48] VLM='A' → CONTINUE (493ms)
+  [ep6 t=96] VLM='A' → CONTINUE (611ms)
+  [ep6 t=144] VLM='A' → CONTINUE (781ms)
+  [ep6 t=192] VLM='A' → CONTINUE (952ms)
+  [ep6 t=240] VLM='A' → CONTINUE (1215ms)

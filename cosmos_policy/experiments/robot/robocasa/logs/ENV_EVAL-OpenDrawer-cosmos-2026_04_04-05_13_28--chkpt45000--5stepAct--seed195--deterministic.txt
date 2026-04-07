@@ -1,0 +1,2645 @@
+Eval config: PolicyEvalConfig(suite='robocasa', model_family='cosmos', config='cosmos_predict2_2b_480p_robocasa_50_demos_per_task__inference', ckpt_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B', planning_model_config_name='', planning_model_ckpt_path='', config_file='cosmos_policy/config/config.py', use_third_person_image=True, num_third_person_images=2, use_wrist_image=True, num_wrist_images=1, use_proprio=True, flip_images=True, use_variance_scale=False, use_jpeg_compression=True, ar_future_prediction=False, ar_value_prediction=False, ar_qvalue_prediction=False, num_denoising_steps_action=5, num_denoising_steps_future_state=1, num_denoising_steps_value=1, unnormalize_actions=True, normalize_proprio=True, dataset_stats_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_dataset_statistics.json', t5_text_embeddings_path='nvidia/Cosmos-Policy-RoboCasa-Predict2-2B/robocasa_t5_embeddings.pkl', trained_with_image_aug=True, chunk_size=32, num_open_loop_steps=16, deterministic=True, deterministic_reset=False, deterministic_reset_seed=None, use_ensemble_future_state_predictions=False, num_future_state_predictions_in_ensemble=3, future_state_ensemble_aggregation_scheme='average', use_ensemble_value_predictions=False, num_value_predictions_in_ensemble=5, value_ensemble_aggregation_scheme='average', search_depth=1, search_depth_value_aggregation_scheme='use_last_value', mask_current_state_action_for_value_prediction=False, mask_future_state_for_qvalue_prediction=False, num_queries_best_of_n=1, use_parallel_inference=False, available_gpus='0,1,2,3,4,5,6,7', parallel_timeout=15, task_name='OpenDrawer', num_trials_per_task=50, env_img_res=224, robots='PandaMobile', controllers='OSC_POSE', obj_instance_split='B', layout_and_style_ids='((1,1),(2,2),(4,4),(6,9),(7,10))', randomize_cameras=False, local_log_dir='cosmos_policy/experiments/robot/robocasa/logs/', run_id_note='chkpt45000--5stepAct--seed195--deterministic', use_wandb=False, wandb_entity='YOUR_ENTITY', wandb_project='YOUR_PROJECT', seed=195, randomize_seed=False, data_collection=False, jpeg_compress=True)
+
+Starting evaluation for task: OpenDrawer
+Number of trials: 50
+
+Evaluating task: OpenDrawer
+Starting episode 1...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 1.167 sec
+Query 1/1 (seed 195): Predicted value = 0.2037
+t=0: Selected seed 195 with value = 0.2037
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2420
+t=16: Selected seed 195 with value = 0.2420
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2787
+t=32: Selected seed 195 with value = 0.2787
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3306
+t=48: Selected seed 195 with value = 0.3306
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4070
+t=64: Selected seed 195 with value = 0.4070
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4783
+t=80: Selected seed 195 with value = 0.4783
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5664
+t=96: Selected seed 195 with value = 0.5664
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.6419
+t=112: Selected seed 195 with value = 0.6419
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7191
+t=128: Selected seed 195 with value = 0.7191
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7890
+t=144: Selected seed 195 with value = 0.7890
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8794
+t=160: Selected seed 195 with value = 0.8794
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9782
+t=176: Selected seed 195 with value = 0.9782
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=192: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=208: Selected seed 195 with value = 0.9994
+  Success detected at timestep 208!
+  Episode 0: SUCCESS (length: 209)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=0--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=0--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 1
+# successes: 1 (100.0%)
+Starting episode 2...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.761 sec
+Query 1/1 (seed 195): Predicted value = 0.2159
+t=0: Selected seed 195 with value = 0.2159
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2565
+t=16: Selected seed 195 with value = 0.2565
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3076
+t=32: Selected seed 195 with value = 0.3076
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3547
+t=48: Selected seed 195 with value = 0.3547
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4083
+t=64: Selected seed 195 with value = 0.4083
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4696
+t=80: Selected seed 195 with value = 0.4696
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.5505
+t=96: Selected seed 195 with value = 0.5505
+Query 1/1: Action query time = 0.806 sec
+Query 1/1 (seed 195): Predicted value = 0.6916
+t=112: Selected seed 195 with value = 0.6916
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8331
+t=128: Selected seed 195 with value = 0.8331
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9520
+t=144: Selected seed 195 with value = 0.9520
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=160: Selected seed 195 with value = 0.9997
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=176: Selected seed 195 with value = 0.9998
+  Success detected at timestep 180!
+  Episode 1: SUCCESS (length: 181)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=1--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=1--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 2
+# successes: 2 (100.0%)
+Starting episode 3...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.1661
+t=0: Selected seed 195 with value = 0.1661
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1950
+t=16: Selected seed 195 with value = 0.1950
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2330
+t=32: Selected seed 195 with value = 0.2330
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3188
+t=48: Selected seed 195 with value = 0.3188
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3963
+t=64: Selected seed 195 with value = 0.3963
+Query 1/1: Action query time = 0.762 sec
+Query 1/1 (seed 195): Predicted value = 0.4743
+t=80: Selected seed 195 with value = 0.4743
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5608
+t=96: Selected seed 195 with value = 0.5608
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6525
+t=112: Selected seed 195 with value = 0.6525
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8064
+t=128: Selected seed 195 with value = 0.8064
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9447
+t=144: Selected seed 195 with value = 0.9447
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=160: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=176: Selected seed 195 with value = 0.9991
+  Success detected at timestep 181!
+  Episode 2: SUCCESS (length: 182)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=2--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=2--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 3
+# successes: 3 (100.0%)
+Starting episode 4...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.754 sec
+Query 1/1 (seed 195): Predicted value = 0.1685
+t=0: Selected seed 195 with value = 0.1685
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1968
+t=16: Selected seed 195 with value = 0.1968
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2360
+t=32: Selected seed 195 with value = 0.2360
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3144
+t=48: Selected seed 195 with value = 0.3144
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.4055
+t=64: Selected seed 195 with value = 0.4055
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4840
+t=80: Selected seed 195 with value = 0.4840
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.5643
+t=96: Selected seed 195 with value = 0.5643
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6659
+t=112: Selected seed 195 with value = 0.6659
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7945
+t=128: Selected seed 195 with value = 0.7945
+Query 1/1: Action query time = 0.759 sec
+Query 1/1 (seed 195): Predicted value = 0.9314
+t=144: Selected seed 195 with value = 0.9314
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=160: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=176: Selected seed 195 with value = 0.9993
+  Success detected at timestep 183!
+  Episode 3: SUCCESS (length: 184)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=3--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=3--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 4
+# successes: 4 (100.0%)
+Starting episode 5...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.766 sec
+Query 1/1 (seed 195): Predicted value = 0.1961
+t=0: Selected seed 195 with value = 0.1961
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2343
+t=16: Selected seed 195 with value = 0.2343
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2745
+t=32: Selected seed 195 with value = 0.2745
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3340
+t=48: Selected seed 195 with value = 0.3340
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3963
+t=64: Selected seed 195 with value = 0.3963
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4778
+t=80: Selected seed 195 with value = 0.4778
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5769
+t=96: Selected seed 195 with value = 0.5769
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7107
+t=112: Selected seed 195 with value = 0.7107
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8738
+t=128: Selected seed 195 with value = 0.8738
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.9931
+t=144: Selected seed 195 with value = 0.9931
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=160: Selected seed 195 with value = 0.9993
+  Success detected at timestep 174!
+  Episode 4: SUCCESS (length: 175)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=4--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=4--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 5
+# successes: 5 (100.0%)
+Starting episode 6...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.1850
+t=0: Selected seed 195 with value = 0.1850
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2224
+t=16: Selected seed 195 with value = 0.2224
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2697
+t=32: Selected seed 195 with value = 0.2697
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3227
+t=48: Selected seed 195 with value = 0.3227
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3926
+t=64: Selected seed 195 with value = 0.3926
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.4748
+t=80: Selected seed 195 with value = 0.4748
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5913
+t=96: Selected seed 195 with value = 0.5913
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7231
+t=112: Selected seed 195 with value = 0.7231
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8344
+t=128: Selected seed 195 with value = 0.8344
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9889
+t=144: Selected seed 195 with value = 0.9889
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=160: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=176: Selected seed 195 with value = 0.9995
+  Success detected at timestep 176!
+  Episode 5: SUCCESS (length: 177)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=5--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=5--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 6
+# successes: 6 (100.0%)
+Starting episode 7...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.1817
+t=0: Selected seed 195 with value = 0.1817
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.2235
+t=16: Selected seed 195 with value = 0.2235
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2664
+t=32: Selected seed 195 with value = 0.2664
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.3421
+t=48: Selected seed 195 with value = 0.3421
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4232
+t=64: Selected seed 195 with value = 0.4232
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5026
+t=80: Selected seed 195 with value = 0.5026
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5736
+t=96: Selected seed 195 with value = 0.5736
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6824
+t=112: Selected seed 195 with value = 0.6824
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.8482
+t=128: Selected seed 195 with value = 0.8482
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9667
+t=144: Selected seed 195 with value = 0.9667
+Query 1/1: Action query time = 0.781 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=160: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=176: Selected seed 195 with value = 0.9995
+  Success detected at timestep 177!
+  Episode 6: SUCCESS (length: 178)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=6--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=6--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 7
+# successes: 7 (100.0%)
+Starting episode 8...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.2255
+t=0: Selected seed 195 with value = 0.2255
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.2646
+t=16: Selected seed 195 with value = 0.2646
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3186
+t=32: Selected seed 195 with value = 0.3186
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3780
+t=48: Selected seed 195 with value = 0.3780
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4466
+t=64: Selected seed 195 with value = 0.4466
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5254
+t=80: Selected seed 195 with value = 0.5254
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6094
+t=96: Selected seed 195 with value = 0.6094
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7570
+t=112: Selected seed 195 with value = 0.7570
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8973
+t=128: Selected seed 195 with value = 0.8973
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=144: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.759 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=160: Selected seed 195 with value = 0.9992
+  Success detected at timestep 172!
+  Episode 7: SUCCESS (length: 173)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=7--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=7--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 8
+# successes: 8 (100.0%)
+Starting episode 9...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.1835
+t=0: Selected seed 195 with value = 0.1835
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.2213
+t=16: Selected seed 195 with value = 0.2213
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2683
+t=32: Selected seed 195 with value = 0.2683
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3145
+t=48: Selected seed 195 with value = 0.3145
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3869
+t=64: Selected seed 195 with value = 0.3869
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4696
+t=80: Selected seed 195 with value = 0.4696
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.5864
+t=96: Selected seed 195 with value = 0.5864
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7203
+t=112: Selected seed 195 with value = 0.7203
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.8422
+t=128: Selected seed 195 with value = 0.8422
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.9904
+t=144: Selected seed 195 with value = 0.9904
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=160: Selected seed 195 with value = 0.9994
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=176: Selected seed 195 with value = 0.9997
+  Success detected at timestep 176!
+  Episode 8: SUCCESS (length: 177)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=8--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=8--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 9
+# successes: 9 (100.0%)
+Starting episode 10...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.2136
+t=0: Selected seed 195 with value = 0.2136
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2391
+t=16: Selected seed 195 with value = 0.2391
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2526
+t=32: Selected seed 195 with value = 0.2526
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2684
+t=48: Selected seed 195 with value = 0.2684
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2823
+t=64: Selected seed 195 with value = 0.2823
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2974
+t=80: Selected seed 195 with value = 0.2974
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3148
+t=96: Selected seed 195 with value = 0.3148
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3244
+t=112: Selected seed 195 with value = 0.3244
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3271
+t=128: Selected seed 195 with value = 0.3271
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.3248
+t=144: Selected seed 195 with value = 0.3248
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3150
+t=160: Selected seed 195 with value = 0.3150
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3292
+t=176: Selected seed 195 with value = 0.3292
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4168
+t=192: Selected seed 195 with value = 0.4168
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5670
+t=208: Selected seed 195 with value = 0.5670
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6045
+t=224: Selected seed 195 with value = 0.6045
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5813
+t=240: Selected seed 195 with value = 0.5813
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5887
+t=256: Selected seed 195 with value = 0.5887
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6304
+t=272: Selected seed 195 with value = 0.6304
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.7428
+t=288: Selected seed 195 with value = 0.7428
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7912
+t=304: Selected seed 195 with value = 0.7912
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8672
+t=320: Selected seed 195 with value = 0.8672
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9700
+t=336: Selected seed 195 with value = 0.9700
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9493
+t=352: Selected seed 195 with value = 0.9493
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9863
+t=368: Selected seed 195 with value = 0.9863
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9964
+t=384: Selected seed 195 with value = 0.9964
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9831
+t=400: Selected seed 195 with value = 0.9831
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9861
+t=416: Selected seed 195 with value = 0.9861
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9875
+t=432: Selected seed 195 with value = 0.9875
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9808
+t=448: Selected seed 195 with value = 0.9808
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9917
+t=464: Selected seed 195 with value = 0.9917
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9954
+t=480: Selected seed 195 with value = 0.9954
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9937
+t=496: Selected seed 195 with value = 0.9937
+  Episode 9: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=9--success=False--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=9--success=False--task=open_the_right_drawer.mp4
+Success: False
+# episodes completed so far: 10
+# successes: 9 (90.0%)
+Starting episode 11...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.764 sec
+Query 1/1 (seed 195): Predicted value = 0.1645
+t=0: Selected seed 195 with value = 0.1645
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2007
+t=16: Selected seed 195 with value = 0.2007
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.2489
+t=32: Selected seed 195 with value = 0.2489
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2891
+t=48: Selected seed 195 with value = 0.2891
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3505
+t=64: Selected seed 195 with value = 0.3505
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4116
+t=80: Selected seed 195 with value = 0.4116
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4701
+t=96: Selected seed 195 with value = 0.4701
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5394
+t=112: Selected seed 195 with value = 0.5394
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6196
+t=128: Selected seed 195 with value = 0.6196
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7447
+t=144: Selected seed 195 with value = 0.7447
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8865
+t=160: Selected seed 195 with value = 0.8865
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=176: Selected seed 195 with value = 0.9989
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=192: Selected seed 195 with value = 0.9993
+  Success detected at timestep 202!
+  Episode 10: SUCCESS (length: 203)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=10--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=10--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 11
+# successes: 10 (90.9%)
+Starting episode 12...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.1499
+t=0: Selected seed 195 with value = 0.1499
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.1767
+t=16: Selected seed 195 with value = 0.1767
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2003
+t=32: Selected seed 195 with value = 0.2003
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2383
+t=48: Selected seed 195 with value = 0.2383
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3117
+t=64: Selected seed 195 with value = 0.3117
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.3968
+t=80: Selected seed 195 with value = 0.3968
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4485
+t=96: Selected seed 195 with value = 0.4485
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5464
+t=112: Selected seed 195 with value = 0.5464
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.6220
+t=128: Selected seed 195 with value = 0.6220
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.6901
+t=144: Selected seed 195 with value = 0.6901
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.7223
+t=160: Selected seed 195 with value = 0.7223
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.7620
+t=176: Selected seed 195 with value = 0.7620
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.8487
+t=192: Selected seed 195 with value = 0.8487
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.5434
+t=208: Selected seed 195 with value = 0.5434
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.6461
+t=224: Selected seed 195 with value = 0.6461
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.6834
+t=240: Selected seed 195 with value = 0.6834
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.7727
+t=256: Selected seed 195 with value = 0.7727
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.8863
+t=272: Selected seed 195 with value = 0.8863
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.8840
+t=288: Selected seed 195 with value = 0.8840
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.8879
+t=304: Selected seed 195 with value = 0.8879
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.8480
+t=320: Selected seed 195 with value = 0.8480
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.8734
+t=336: Selected seed 195 with value = 0.8734
+Query 1/1: Action query time = 0.786 sec
+Query 1/1 (seed 195): Predicted value = 0.8779
+t=352: Selected seed 195 with value = 0.8779
+  Success detected at timestep 359!
+  Episode 11: SUCCESS (length: 360)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=11--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=11--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 12
+# successes: 11 (91.7%)
+Starting episode 13...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.769 sec
+Query 1/1 (seed 195): Predicted value = 0.1714
+t=0: Selected seed 195 with value = 0.1714
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.2122
+t=16: Selected seed 195 with value = 0.2122
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.2641
+t=32: Selected seed 195 with value = 0.2641
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.3186
+t=48: Selected seed 195 with value = 0.3186
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.3973
+t=64: Selected seed 195 with value = 0.3973
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.4581
+t=80: Selected seed 195 with value = 0.4581
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.5102
+t=96: Selected seed 195 with value = 0.5102
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.5858
+t=112: Selected seed 195 with value = 0.5858
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.6743
+t=128: Selected seed 195 with value = 0.6743
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.8257
+t=144: Selected seed 195 with value = 0.8257
+Query 1/1: Action query time = 0.771 sec
+Query 1/1 (seed 195): Predicted value = 0.9636
+t=160: Selected seed 195 with value = 0.9636
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=176: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=192: Selected seed 195 with value = 0.9994
+  Success detected at timestep 193!
+  Episode 12: SUCCESS (length: 194)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=12--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=12--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 13
+# successes: 12 (92.3%)
+Starting episode 14...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.1909
+t=0: Selected seed 195 with value = 0.1909
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.2284
+t=16: Selected seed 195 with value = 0.2284
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.2726
+t=32: Selected seed 195 with value = 0.2726
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.3254
+t=48: Selected seed 195 with value = 0.3254
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.3794
+t=64: Selected seed 195 with value = 0.3794
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.4399
+t=80: Selected seed 195 with value = 0.4399
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.5055
+t=96: Selected seed 195 with value = 0.5055
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.5810
+t=112: Selected seed 195 with value = 0.5810
+Query 1/1: Action query time = 0.777 sec
+Query 1/1 (seed 195): Predicted value = 0.6835
+t=128: Selected seed 195 with value = 0.6835
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.7538
+t=144: Selected seed 195 with value = 0.7538
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.8528
+t=160: Selected seed 195 with value = 0.8528
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.9538
+t=176: Selected seed 195 with value = 0.9538
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=192: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=208: Selected seed 195 with value = 0.9994
+  Success detected at timestep 210!
+  Episode 13: SUCCESS (length: 211)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=13--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=13--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 14
+# successes: 13 (92.9%)
+Starting episode 15...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.769 sec
+Query 1/1 (seed 195): Predicted value = 0.1533
+t=0: Selected seed 195 with value = 0.1533
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.1796
+t=16: Selected seed 195 with value = 0.1796
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.2169
+t=32: Selected seed 195 with value = 0.2169
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.2548
+t=48: Selected seed 195 with value = 0.2548
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.3287
+t=64: Selected seed 195 with value = 0.3287
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.4007
+t=80: Selected seed 195 with value = 0.4007
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.4613
+t=96: Selected seed 195 with value = 0.4613
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.5675
+t=112: Selected seed 195 with value = 0.5675
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.7099
+t=128: Selected seed 195 with value = 0.7099
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.7558
+t=144: Selected seed 195 with value = 0.7558
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.8485
+t=160: Selected seed 195 with value = 0.8485
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.9618
+t=176: Selected seed 195 with value = 0.9618
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.5333
+t=192: Selected seed 195 with value = 0.5333
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.5857
+t=208: Selected seed 195 with value = 0.5857
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.6515
+t=224: Selected seed 195 with value = 0.6515
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.7040
+t=240: Selected seed 195 with value = 0.7040
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.8099
+t=256: Selected seed 195 with value = 0.8099
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.9033
+t=272: Selected seed 195 with value = 0.9033
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.8730
+t=288: Selected seed 195 with value = 0.8730
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.9393
+t=304: Selected seed 195 with value = 0.9393
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.9954
+t=320: Selected seed 195 with value = 0.9954
+  Success detected at timestep 321!
+  Episode 14: SUCCESS (length: 322)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=14--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=14--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 15
+# successes: 14 (93.3%)
+Starting episode 16...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.783 sec
+Query 1/1 (seed 195): Predicted value = 0.1818
+t=0: Selected seed 195 with value = 0.1818
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.2202
+t=16: Selected seed 195 with value = 0.2202
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.2694
+t=32: Selected seed 195 with value = 0.2694
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.3183
+t=48: Selected seed 195 with value = 0.3183
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.3954
+t=64: Selected seed 195 with value = 0.3954
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.4613
+t=80: Selected seed 195 with value = 0.4613
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.5096
+t=96: Selected seed 195 with value = 0.5096
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.6055
+t=112: Selected seed 195 with value = 0.6055
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.6798
+t=128: Selected seed 195 with value = 0.6798
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.8730
+t=144: Selected seed 195 with value = 0.8730
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.9921
+t=160: Selected seed 195 with value = 0.9921
+Query 1/1: Action query time = 0.803 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=176: Selected seed 195 with value = 0.9992
+  Success detected at timestep 189!
+  Episode 15: SUCCESS (length: 190)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=15--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=15--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 16
+# successes: 15 (93.8%)
+Starting episode 17...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.757 sec
+Query 1/1 (seed 195): Predicted value = 0.1673
+t=0: Selected seed 195 with value = 0.1673
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.2031
+t=16: Selected seed 195 with value = 0.2031
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.2402
+t=32: Selected seed 195 with value = 0.2402
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.2830
+t=48: Selected seed 195 with value = 0.2830
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.3467
+t=64: Selected seed 195 with value = 0.3467
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.4055
+t=80: Selected seed 195 with value = 0.4055
+Query 1/1: Action query time = 0.741 sec
+Query 1/1 (seed 195): Predicted value = 0.4694
+t=96: Selected seed 195 with value = 0.4694
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.5409
+t=112: Selected seed 195 with value = 0.5409
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.6178
+t=128: Selected seed 195 with value = 0.6178
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.7381
+t=144: Selected seed 195 with value = 0.7381
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.8690
+t=160: Selected seed 195 with value = 0.8690
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=176: Selected seed 195 with value = 0.9988
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=192: Selected seed 195 with value = 0.9991
+  Success detected at timestep 202!
+  Episode 16: SUCCESS (length: 203)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=16--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=16--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 17
+# successes: 16 (94.1%)
+Starting episode 18...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.785 sec
+Query 1/1 (seed 195): Predicted value = 0.1722
+t=0: Selected seed 195 with value = 0.1722
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.2099
+t=16: Selected seed 195 with value = 0.2099
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2628
+t=32: Selected seed 195 with value = 0.2628
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3132
+t=48: Selected seed 195 with value = 0.3132
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3931
+t=64: Selected seed 195 with value = 0.3931
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4454
+t=80: Selected seed 195 with value = 0.4454
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5022
+t=96: Selected seed 195 with value = 0.5022
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5698
+t=112: Selected seed 195 with value = 0.5698
+Query 1/1: Action query time = 0.924 sec
+Query 1/1 (seed 195): Predicted value = 0.6520
+t=128: Selected seed 195 with value = 0.6520
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7963
+t=144: Selected seed 195 with value = 0.7963
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9275
+t=160: Selected seed 195 with value = 0.9275
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=176: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=192: Selected seed 195 with value = 0.9994
+  Success detected at timestep 197!
+  Episode 17: SUCCESS (length: 198)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=17--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=17--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 18
+# successes: 17 (94.4%)
+Starting episode 19...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.2003
+t=0: Selected seed 195 with value = 0.2003
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.2245
+t=16: Selected seed 195 with value = 0.2245
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2683
+t=32: Selected seed 195 with value = 0.2683
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.3148
+t=48: Selected seed 195 with value = 0.3148
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3804
+t=64: Selected seed 195 with value = 0.3804
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.4515
+t=80: Selected seed 195 with value = 0.4515
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.5230
+t=96: Selected seed 195 with value = 0.5230
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.5898
+t=112: Selected seed 195 with value = 0.5898
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.6689
+t=128: Selected seed 195 with value = 0.6689
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7718
+t=144: Selected seed 195 with value = 0.7718
+Query 1/1: Action query time = 0.751 sec
+Query 1/1 (seed 195): Predicted value = 0.8668
+t=160: Selected seed 195 with value = 0.8668
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9793
+t=176: Selected seed 195 with value = 0.9793
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=192: Selected seed 195 with value = 0.9993
+  Success detected at timestep 207!
+  Episode 18: SUCCESS (length: 208)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=18--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=18--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 19
+# successes: 18 (94.7%)
+Starting episode 20...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.787 sec
+Query 1/1 (seed 195): Predicted value = 0.1725
+t=0: Selected seed 195 with value = 0.1725
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2132
+t=16: Selected seed 195 with value = 0.2132
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2660
+t=32: Selected seed 195 with value = 0.2660
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3147
+t=48: Selected seed 195 with value = 0.3147
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3915
+t=64: Selected seed 195 with value = 0.3915
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4444
+t=80: Selected seed 195 with value = 0.4444
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4994
+t=96: Selected seed 195 with value = 0.4994
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5672
+t=112: Selected seed 195 with value = 0.5672
+Query 1/1: Action query time = 0.781 sec
+Query 1/1 (seed 195): Predicted value = 0.6537
+t=128: Selected seed 195 with value = 0.6537
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8100
+t=144: Selected seed 195 with value = 0.8100
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9457
+t=160: Selected seed 195 with value = 0.9457
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=176: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=192: Selected seed 195 with value = 0.9994
+  Success detected at timestep 194!
+  Episode 19: SUCCESS (length: 195)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=19--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=19--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 20
+# successes: 19 (95.0%)
+Starting episode 21...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.1678
+t=0: Selected seed 195 with value = 0.1678
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2089
+t=16: Selected seed 195 with value = 0.2089
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2593
+t=32: Selected seed 195 with value = 0.2593
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2990
+t=48: Selected seed 195 with value = 0.2990
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3648
+t=64: Selected seed 195 with value = 0.3648
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4133
+t=80: Selected seed 195 with value = 0.4133
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4651
+t=96: Selected seed 195 with value = 0.4651
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5249
+t=112: Selected seed 195 with value = 0.5249
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6272
+t=128: Selected seed 195 with value = 0.6272
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.8189
+t=144: Selected seed 195 with value = 0.8189
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9572
+t=160: Selected seed 195 with value = 0.9572
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=176: Selected seed 195 with value = 0.9988
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9754
+t=192: Selected seed 195 with value = 0.9754
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9422
+t=208: Selected seed 195 with value = 0.9422
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8561
+t=224: Selected seed 195 with value = 0.8561
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8299
+t=240: Selected seed 195 with value = 0.8299
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5659
+t=256: Selected seed 195 with value = 0.5659
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7429
+t=272: Selected seed 195 with value = 0.7429
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8845
+t=288: Selected seed 195 with value = 0.8845
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9079
+t=304: Selected seed 195 with value = 0.9079
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9700
+t=320: Selected seed 195 with value = 0.9700
+Query 1/1: Action query time = 0.794 sec
+Query 1/1 (seed 195): Predicted value = 0.9969
+t=336: Selected seed 195 with value = 0.9969
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9951
+t=352: Selected seed 195 with value = 0.9951
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9976
+t=368: Selected seed 195 with value = 0.9976
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9998
+t=384: Selected seed 195 with value = 0.9998
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=400: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9970
+t=416: Selected seed 195 with value = 0.9970
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9978
+t=432: Selected seed 195 with value = 0.9978
+Query 1/1: Action query time = 0.788 sec
+Query 1/1 (seed 195): Predicted value = 0.9927
+t=448: Selected seed 195 with value = 0.9927
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9953
+t=464: Selected seed 195 with value = 0.9953
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9941
+t=480: Selected seed 195 with value = 0.9941
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9951
+t=496: Selected seed 195 with value = 0.9951
+  Episode 20: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=20--success=False--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=20--success=False--task=open_the_right_drawer.mp4
+Success: False
+# episodes completed so far: 21
+# successes: 19 (90.5%)
+Starting episode 22...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.1982
+t=0: Selected seed 195 with value = 0.1982
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2386
+t=16: Selected seed 195 with value = 0.2386
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2798
+t=32: Selected seed 195 with value = 0.2798
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3179
+t=48: Selected seed 195 with value = 0.3179
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3887
+t=64: Selected seed 195 with value = 0.3887
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4358
+t=80: Selected seed 195 with value = 0.4358
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4959
+t=96: Selected seed 195 with value = 0.4959
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5789
+t=112: Selected seed 195 with value = 0.5789
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6825
+t=128: Selected seed 195 with value = 0.6825
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.7996
+t=144: Selected seed 195 with value = 0.7996
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8480
+t=160: Selected seed 195 with value = 0.8480
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9265
+t=176: Selected seed 195 with value = 0.9265
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9953
+t=192: Selected seed 195 with value = 0.9953
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9984
+t=208: Selected seed 195 with value = 0.9984
+  Success detected at timestep 208!
+  Episode 21: SUCCESS (length: 209)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=21--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=21--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 22
+# successes: 20 (90.9%)
+Starting episode 23...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.780 sec
+Query 1/1 (seed 195): Predicted value = 0.1528
+t=0: Selected seed 195 with value = 0.1528
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1874
+t=16: Selected seed 195 with value = 0.1874
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2275
+t=32: Selected seed 195 with value = 0.2275
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2641
+t=48: Selected seed 195 with value = 0.2641
+Query 1/1: Action query time = 0.792 sec
+Query 1/1 (seed 195): Predicted value = 0.3231
+t=64: Selected seed 195 with value = 0.3231
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3789
+t=80: Selected seed 195 with value = 0.3789
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4402
+t=96: Selected seed 195 with value = 0.4402
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5285
+t=112: Selected seed 195 with value = 0.5285
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.6463
+t=128: Selected seed 195 with value = 0.6463
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7716
+t=144: Selected seed 195 with value = 0.7716
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.8981
+t=160: Selected seed 195 with value = 0.8981
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=176: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=192: Selected seed 195 with value = 0.9992
+  Success detected at timestep 199!
+  Episode 22: SUCCESS (length: 200)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=22--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=22--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 23
+# successes: 21 (91.3%)
+Starting episode 24...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.752 sec
+Query 1/1 (seed 195): Predicted value = 0.1951
+t=0: Selected seed 195 with value = 0.1951
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2260
+t=16: Selected seed 195 with value = 0.2260
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2592
+t=32: Selected seed 195 with value = 0.2592
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2957
+t=48: Selected seed 195 with value = 0.2957
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3619
+t=64: Selected seed 195 with value = 0.3619
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4270
+t=80: Selected seed 195 with value = 0.4270
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4929
+t=96: Selected seed 195 with value = 0.4929
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6014
+t=112: Selected seed 195 with value = 0.6014
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7109
+t=128: Selected seed 195 with value = 0.7109
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8257
+t=144: Selected seed 195 with value = 0.8257
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9040
+t=160: Selected seed 195 with value = 0.9040
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=176: Selected seed 195 with value = 0.9988
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=192: Selected seed 195 with value = 0.9990
+  Success detected at timestep 200!
+  Episode 23: SUCCESS (length: 201)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=23--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=23--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 24
+# successes: 22 (91.7%)
+Starting episode 25...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.775 sec
+Query 1/1 (seed 195): Predicted value = 0.1513
+t=0: Selected seed 195 with value = 0.1513
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1825
+t=16: Selected seed 195 with value = 0.1825
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2236
+t=32: Selected seed 195 with value = 0.2236
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.2771
+t=48: Selected seed 195 with value = 0.2771
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3268
+t=64: Selected seed 195 with value = 0.3268
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.3795
+t=80: Selected seed 195 with value = 0.3795
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4465
+t=96: Selected seed 195 with value = 0.4465
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5298
+t=112: Selected seed 195 with value = 0.5298
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6257
+t=128: Selected seed 195 with value = 0.6257
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7327
+t=144: Selected seed 195 with value = 0.7327
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8603
+t=160: Selected seed 195 with value = 0.8603
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9841
+t=176: Selected seed 195 with value = 0.9841
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=192: Selected seed 195 with value = 0.9991
+  Success detected at timestep 206!
+  Episode 24: SUCCESS (length: 207)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=24--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=24--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 25
+# successes: 23 (92.0%)
+Starting episode 26...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.1961
+t=0: Selected seed 195 with value = 0.1961
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2290
+t=16: Selected seed 195 with value = 0.2290
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2598
+t=32: Selected seed 195 with value = 0.2598
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2947
+t=48: Selected seed 195 with value = 0.2947
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3647
+t=64: Selected seed 195 with value = 0.3647
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4276
+t=80: Selected seed 195 with value = 0.4276
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4926
+t=96: Selected seed 195 with value = 0.4926
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6006
+t=112: Selected seed 195 with value = 0.6006
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7045
+t=128: Selected seed 195 with value = 0.7045
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8180
+t=144: Selected seed 195 with value = 0.8180
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8910
+t=160: Selected seed 195 with value = 0.8910
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9750
+t=176: Selected seed 195 with value = 0.9750
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=192: Selected seed 195 with value = 0.9990
+  Success detected at timestep 202!
+  Episode 25: SUCCESS (length: 203)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=25--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=25--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 26
+# successes: 24 (92.3%)
+Starting episode 27...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.775 sec
+Query 1/1 (seed 195): Predicted value = 0.1621
+t=0: Selected seed 195 with value = 0.1621
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1987
+t=16: Selected seed 195 with value = 0.1987
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2439
+t=32: Selected seed 195 with value = 0.2439
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2836
+t=48: Selected seed 195 with value = 0.2836
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3550
+t=64: Selected seed 195 with value = 0.3550
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4137
+t=80: Selected seed 195 with value = 0.4137
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4717
+t=96: Selected seed 195 with value = 0.4717
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5622
+t=112: Selected seed 195 with value = 0.5622
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.6808
+t=128: Selected seed 195 with value = 0.6808
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.8206
+t=144: Selected seed 195 with value = 0.8206
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9191
+t=160: Selected seed 195 with value = 0.9191
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=176: Selected seed 195 with value = 0.9990
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=192: Selected seed 195 with value = 0.9992
+  Success detected at timestep 196!
+  Episode 26: SUCCESS (length: 197)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=26--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=26--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 27
+# successes: 25 (92.6%)
+Starting episode 28...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.755 sec
+Query 1/1 (seed 195): Predicted value = 0.1600
+t=0: Selected seed 195 with value = 0.1600
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.1888
+t=16: Selected seed 195 with value = 0.1888
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2274
+t=32: Selected seed 195 with value = 0.2274
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2752
+t=48: Selected seed 195 with value = 0.2752
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3236
+t=64: Selected seed 195 with value = 0.3236
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3668
+t=80: Selected seed 195 with value = 0.3668
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4384
+t=96: Selected seed 195 with value = 0.4384
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.5227
+t=112: Selected seed 195 with value = 0.5227
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6260
+t=128: Selected seed 195 with value = 0.6260
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7678
+t=144: Selected seed 195 with value = 0.7678
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9167
+t=160: Selected seed 195 with value = 0.9167
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=176: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=192: Selected seed 195 with value = 0.9995
+  Success detected at timestep 197!
+  Episode 27: SUCCESS (length: 198)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=27--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=27--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 28
+# successes: 26 (92.9%)
+Starting episode 29...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.770 sec
+Query 1/1 (seed 195): Predicted value = 0.1941
+t=0: Selected seed 195 with value = 0.1941
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2231
+t=16: Selected seed 195 with value = 0.2231
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2509
+t=32: Selected seed 195 with value = 0.2509
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2988
+t=48: Selected seed 195 with value = 0.2988
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3655
+t=64: Selected seed 195 with value = 0.3655
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4315
+t=80: Selected seed 195 with value = 0.4315
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4978
+t=96: Selected seed 195 with value = 0.4978
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6013
+t=112: Selected seed 195 with value = 0.6013
+Query 1/1: Action query time = 0.739 sec
+Query 1/1 (seed 195): Predicted value = 0.6997
+t=128: Selected seed 195 with value = 0.6997
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8241
+t=144: Selected seed 195 with value = 0.8241
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8987
+t=160: Selected seed 195 with value = 0.8987
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9750
+t=176: Selected seed 195 with value = 0.9750
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=192: Selected seed 195 with value = 0.9991
+  Success detected at timestep 202!
+  Episode 28: SUCCESS (length: 203)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=28--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=28--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 29
+# successes: 27 (93.1%)
+Starting episode 30...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.762 sec
+Query 1/1 (seed 195): Predicted value = 0.1633
+t=0: Selected seed 195 with value = 0.1633
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.1908
+t=16: Selected seed 195 with value = 0.1908
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2330
+t=32: Selected seed 195 with value = 0.2330
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2726
+t=48: Selected seed 195 with value = 0.2726
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3366
+t=64: Selected seed 195 with value = 0.3366
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.3961
+t=80: Selected seed 195 with value = 0.3961
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4503
+t=96: Selected seed 195 with value = 0.4503
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5386
+t=112: Selected seed 195 with value = 0.5386
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6525
+t=128: Selected seed 195 with value = 0.6525
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7715
+t=144: Selected seed 195 with value = 0.7715
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9119
+t=160: Selected seed 195 with value = 0.9119
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=176: Selected seed 195 with value = 0.9997
+Query 1/1: Action query time = 0.773 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=192: Selected seed 195 with value = 0.9995
+  Success detected at timestep 202!
+  Episode 29: SUCCESS (length: 203)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=29--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=29--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 30
+# successes: 28 (93.3%)
+Starting episode 31...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.775 sec
+Query 1/1 (seed 195): Predicted value = 0.1662
+t=0: Selected seed 195 with value = 0.1662
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1923
+t=16: Selected seed 195 with value = 0.1923
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2335
+t=32: Selected seed 195 with value = 0.2335
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2741
+t=48: Selected seed 195 with value = 0.2741
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3511
+t=64: Selected seed 195 with value = 0.3511
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4053
+t=80: Selected seed 195 with value = 0.4053
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4849
+t=96: Selected seed 195 with value = 0.4849
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5684
+t=112: Selected seed 195 with value = 0.5684
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6412
+t=128: Selected seed 195 with value = 0.6412
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7904
+t=144: Selected seed 195 with value = 0.7904
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.8941
+t=160: Selected seed 195 with value = 0.8941
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9979
+t=176: Selected seed 195 with value = 0.9979
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=192: Selected seed 195 with value = 0.9981
+  Success detected at timestep 203!
+  Episode 30: SUCCESS (length: 204)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=30--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=30--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 31
+# successes: 29 (93.5%)
+Starting episode 32...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.758 sec
+Query 1/1 (seed 195): Predicted value = 0.1834
+t=0: Selected seed 195 with value = 0.1834
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2053
+t=16: Selected seed 195 with value = 0.2053
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2375
+t=32: Selected seed 195 with value = 0.2375
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2696
+t=48: Selected seed 195 with value = 0.2696
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3407
+t=64: Selected seed 195 with value = 0.3407
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4008
+t=80: Selected seed 195 with value = 0.4008
+Query 1/1: Action query time = 0.740 sec
+Query 1/1 (seed 195): Predicted value = 0.4721
+t=96: Selected seed 195 with value = 0.4721
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5659
+t=112: Selected seed 195 with value = 0.5659
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.6484
+t=128: Selected seed 195 with value = 0.6484
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7876
+t=144: Selected seed 195 with value = 0.7876
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8983
+t=160: Selected seed 195 with value = 0.8983
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=176: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.801 sec
+Query 1/1 (seed 195): Predicted value = 0.9981
+t=192: Selected seed 195 with value = 0.9981
+  Success detected at timestep 200!
+  Episode 31: SUCCESS (length: 201)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=31--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=31--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 32
+# successes: 30 (93.8%)
+Starting episode 33...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.1811
+t=0: Selected seed 195 with value = 0.1811
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2191
+t=16: Selected seed 195 with value = 0.2191
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2566
+t=32: Selected seed 195 with value = 0.2566
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3015
+t=48: Selected seed 195 with value = 0.3015
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3590
+t=64: Selected seed 195 with value = 0.3590
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4269
+t=80: Selected seed 195 with value = 0.4269
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5300
+t=96: Selected seed 195 with value = 0.5300
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6127
+t=112: Selected seed 195 with value = 0.6127
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7054
+t=128: Selected seed 195 with value = 0.7054
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8229
+t=144: Selected seed 195 with value = 0.8229
+Query 1/1: Action query time = 0.787 sec
+Query 1/1 (seed 195): Predicted value = 0.8828
+t=160: Selected seed 195 with value = 0.8828
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9975
+t=176: Selected seed 195 with value = 0.9975
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9994
+t=192: Selected seed 195 with value = 0.9994
+  Success detected at timestep 202!
+  Episode 32: SUCCESS (length: 203)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=32--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=32--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 33
+# successes: 31 (93.9%)
+Starting episode 34...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.784 sec
+Query 1/1 (seed 195): Predicted value = 0.2037
+t=0: Selected seed 195 with value = 0.2037
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2386
+t=16: Selected seed 195 with value = 0.2386
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2739
+t=32: Selected seed 195 with value = 0.2739
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3167
+t=48: Selected seed 195 with value = 0.3167
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3815
+t=64: Selected seed 195 with value = 0.3815
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4638
+t=80: Selected seed 195 with value = 0.4638
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5479
+t=96: Selected seed 195 with value = 0.5479
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6307
+t=112: Selected seed 195 with value = 0.6307
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7513
+t=128: Selected seed 195 with value = 0.7513
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8360
+t=144: Selected seed 195 with value = 0.8360
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9247
+t=160: Selected seed 195 with value = 0.9247
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=176: Selected seed 195 with value = 0.9987
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=192: Selected seed 195 with value = 0.9988
+  Success detected at timestep 195!
+  Episode 33: SUCCESS (length: 196)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=33--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=33--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 34
+# successes: 32 (94.1%)
+Starting episode 35...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.764 sec
+Query 1/1 (seed 195): Predicted value = 0.1974
+t=0: Selected seed 195 with value = 0.1974
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2412
+t=16: Selected seed 195 with value = 0.2412
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2804
+t=32: Selected seed 195 with value = 0.2804
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3238
+t=48: Selected seed 195 with value = 0.3238
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3979
+t=64: Selected seed 195 with value = 0.3979
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4958
+t=80: Selected seed 195 with value = 0.4958
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5618
+t=96: Selected seed 195 with value = 0.5618
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6414
+t=112: Selected seed 195 with value = 0.6414
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.7852
+t=128: Selected seed 195 with value = 0.7852
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8752
+t=144: Selected seed 195 with value = 0.8752
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=160: Selected seed 195 with value = 0.9991
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=176: Selected seed 195 with value = 0.9988
+  Success detected at timestep 185!
+  Episode 34: SUCCESS (length: 186)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=34--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=34--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 35
+# successes: 33 (94.3%)
+Starting episode 36...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.768 sec
+Query 1/1 (seed 195): Predicted value = 0.2002
+t=0: Selected seed 195 with value = 0.2002
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2473
+t=16: Selected seed 195 with value = 0.2473
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2816
+t=32: Selected seed 195 with value = 0.2816
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3249
+t=48: Selected seed 195 with value = 0.3249
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4042
+t=64: Selected seed 195 with value = 0.4042
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4889
+t=80: Selected seed 195 with value = 0.4889
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5528
+t=96: Selected seed 195 with value = 0.5528
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6270
+t=112: Selected seed 195 with value = 0.6270
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7419
+t=128: Selected seed 195 with value = 0.7419
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.8472
+t=144: Selected seed 195 with value = 0.8472
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9750
+t=160: Selected seed 195 with value = 0.9750
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=176: Selected seed 195 with value = 0.9986
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=192: Selected seed 195 with value = 0.9988
+  Success detected at timestep 192!
+  Episode 35: SUCCESS (length: 193)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=35--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=35--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 36
+# successes: 34 (94.4%)
+Starting episode 37...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.1604
+t=0: Selected seed 195 with value = 0.1604
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.1811
+t=16: Selected seed 195 with value = 0.1811
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2192
+t=32: Selected seed 195 with value = 0.2192
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2688
+t=48: Selected seed 195 with value = 0.2688
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3592
+t=64: Selected seed 195 with value = 0.3592
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4340
+t=80: Selected seed 195 with value = 0.4340
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5013
+t=96: Selected seed 195 with value = 0.5013
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5836
+t=112: Selected seed 195 with value = 0.5836
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6726
+t=128: Selected seed 195 with value = 0.6726
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8072
+t=144: Selected seed 195 with value = 0.8072
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9270
+t=160: Selected seed 195 with value = 0.9270
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=176: Selected seed 195 with value = 0.9988
+Query 1/1: Action query time = 0.814 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=192: Selected seed 195 with value = 0.9986
+  Success detected at timestep 195!
+  Episode 36: SUCCESS (length: 196)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=36--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=36--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 37
+# successes: 35 (94.6%)
+Starting episode 38...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.764 sec
+Query 1/1 (seed 195): Predicted value = 0.1859
+t=0: Selected seed 195 with value = 0.1859
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2194
+t=16: Selected seed 195 with value = 0.2194
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2577
+t=32: Selected seed 195 with value = 0.2577
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2891
+t=48: Selected seed 195 with value = 0.2891
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3609
+t=64: Selected seed 195 with value = 0.3609
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4404
+t=80: Selected seed 195 with value = 0.4404
+Query 1/1: Action query time = 0.747 sec
+Query 1/1 (seed 195): Predicted value = 0.4946
+t=96: Selected seed 195 with value = 0.4946
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5727
+t=112: Selected seed 195 with value = 0.5727
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6833
+t=128: Selected seed 195 with value = 0.6833
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8042
+t=144: Selected seed 195 with value = 0.8042
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9175
+t=160: Selected seed 195 with value = 0.9175
+Query 1/1: Action query time = 0.760 sec
+Query 1/1 (seed 195): Predicted value = 0.9985
+t=176: Selected seed 195 with value = 0.9985
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9987
+t=192: Selected seed 195 with value = 0.9987
+  Success detected at timestep 194!
+  Episode 37: SUCCESS (length: 195)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=37--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=37--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 38
+# successes: 36 (94.7%)
+Starting episode 39...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.773 sec
+Query 1/1 (seed 195): Predicted value = 0.1822
+t=0: Selected seed 195 with value = 0.1822
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2117
+t=16: Selected seed 195 with value = 0.2117
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2466
+t=32: Selected seed 195 with value = 0.2466
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2814
+t=48: Selected seed 195 with value = 0.2814
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3455
+t=64: Selected seed 195 with value = 0.3455
+Query 1/1: Action query time = 0.738 sec
+Query 1/1 (seed 195): Predicted value = 0.4191
+t=80: Selected seed 195 with value = 0.4191
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5104
+t=96: Selected seed 195 with value = 0.5104
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6010
+t=112: Selected seed 195 with value = 0.6010
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6976
+t=128: Selected seed 195 with value = 0.6976
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8249
+t=144: Selected seed 195 with value = 0.8249
+Query 1/1: Action query time = 0.774 sec
+Query 1/1 (seed 195): Predicted value = 0.8744
+t=160: Selected seed 195 with value = 0.8744
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=176: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9990
+t=192: Selected seed 195 with value = 0.9990
+  Success detected at timestep 201!
+  Episode 38: SUCCESS (length: 202)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=38--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=38--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 39
+# successes: 37 (94.9%)
+Starting episode 40...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.761 sec
+Query 1/1 (seed 195): Predicted value = 0.1872
+t=0: Selected seed 195 with value = 0.1872
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2148
+t=16: Selected seed 195 with value = 0.2148
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2570
+t=32: Selected seed 195 with value = 0.2570
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3119
+t=48: Selected seed 195 with value = 0.3119
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3827
+t=64: Selected seed 195 with value = 0.3827
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4273
+t=80: Selected seed 195 with value = 0.4273
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4971
+t=96: Selected seed 195 with value = 0.4971
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5674
+t=112: Selected seed 195 with value = 0.5674
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6652
+t=128: Selected seed 195 with value = 0.6652
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.7949
+t=144: Selected seed 195 with value = 0.7949
+Query 1/1: Action query time = 0.806 sec
+Query 1/1 (seed 195): Predicted value = 0.8839
+t=160: Selected seed 195 with value = 0.8839
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9986
+t=176: Selected seed 195 with value = 0.9986
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=192: Selected seed 195 with value = 0.9989
+  Success detected at timestep 198!
+  Episode 39: SUCCESS (length: 199)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=39--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=39--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 40
+# successes: 38 (95.0%)
+Starting episode 41...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.760 sec
+Query 1/1 (seed 195): Predicted value = 0.1817
+t=0: Selected seed 195 with value = 0.1817
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.2201
+t=16: Selected seed 195 with value = 0.2201
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2729
+t=32: Selected seed 195 with value = 0.2729
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3236
+t=48: Selected seed 195 with value = 0.3236
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4052
+t=64: Selected seed 195 with value = 0.4052
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4821
+t=80: Selected seed 195 with value = 0.4821
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5445
+t=96: Selected seed 195 with value = 0.5445
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6393
+t=112: Selected seed 195 with value = 0.6393
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.7541
+t=128: Selected seed 195 with value = 0.7541
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8870
+t=144: Selected seed 195 with value = 0.8870
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=160: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=176: Selected seed 195 with value = 0.9996
+  Success detected at timestep 191!
+  Episode 40: SUCCESS (length: 192)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=40--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=40--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 41
+# successes: 39 (95.1%)
+Starting episode 42...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.1905
+t=0: Selected seed 195 with value = 0.1905
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2296
+t=16: Selected seed 195 with value = 0.2296
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2658
+t=32: Selected seed 195 with value = 0.2658
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3214
+t=48: Selected seed 195 with value = 0.3214
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3804
+t=64: Selected seed 195 with value = 0.3804
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4362
+t=80: Selected seed 195 with value = 0.4362
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.5149
+t=96: Selected seed 195 with value = 0.5149
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6408
+t=112: Selected seed 195 with value = 0.6408
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7579
+t=128: Selected seed 195 with value = 0.7579
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8980
+t=144: Selected seed 195 with value = 0.8980
+Query 1/1: Action query time = 0.811 sec
+Query 1/1 (seed 195): Predicted value = 0.9989
+t=160: Selected seed 195 with value = 0.9989
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=176: Selected seed 195 with value = 0.9993
+  Success detected at timestep 187!
+  Episode 41: SUCCESS (length: 188)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=41--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=41--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 42
+# successes: 40 (95.2%)
+Starting episode 43...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.742 sec
+Query 1/1 (seed 195): Predicted value = 0.2129
+t=0: Selected seed 195 with value = 0.2129
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.2471
+t=16: Selected seed 195 with value = 0.2471
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2788
+t=32: Selected seed 195 with value = 0.2788
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3346
+t=48: Selected seed 195 with value = 0.3346
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4005
+t=64: Selected seed 195 with value = 0.4005
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.4698
+t=80: Selected seed 195 with value = 0.4698
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5562
+t=96: Selected seed 195 with value = 0.5562
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6408
+t=112: Selected seed 195 with value = 0.6408
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.7206
+t=128: Selected seed 195 with value = 0.7206
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6688
+t=144: Selected seed 195 with value = 0.6688
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6640
+t=160: Selected seed 195 with value = 0.6640
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6588
+t=176: Selected seed 195 with value = 0.6588
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.6633
+t=192: Selected seed 195 with value = 0.6633
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.6697
+t=208: Selected seed 195 with value = 0.6697
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.7170
+t=224: Selected seed 195 with value = 0.7170
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7419
+t=240: Selected seed 195 with value = 0.7419
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7956
+t=256: Selected seed 195 with value = 0.7956
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.8946
+t=272: Selected seed 195 with value = 0.8946
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7560
+t=288: Selected seed 195 with value = 0.7560
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6321
+t=304: Selected seed 195 with value = 0.6321
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5553
+t=320: Selected seed 195 with value = 0.5553
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.5871
+t=336: Selected seed 195 with value = 0.5871
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.5887
+t=352: Selected seed 195 with value = 0.5887
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5978
+t=368: Selected seed 195 with value = 0.5978
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5603
+t=384: Selected seed 195 with value = 0.5603
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5871
+t=400: Selected seed 195 with value = 0.5871
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6514
+t=416: Selected seed 195 with value = 0.6514
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.7797
+t=432: Selected seed 195 with value = 0.7797
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9556
+t=448: Selected seed 195 with value = 0.9556
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9399
+t=464: Selected seed 195 with value = 0.9399
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9163
+t=480: Selected seed 195 with value = 0.9163
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9853
+t=496: Selected seed 195 with value = 0.9853
+  Episode 42: FAILURE (length: 500)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=42--success=False--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=42--success=False--task=open_the_right_drawer.mp4
+Success: False
+# episodes completed so far: 43
+# successes: 40 (93.0%)
+Starting episode 44...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.767 sec
+Query 1/1 (seed 195): Predicted value = 0.1896
+t=0: Selected seed 195 with value = 0.1896
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2384
+t=16: Selected seed 195 with value = 0.2384
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.2717
+t=32: Selected seed 195 with value = 0.2717
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3147
+t=48: Selected seed 195 with value = 0.3147
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3763
+t=64: Selected seed 195 with value = 0.3763
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.4330
+t=80: Selected seed 195 with value = 0.4330
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5167
+t=96: Selected seed 195 with value = 0.5167
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.6469
+t=112: Selected seed 195 with value = 0.6469
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7747
+t=128: Selected seed 195 with value = 0.7747
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.9013
+t=144: Selected seed 195 with value = 0.9013
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=160: Selected seed 195 with value = 0.9992
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=176: Selected seed 195 with value = 0.9993
+  Success detected at timestep 187!
+  Episode 43: SUCCESS (length: 188)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=43--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=43--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 44
+# successes: 41 (93.2%)
+Starting episode 45...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.744 sec
+Query 1/1 (seed 195): Predicted value = 0.1867
+t=0: Selected seed 195 with value = 0.1867
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2375
+t=16: Selected seed 195 with value = 0.2375
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.2620
+t=32: Selected seed 195 with value = 0.2620
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2877
+t=48: Selected seed 195 with value = 0.2877
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.3835
+t=64: Selected seed 195 with value = 0.3835
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4474
+t=80: Selected seed 195 with value = 0.4474
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.5166
+t=96: Selected seed 195 with value = 0.5166
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.6136
+t=112: Selected seed 195 with value = 0.6136
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.7126
+t=128: Selected seed 195 with value = 0.7126
+Query 1/1: Action query time = 0.730 sec
+Query 1/1 (seed 195): Predicted value = 0.8813
+t=144: Selected seed 195 with value = 0.8813
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9720
+t=160: Selected seed 195 with value = 0.9720
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9995
+t=176: Selected seed 195 with value = 0.9995
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=192: Selected seed 195 with value = 0.9996
+  Success detected at timestep 193!
+  Episode 44: SUCCESS (length: 194)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=44--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=44--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 45
+# successes: 42 (93.3%)
+Starting episode 46...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.2114
+t=0: Selected seed 195 with value = 0.2114
+Query 1/1: Action query time = 0.763 sec
+Query 1/1 (seed 195): Predicted value = 0.2387
+t=16: Selected seed 195 with value = 0.2387
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2768
+t=32: Selected seed 195 with value = 0.2768
+Query 1/1: Action query time = 0.746 sec
+Query 1/1 (seed 195): Predicted value = 0.3178
+t=48: Selected seed 195 with value = 0.3178
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.3828
+t=64: Selected seed 195 with value = 0.3828
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.4536
+t=80: Selected seed 195 with value = 0.4536
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5548
+t=96: Selected seed 195 with value = 0.5548
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.6564
+t=112: Selected seed 195 with value = 0.6564
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.8388
+t=128: Selected seed 195 with value = 0.8388
+Query 1/1: Action query time = 0.737 sec
+Query 1/1 (seed 195): Predicted value = 0.9322
+t=144: Selected seed 195 with value = 0.9322
+Query 1/1: Action query time = 0.749 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=160: Selected seed 195 with value = 0.9988
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.9991
+t=176: Selected seed 195 with value = 0.9991
+  Success detected at timestep 182!
+  Episode 45: SUCCESS (length: 183)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=45--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=45--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 46
+# successes: 43 (93.5%)
+Starting episode 47...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.753 sec
+Query 1/1 (seed 195): Predicted value = 0.2341
+t=0: Selected seed 195 with value = 0.2341
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2716
+t=16: Selected seed 195 with value = 0.2716
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2952
+t=32: Selected seed 195 with value = 0.2952
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.3275
+t=48: Selected seed 195 with value = 0.3275
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.4253
+t=64: Selected seed 195 with value = 0.4253
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4914
+t=80: Selected seed 195 with value = 0.4914
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5630
+t=96: Selected seed 195 with value = 0.5630
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.6511
+t=112: Selected seed 195 with value = 0.6511
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.7390
+t=128: Selected seed 195 with value = 0.7390
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9013
+t=144: Selected seed 195 with value = 0.9013
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9971
+t=160: Selected seed 195 with value = 0.9971
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.9992
+t=176: Selected seed 195 with value = 0.9992
+  Success detected at timestep 190!
+  Episode 46: SUCCESS (length: 191)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=46--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=46--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 47
+# successes: 44 (93.6%)
+Starting episode 48...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.1694
+t=0: Selected seed 195 with value = 0.1694
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.2117
+t=16: Selected seed 195 with value = 0.2117
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2597
+t=32: Selected seed 195 with value = 0.2597
+Query 1/1: Action query time = 0.811 sec
+Query 1/1 (seed 195): Predicted value = 0.3214
+t=48: Selected seed 195 with value = 0.3214
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.4010
+t=64: Selected seed 195 with value = 0.4010
+Query 1/1: Action query time = 0.750 sec
+Query 1/1 (seed 195): Predicted value = 0.4619
+t=80: Selected seed 195 with value = 0.4619
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.5368
+t=96: Selected seed 195 with value = 0.5368
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6259
+t=112: Selected seed 195 with value = 0.6259
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.7495
+t=128: Selected seed 195 with value = 0.7495
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.8798
+t=144: Selected seed 195 with value = 0.8798
+Query 1/1: Action query time = 0.735 sec
+Query 1/1 (seed 195): Predicted value = 0.9828
+t=160: Selected seed 195 with value = 0.9828
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=176: Selected seed 195 with value = 0.9996
+Query 1/1: Action query time = 0.748 sec
+Query 1/1 (seed 195): Predicted value = 0.9997
+t=192: Selected seed 195 with value = 0.9997
+  Success detected at timestep 195!
+  Episode 47: SUCCESS (length: 196)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=47--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=47--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 48
+# successes: 45 (93.8%)
+Starting episode 49...
+
+Task description: open the right drawer
+Query 1/1: Action query time = 0.756 sec
+Query 1/1 (seed 195): Predicted value = 0.2058
+t=0: Selected seed 195 with value = 0.2058
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2411
+t=16: Selected seed 195 with value = 0.2411
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.2880
+t=32: Selected seed 195 with value = 0.2880
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.3278
+t=48: Selected seed 195 with value = 0.3278
+Query 1/1: Action query time = 0.768 sec
+Query 1/1 (seed 195): Predicted value = 0.3897
+t=64: Selected seed 195 with value = 0.3897
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.4525
+t=80: Selected seed 195 with value = 0.4525
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5429
+t=96: Selected seed 195 with value = 0.5429
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.6679
+t=112: Selected seed 195 with value = 0.6679
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.7713
+t=128: Selected seed 195 with value = 0.7713
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.8744
+t=144: Selected seed 195 with value = 0.8744
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9634
+t=160: Selected seed 195 with value = 0.9634
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.9988
+t=176: Selected seed 195 with value = 0.9988
+  Success detected at timestep 191!
+  Episode 48: SUCCESS (length: 192)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=48--success=True--task=open_the_right_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=48--success=True--task=open_the_right_drawer.mp4
+Success: True
+# episodes completed so far: 49
+# successes: 46 (93.9%)
+Starting episode 50...
+
+Task description: open the left drawer
+Query 1/1: Action query time = 0.745 sec
+Query 1/1 (seed 195): Predicted value = 0.1824
+t=0: Selected seed 195 with value = 0.1824
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.2342
+t=16: Selected seed 195 with value = 0.2342
+Query 1/1: Action query time = 0.732 sec
+Query 1/1 (seed 195): Predicted value = 0.2708
+t=32: Selected seed 195 with value = 0.2708
+Query 1/1: Action query time = 0.813 sec
+Query 1/1 (seed 195): Predicted value = 0.3300
+t=48: Selected seed 195 with value = 0.3300
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.4039
+t=64: Selected seed 195 with value = 0.4039
+Query 1/1: Action query time = 0.743 sec
+Query 1/1 (seed 195): Predicted value = 0.4820
+t=80: Selected seed 195 with value = 0.4820
+Query 1/1: Action query time = 0.733 sec
+Query 1/1 (seed 195): Predicted value = 0.5452
+t=96: Selected seed 195 with value = 0.5452
+Query 1/1: Action query time = 0.734 sec
+Query 1/1 (seed 195): Predicted value = 0.6468
+t=112: Selected seed 195 with value = 0.6468
+Query 1/1: Action query time = 0.736 sec
+Query 1/1 (seed 195): Predicted value = 0.7787
+t=128: Selected seed 195 with value = 0.7787
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9217
+t=144: Selected seed 195 with value = 0.9217
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9993
+t=160: Selected seed 195 with value = 0.9993
+Query 1/1: Action query time = 0.731 sec
+Query 1/1 (seed 195): Predicted value = 0.9996
+t=176: Selected seed 195 with value = 0.9996
+  Success detected at timestep 186!
+  Episode 49: SUCCESS (length: 187)
+Saved rollout MP4 at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--episode=49--success=True--task=open_the_left_drawer.mp4
+Saved rollout MP4 with future predictions at path cosmos_policy/experiments/robot/robocasa/logs/rollout_data/OpenDrawer--2026_04_04-05_13_28/2026_04_04-05_13_28--with_future_img--episode=49--success=True--task=open_the_left_drawer.mp4
+Success: True
+# episodes completed so far: 50
+# successes: 47 (94.0%)
+Task OpenDrawer results:
+  Success rate: 0.9400 (94%)
+  Average episode length: 218.5
+  Successes: 47/50
+
+================================================================================
+FINAL RESULTS
+================================================================================
+Task: OpenDrawer
+Success rate: 0.9400 (94%)
+Average episode length: 218.5
+Total episodes: 50
+Total successes: 47
+
+Results saved to: cosmos_policy/experiments/robot/robocasa/logs/ENV_EVAL-OpenDrawer-cosmos-2026_04_04-05_13_28--chkpt45000--5stepAct--seed195--deterministic.txt
